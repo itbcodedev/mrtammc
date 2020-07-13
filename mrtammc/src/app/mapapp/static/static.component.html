@@ -1,0 +1,299 @@
+<div class="content-wrapper">
+  <section class="content">
+    <div class="row">
+      <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-danger">
+          <div class="inner">
+            <h3>{{average || 0}}</h3>
+
+            <p>จำนวนผู้โดยสาร</p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-man"></i>
+          </div>
+          <a href="#" class="small-box-footer">More info <i class="fa fa-male"></i></a>
+        </div>
+      </div>
+      <!-- ./col -->
+      <!-- ./col -->
+      <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-success">
+          <div class="inner">
+            <h3>00<sup style="font-size: 20px"></sup></h3>
+
+            <p>online mobiles</p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-stats-bars"></i>
+          </div>
+          <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+          <div class="inner">
+            <h3>150</h3>
+
+            <p>จำนวนการแจ้งเตือนจากระบบ</p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-alert"></i>
+          </div>
+          <a href="#" class="small-box-footer">More info <i class="fa fa-exclamation-triangle"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+          <div class="inner">
+            <h3>10</h3>
+
+            <p>จำนวนข้อความที่ส่งไปมือถือ</p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-person-add"></i>
+          </div>
+          <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+      <!-- ./col -->
+
+    </div>
+    <div class="row">
+      <section class="col-lg-6">
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">ความหนาแน่นผู้โดยสาร</h3>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <th style="width: 100px">#</th>
+                  <th>สถานี</th>
+                  <th>ความหนาแน่นผู้โดยสาร</th>
+                  <th style="width: 200px">จำนวน ผู้โดยสาร</th>
+                </tr>
+                <tr *ngFor="let passenger of passengers">
+                  <td>{{passenger.create_on |  date :'hh:mm:ss a '}}</td>
+                  <td>{{passenger.station}}</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" [ngStyle]="{'width': passenger.density + '%'}">
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-danger text-center">{{passenger.density}}</span></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <!-- /.card-body -->
+          <div class="card-footer clearfix">
+
+          </div>
+        </div>
+
+
+        <!-- <div class="card">
+          <div class="card-header d-flex p-0 ui-sortable-handle" style="cursor: move;">
+            <h3 class="card-title p-3">
+              <i class="fa fa-pie-chart mr-1"></i>
+              Parking
+            </h3>
+
+          </div>
+          <div class="card-body">
+            <div *ngIf="chart">
+              <canvas id="canvas">{{ chart }}</canvas>
+            </div>
+          </div>
+        </div> -->
+
+      </section>
+      <section class="col-lg-6">
+        <div class="card">
+          <div class="card-header ui-sortable-handle" style="cursor: move;">
+            <h4 class="card-title">
+              <i class="ion ion-clipboard mr-1"></i>
+              ข้อความแจ้งเตือนจากระบบเดินรถ
+              <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#alertModal">
+                <i class="fa fa-arrow-circle-right"></i> ส่งข้อความไปยังมือถือ</button>
+            </h4>
+
+            <div class="card-tools">
+              <ul class="pagination pagination-sm">
+                <li class="page-item"><a href="#" class="page-link">«</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">»</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <ul class="todo-list ui-sortable">
+              <li *ngFor="let alert of alerts">
+                <!-- drag handle -->
+                <span class="handle ui-sortable-handle">
+                  <i class="fa fa-ellipsis-v"></i>
+                  <i class="fa fa-ellipsis-v"></i>
+                </span>
+
+                <!-- todo text -->
+                <span class="text">{{alert.summary}}</span>
+                &nbsp;&nbsp;<small class="badge badge-danger"><i class="fa fa-clock-o"></i>
+                  {{alert.create_on |  date:'medium' }}</small>
+
+                <p style="margin-bottom: 0.5rem;">{{alert.description}}</p>
+                &nbsp;&nbsp;<span class="badge badge-light">by: {{alert.owner_by}}</span>
+                &nbsp;&nbsp;<span class="badge badge-light">level: {{alert.level}}</span>
+                &nbsp;&nbsp;<span class="badge badge-light">priority: {{alert.priority}}</span>
+              </li>
+            </ul>
+          </div>
+          <!-- /.card-body -->
+          <div class="card-footer clearfix">
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header ui-sortable-handle" style="cursor: move;">
+            <h4 class="card-title">
+              <i class="ion ion-clipboard mr-1"></i>
+              ประวัติข้อความที่ส่งไปมือถือ
+            </h4>
+
+            <div class="card-tools">
+              <ul class="pagination pagination-sm">
+                <li class="page-item"><a href="#" class="page-link">«</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">»</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <ag-grid-angular [enableSorting]="true" style="width: 100%; height: 500px;" class="ag-theme-balham"
+              [rowData]="rowData" (gridReady)="onGridReady($event)" [columnDefs]="columnDefs">
+            </ag-grid-angular>
+          </div>
+          <!-- /.card-body -->
+          <div class="card-footer clearfix">
+
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </section>
+</div>
+
+
+<!-- Modal -->
+<div #alertModel class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ระบบส่งข้อความไปยังมือถือ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" #closeBtn>
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="alertForm" (ngSubmit)="onSubmit()">
+          <div class="form-group row">
+            <label for="title" class="col-sm-3 col-form-label">stop_group
+              <span style="color:red;font-weight:bold">*</span>
+            </label>
+            <div class="col-sm-8">
+              <select class="custom-select" [ngModel]="stop_group" (ngModelChange)="changeRoute($event)" formControlName="stop_group">
+                <option value="" disabled>กรุณาเลือกเส้นทาง</option>
+                <option *ngFor="let route of routes" [ngValue]="route">{{route}}</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="title" class="col-sm-3 col-form-label">stop_id &nbsp; &nbsp;&nbsp;
+              <span style="color:red;font-weight:bold">*</span>
+            </label>
+            <div class="col-sm-8">
+
+              <select class="custom-select" [ngModel]="stop_id" (ngModelChange)="changeRoute($event)" formControlName="stop_id">
+                <option value="" disabled>กรุณาเลือกสถานี</option>
+                <option *ngFor="let station of stations" [ngValue]="station">{{station}}</option>
+              </select>
+
+            </div>
+
+          </div>
+          <div class="form-group row">
+            <label for="title" class="col-sm-3 col-form-label">title_line
+              <span style="color:red;font-weight:bold">*</span>
+            </label>
+            <div class="col-sm-8">
+              <input class="form-control" id="title_line" formControlName="title_line">
+
+            </div>
+
+          </div>
+          <div class="form-group row">
+            <label for="title" class="col-sm-3 col-form-label">title_line_en</label>
+            <div class="col-sm-8">
+              <input class="form-control" id="title_line_en" formControlName="title_line_en">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="message" class="col-sm-3 col-form-label">Message
+              <span style="color:red;font-weight:bold">*</span>
+            </label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="message" formControlName="message"></textarea>
+
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="message_en" class="col-sm-3 col-form-label">Message_en</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="message_en" formControlName="message_en"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="user_name" class="col-sm-3 col-form-label">user_name</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="user_name" placeholder={{username}} disabled
+                value={{username}} formControlName="user_name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-8">
+              <!-- <button type="submit" class="btn btn-primary btn-sm" [disabled]="!alertForm.valid" >Create Alert</button> -->
+              <button type="submit" class="btn btn-primary btn-sm" [disabled]="!alertForm.valid">แจ้งเตือน</button>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p></p>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,30 @@
+<h5 class="card-title text-center">UserDetail</h5>
+<form class="form-signin" [formGroup]="FormData">
+  <input type="hidden" name="_id" formControlName="_id" [(ngModel)]="_userservice.formdata._id">
+  <div class="form-label-group">
+    <label for="inputUserame">Username</label>
+    <input type="text" id="inputUserame" class="form-control" placeholder="Username" formControlName="username" disabled
+      [(ngModel)]="_userservice.formdata.username" required autofocus>
+  </div>
+  <div class="form-label-group">
+    <label for="inputEmail">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" formControlName="email" disabled
+      [(ngModel)]="_userservice.formdata.email" required>
+  </div>
+  <hr>
+  <div class="form-label-group">
+    <label for="firstname">firstname</label>
+    <input type="text" id="firstname" class="form-control" placeholder="firstname" formControlName="firstname"
+      [(ngModel)]="_userservice.formdata.firstname" required autofocus>
+  </div>
+  <div class="form-label-group">
+    <label for="lastname">lastname</label>
+    <input type="text" id="lastname" class="form-control" placeholder="lastname" formControlName="lastname" [(ngModel)]="_userservice.formdata.lastname"
+      required autofocus>
+  </div>
+  <hr>
+  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="update()">Update</button>
+  <div style="text-align: center;">
+  </div>
+
+</form>

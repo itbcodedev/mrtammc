@@ -1,0 +1,33 @@
+<div class="content-wrapper">
+  <section class="content">
+    <div id="map" style="z-index: 1;">
+
+    </div>
+    <div id="overlay" class="row">
+      <div class="col-md-12">
+        <h4> <i class="fa fa-car"></i> สถานะอาคารจอดรถ Park & Ride </h4>
+        <p> {{ ratiolabel }}</p>
+      </div>
+      <div class="col-md-6" *ngFor="let parking of parkings; index as i"  (click)="getparkcode(parking)">
+        <div class="card-counter">
+          <div class="count-desc">
+            <img src={{parking.icon}} alt="icon" height="44" width="44">   
+            {{ parking.name }}
+          </div>
+
+          <div class="success-bar">
+            <ul class="parking-list">
+              <li class="parking" >
+                <h4>{{ parking.percent }} %</h4>
+                <progress [ngClass]="parking.class" max="100" value="{{parking.percent}}">
+                </progress>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="count-code" >{{ parking.code }}</div> -->
+          <span class="count-numbers" style="color: green">{{parking.ncarrem }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

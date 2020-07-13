@@ -1,0 +1,11 @@
+--2019-05-03 22:50:55--  http://api.flickr.com/services/feeds/geo/?g=322338@N20
+Resolving api.flickr.com (api.flickr.com)... 119.161.10.12, 119.161.10.11, 2406:2000:98:800::e5, ...
+Connecting to api.flickr.com (api.flickr.com)|119.161.10.12|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/atom+xml]
+Saving to: ‘index.html?g=322338@N20’
+
+index.html?g=322338@N20                                     [<=>                                                                                                                            ]       0  --.-KB/s               index.html?g=322338@N20                                     [ <=>                                                                                                                           ]  21.96K  --.-KB/s    in 0.09s   
+
+2019-05-03 22:50:56 (253 KB/s) - ‘index.html?g=322338@N20’ saved [22482]
+

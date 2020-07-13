@@ -1,0 +1,19 @@
+<h5>User List</h5>
+<table class="table table-striped">
+  <thead>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Action</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td (click)="populateForm(user)">{{user.firstname}} </td>
+      <td (click)="populateForm(user)">{{user.lastname}}</td>
+      <td (click)="populateForm(user)">{{user.username}}</td>
+      <td (click)="populateForm(user)">{{user.email}}</td>
+      <td (click)="populateForm(user)"><button class="btn btn-sm btn-outline-danger">X</button></td>
+    </tr>
+  </tbody>
+</table>

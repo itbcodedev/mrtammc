@@ -1,0 +1,23 @@
+<div class="content-wrapper">
+  <section class="content">
+    <div class="row">
+      <div class="col-sm-2 p-4">
+        <h5> กรุณาเลือกแสดงข้อมูล </h5>
+        <form #dataForm="ngForm">
+          <div class="input-group mb-3" *ngFor="let category of categories">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="checkbox" name="{{ category.category }}" ngModel (change)=loadmap(dataForm)>
+              </div>
+            </div>
+             <input type="text" class="form-control"  placeholder="{{category.desc}}" readonly>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-10">
+        <div id="map">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

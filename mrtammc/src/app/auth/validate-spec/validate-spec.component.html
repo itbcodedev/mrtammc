@@ -1,0 +1,85 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="error-tab" data-toggle="tab" href="#error" role="tab" aria-controls="error" aria-selected="true">Errors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="warning-tab" data-toggle="tab" href="#warning" role="tab" aria-controls="warning" aria-selected="false">Warning</a>
+  </li>
+
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="error" role="tabpanel" aria-labelledby="error-tab">
+    <ul>
+    <li>File <em>file name</em> is not found (E1)</li>
+    <li>File <em>file name</em> is empty (E2)</li>
+    <li>Couldn't find a feed named <em>feed name</em> (E3)</li>
+    <li>The feed named <em>feed name</em> had an unknown format: feeds should be either .zip files or directories. (E4)</li>
+    <li>Files must be encoded in utf-8 and may not contain any null bytes (0x00). (E5)</li>
+    <li>Missing column <em>column name</em> in file <em>file name</em> (E6)</li>
+    <li>Missing value for column <em>column name</em> (E7)</li>
+    <li>Invalid value <em>value</em> in field <em>column name</em> (E8)</li>
+    <li>Duplicate ID <em>value</em> in column <em>column name</em> (E9)</li>
+    <li>Invalid value <em>value</em> in field stop_desc.  stop_desc should not be the same as stop_name (E10)</li>
+    <li>Invalid value <em>value</em> in field route_short_name.  Both route_short_name and route_long name are blank. (E10)</li>
+    <li>Invalid value <em>value</em> in field route_desc.  route_desc shouldn't be the same as route_short_name or route_long_name (E11)</li>
+    <li>Invalid value <em>value</em> in field route_color.  route_color should be a valid color description which consists of 6 hexadecimal characters representing the RGB values. Example: 44AA06 (E12)</li>
+    <li>Invalid value <em>value</em> in field route_text_color.  route_text_color should be a valid color description, which consists of 6 hexadecimal characters representing the RGB values. Example: 44AA06 (E13)</li>
+    <li>Invalid value <em>value</em> in field departure_time.  The departure time at this stop (%s) is before the arrival time (%s).  This is often caused by problems in the feed exporter's time conversion (E14)</li>
+    <li>Missing value for column departure_time.  arrival_time and departure_time should either both be provided or both be left blank.  It's OK to set them both to the same value.  (E15)</li>
+    <li>Missing value for column arrival_time.  arrival_time and departure_time should either both be provided or both be left blank.  It's OK to set them both to the same value.  (E16)</li>
+    <li>No time for first StopTime of trip_id "<em>trip id</em>" (E17)</li>
+    <li>out of order stop time for stop_id=<em>stop id</em> trip_id=<em>trip id</em> (E18)</li>
+    <li>The first stop_time in trip <em>trip id</em> is missing times. (E19)</li>
+    <li>direction_id must be "0" or "1" (E20)</li>
+    <li>Duplicate stop_sequence in trip_id (E21)</li>
+    <li>No time for start of trip_id <em>trip id</em> (E22)</li>
+    <li>No time for end of trip_id <em>trip id</em> (E23)</li>
+    <li>Trip contains overlapping headway periods <em>period 1</em> and <em>period 2</em> (E24)</li>
+    <li>can't have a nonzero transfer_duration for a fare that doesn't allow transfers! (E25)</li>
+    <li>Each subsequent point in a shape should have a distance value that's at least as large as the previous ones.  In this case, the previous distance was <em>distance</em>. (E26)</li>
+    <li>Invalid value <em>value</em> in field shape_dist_traveled.  This value should be a positive number. (E27)</li>
+    <li>Invalid value <em>value</em> in field agency_timezone.  "<em>timezone</em>" isn't a recognized time zone (E28)</li>
+    <li>Invalid value <em>value</em> in field agency_id.  The route with ID <em>route id</em> specifies agency_id <em>agency id</em>, which doesn't exist. (E29)</li>
+    <li>A file must use a consistent line end. (E30)</li>
+    <li>appears to be encoded in utf-16 (E31)</li>
+    <li>contains a null in text <em>text</em> at byte <em>byte number</em> (E32)</li>
+    <li>Unicode error (E33)</li>
+    <li>In shape <em>shape id</em>, a negative sequence number <em>number</em> was found; sequence numbers should be 0 or higher. (E34)</li>
+    <li>The sequence number <em>number</em> occurs more than once in shape <em>shape ID</em>. (E35)</li>
+    <li>Invalid value <em>value</em> in field stop_sequence.  This should be a number. (E36)</li>
+    <li>Invalid value <em>value</em> in field stop_sequence.  Sequence numbers should be 0 or higher. (E37)</li>
+    <li>Invalid value <em>value</em> in field stop_id.  This value wasn't defined in stops.txt (E38)</li>
+    <li>Invalid value <em>value</em> in field trip_id.  This value wasn't defined in trips.txt (E39)</li>
+    </ul>
+  </div>
+  <div class="tab-pane fade" id="warning" role="tabpanel" aria-labelledby="warning-tab">
+    <ul>
+    <li>Unrecognized column <em>column name</em> in file <em>file name</em>.  This might be a misspelled column name (capitalization matters!). Or it could be extra information (such as a proposed feed extension) that the validator doesn't know about yet. Extra information is fine; this warning is here to catch misspelled optional column names. (W1)</li>
+    <li>
+    <em>stop name</em> (ID <em>stop id</em>) isn't used in any trips (W2)</li>
+    <li>This feed expired on <em>date</em> (W3)</li>
+    <li>This feed will soon expire, on <em>date</em> (W4)</li>
+    <li>Each line must end with CR LF or LF except for the last line of the file. This line ends with <em>line ending example</em>. (W5)</li>
+    <li>Invalid value <em>value</em> in field stop_lat.  Stop location too close to 0, 0 (W6)</li>
+    <li>Invalid value <em>value</em> in field route_short_name.  This route_short_name is relatively long, which probably means that it contains a place name.  You should only use this field to hold a short code that riders use to identify a route.  If this route doesn't have such a code, it's OK to leave this field empty. (W7)</li>
+    <li>Invalid value <em>value</em> in field route_short_name.  route_long_name shouldn't contain the route_short_name value, as both fields are often displayed side-by-side. (W8)</li>
+    <li>Invalid value <em>value</em> in field route_short_name.  route_long_name shouldn't be the same the route_short_name value, as both fields are often displayed side-by-side.  It's OK to omit either the short or long name (but not both). (W9)</li>
+    <li>Invalid value <em>value</em> in field route_color.  The route_text_color and route_color should be set to contrasting colors, as they are used as the text and background color (respectively) for displaying route names.  When left blank, route_text_color defaults to 000000 (black) and route_color defaults to FFFFFF (white).  A common source of issues here is setting route_color to a dark color, while leaving route_text_color set to black.  In this case, route_text_color should be set to a lighter color like FFFFFF to ensure a legible contrast between the two. (W10)
+    You may find a color picker tool such as <a href="http://snook.ca/technical/colour_contrast/colour.html" rel="nofollow">http://snook.ca/technical/colour_contrast/colour.html</a> handy.</li>
+    <li>This stop time has a pickup_type and drop_off_type of 1, indicating that riders can't get on or off here.  Since it doesn't define a timepoint either, this entry serves no purpose and should be excluded from the trip. (W11)</li>
+    <li>Point location too close to 0, 0, which means that it's probably an incorrect location. (W12)</li>
+    <li>The shape with shape_id "<em>shape id</em>" contains no points. (W13)</li>
+    <li>Service period with service_id <em>service id</em> doesn't have service on any days of the week. (W14)</li>
+    <li>This feed has no effective service dates! (W15)</li>
+    <li>The stops <em>stop name 1</em> (ID <em>stop id 1</em>) and <em>stop name 2</em> (ID <em>stop id 2</em>) are so close together that they probably represent the same location. (W16)</li>
+    <li>The same combination of route_short_name and route_long_name shouldn't be used for more than one route, as it is for the for the two routes with IDs <em>route ID 1</em> and <em>route ID 2</em>. (W17)</li>
+    <li>The trip with the trip_id "<em>trip id</em>" doesn't have any stop times defined. (W18)</li>
+    <li>The trip with the trip_id "<em>trip id</em>" only has one stop on it; it should have at least one more stop so that the riders can leave! (W19)</li>
+    <li>The shapes with the following shape_ids aren't used by any trips: <em>shape IDs</em> (W20)</li>
+    <li>Found too many cells (commas) in line <em>line number</em> of file "<em>file</em>".  Every row in the file should have the same number of cells as the header (first line) does. (W21)</li>
+    <li>Found missing cells (commas) in line <em>line</em> of file "<em>file</em>".  Every row in the file should have the same number of cells as the header (first line) does. (W22)</li>
+    </ul>
+
+  </div>
+
+</div>

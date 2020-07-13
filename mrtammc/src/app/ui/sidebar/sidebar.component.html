@@ -1,0 +1,172 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar elevation-1 sidebar-light-danger">
+  <!-- Brand Logo -->
+  <a href="#" class="brand-link bg-primary ">
+    <img
+      src="assets/dist/img/mrtalogo.png"
+      alt="mrtalogo"
+      class="brand-image img-fluid"
+      style="opacity: 1"
+    />
+    <span class="brand-text font-weight-light">MRTA MMC</span>
+  </a>
+
+  <!-- Sidebar -->
+  <div appHidediv class="sidebar">
+
+    <!-- Sidebar Menu -->
+    <ul id="accordion1" class="nav nav-pills nav-sidebar flex-column mt-2">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          data-toggle="collapse"
+          href="#item-1"
+          data-parent="#accordion1"
+        >
+          <i class="nav-icon fa fa-tachometer"></i>
+          <p>Dashbaord</p>
+        </a>
+        <div id="item-1" class="collapse show">
+          <ul class="nav flex-column ml-3">
+            <li class="nav-item">
+              <a href="/gtfsrt" class="nav-link ">
+              <i class=""> <img src="assets/dist/img/googlemap.png" width="25"></i>
+                <p>&nbsp; Map</p>
+              </a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a href="/kmlslayer" class="nav-link ">
+                <i class=""> <img src="assets/dist/img/kml.png" width="25"></i>
+                <p>&nbsp; KMLS Layers</p>
+              </a>
+            </li>
+            -->
+            <li class="nav-item">
+              <a href="/tubemap" class="nav-link ">
+                <i class=""> <img src="assets/dist/img/tube.jpg" width="25"></i>
+                <p>&nbsp; Tube Map</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/poi" class="nav-link ">
+                <i class=""> <img src="assets/dist/img/poi.png" width="25"></i>
+                <p>&nbsp; MRTA POI</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/parking" class="nav-link">
+                <i class=""> <img src="assets/dist/img/parking.png" width="25"></i>
+                <p>&nbsp; Parking</p>
+              </a>
+            </li>
+            <!-- 
+            <li class="nav-item">
+              <a href="/caltrip" class="nav-link">
+                <i class="fa fa-usd nav-icon"></i>
+                <p>&nbsp; Caculate Fairs</p>
+              </a>
+            </li> 
+            -->
+            <li class="nav-item">
+              <a href="/cctv" class="nav-link">
+                <i class=""> <img src="assets/dist/img/cctv.png" width="25"></i>
+                <p style="color: gray;">&nbsp; CCTV</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          data-toggle="collapse"
+          href="#item-2"
+          data-parent="#accordion1"
+        >
+          <i class="nav-icon fa fa-align-left"></i>
+          <p>GTFS Data</p>
+        </a>
+        <div id="item-2" class="collapse">
+          <ul class="nav flex-column ml-3">
+            <li class="nav-item">
+              <a href="gtfseditor/agency" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                agency.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/stops" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                stops.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/routes" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                routes.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/trips" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                trips.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/stop_times" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                stop_times.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/calendar" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                calendar.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/calendar_dates" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                calendar_dates.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/fare_attributes" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                fare_attributes.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/fare_rules" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                fare_rules.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/shapes" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                shapes.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/frequencies" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                frequencies.txt
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="gtfseditor/transfers" class="nav-link">
+                <i class="fa fa-file-text-o nav-icon"></i>
+                transfers.txt
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>

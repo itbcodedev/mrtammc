@@ -1,0 +1,5 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type
+00011,MRTA_Transit,Purple Line In (south),Depot Purple Line to [PP16: Tao Poon],จากสถานีคลองบางไผ่ ไปสถานีเตาปูน (PP01 – PP16),2
+00012,MRTA_Transit,Purple Line Out (North),[PP16: TaoPoon to Depot Purple Line,จากสถานีสถานีเตาปูน ไปสถานีคลองบางไผ่ (PP16 – PP01),2
+00013,MRTA_Transit,Tao Poon - Hua Lamphong ,Tao Poon - Hua Lamphong,จากสถานีสถานีเตาปูน ไปสถานีหัวลำโพง (ฺฺBL10 – BL28),2
+00014,MRTA_Transit,Hua Lamphong - Tao Poon ,Hua Lamphong - Tao Poon, จากสถานีหัวลำโพง ไปสถานีสถานีเตาปูน  (ฺฺBL28 – BL10),2

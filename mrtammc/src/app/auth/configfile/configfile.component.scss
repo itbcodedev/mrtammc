@@ -1,0 +1,214 @@
+label {
+  display: inline-block;
+  margin: 4px;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  border: 1px solid #BDC3C7;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0rem;
+}
+
+
+label:hover{
+  cursor: pointer;
+ }
+
+ .list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.1rem 0.5rem;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+}
+
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0.2rem;
+  list-style: none;
+}
+
+
+input[type=file] { width: 270px; border: 1px solid #ccc; }
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: -5px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+.table th, .table td {
+    padding: 0.5rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table .thead-dark th {
+    color: #ffffff;
+    background-color: #007bff !important;
+    border-color: #32383e;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 0px solid #dee2e6 !important;
+}
+
+// input[type="file"] {
+//     width: 200px !important;
+//     border: 1px solid #ccc;
+// }
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+.content-wrapper > .content {
+    padding: 10px 10px;
+    background-color: #efefef;
+}
+
+.content-header {
+    padding: 10px 10px;
+    background-color: #e9ecfe;
+}
+
+
+#agency_info {
+    display: none;
+}
+
+#calendar_dates_info {
+    display: none;
+}
+
+#agency_info {
+    display: none;
+}
+#calendar_dates_info {
+    display: none;
+}
+#calendar_info {
+    display: none;
+}
+#frequencies_info {
+    display: none;
+}
+#periods_info {
+    display: none;
+}
+#routes_info {
+    display: none;
+}
+#shape_details_info {
+    display: none;
+}
+#shapes_info {
+    display: none;
+}
+#stop_times_info {
+    display: none;
+}
+#stops_info {
+    display: none;
+}
+#trips_info {
+    display: none;
+}
+
+#kml_info {
+    display: none;
+}
+
+.table .thead-dark th {
+    color: #ffffff;
+    background-color: #1b275c;
+    border-color: #32383e;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 0.2rem 0.2rem;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    border-radius: 0.2rem;
+}
+
+.ag-row-hover {
+    /* putting in !important so it overrides the theme's styling as it hovers the row also */
+    background-color: #dfdfff !important;
+}
+
+.ag-column-hover {
+    background-color: #dfffdf;
+}
+
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.7rem;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  background-color: #45b6fe
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.content-header {
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+}

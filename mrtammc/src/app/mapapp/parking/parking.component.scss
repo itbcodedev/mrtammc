@@ -1,0 +1,331 @@
+#map {
+  height: 1100px;
+  width: 100%;
+}
+
+#overlay {
+  position: absolute;
+  top: 55px;
+  left: 140px;
+  width: 500px;
+
+  z-index: 100;
+}
+
+.awesome-marker i {
+    font-size: 30px !important;
+    margin-top: 8px;
+}
+
+.card-counter {
+  margin: 2px;
+  padding: 8px;
+  background-color: #f2f2f2;
+  height: 105px;
+  transition: 0.3s linear all;
+  border: 1px solid #dee2e6;
+}
+
+// .card-counter:hover {
+//   background-color: #F0F0F0;
+//   transform: scale(1.1);
+// }
+
+
+.card-counter.primary {
+  background-color: #007bff;
+  color: #FFF;
+}
+
+.card-counter.danger {
+  background-color: #ef5350;
+  color: #FFF;
+}
+
+.card-counter.success {
+  background-color: #66bb6a;
+  color: #FFF;
+}
+
+.card-counter.info {
+  background-color: #26c6da;
+  color: #FFF;
+}
+
+.card-counter i {
+  font-size: 1.5em;
+  opacity: 1;
+}
+
+.card-counter .count-numbers {
+  position: absolute;
+  right: 35px;
+  top: 0px;
+  font-size: 28px;
+  display: block;
+  color: #ff0000;
+  opacity: 1;
+}
+
+.card-counter .count-code {
+  position: absolute;
+  top: 5px;
+  font-size: 17px;
+  display: block;
+  width: 200px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.card-counter .count-desc {
+  position: absolute;
+  top: 2px;
+  padding: 2px;
+  font-size: 15px;
+  display: block;
+  width: 160px;
+  opacity: 1;
+}
+.success-bar {
+  position: absolute;
+  top: 70px;
+  font-size: 15px;
+  display: block;
+  width: 200px;
+  opacity: 1;
+}
+
+.card-counter .count-name {
+  position: absolute;
+  right: 35px;
+  top: 65px;
+  font-style: italic;
+  text-transform: capitalize;
+  opacity: 1;
+  display: block;
+  font-size: 18px;
+}
+
+.background-1 {
+  background-color: #d4bff9;
+  opacity: 0.7;
+}
+
+.background-2 {
+  background-color: #b794f6;
+  opacity: 0.7;
+}
+
+.background-3 {
+  background-color: #defabb;
+  opacity: 0.7;
+}
+
+.background-4 {
+  background-color: #c6f68d;
+  opacity: 0.7;
+}
+
+.background-5 {
+  background-color: #f2bcf8;
+  opacity: 0.7;
+}
+
+.background-6 {
+  background-color: #e98df5;
+  opacity: 0.7;
+}
+
+.background-7 {
+  background-color: #f5b6da;
+  opacity: 0.7;
+}
+
+.background-8 {
+  background-color: #ffc77d;
+  opacity: 0.7;
+}
+
+.background-9 {
+  background-color: #90CAF9;
+  opacity: 0.7;
+}
+
+.background-10 {
+  background-color: #64B5F6;
+  opacity: 0.7;
+}
+
+.background-11 {
+  background-color: #B39DDB;
+  opacity: 0.7;
+}
+
+.background-12 {
+  background-color: #9575CD;
+  opacity: 0.7;
+}
+
+.background-13 {
+  background-color: #81D4FA;
+  opacity: 0.7;
+}
+
+.background-14 {
+  background-color: #4FC3F7;
+  opacity: 0.7;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+/* timeline */
+#over_map {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+/*  bar chart */
+progress, progress[role] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-size: auto;
+  height: 25px;
+  width: 100%;
+}
+
+
+// The unordered list
+.parking-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.2em;
+}
+
+// The list item
+.parking {
+  margin-bottom: 0.1em;
+  position: relative;
+  h4 {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: "Helvetica Neue", arial, sans-serif;
+    left: 0.5em;
+    line-height: 1;
+    position: absolute;
+    top: 0.2em;
+
+  }
+  ::-webkit-progress-value {
+    -webkit-animation: bar-fill 2s;
+    width: 0px;
+  }
+}
+
+// The background colors
+/*For webkit browsers*/
+.light-green::-webkit-progress-value {
+  background: #d4ea6b;
+}
+/*For firefox*/
+.light-green::-moz-progress-bar {
+  background: #d4ea6b;
+}
+/*For IE*/
+.light-green::-ms-fill {
+  background: #d4ea6b;
+}
+
+
+/*For webkit browsers*/
+.green::-webkit-progress-value {
+  background: #468a1a;
+}
+/*For firefox*/
+.green::-moz-progress-bar {
+  background: #468a1a;
+}
+/*For IE*/
+.green::-ms-fill {
+  background: #468a1a;
+}
+
+.yellow::-webkit-progress-value {
+  background: #e7b416;
+}
+
+.yellow::-moz-progress-bar {
+  background: #e7b416;
+}
+
+.yellow::-ms-fill {
+  background: #e7b416;
+}
+
+
+.orange::-webkit-progress-value {
+  background: #ff8828;
+}
+
+.orange::-moz-progress-bar {
+  background: #ff8828;
+}
+
+.orange::-ms-fill {
+  background: #ff8828;
+}
+
+.red::-webkit-progress-value {
+  background: #cc0000;
+}
+
+.red::-moz-progress-bar {
+  background: #cc0000;
+}
+
+.red::-ms-fill {
+  background: #cc0000;
+}
+
+// The keyframes
+@-webkit-keyframes bar-fill {
+ 0% { width: 0; }
+}
+
+@keyframes bar-fill {
+ 0% { width: 0; }
+}

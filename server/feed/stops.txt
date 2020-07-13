@@ -1,0 +1,148 @@
+stop_id,stop_name,stop_name_en,stop_lat,stop_lon,zone_id,stop_url,stop,icon
+PP01,สถานีคลองบางไผ่,Khlong Bang Phai,13.892337,100.408416,,/assets/dist/img/stationimage/purple_pp01.png,1,purple_diamon.png
+PP02,สถานีตลาดบางใหญ่,Talad Bang Yai,13.881034,100.409401,,/assets/dist/img/stationimage/purple_pp02.png,1250,purple_diamon.png
+PP03,สถานีสามแยกบางใหญ่,Sam Yaek Bang Yai,13.874785,100.419486,,/assets/dist/img/stationimage/purple_pp03.png,3000,purple_diamon.png
+PP04,สถานีบางพลู,Bang Phlu,13.875704,100.433925,,/assets/dist/img/stationimage/purple_pp04.png,4520,purple_diamon.png
+PP05,สถานีบางรักใหญ่,Bang Rak Yai,13.8766,100.444578,,/assets/dist/img/stationimage/purple_pp05.png,5680,purple_diamon.png
+PP06,สถานีบางรักน้อยท่าอิฐ,Bang Rak Noi Tha It,13.874939,100.456102,,/assets/dist/img/stationimage/purple_pp06.png,7000,purple_diamon.png
+PP07,สถานีไทรม้า,Sai Ma,13.870599,100.466664,,/assets/dist/img/stationimage/purple_pp07.png,8200,purple_diamon.png
+PP08,สถานีสะพานพระนั่งเกล้า,Phra Nangklao Bridge,13.870349,100.480489,,/assets/dist/img/stationimage/purple_pp08.png,9700,purple_diamon.png
+PP09,สถานีแยกนนทบุรี 1,Yaek Nonthaburi 1,13.866058,100.494289,,/assets/dist/img/stationimage/purple_pp09.png,11300,purple_diamon.png
+PP10,สถานีบางกระสอ,Bang Krasor,13.86162,100.504773,,/assets/dist/img/stationimage/purple_pp10.png,12600,purple_diamon.png
+PP11,สถานีศูนย์ราชการนนทบุรี,Nonthaburi Civic Center,13.860215,100.513384,,/assets/dist/img/stationimage/purple_pp11.png,13500,purple_diamon.png
+PP12,สถานีกระทรวงสาธารณสุข,Ministry of Public Health,13.848626,100.514893,,/assets/dist/img/stationimage/purple_pp12.png,15700,purple_diamon.png
+PP13,สถานีแยกติวานนท์,Yaek Tiwanon,13.839409,100.515188,,/assets/dist/img/stationimage/purple_pp13.png,17000,purple_diamon.png
+PP14,สถานีวงศ์สว่าง,Wong Sawang,13.829947,100.526629,,/assets/dist/img/stationimage/purple_pp14.png,18600,purple_diamon.png
+PP15,สถานีบางซ่อน,Bang Son,13.820201,100.532592,,/assets/dist/img/stationimage/purple_pp15.png,20000,purple_diamon.png
+PP16,สถานีเตาปูน,Tao Poon,13.806205,100.530836,,/assets/dist/img/stationimage/purple_pp16.png,21600,purple_diamon.png
+BL01,สถานีท่าพระ,Tha Phra,13.72966,100.47417,,,,blue_diamon.png
+BL02,สถานีจรัญฯ 13,Charan 13,13.74011,100.47084,,,,blue_diamon.png
+BL03,สถานีไฟฉาย,Fai Chai,13.75569,100.46937,,,,blue_diamon.png
+BL04,สถานีบางขุนนนท์,Bang Khun Non,13.76328,100.47334,,,,blue_diamon.png
+BL05,สถานีบางยี่ขัน,Bang Yi Khan,13.77726,100.4852,,,,blue_diamon.png
+BL06,สถานีสิรินธร,Sirindhorn,13.78389,100.49345,,,,blue_diamon.png
+BL07,สถานีบางพลัด,Bang Phlat,13.79247,100.50499,,,,blue_diamon.png
+BL08,สถานีบางอ้อ,Bang O,13.79891,100.50986,,,,blue_diamon.png
+BL09,สถานีบางโพ,Bang Pho,13.8064,100.52097,,,,blue_diamon.png
+BL10,สถานีเตาปูน,Tao Poon,13.8062237,100.5308543,,/assets/dist/img/stationimage/purple_pp16.png,,blue_diamon.png
+BL11,สถานีบางซื่อ,Bang Sue,13.8029397,100.5398691,,/assets/dist/img/stationimage/blue_bl11.png,,blue_diamon.png
+BL12,สถานีกำแพงเพชร,Kamphaeng Phet,13.7976359,100.5476904,,/assets/dist/img/stationimage/blue_bl12.png,,blue_diamon.png
+BL13,สถานีสวนจตุจักร,Chatuchak Park,13.8026007,100.5538058,,/assets/dist/img/stationimage/blue_bl13.png,,blue_diamon.png
+BL14,สถานีพหลโยธิน,Phahon Yothin,13.8129049,100.5613803,,/assets/dist/img/stationimage/blue_bl14.png,,blue_diamon.png
+BL15,สถานีลาดพร้าว,Lat Phrao,13.806664,100.5725598,,/assets/dist/img/stationimage/blue_bl15.png,,blue_diamon.png
+BL16,สถานีรัชดาภิเษก,Ratchadaphisek,13.799105,100.5746841,,/assets/dist/img/stationimage/blue_bl16.png,,blue_diamon.png
+BL17,สถานีสุทธิสาร,Sutthisan,13.7890191,100.5741477,,/assets/dist/img/stationimage/blue_bl17.png,,blue_diamon.png
+BL18,สถานีห้วยขวาง,Huai Khwang,13.7790056,100.5736864,,/assets/dist/img/stationimage/blue_bl18.png,,blue_diamon.png
+BL19,สถานีศูนย์วัฒนธรรม,Thailand Cultural Centre,13.7673921,100.5711436,,/assets/dist/img/stationimage/blue_bl19.png,,blue_diamon.png
+BL20,สถานีพระราม 9,Phra Ram 9,13.7577477,100.565334,,/assets/dist/img/stationimage/blue_bl20.png,,blue_diamon.png
+BL21,สถานีเพชรบุรี,Phetchaburi,13.7484936,100.5633169,,/assets/dist/img/stationimage/blue_bl21.png,,blue_diamon.png
+BL22,สถานีสุขุมวิท,Sukhumvit,13.7367666,100.5613777,,/assets/dist/img/stationimage/blue_bl22.png,,blue_diamon.png
+BL23,สถานีศูนย์ประชุมแห่งชาติสิริกิตติ์,Queen Sirikit NCC,13.7237049,100.5602539,,/assets/dist/img/stationimage/blue_bl23.png,,blue_diamon.png
+BL24,สถานีคลองเตย,Khlong Toei,13.7224177,100.5537146,,/assets/dist/img/stationimage/blue_bl24.png,,blue_diamon.png
+BL25,สถานีลุมพินี,Lumphini,13.7261281,100.5449008,,/assets/dist/img/stationimage/blue_bl25.png,,blue_diamon.png
+BL26,สถานีสีลม,Si Lom,13.7295154,100.536704,,/assets/dist/img/stationimage/blue_bl26.png,,blue_diamon.png
+BL27,สถานีสามย่าน,Sam Yan,13.7327828,100.5287433,,/assets/dist/img/stationimage/blue_bl27.png,,blue_diamon.png
+BL28,สถานีหัวลำโพง,Hua Lamphong,13.7376342,100.5168852,,/assets/dist/img/stationimage/blue_bl28.png,,blue_diamon.png
+BL29,สถานีวัดมังกร,Wat Mangkon,13.74182,100.51049,,,,blue_diamon.png
+BL30,สถานีสามยอด,Sam Yot,13.74701,100.50317,,,,blue_diamon.png
+BL31,สถานีสนามไชย,Sanam Chai,13.74741,100.49419,,,,blue_diamon.png
+BL32,สถานีอิสรภาพ,Itsaraphap,13.7404,100.48392,,,,blue_diamon.png
+BL01,สถานีท่าพระ,Tha Phra,13.72966,100.47417,,,,blue_diamon.png
+BL33,สถานีบางไผ่,Bang Phai,13.72464,100.4653,,,,blue_diamon.png
+BL34,สถานีบางหว้า,Bang Wa,13.72024,100.45717,,,,blue_diamon.png
+BL35,สถานีเพชรเกษม 48,Phetkasem 48,13.71566,100.44582,,,,blue_diamon.png
+BL36,สถานีภาษีเจริญ,Phasi Charoen,13.71293,100.43435,,,,blue_diamon.png
+BL37,สถานีบางแค,Bang Khae,13.71192,100.42236,,,,blue_diamon.png
+BL38,สถานีหลักสอง,Lak Song,13.71084,100.4095,,,,blue_diamon.png
+BL39,สถานีพุทธมณฑลสาย 2,Phutthamonthon Sai 2,13.70966,100.39461,,,,blue_diamon.png
+BL49,สถานีทวีวัฒนา,Thawi Watthana,13.70803,100.37508,,,,blue_diamon.png
+BL41,สถานีพุทธมณฑลสาย 3,Phutthamonthon Sai 3,13.70699,100.36306,,,,blue_diamon.png
+BL42,สถานีพุทธมณฑลสาย 4,Phutthamonthon Sai 4,13.70436,100.33186,,,,blue_diamon.png
+OR0,สถานีตลิ่งชัน,Taling Chan,13.78888,100.44003,,,,orange_diamon.png
+OR1,สถานีบางขุนนนท์,Bang Khun Non,13.76272,100.47281,,,,orange_diamon.png
+OR2,ศิริราช ,Siriraj,13.7597,100.48269,,,,orange_diamon.png
+OR3,สนามหลวง ,Sanam Luang ,13.75897,100.49288,,,,orange_diamon.png
+OR4,อนุสาวรีย์ประชาธิปไตย ,Democracy Monument,13.75598,100.50533,,,,orange_diamon.png
+OR5,หลานหลวง ,Lan Luang,13.75645,100.50964,,,,orange_diamon.png
+OR6,ยมราช ,Yommarat,13.75729,100.52065,,,,orange_diamon.png
+OR7,ราชเทวี,Ratchathewi,13.75314,100.53176,,,,orange_diamon.png
+OR8,ประตูน้ำ,Pratunam,13.75124,100.53724,,,,orange_diamon.png
+OR9,ราชปรารภ ,Ratchaprarop,13.75437,100.54206,,,,orange_diamon.png
+OR10,รางน้ำ,Rang Nam ,13.7588,100.54241,,,,orange_diamon.png
+OR11,ดินแดง ,Din Daeng,13.77131,100.56016,,,,orange_diamon.png
+OR12,ประชาสงเคราะห์ ,Pracha Songkhro,13.77131,100.56016,,,,orange_diamon.png
+OR13,ศูนย์วัฒนธรรมแห่งประเทศไทย,Thailand Cultural Centre,13.76649,100.57051,,,,orange_diamon.png
+OR14 ,รฟม. ,MRTA,13.75532,100.57833,,,,orange_diamon.png
+OR15 ,ประดิษฐ์มนูธรรม ,Pradit Manutham,13.75198,100.5919,,,,orange_diamon.png
+OR16,รามคำแหง 12 ,Ramkhamhaeng 12 ,13.75198,100.61014,,,,orange_diamon.png
+OR17,รามคำแหง ,Ramkhamhaeng ,13.75952,100.61837,,,,orange_diamon.png
+OR18,ราชมังคลา ,Rajamangala,13.7604,100.62537,,,,orange_diamon.png
+OR19,หัวหมาก,Hua Mak ,13.7619,100.63822,,,,orange_diamon.png
+OR20 ,ลำสาลี ,Lam Sali,13.76281,100.64671,,,,orange_diamon.png
+OR21,ศรีบูรพา ,Sri Burapha  ,13.76795,100.65818,,,,orange_diamon.png
+OR22 ,คลองบ้านม้า ,Khlong Ban Ma,13.77399,100.66792,,,,orange_diamon.png
+OR23,สัมมากร ,Sammakon ,13.77832,100.67596,,,,orange_diamon.png
+OR24 ,น้อมเกล้า,Nom Klao ,13.78673,100.69117,,,,orange_diamon.png
+OR25 ,ราษฎร์พัฒนา,Rat Phatthana ,13.7929,100.70257,,,,orange_diamon.png
+OR26,มีนพัฒนา,Min Phatthana ,13.79911,100.71478,,,,orange_diamon.png
+OR27 ,เคหะรามคำแหง ,Keha Ramkhamhaeng,13.80372,100.72375,,,,orange_diamon.png
+OR28,มีนบุรี ,Min Buri ,13.81238,100.73676,,,,orange_diamon.png
+N24,คูคต ,Khu khot,13.93328,100.64225,,,,green_diamon.png
+N23,สถานี กม 25,Km 25,13.92625,100.6265,,,,green_diamon.png
+N22,พิพิธภัณฑ์กองทัพอากาศ ,Royal Thai Air Force Museum ,13.91961,100.62257,,,,green_diamon.png
+N21,โรงพยาบาลภูมิพลอดุลยเดช ,Bhumibol Adulyadej Hospital ,13.90932,100.61653,,,,green_diamon.png
+N20,สะพานใหม่ ,Saphan Mai ,13.89462,100.60791,,,,green_diamon.png
+N19,สายหยุด,Sai Yut ,13.88659,100.60325,,,,green_diamon.png
+N18,สถานีอนุสาวรีย์หลักสี่,Lak Si Monument ,13.87989,100.59924,,,,green_diamon.png
+N17,วัดพระศรีมหาธาตุ,Wat Phra Sri Mahathat ,13.8744,100.59604,,,,green_diamon.png
+N16,กรมทหารราบที่ 11 ,11th Infantry Regiment ,13.86288,100.58934,,,,green_diamon.png
+N15,บางบัว ,Bang Bua ,13.85706,100.58585,,,,green_diamon.png
+N14,กรมป่าไม้,Royal Forest Department ,13.84875,100.58093,,,,green_diamon.png
+N13,มหาวิทยาลัยเกษตรศาสตร์,Kasetsart University ,13.84195,100.57684,,,,green_diamon.png
+N12,เสนานิคม,Sena Nikhom ,13.83399,100.57215,,,,green_diamon.png
+N11,รัชโยธิน ,Ratchayothin ,13.82703,100.5681,,,,green_diamon.png
+N10,พหลโยธิน 24 ,Phahonyothin 24,13.82295,100.5658,,,,green_diamon.png
+N9,ห้าแยกลาดพร้าว ,Ha Yaek Lat Phrao ,13.81352,100.56029,,,,green_diamon.png
+N8,หมอชิต ,Mo Chit,13.80243,100.55373,,,,green_diamon.png
+N7,สะพานควาย,Saphan Khwai,13.79384,100.5497,,,,green_diamon.png
+N5,อารีย์ ,Ari,13.77975,100.54461,,,,green_diamon.png
+N4,สนามเป้า ,Sanam Pao,13.77262,100.54209,,,,green_diamon.png
+N3,อนุสาวรีย์ชัยสมรภูมิ ,Victory Monument,13.76285,100.5371,,,,green_diamon.png
+N2 ,พญาไท,Phaya Thai,13.75696,100.53388,,,,green_diamon.png
+N1 ,ราชเทวี ,Ratchathewi,13.75194,100.5316,,,,green_diamon.png
+CEN,สยาม ,Siam ,13.74558,100.5343,,,,green_diamon.png
+E1,ชิดลม ,Chit Lom,13.74405,100.5431,,,,green_diamon.png
+E2,เพลินจิต ,Phloen Chit,13.74292,100.5487,,,,green_diamon.png
+E3,นานา ,Nana,13.74056,100.55546,,,,green_diamon.png
+E4,อโศก ,Asok,13.73707,100.56038,,,,green_diamon.png
+E5,สถานีพร้อมพงษ์,Phrom Phong,13.73042,100.56977,,,,green_diamon.png
+E6,สถานีทองหล่อ,Thong Lo,13.72421,100.57854,,,,green_diamon.png
+E7,สถานีเอกมัย,Ekkamai,13.71961,100.58501,,,,green_diamon.png
+E8,สถานีพระโขนง,Phra Khanong,13.71519,100.59123,,,,green_diamon.png
+E9,สถานีอ่อนนุช,On Nut,13.70566,100.60101,,,,green_diamon.png
+E10,สถานีบางจาก,Bang Chak,13.69683,100.60532,,,,green_diamon.png
+E11,สถานีปุณณวิถี,Punnawithi,13.68934,100.60899,,,,green_diamon.png
+E12,สถานีอุดมสุข,Udom Suk,13.67991,100.60948,,,,green_diamon.png
+E13,สถานีบางนา,Bang Na,13.6682,100.60465,,,,green_diamon.png
+E14,สถานีแบริ่ง,Bearing,13.66126,100.60185,,,,green_diamon.png
+E15,สถานีสำโรง,Samrong,13.64543,100.59549,,,,green_diamon.png
+E16,สถานีปู่เจ้าสมิงพราย,Pu Chao,13.63725,100.592,,,,green_diamon.png
+E17,สถานีเอราวัณ,Chang Erawan,13.62146,100.59015,,,,green_diamon.png
+E18,สถานีโรงเรียนนายเรือ,Royal Thai Naval Academy,13.60841,100.59485,,,,green_diamon.png
+E19,สถานีสมุทรปราการ,Samutprakarn,13.60218,100.59708,,,,green_diamon.png
+E20,สถานีศรีนครินทร์,Srinagarindra,13.59329,100.60827,,,,green_diamon.png
+E21,สถานีแพรกษา,Phraek Sa,13.58428,100.60804,,,,green_diamon.png
+E22,สถานีสายลวด,Sai Luat,13.57777,100.60541,,,,green_diamon.png
+E23,สถานีเคหะสมุทรปราการ,Kheha,13.56763,100.60771,,,,green_diamon.png
+E-,สถานีไบเทค,BITEC,13.67221,100.61343,,,,green_diamon.png
+E-,สถานีภาวรนิเวศน์,,13.66975,13.66975,,,,green_diamon.png
+E-,สถานีเซ็นทรัลซิตี้,,13.66775,100.63519,,,,green_diamon.png
+E-,สถานีศรีเอี่ยม,,13.66581,100.64431,,,,green_diamon.png
+E-,สถานีปลัดเปรียง,,13.66183,100.66077,,,,green_diamon.png
+E-,สถานีบางแก้ว,,13.65441,100.67407,,,,green_diamon.png
+E-,สถานีวัดสกุล,,13.64565,100.69072,,,,green_diamon.png
+E-,สถานีบางพลี,,13.6347,100.70965,,,,green_diamon.png
+E-,สถานีธนาซิตี้,,13.62482,100.72883,,,,green_diamon.png
+E-,สถานีมหาวิทยาลัยเกริก,,13.63417,100.74023,,,,green_diamon.png
+E-,สถานีบางโฉลง,,13.61704,100.74664,,,,green_diamon.png
+E-,วัดศรีวารีน้อย,,13.61087,100.76028,,,,green_diamon.png

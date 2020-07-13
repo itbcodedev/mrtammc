@@ -1,0 +1,677 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "รวมรวม API สำหรับ Application  ที่ใช้ในโครงการ [http://mmc_app1.mrta.co.th/](http://mmc_app1.mrta.co.th/) ",
+        "version": "1.0.1",
+        "title": "MRTA API DOCUMENTS"
+    },
+    "host": "mmc_app1.mrta.co.th",
+    "basePath": "/api/v2",
+
+    "schemes": [
+        "http"
+    ],
+    "tags": [
+        {
+            "name": "Agencies",
+            "description": "API สำหรับ agency"
+        },
+        {
+            "name": "Stops",
+            "description": "API สำหรับ agency"
+        },
+        {
+            "name": "Routes",
+            "description": "API สำหรับ route"
+        },
+        {
+            "name": "Trips",
+            "description": "API สำหรับ route"
+        },
+        {
+            "name": "StopTimes",
+            "description": "API สำหรับ Stop Times"
+        },
+        {
+            "name": "RouteInfo",
+            "description": "API สำหรับ routeinfo"
+        },
+        {
+            "name": "MobileMessage",
+            "description": "API สำหรับ MobileMessage "
+        },
+        {
+            "name": "cctv",
+            "description": "API สำหรับ รายชื่อ cctv "
+        }
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces" : [
+        "application/json"
+    ],
+    "paths": {
+        "/agencies": {
+            "get": {
+                "tags": [
+                    "Agencies"
+                ],
+                "summary": "รายการ Agency ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/agency"
+                        }
+                    }
+                }
+            }
+        },
+        "/stops": {
+            "get": {
+                "tags": [
+                    "Stops"
+                ],
+                "summary": "รายการ Stops ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/stop"
+                        }
+                    }
+                }
+            }
+        },
+        "/stops/{agency_key}/{route_id}": {
+            "parameters": [
+                {
+                    "name": "agency_key",
+                    "in": "path",
+                    "required": true,
+                    "description": "ค้นหา stops ด้วย agency_key",
+                    "type": "string"
+                },
+                {
+                    "name": "route_id",
+                    "in": "path",
+                    "required": true,
+                    "description": "ค้นหา stops ด้วย route_id",
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "tags": [
+                    "Stops"
+                ],
+                "summary": "รายการ Stops ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/stop"
+                        }
+                    }
+                }
+            }
+        },
+        "/stops/{agency_key}": {
+            "parameters": [
+                {
+                    "name": "agency_key",
+                    "in": "path",
+                    "required": true,
+                    "description": "ค้นหา stops ด้วย agency_key",
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "tags": [
+                    "Stops"
+                ],
+                "summary": "รายการ Stops ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/stop"
+                        }
+                    }
+                }
+            }
+        },
+        "/getallstops": {
+            "get": {
+                "tags": [
+                    "Stops"
+                ],
+                "summary": "รายการ Stops ทั้งหมด โดยแยกตามสายทาง",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/stop"
+                        }
+                    }
+                }
+            }
+        },
+        "/routesbasic": {
+            "get": {
+                "tags": [
+                    "Routes"
+                ],
+                "summary": "รายการ Route ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/route"
+                        }
+                    }
+                }
+            }
+        },
+        "/kmltool": {
+            "get": {
+                "tags": [
+                    "Routes"
+                ],
+                "summary": "รายการ KML file สำหรับแต่ละ Route",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/routekml"
+                        }
+                    }
+                }
+            }
+        },
+        "/trips": {
+            "get": {
+                "tags": [
+                    "Trips"
+                ],
+                "summary": "รายการ Trips ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/trip"
+                        }
+                    }
+                }
+            }
+        },
+        "/stoptimes/{agency_key}/{route_id}": {
+            "parameters": [
+                {
+                    "name": "agency_key",
+                    "in": "path",
+                    "required": true,
+                    "description": "ค้นหา stoptims ด้วย agency_key",
+                    "type": "string"
+                },
+                {
+                    "name": "route_id",
+                    "in": "path",
+                    "required": true,
+                    "description": "ค้นหา stoptims ด้วย route_id",
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "tags": [
+                    "StopTimes"
+                ],
+                "summary": "รายการ Trips ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/stop_time"
+                        }
+                    }
+                }
+            }
+        },
+        "/allstoptimes": {
+            "get": {
+                "tags": [
+                    "StopTimes"
+                ],
+                "summary": "รายการ Trips ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/stop_time"
+                        }
+                    }
+                }
+            }
+        },
+        "/routeinfos": {
+            "get": {
+                "tags": [
+                    "RouteInfo"
+                ],
+                "summary": "รายการ Route Info ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/routeinfo"
+                        }
+                    }
+                }
+            }
+        },
+        "/routeinfowithtrip/{trip_id}": {
+            "parameters": [
+                {
+                    "name": "trip_id",
+                    "in": "path",
+                    "required": true,
+                    "description": "ค้นหา route info ด้วย trip id",
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "tags": [
+                    "RouteInfo"
+                ],
+                "summary": "รายการ Route Info ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/routeinfo"
+                        }
+                    }
+                }
+            }
+        },
+        "/alerts/mobile": {
+            "get": {
+                "tags": [
+                    "MobileMessage"
+                ],
+                "summary": "รายการ ข้อความที่ส่งไปยังมือถือ mobile message ทั้งหมด",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/mobilemessage"
+                        }
+                    }
+                }
+            }
+        },
+        "/cctvs": {
+            "get": {
+                "tags": [
+                    "cctv"
+                ],
+                "summary": "รายการ กล้อง cctv",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/cctv"
+                        }
+                    }
+                }
+            }
+        }
+
+    },
+    "definitions": {
+        "agency": {
+            "type": "object",
+            "properties": {
+                "agency_key": {
+                    "type": "string"
+                },
+                "agency_id": {
+                    "type": "string"
+                },
+                "agency_name": {
+                    "type": "string"
+                },
+                "agency_url": {
+                    "type": "string"
+                },
+                "agency_timezone": {
+                    "type": "string"
+                },
+                "agency_lang": {
+                    "type": "string"
+                },
+                "agency_phone": {
+                    "type": "string"
+                },
+                "agency_fare_url": {
+                    "type": "string"
+                },
+                "agency_email": {
+                    "type": "string"
+                }
+            }
+        },
+        "stop": {
+            "type": "object",
+            "properties": {
+                "agency_key": {
+                    "type": "string"
+                },
+                "stop_id": {
+                    "type": "string"
+                },
+                "stop_code": {
+                    "type": "string"
+                },
+                "stop_name": {
+                    "type": "string"
+                },
+                "stop_desc": {
+                    "type": "string"
+                },
+                "stop_lat": {
+                    "type": "string"
+                },
+                "stop_lon": {
+                    "type": "string"
+                },
+                "zone_id": {
+                    "type": "string"
+                },
+                "stop_url": {
+                    "type": "string"
+                },
+                "location_type": {
+                    "type": "string"
+                },
+                "parent_station": {
+                    "type": "string"
+                },
+                "stop_timezone": {
+                    "type": "string"
+                },
+                "wheelchair_boarding": {
+                    "type": "number"
+                },
+                "level_id": {
+                    "type": "number"
+                },
+                "platform_code": {
+                    "type": "string"
+                },
+                "icon": {
+                    "type": "string"
+                }
+            }
+        },
+        "route": {
+            "type": "object",
+            "properties": {
+                "agency_key": {
+                    "type": "string"
+                  },
+                  "route_id": {
+                    "type": "string"
+                  },
+                  "agency_id": {
+                    "type": "string"
+                  },
+                  "route_short_name": {
+                    "type": "string"
+                  },
+                  "route_long_name": {
+                    "type": "string"
+                  },
+                  "route_desc": {
+                    "type": "string"
+                  },
+                  "route_type": {
+                    "type": "Number"
+                  },
+                  "route_url": {
+                    "type": "string"
+                  },
+                  "route_color":  {
+                    "type": "string"
+                  },
+                  "route_text_color": {
+                    "type": "string"
+                  }
+            }
+        },
+        "trip": {
+            "type": "object",
+            "properties": {
+                "agency_key": {
+                    "type": "String"
+                  },
+                  "route_id": {
+                    "type": "String"
+                  },
+                  "service_id": {
+                    "type": "String"
+                  },
+                  "trip_id": {
+                    "type": "String"
+                  },
+                  "trip_headsign":  {
+                    "type": "String"
+                  },
+                  "trip_short_name":  {
+                    "type": "String"
+                  },
+                  "direction_id": {
+                    "type": "Number"
+                  },
+                  "block_id":  {
+                    "type": "String"
+                  },
+                  "shape_id":  {
+                    "type": "String"
+                  },
+                  "wheelchair_accessible": {
+                    "type": "Number"
+                  },
+                  "bikes_allowed": {
+                    "type": "Number"
+                  }
+            }
+        },
+        "stop_time": {
+            "type": "object",
+            "properties": {
+                "agency_key": {
+                    "type": "String"
+                  },
+                  "trip_id": {
+                    "type": "String"
+                  },
+                  "arrival_time": {
+                    "type": "String"
+                  },
+                  "departure_time": {
+                    "type": "String"
+                  },
+                  "stop_id": {
+                    "type": "String"
+                  },
+                  "stop_sequence": {
+                    "type": "Number"
+                  },
+                  "stop_headsign": {
+                      "type": "String"
+                  },
+                  "pickup_type": {
+                    "type": "Number"
+                  },
+                  "drop_off_type": {
+                    "type": "Number"
+                  },
+                  "shape_dist_traveled": {
+                    "type": "Number"
+                  },
+                  "timepoint": {
+                    "type": "Number"
+                  }
+            }
+        },
+        "calendar": {
+            "type": "object",
+            "properties": {
+                "agency_key": {
+                    "type": "String"
+                  },
+                  "service_id": {
+                    "type": "String"
+                  },
+                  "monday": {
+                    "type": "Number"
+                  },
+                  "tuesday": {
+                    "type": "Number"
+                  },
+                  "wednesday": {
+                    "type": "Number"
+                  },
+                  "thursday": {
+                    "type": "Number"
+                  },
+                  "friday": {
+                    "type": "Number"
+                  },
+                  "saturday": {
+                    "type": "Number"
+                  },
+                  "sunday": {
+                    "type": "Number"
+                  },
+                  "start_date": {
+                    "type": "Number"
+                  },
+                  "end_date": {
+                    "type": "Number"
+                  }
+            }
+        },
+        "routeinfo": {
+            "type": "object",
+            "properties": {
+                "agency_key": {
+                    "type": "String"
+                },
+                "feed_publisher_name": {
+                    "type": "String"
+                },
+                "feed_publisher_url": {
+                    "type": "String"
+                },
+                "feed_lang": {
+                    "type": "String"
+                },
+                "feed_start_date": {
+                    "type": "Number"
+                },
+                "feed_end_date": {
+                    "type": "Number"
+                },
+                "feed_version": {
+                    "type": "String"
+                }
+            }
+        },
+        "mobilemessage": {
+            "type": "object",
+            "properties": {
+                "stop_group" : {
+                    "type": "String"
+                },
+                "stop_id": {
+                    "type": "String"
+                },
+                "title_line": {
+                    "type": "String"
+                },
+                "title_line_en": {
+                    "type": "String"
+                },
+                "notify_date": {
+                    "type": "String"
+                },
+                "message": {
+                    "type": "String"
+                },
+                "message_en": {
+                    "type": "String"
+                },
+                "user_name": {
+                    "type": "String"
+                }
+            }
+        },
+        "cctv": {
+            "type": "object",
+            "properties": {
+                "code" : {
+                    "type": "String"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "protocol": {
+                    "type": "String"
+                },
+                "host": {
+                    "type": "String"
+                },
+                "port": {
+                    "type": "String"
+                },
+                "username": {
+                    "type": "String"
+                },
+                "password": {
+                    "type": "String"
+                },
+                "latitude": {
+                    "type": "String"
+                },
+                "longitude": {
+                    "type": "String"
+                },
+                "description": {
+                    "type": "String"
+                }
+                
+            }
+        },
+        "routekml": {
+            "type": "object",
+            "properties": {
+                "route" : {
+                    "type": "String"
+                },
+                "kml_file": {
+                    "type": "String"
+                },
+                "geojson_path": {
+                    "type": "String"
+                },
+                "shapefile_path": {
+                    "type": "String"
+                }
+            }
+
+        }
+    }
+
+}

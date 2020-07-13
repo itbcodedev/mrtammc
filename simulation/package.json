@@ -1,0 +1,22 @@
+{
+  "name": "simulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "fast-csv": "^3.4.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.5.12",
+    "node-fetch": "^2.6.0",
+    "read-xml": "^3.0.0",
+    "request": "^2.88.0",
+    "xml-js": "^1.6.11"
+  }
+}

@@ -1,0 +1,176 @@
+<div class="content-wrapper">
+  <section class="content">
+    <div class="row">
+      <!-- <div class="col-sm-2">
+        <div class="fullbox" >
+          <h6> Data simulation </h6>
+          {{wsdata}}
+        </div>
+
+      </div> -->
+      <div class="col-sm-12">
+        <div class="fullbox">
+          <div class="custom-popup" id="map" style="z-index: 1;"></div>
+
+          <div id="overlay" class="row">
+            <div style="width: 18rem; padding: 2px;">
+              <nav class="navbar navbar-light bg-light">
+                <div>
+                  <h5>
+                    {{ time }}&nbsp;
+                    <button class="btn btn-danger">
+                      จำนวน{{ tripbycalendar.length }} Trip
+                    </button>
+                  </h5>
+                </div>
+                <button
+                  class="navbar-toggler pull-right"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarToggleExternalContent"
+                  aria-controls="navbarToggleExternalContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
+
+              <div
+                class="collapse"
+                style="width: 17rem;"
+                id="navbarToggleExternalContent"
+              >
+                <div
+                  class="bg-light p-1"
+                  style="height: 250px; overflow-y: scroll;"
+                >
+                  <form #dataForm="ngForm">
+                    <div
+                      class="input-group mb-1"
+                      *ngFor="let route of kmlroutes"
+                    >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text" style="padding: 0.1rem;">
+                          <input
+                            type="radio"
+                            name="route_en"
+                            value="{{ route.route_en }}"
+                            ngModel
+                            (change)="loadRoute(dataForm)"
+                          />
+                        </div>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        style="padding: 0.1rem;"
+                        placeholder="{{ route.route_th }}"
+                        readonly
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="btn btn-outline-primary btn-sm m-2"
+                  role="alert"
+                  style="padding: 4px 4px; width: 264px;"
+                >
+                  ขบวนรถที่หมดระยะ {{ this.endtrip }}
+                </div>
+                <div class="bg-light p-1" style="width: 280px;">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="home-tab"
+                        data-toggle="tab"
+                        href="#home"
+                        role="tab"
+                        aria-controls="home"
+                        aria-selected="true"
+                      >
+                        Route {{ selectrouteid }}
+                        <span class="badge badge-danger">
+                          <div *ngIf="activeRoutes?.length > 0">
+                            {{ activeRoutes.length }}
+                          </div>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="profile-tab"
+                        data-toggle="tab"
+                        href="#profile"
+                        role="tab"
+                        aria-controls="profile"
+                        aria-selected="false"
+                      >
+                        No
+                        <span class="badge badge-info">
+                          {{ totalTrips.length }}
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn btn-sm  btn-outline-success" (click) = "resumeGeojson()"> <i class="fa fa-undo" aria-hidden="true"></i> Map </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="home"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                    >
+                      <ul class="list-group list-group-flush">
+                        <div
+                          style="
+                            width: 270px;
+                            height: 310px;
+                            overflow-y: scroll;
+                          "
+                        >
+                          <li *ngFor="let item of activeRoutes; let i = index">
+                            {{ item.trip_id }}
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            start {{ item.start_time }} to {{ item.end_time }}
+                          </li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="profile"
+                      role="tabpanel"
+                      aria-labelledby="profile-tab"
+                    >
+                      <ul
+                        class="list-group list-group-flush"
+                        style="height: 380px; overflow-y: scroll;"
+                      >
+                        <li
+                          *ngFor="let item of totalTrips; let i = index"
+                          class="btn btn-outline-success btn-sm"
+                          style="margin: 1px; width: 260px;"
+                        >
+                          <div>
+                            {{ item.trip_id }}
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            start {{ item.start_time }} to {{ item.end_time }}
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

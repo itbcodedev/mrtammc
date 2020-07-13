@@ -1,0 +1,50 @@
+[
+  {
+    "station_code": "PP01", "station_name": "คลองบางไผ่", "x": 27.975, "y": 447.68
+  },
+  {
+    "station_code": "PP02", "station_name": "ตลาดบางใหญ่", "x": 27.975, "y": 436.96
+  },
+  {
+    "station_code": "PP03", "station_name": "สามแยกบางใหญ่", "x": 34.869, "y": 427.003
+  },
+  {
+    "station_code": "PP04", "station_name": "บางพลู", "x": 50.954, "y": 427.003
+  },
+  {
+    "station_code": "PP05", "station_name": "บางรักใหญ่", "x": 66.784, "y": 427.003
+  },
+  {
+    "station_code": "PP06", "station_name": "บางรักน้อยท่าอิฐ", "x": 83.124, "y": 427.003
+  },
+  {
+    "station_code": "PP07", "station_name": "ไทรม้า", "x": 98.954, "y": 427.003
+  },
+  {
+    "station_code": "PP08", "station_name": "สะพานพระนั่งเกล้า", "x": 115.805, "y": 427.003
+  },
+  {
+    "station_code": "PP09", "station_name": "แยกนนทบุรี 1", "x": 134.954, "y": 427.003
+  },
+  {
+    "station_code": "PP010", "station_name": "บางกระสอ", "x": 151.805, "y": 427.003
+  },
+  {
+    "station_code": "PP011", "station_name": "ศูนย์ราชการนนทบุรี", "x": 168.401, "y": 427.003
+  },
+  {
+    "station_code": "PP012", "station_name": "กระทรวงสาธารณสุข", "x": 201.592, "y": 405.556
+  },
+  {
+    "station_code": "PP013", "station_name": "แยกติวานนท์", "x": 214.103, "y": 393.811
+  },
+  {
+    "station_code": "PP014", "station_name": "วงศ์สว่าง", "x": 219.465, "y": 377.982
+  },
+  {
+    "station_code": "PP015", "station_name": "บางซ่อน", "x": 219.465, "y": 360.875
+  },
+  {
+    "station_code": "PP016", "station_name": "เตาปูน", "x": 219.465, "y": 342.748
+  }
+]

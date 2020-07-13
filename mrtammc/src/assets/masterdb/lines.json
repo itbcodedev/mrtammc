@@ -1,0 +1,239 @@
+[{
+    "line": "สายเฉลิมรัชมงคล",
+    "stations": [{
+        "station": "เตาปูน",
+        "code": "BL10",
+        "transfer": ["สายฉลองรัชธรรม"]
+      },
+      {
+        "station": "บางซื่อ",
+        "code": "BL11",
+        "transfer": ["สายสีแดงอ่อน", "สายสีแดงเข้ม", "สายเชื่อมท่าอากาศยาน"]
+      },
+      {
+        "station": "กำแพงเพชร",
+        "code": "BL12",
+        "transfer": []
+      },
+      {
+        "station": "สวนจตุจักร",
+        "code": "BL13",
+        "transfer": ["สายสุขุมวิท"]
+      },
+      {
+        "station": "พหลโยธิน",
+        "code": "BL14",
+        "transfer": ["สายสุขุมวิท"]
+      },
+      {
+        "station": "ลาดพร้าว",
+        "code": "BL15",
+        "transfer": ["สายสีเหลือง"]
+      },
+      {
+        "station": "รัชดาภิเษก",
+        "code": "BL16",
+        "transfer": []
+      },
+      {
+        "station": "สุทธิสาร",
+        "code": "BL17",
+        "transfer": []
+      },
+      {
+        "station": "ห้วยขวาง",
+        "code": "BL18",
+        "transfer": []
+      },
+      {
+        "station": "ศูนย์วัฒนธรรมแห่งประเทศไทย",
+        "code": "BL19",
+        "transfer": ["สายสีส้ม"]
+      },
+      {
+        "station": "พระราม 9",
+        "code": "BL20",
+        "transfer": []
+      },
+      {
+        "station": "เพชรบุรี",
+        "code": "BL21",
+        "transfer": ["สายเชื่อมท่าอากาศยาน", "สายสีแดงอ่อน", "สายสีฟ้า"]
+      },
+      {
+        "station": "สุขุมวิท",
+        "code": "BL22",
+        "transfer": ["สายสุขุมวิท"]
+      },
+      {
+        "station": "ศูนย์การประชุมแห่งชาติสิริกิติ์",
+        "code": "BL23",
+        "transfer": []
+      },
+      {
+        "station": "คลองเตย",
+        "code": "BL24",
+        "transfer": []
+      },
+      {
+        "station": "ลุมพินี",
+        "code": "BL25",
+        "transfer": ["สายสีเทา", "สายสีฟ้า"]
+      },
+      {
+        "station": "สีลม",
+        "code": "BL25",
+        "transfer": ["สายสีลม"]
+      },
+      {
+        "station": "สามย่าน",
+        "code": "BL27",
+        "transfer": ["สายจุฬาฯ-สามย่าน"]
+      },
+      {
+        "station": "หัวลำโพง",
+        "code": "BL28",
+        "transfer": ["สายสีแดงเข้ม"]
+      },
+      {
+        "station": "วัดมังกร",
+        "code": "BL29",
+        "transfer": []
+      },
+      {
+        "station": "สามยอด",
+        "code": "BL30",
+        "transfer": ["สายฉลองรัชธรรม"]
+      },
+      {
+        "station": "สนามไชย",
+        "code": "BL31",
+        "transfer": []
+      },
+      {
+        "station": "อิสรภาพ",
+        "code": "BL32",
+        "transfer": []
+      },
+      {
+        "station": "ท่าพระ",
+        "code": "BL01",
+        "transfer": []
+      },
+      {
+        "station": "บางไผ่",
+        "code": "BL33",
+        "transfer": []
+      },
+      {
+        "station": "บางหว้า",
+        "code": "BL34",
+        "transfer": ["สายสีลม"]
+      },
+      {
+        "station": "เพชรเกษม 48",
+        "code": "BL35",
+        "transfer": []
+      },
+      {
+        "station": "ภาษีเจริญ",
+        "code": "BL36",
+        "transfer": []
+      },
+      {
+        "station": "บางแค",
+        "code": "BL37",
+        "transfer": []
+      },
+      {
+        "station": "หลักสอง",
+        "code": "BL38",
+        "transfer": []
+      }
+    ]
+  },
+  {
+    "line": "สายฉลองรัชธรรม",
+    "stations": [{
+        "station": "คลองบางไผ่",
+        "code": "PP01",
+        "transfer": []
+      },
+      {
+        "station": "ตลาดบางใหญ่",
+        "code": "PP02",
+        "transfer": []
+      },
+      {
+        "station": "สามแยกบางใหญ่",
+        "code": "PP03",
+        "transfer": []
+      },
+      {
+        "station": "บางพลู",
+        "code": "PP04",
+        "transfer": []
+      },
+      {
+        "station": "บางรักใหญ่",
+        "code": "PP05",
+        "transfer": []
+      },
+      {
+        "station": "บางรักน้อย-ท่าอิฐ",
+        "code": "PP06",
+        "transfer": []
+      },
+      {
+        "station": "ไทรม้า",
+        "code": "PP07",
+        "transfer": []
+      },
+      {
+        "station": "สะพานพระนั่งเกล้า",
+        "code": "PP08",
+        "transfer": []
+      },
+      {
+        "station": "แยกนนทบุรี 1",
+        "code": "PP09",
+        "transfer": []
+      },
+      {
+        "station": "บางกระสอ",
+        "code": "PP10",
+        "transfer": []
+      },
+      {
+        "station": "ศูนย์ราชการนนทบุรี",
+        "code": "PP11",
+        "transfer": ["สายสีชมพู", "สายสีน้ำตาล"]
+      },
+      {
+        "station": "กระทรวงสาธารณสุข",
+        "code": "PP12",
+        "transfer": []
+      },
+      {
+        "station": "แยกติวานนท์",
+        "code": "PP13",
+        "transfer": []
+      },
+      {
+        "station": "วงศ์สว่าง",
+        "code": "PP14",
+        "transfer": []
+      },
+      {
+        "station": "บางซ่อน",
+        "code": "PP15",
+        "transfer": ["สายสีแดงอ่อน"]
+      },
+      {
+        "station": "เตาปูน",
+        "code": "PP16",
+        "transfer": ["สายเฉลิมรัชมงคล"]
+      }
+    ]
+  }
+]

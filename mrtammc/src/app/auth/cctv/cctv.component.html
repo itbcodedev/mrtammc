@@ -1,0 +1,269 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+
+  <nav class="navbar navbar-expand-lg  primary-color">
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-table mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/config">File config mgmt</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-database mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/mrtaline">GTFS DB config mgmt</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-camera mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/cctv">CCTV mgmt</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-car mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/parking">Parking mgmt</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-train mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/routeformat">Route Format</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+              <i class="fa fa-car ml-1" aria-hidden="true"></i>
+              <a href="/auth/ratioparking">Ratio Parking</a>
+          </h6>
+      </li>
+      <li class="nav-item mr-2">
+        <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-map-o mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/kmltoroute">KML to Route</a>
+        </h6>
+    </li>
+
+      </ul>
+
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <ul class="nav nav-tabs border-secondary" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active " id="home-tab" data-toggle="tab" href="#cctvform" role="tab"
+                aria-controls="home" aria-selected="true">
+                <i class="fa fa-camera" aria-hidden="true"></i> CCTV Form
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#system" role="tab" aria-controls="profile"
+                aria-selected="false" style="cursor: pointer">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+                systems control
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent"
+            style="padding: 10px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;">
+            <div class="tab-pane fade show active" id="cctvform" role="tabpanel" aria-labelledby="home-tab">
+              <div id="cctvformdiv">
+                <!-- <p>CCTV form</p>-->
+                <p>กรุณากรอกข้อมูลกล้อง CCTV Form</p>
+                <form [formGroup]="cctvForm" (ngSubmit)="submitCctvData()" novalidate>
+                  <!-- Value: {{ cctvForm.value | json }}
+                  <hr> -->
+                  <div class="form-group row">
+                    <label for="code" class="col-sm-2 col-form-label">code*</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control form-control-sm" id="code" placeholder="code"
+                        formControlName="code">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">name*</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control form-control-sm" id="name" placeholder="name"
+                        formControlName="name">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="host" class="col-sm-2 col-form-label">url*</label>
+                    <div class="col-sm-3">
+                      <select class="form-control form-control-sm" formControlName="protocol">
+                        <option *ngFor="let protocol of protocols" [value]="protocol">{{protocol}}</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control form-control-sm" id="host" placeholder="host"
+                        formControlName="host">
+                    </div>
+
+                  </div>
+                  <div class="form-group row">
+                    <label for="host" class="col-sm-2 col-form-label">Port*</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control form-control-sm" id="port" placeholder="port"
+                        formControlName="port">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="username" class="col-sm-2 col-form-label">username*</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control form-control-sm" id="username" placeholder="username"
+                        formControlName="username">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="password" class="col-sm-2 col-form-label">password*</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control form-control-sm" id="password" placeholder="password"
+                        formControlName="password">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">location*</label>
+
+                    <!-- <button type="button" class="btn btn-danger btn-circle btn-sm"
+                          (click)="ngxSmartModalService.getModal('myModal').open()">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      </button> -->
+
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control form-control-sm" id="latitude" placeholder="latitude"
+                        formControlName="latitude" [(ngModel)]="latitude">
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control form-control-sm" id="longitude" placeholder="longitude"
+                        formControlName="longitude" [(ngModel)]="longitude">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="description" class="col-sm-2 col-form-label">description*</label>
+                    <div class="col-sm-9">
+                      <textarea class="form-control form-control-sm" id="description" placeholder="description"
+                        formControlName="description" rows="3"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-sm">เพิ่ม CCTV</button>
+                  </div>
+                </form>
+
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="system" role="tabpanel" aria-labelledby="profile-tab">
+
+              <button type="submit" class="btn btn-primary btn-sm mb-4" (click)="getSeverStatus()">สถานะ streaming
+                server</button>
+              <p> Streaming server 192.168..3.48 </p>
+              <div class="alert alert-primary">
+                <pre>
+                    {{ cctvstatus }}
+                </pre>
+
+              </div>
+              <button type="submit" class="btn btn-danger btn-sm" (click)="restartServer()">Restart CCTV
+                Service</button>
+            </div>
+          </div>
+        </div>
+        <!-- /.col -->
+        <!-- <div class="col-7" *ngIf="showfile"> -->
+        <div class="col-9">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a id="uploadfiletab" class="nav-link active" data-toggle="tab" href="#cctvlist" role="tab"
+                aria-controls="home">
+                <i class="fa fa-map-o" aria-hidden="true"></i> CCTV Map
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#map1" role="tab" aria-controls="profile">Map Component</a>
+            </li> -->
+            <li class="nav-item">
+              <a id="onmaptab" class="nav-link" data-toggle="tab" href="#onmap" role="tab" aria-controls="profile"
+                (click)="refresh()">
+                <i class="fa fa-table" aria-hidden="true"></i> CCTV List
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <div class="well">
+                <div class="m-1">
+
+                  <button type="button" class="btn btn-outline-danger btn-sm" (click)="deleteCCTV()">
+                    <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                  </button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="tab-content"
+            style="padding: 0px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;">
+            <div #mapdiv class="tab-pane active" id="cctvlist" role="tabpanel">
+              <div #map id="map" [style.height]="height" style="width: 100%;">
+
+              </div>
+            </div>
+            <div class="tab-pane" id="onmap" role="tabpanel">
+              <ag-grid-angular style="width: 100%; height: 600px;" class="ag-theme-balham"
+                (gridReady)="onGridReady($event)" [columnDefs]="columnDefs" [rowData]="rowData" rowSelection="single"
+                pagination="true" paginationPageSize=25 (selectionChanged)="onSelectionChanged($event)"
+                (cellEditingStopped)="onCellEditingStopped($event)" (dataChanged)="onrowValueChanged($event)">
+              </ag-grid-angular>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- /.col -->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- <ngx-smart-modal #myModal identifier="myModal">
+    <h6>Click on map</h6>
+    <div #map id="map">
+
+    </div>
+    <button class="btn btn-danger  btn-sm"  (click)="myModal.close()">Close</button>
+</ngx-smart-modal>
+   -->

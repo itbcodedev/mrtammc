@@ -1,0 +1,505 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <nav class="navbar navbar-expand-lg  primary-color">
+    
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active mr-2">
+            <h6 class="m-0 text-dark btn btn-outline-primary">
+                <i class="fa fa-table mr-1 ml-1" aria-hidden="true"></i>
+                <a href="/auth/config">File config mgmt</a>
+            </h6>
+        </li>
+        <li class="nav-item mr-2">
+            <h6 class="m-0 text-dark btn btn-outline-primary">
+                <i class="fa fa-database mr-1 ml-1" aria-hidden="true"></i>
+                <a href="/auth/mrtaline">GTFS DB config mgmt</a>
+            </h6>
+        </li>
+        <li class="nav-item mr-2">
+            <h6 class="m-0 text-dark btn btn-outline-primary">
+                <i class="fa fa-camera mr-1 ml-1" aria-hidden="true"></i>
+                <a href="/auth/cctv">CCTV mgmt</a>
+            </h6>
+        </li>
+        <li class="nav-item mr-2">
+            <h6 class="m-0 text-dark btn btn-outline-primary">
+                <i class="fa fa-car mr-1 ml-1" aria-hidden="true"></i>
+                <a href="/auth/parking">Parking mgmt</a>
+            </h6>
+        </li>
+        <li class="nav-item mr-2">
+            <h6 class="m-0 text-dark btn btn-outline-primary">
+                <i class="fa fa-train mr-1 ml-1" aria-hidden="true"></i>
+                <a href="/auth/routeformat">Route Format</a>
+            </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+              <i class="fa fa-car mr-1 ml-1" aria-hidden="true"></i>
+              <a href="/auth/ratioparking">Ratio Parking</a>
+          </h6>
+      </li>
+      <li class="nav-item mr-2">
+        <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-map-o mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/kmltoroute">KML to Route</a>
+        </h6>
+    </li>
+      </ul>
+
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#treemenulist" role="tab" aria-controls="home" aria-selected="true">
+                <i class="fa fa-upload" aria-hidden="true"></i> MRTA
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" (click)="refresh()" style="cursor: pointer">
+                <i class="fa fa-server" aria-hidden="true"></i>
+                List File
+              </a>
+            </li> -->
+          </ul>
+          <div class="tab-content" id="myTabContent" style="padding: 10px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;" s>
+            <div class="tab-pane fade show active" id="treemenulist" role="tabpanel" aria-labelledby="home-tab">
+              <div id="treemenu">
+                <ul>
+                  <li>GTFS File Database
+                    <ul>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#agencys_info"> ผู้เดินรถ Agency </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#routes_info"> เส้นทาง Route</a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#trips_info"> เที่ยวรถ Trip </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#stops_info"> สถานีรถไฟฟ้า Stop (Station)</a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#stop_times_info"> ตารางการเดินรถ stop time </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#calendars_info"> ตารางการเดินรถ Calendar </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#calendar_dates_info"> ตารางการเดินรถพิเศษ Calendar Date </a>
+                      </li>
+
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#fare_attributes_info"> ตารางค่าโดยสาร Fare Attribute </a>
+                      </li>
+
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#fare_rules_info"> เงื่อนไขค่าโดยสาร Fare Rule </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#shapes_info"> เส้นทางการเดินรถ Shape </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#pathways_info"> เส้นทาง Pathway </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#frequencies_info"> ความถี่การเดินรถ frequency </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#transforms_info"> สถานีเชื่อมต่อ Transfer </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-database"}'>
+                        <a href="#levels_info"> ขั้นจอดขบวนรถ Levels </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- <li>
+                    MAP Component
+                    <ul>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#kml_info">KML Layer</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+            </div>
+          </div>
+        </div>
+        <!-- /.col -->
+        <!-- <div class="col-7" *ngIf="showfile"> -->
+        <div class="col-9">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a id="gtfstab" class="nav-link active" data-toggle="tab" href="#gtfspane" role="tab" aria-controls="home">
+                ฐานข้อมูล GTFS</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a id="filedetailtab" class="nav-link" data-toggle="tab" href="#filedetail" role="tab" aria-controls="profile">File Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#messages1" role="tab" aria-controls="messages">GTFS Spec</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#settings1" role="tab" aria-controls="settings">Error Code</a>
+            </li>
+            <li class="nav-item">
+              <a id="verifytab" class="nav-link" data-toggle="tab" href="#verify1" role="tab" aria-controls="verify">GTFS Verify</a>
+            </li> -->
+          </ul>
+
+          <div class="tab-content" style="padding: 10px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;">
+            <div class="tab-pane active" id="gtfspane" role="tabpanel">
+              <div id="agencys_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand"> ผู้เดินรถ Agency</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm  btn-outline-primary" (click)="viewAgency()"> View </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+
+              </div> <!-- agency_info -->
+
+              <div id="routes_info">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                 <a class="navbar-brand">เส้นทาง route</a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav">
+                     <li class="nav-item active">
+                       <a class="nav-link btn btn-sm  btn-outline-primary" (click)="viewRoute()"> View </a>
+                     </li>
+
+                   </ul>
+                 </div>
+               </nav>
+
+              </div>
+
+              <div id="trips_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand"> ขบวน Trip </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm btn-outline-primary" (click)="viewTrip()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+
+              <div id="stops_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand"> สถานีรถไฟฟ้า Stop</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm  btn-outline-primary" (click)="viewStop()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+
+              <div id="stop_times_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand">ตารางเวลาเดินรถ Stop Time</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm  btn-outline-primary" (click)="viewStoptime()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+              <div id="calendars_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand"> ปฎิทินเดินรถ Calendar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm btn-outline-primary" (click)="viewCalendar()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+              <div id="calendar_dates_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand"> ตารางการเดินรถพิเศษ Calendar Date</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm  btn-outline-primary"  (click)="viewCalendardate()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+
+              <div id="fare_attributes_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand">ตารางค่าโดยสาร Fare Attribute</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm btn-outline-primary" (click)="viewFareattribute()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+
+              <div id="fare_rules_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand">เงื่อนไขค่าโดยสาร Fare Rule</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm  btn-outline-primary" (click)="viewFarerule()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+              <div id="shapes_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand">เส้นทางการเดินรถ Shape</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm  btn-outline-primary" (click)="viewShape()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+              <div id="pathways_info">
+
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand"> เส้นทาง Pathway </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm  btn-outline-primary" (click)="viewPathway()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+
+              <div id="frequencies_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand">  ความถี่การเดินรถ Frequency</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm btn-outline-primary" (click)="viewFrequency()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+              <div id="transforms_info">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand"> สถานีเชื่อมต่อ Transfer </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm btn-outline-primary" (click)="viewTransfer()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+              <div id="levels_info">
+
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand"> ขั้นจอดขบวนรถ Levels</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link btn btn-sm  btn-outline-primary" (click)="viewLevel()"> View </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+              </div>
+            <div id="listview" *ngIf="listview" class="listview">
+              <p> รายละเอียดข้อมูล </p>
+              <div class=" py-2">
+
+                <ag-grid-angular
+                  #agGrid
+                  style="height: 600px;"
+                  class="ag-theme-balham" 
+                  [rowData]="rowData" 
+                  [columnDefs]="columnDefs"
+                  [defaultColDef]="defaultColDef"
+                  (gridReady)="onGridReady($event)" 
+                  (cellValueChanged)="onCellValueChanged(model, $event)">
+                </ag-grid-angular>
+
+              </div>
+            </div>
+            </div>
+            <!-- <div class="tab-pane" id="map1" role="tabpanel">
+              Map Component
+            </div> -->
+            <div class="tab-pane" id="filedetail" role="tabpanel">
+            </div>
+            <div class="tab-pane" id="messages1" role="tabpanel">
+
+            </div>
+            <div class="tab-pane" id="settings1" role="tabpanel">
+
+            </div>
+            <div class="tab-pane" id="verify1" role="tabpanel">
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- /.col -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Button trigger modal -->
+  <button id="modalbtn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  </button>
+
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ modal_title }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span [innerHTML]="modal_icon"></span><span>{{ modal_body }}</span>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- hiddle button -->
+<button id="hidelistview" type="button" class="btn btn-outline-primary " (click)="hidelistview()"></button>
+
+</div>

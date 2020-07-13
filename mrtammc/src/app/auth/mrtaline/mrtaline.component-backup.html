@@ -1,0 +1,1753 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-1">
+            <div class="col-sm-2">
+                <h6 class="m-0 text-dark">
+                  <i class="fa fa-table" aria-hidden="true"></i>
+                  <a href="/auth/config">File config mgmt</a>
+                </h6>
+              </div>
+              <div class="col-sm-2">
+                <h6 class="m-0 text-dark">
+                  <i class="fa fa-database" aria-hidden="true"></i>
+                  <a href="/auth/mrtaline">GTFS DB config mgmt</a>
+                </h6>
+              </div>
+              <div class="col-sm-2">
+                <h6 class="m-0 text-dark">
+                  <i class="fa fa-camera" aria-hidden="true"></i>
+                  <a href="/auth/cctv">CCTV mgmt</a>
+                </h6>
+              </div>
+          <div class="col-sm-2">
+  
+          </div>
+          <div class="col-sm-2">
+  
+          </div>
+          <div class="col-sm-2">
+  
+          </div>
+          <div class="col-sm-2">
+  
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+  
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#treemenulist" role="tab" aria-controls="home" aria-selected="true">
+                  <i class="fa fa-upload" aria-hidden="true"></i> MRTA
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" (click)="refresh()" style="cursor: pointer">
+                  <i class="fa fa-server" aria-hidden="true"></i>
+                  List File
+                </a>
+              </li> -->
+            </ul>
+            <div class="tab-content" id="myTabContent" style="padding: 10px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;" s>
+              <div class="tab-pane fade show active" id="treemenulist" role="tabpanel" aria-labelledby="home-tab">
+                <div id="treemenu">
+                  <ul>
+                    <li>GTFS File Database
+                      <ul>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#agencys_info"> ผู้เดินรถ Agency </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#routes_info"> เส้นทาง Route</a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#trips_info"> เที่ยวรถ Trip </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#stops_info"> สถานีรถไฟฟ้า Stop (Station)</a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#stop_times_info"> ตารางการเดินรถ stop time </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#calendars_info"> ตารางการเดินรถ Calendar </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#calendar_dates_info"> ตารางการเดินรถพิเศษ Calendar Date </a>
+                        </li>
+  
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#fare_attributes_info"> ตารางค่าโดยสาร Fare Attribute </a>
+                        </li>
+  
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#fare_rules_info"> เงื่อนไขค่าโดยสาร Fare Rule </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#shapes_info"> เส้นทางการเดินรถ Shape </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#pathways_info"> เส้นทาง Pathway </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#frequencies_info"> ความถี่การเดินรถ frequency </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#transforms_info"> สถานีเชื่อมต่อ Transfer </a>
+                        </li>
+                        <li data-jstree='{"icon":"fa fa-database"}'>
+                          <a href="#levels_info"> ขั้นจอดขบวนรถ Levels </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- <li>
+                      MAP Component
+                      <ul>
+                        <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                          <a href="#kml_info">KML Layer</a>
+                        </li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+          <!-- <div class="col-7" *ngIf="showfile"> -->
+          <div class="col-9">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a id="gtfstab" class="nav-link active" data-toggle="tab" href="#gtfspane" role="tab" aria-controls="home">GTFS</a>
+              </li>
+  
+              <!-- <li class="nav-item">
+                <a id="filedetailtab" class="nav-link" data-toggle="tab" href="#filedetail" role="tab" aria-controls="profile">File Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#messages1" role="tab" aria-controls="messages">GTFS Spec</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#settings1" role="tab" aria-controls="settings">Error Code</a>
+              </li>
+              <li class="nav-item">
+                <a id="verifytab" class="nav-link" data-toggle="tab" href="#verify1" role="tab" aria-controls="verify">GTFS Verify</a>
+              </li> -->
+            </ul>
+  
+            <div class="tab-content" style="padding: 10px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;">
+              <div class="tab-pane active" id="gtfspane" role="tabpanel">
+                <div id="agencys_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand"> ผู้เดินรถ Agency</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm  btn-light" (click)="viewAgency()"> View </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="agencyForm" (ngSubmit)="onAgencySubmit(agencyForm)" >
+                          <!-- {{ agencyForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && af.agency_key.errors }"
+                              placeholder="agency_key">
+                              <div *ngIf="submitted && af.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_key.errors.required">agency_key is required</div>
+                              </div>
+                            </div>
+  
+                            <div class="col-sm-4">
+                              <label for="agency_id">agency_id</label>
+                              <input id="agency_id" type="text" class="form-control" formControlName="agency_id"
+                              [ngClass]="{ 'is-invalid': submitted && af.agency_id.errors }"
+                              placeholder="agency_id">
+                              <div *ngIf="submitted && af.agency_id.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_id.errors.required">agency_id is required</div>
+                              </div>
+                            </div>
+  
+                            <div class="col-sm-4">
+                              <label for="agency_name">agency_name</label>
+                              <input id="agency_name" type="text" class="form-control" formControlName="agency_name"
+                              [ngClass]="{ 'is-invalid': submitted && af.agency_name.errors }"
+                              placeholder="agency_name">
+  
+                              <div *ngIf="submitted && af.agency_name.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_name.errors.required">agency_name is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_url">agency_url</label>
+                              <input id="agency_url" type="text" class="form-control" formControlName="agency_url"
+                              [ngClass]="{ 'is-invalid': submitted && af.agency_url.errors }"
+                              placeholder="agency_url">
+  
+                              <div *ngIf="submitted && af.agency_url.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_url.errors.required">agency_url is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="agency_timezone">agency_timezone</label>
+                              <select class="form-control" formControlName="agency_timezone" [ngClass]="{ 'is-invalid': submitted && af.agency_timezone.errors }">
+                                <option *ngFor="let tz of agency_timezone" [ngValue]="tz.value">
+                                  {{ tz.name }}
+                                </option>
+                              </select>
+                              <div *ngIf="submitted && af.agency_timezone.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_timezone.errors.required">agency_timezone is required</div>
+                              </div>
+  
+                              <!-- <input id="agency_timezone" type="text" class="form-control" formControlName="agency_timezone" placeholder="agency_timezone"> -->
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="agency_lang">agency_lang</label>
+                              <select class="form-control" formControlName="agency_lang" [ngClass]="{ 'is-invalid': submitted && af.agency_lang.errors }">
+                                <option *ngFor="let l of agency_lang" [ngValue]="l.value">
+                                  {{ l.name }}
+                                </option>
+                              </select>
+                              <div *ngIf="submitted && af.agency_lang.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_lang.errors.required">agency_lang is required</div>
+                              </div>
+                              <!-- <input id="agency_lang" type="text" class="form-control" formControlName="agency_lang" placeholder="agency_lang"> -->
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_phone">agency_phone</label>
+                              <input id="agency_phone" type="text" class="form-control" formControlName="agency_phone"
+                              [ngClass]="{ 'is-invalid': submitted && af.agency_phone.errors }"
+                              placeholder="agency_phone">
+  
+                              <div *ngIf="submitted && af.agency_phone.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_phone.errors.required">agency_phone is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="agency_fare_url">agency_fare_url</label>
+                              <input id="agency_fare_url" type="text" class="form-control" formControlName="agency_fare_url"
+                              [ngClass]="{ 'is-invalid': submitted && af.agency_fare_url.errors }"
+                              placeholder="agency_fare_url">
+  
+                              <div *ngIf="submitted && af.agency_fare_url.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_fare_url.errors.required">agency_fare_url is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="agency_email">agency_email</label>
+                              <input id="agency_email" type="text" class="form-control" formControlName="agency_email"
+                              [ngClass]="{ 'is-invalid': submitted && af.agency_email.errors }"
+                              placeholder="agency_email">
+  
+                              <div *ngIf="submitted && af.agency_email.errors" class="invalid-feedback">
+                                <div *ngIf="af.agency_email.errors.required">agency_email is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+  
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- agency_info -->
+  
+                <div id="routes_info">
+                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                   <a class="navbar-brand">เส้นทาง route</a>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav">
+                       <li class="nav-item active">
+                         <a class="nav-link btn btn-sm  btn-light" (click)="viewRoute()"> View </a>
+                       </li>
+  
+                     </ul>
+                   </div>
+                 </nav>
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="routesForm"   (ngSubmit)="onRouteSubmit(routesForm)">
+                          <!-- {{ routesForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && rf.agency_key.errors }"
+                              placeholder="agency_key">
+  
+                              <div *ngIf="submitted && rf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="rf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+  
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="agency_id">agency_id</label>
+                              <input id="agency_id" type="text" class="form-control" formControlName="agency_id"
+                              [ngClass]="{ 'is-invalid': submitted && rf.agency_id.errors }"
+                              placeholder="agency_id">
+  
+                              <div *ngIf="submitted && rf.agency_id.errors" class="invalid-feedback">
+                                <div *ngIf="rf.agency_id.errors.required">agency_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="route_id">route_id</label>
+                              <input id="route_id" type="text" class="form-control" formControlName="route_id"
+                              [ngClass]="{ 'is-invalid': submitted && rf.route_id.errors }"
+                              placeholder="route_id">
+  
+                              <div *ngIf="submitted && rf.route_id.errors" class="invalid-feedback">
+                                <div *ngIf="rf.route_id.errors.required">route_id is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="route_short_name">route_short_name</label>
+                              <input id="route_short_name" type="text" class="form-control" formControlName="route_short_name"
+                              [ngClass]="{ 'is-invalid': submitted && rf.route_short_name.errors }"
+                              placeholder="route_short_name">
+  
+                              <div *ngIf="submitted && rf.route_short_name.errors" class="invalid-feedback">
+                                <div *ngIf="rf.route_short_name.errors.required">route_short_name is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="route_long_name">route_long_name</label>
+                              <input id="route_long_name" type="text" class="form-control" formControlName="route_long_name"
+                              [ngClass]="{ 'is-invalid': submitted && rf.route_long_name.errors }"
+                              placeholder="route_long_name">
+  
+                              <div *ngIf="submitted && rf.route_long_name.errors" class="invalid-feedback">
+                                <div *ngIf="rf.route_long_name.errors.required">route_long_name is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="route_desc">route_desc</label>
+                              <input id="route_desc" type="text" class="form-control" formControlName="route_desc"
+                              [ngClass]="{ 'is-invalid': submitted && rf.route_desc.errors }"
+                              placeholder="route_desc">
+                              <div *ngIf="submitted && rf.route_desc.errors" class="invalid-feedback">
+                                <div *ngIf="rf.route_desc.errors.required">route_desc is required</div>
+                              </div>
+                            </div>
+  
+  
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="route_type">route_type</label>
+                              <select class="form-control" formControlName="route_type" [ngClass]="{ 'is-invalid': submitted && rf.route_type.errors }">
+                                <option *ngFor="let rt of route_type" [ngValue]="rt.value"  >
+                                  {{rt.value}} - {{ rt.name }}
+                                </option>
+                              </select>
+                              <div *ngIf="submitted && rf.route_type.errors" class="invalid-feedback">
+                                <div *ngIf="rf.route_type.errors.required">route_type is required</div>
+                              </div>
+                              <!-- <input id="route_type" type="text" class="form-control" formControlName="route_type" placeholder="route_type"> -->
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="route_url">route_url</label>
+                              <input id="route_url" type="text" class="form-control" formControlName="route_url"
+                              [ngClass]="{ 'is-invalid': submitted && rf.route_url.errors }"
+                              placeholder="route_url">
+                              <div *ngIf="submitted && rf.route_url.errors" class="invalid-feedback">
+                                <div *ngIf="rf.route_url.errors.required">route_url is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="route_color">route_color</label>
+                              <input id="route_color" type="text" class="form-control" formControlName="route_color"
+                              [ngClass]="{ 'is-invalid': submitted && rf.route_color.errors }"
+                              placeholder="route_color">
+                              <div *ngIf="submitted && rf.route_color.errors" class="invalid-feedback">
+                                <div *ngIf="rf.route_color.errors.required">route_color is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="route_text_color">route_text_color</label>
+                              <input id="route_text_color" type="text" class="form-control" formControlName="route_text_color"
+                              [ngClass]="{ 'is-invalid': submitted && rf.route_text_color.errors }"
+                              placeholder="route_text_color">
+                              <div *ngIf="submitted && rf.route_text_color.errors" class="invalid-feedback">
+                                <div *ngIf="rf.route_text_color.errors.required">route_text_color is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div id="trips_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand"> ขบวน Trip </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm btn-light" (click)="viewTrip()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="tripsForm" (ngSubmit)="onTripSubmit(tripsForm)">
+                          <!-- {{ tripsForm.value | json}} -->
+                          <div class="form-group row">
+  
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && tf.agency_key.errors }"
+                              placeholder="agency_key">
+  
+                              <div *ngIf="submitted && tf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="tf.agency_key.errors.required">route_text_color is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="route_id">route_id</label>
+                              <input id="route_id" type="text" class="form-control" formControlName="route_id"
+                              [ngClass]="{ 'is-invalid': submitted && tf.route_id.errors }"
+                              placeholder="route_id">
+  
+                              <div *ngIf="submitted && tf.route_id.errors" class="invalid-feedback">
+                                <div *ngIf="tf.route_id.errors.required">route_text_color is required</div>
+                              </div>
+  
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="service_id">service_id</label>
+                              <input id="service_id" type="text" class="form-control" formControlName="service_id"
+                              [ngClass]="{ 'is-invalid': submitted && tf.service_id.errors }"
+                              placeholder="service_id">
+  
+                              <div *ngIf="submitted && tf.service_id.errors" class="invalid-feedback">
+                                <div *ngIf="tf.service_id.errors.required">service_id is required</div>
+                              </div>
+  
+                            </div>
+  
+                          </div>
+                          <div class="form-group row">
+  
+                            <div class="col-sm-4">
+                              <label for="trip_id">trip_id</label>
+                              <input id="trip_id" type="text" class="form-control" formControlName="trip_id"
+                              [ngClass]="{ 'is-invalid': submitted && tf.trip_id.errors }"
+                              placeholder="trip_id">
+  
+                              <div *ngIf="submitted && tf.trip_id.errors" class="invalid-feedback">
+                                <div *ngIf="tf.trip_id.errors.required">service_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="trip_headsign">trip_headsign</label>
+                              <input id="trip_headsign" type="text" class="form-control" formControlName="trip_headsign"
+                              [ngClass]="{ 'is-invalid': submitted && tf.trip_headsign.errors }"
+                              placeholder="trip_headsign">
+                              <div *ngIf="submitted && tf.trip_headsign.errors" class="invalid-feedback">
+                                <div *ngIf="tf.trip_headsign.errors.required">service_id is required</div>
+                              </div>
+                            </div>
+  
+                            <div class="col-sm-4">
+                              <label for="trip_short_name">trip_short_name</label>
+                              <input id="trip_short_name" type="text" class="form-control" formControlName="trip_short_name"
+                              [ngClass]="{ 'is-invalid': submitted && tf.trip_short_name.errors }"
+                              placeholder="trip_short_name">
+                              <div *ngIf="submitted && tf.trip_short_name.errors" class="invalid-feedback">
+                                <div *ngIf="tf.trip_short_name.errors.required">trip_short_name is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+                          <div class="form-group row">
+  
+                            <div class="col-sm-4">
+                              <label for="direction_id">direction_id</label>
+                              <input id="direction_id" type="text" class="form-control" formControlName="direction_id"
+                              [ngClass]="{ 'is-invalid': submitted && tf.direction_id.errors }"
+  
+                              placeholder="direction_id">
+  
+                              <div *ngIf="submitted && tf.direction_id.errors" class="invalid-feedback">
+                                <div *ngIf="tf.direction_id.errors.required">direction_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="block_id">block_id</label>
+                              <input id="block_id" type="text" class="form-control" formControlName="block_id"
+                              [ngClass]="{ 'is-invalid': submitted && tf.block_id.errors }"
+                              placeholder="block_id">
+                              <div *ngIf="submitted && tf.block_id.errors" class="invalid-feedback">
+                                <div *ngIf="tf.block_id.errors.required">block_id is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="shape_id">shape_id</label>
+                              <input id="shape_id" type="text" class="form-control" formControlName="shape_id"
+                              [ngClass]="{ 'is-invalid': submitted && tf.shape_id.errors }"
+                              placeholder="shape_id">
+                              <div *ngIf="submitted && tf.shape_id.errors" class="invalid-feedback">
+                                <div *ngIf="tf.shape_id.errors.required">block_id is required</div>
+                              </div>
+                            </div>
+  
+  
+                          </div>
+                          <div class="form-group row">
+  
+                            <div class="col-sm-4">
+                              <label for="wheelchair_accessible">wheelchair_accessible</label>
+                              <input id="wheelchair_accessible" type="text" class="form-control" formControlName="wheelchair_accessible"
+                              [ngClass]="{ 'is-invalid': submitted && tf.wheelchair_accessible.errors }"
+                              placeholder="wheelchair_accessible">
+  
+                              <div *ngIf="submitted && tf.wheelchair_accessible.errors" class="invalid-feedback">
+                                <div *ngIf="tf.wheelchair_accessible.errors.required">wheelchair_accessible is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="bikes_allowed">bikes_allowed</label>
+                              <input id="bikes_allowed" type="text" class="form-control" formControlName="bikes_allowed"
+                              [ngClass]="{ 'is-invalid': submitted && tf.bikes_allowed.errors }"
+                              placeholder="bikes_allowed">
+                              <div *ngIf="submitted && tf.bikes_allowed.errors" class="invalid-feedback">
+                                <div *ngIf="tf.bikes_allowed.errors.required">bikes_allowed is required</div>
+                              </div>
+                            </div>
+  
+  
+                          </div>
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div id="stops_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand"> สถานีรถไฟฟ้า Stop</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm  btn-light" (click)="viewStop()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="stopsForm" (ngSubmit)="onStopSubmit(stopsForm)">
+                          <!-- {{ stopsForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && sf.agency_key.errors }"
+                              placeholder="agency_key">
+                              <div *ngIf="submitted && sf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="tf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="stop_id">stop_id</label>
+                              <input id="stop_id" type="text" class="form-control" formControlName="stop_id"
+                              [ngClass]="{ 'is-invalid': submitted && sf.stop_id.errors }" placeholder="stop_id">
+                              <div *ngIf="submitted && sf.stop_id.errors" class="invalid-feedback">
+                                <div *ngIf="sf.stop_id.errors.required">stop_id is required</div>
+                              </div>
+                            </div>
+  
+                            <div class="col-sm-4">
+                              <label for="stop_code">stop_code</label>
+                              <input id="stop_code" type="text" class="form-control" formControlName="stop_code"
+                              [ngClass]="{ 'is-invalid': submitted && sf.stop_code.errors }" placeholder="stop_code">
+                              <div *ngIf="submitted && sf.stop_code.errors" class="invalid-feedback">
+                                <div *ngIf="sf.stop_code.errors.required">stop_code is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+  
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="stop_name">stop_name</label>
+                              <input id="stop_name" type="text" class="form-control" formControlName="stop_name"
+                              [ngClass]="{ 'is-invalid': submitted && sf.stop_name.errors }" placeholder="stop_name">
+                              <div *ngIf="submitted && sf.stop_name.errors" class="invalid-feedback">
+                                <div *ngIf="sf.stop_name.errors.required">stop_name is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="stop_desc">stop_desc</label>
+                              <input id="stop_desc" type="text" class="form-control" formControlName="stop_desc"
+                              [ngClass]="{ 'is-invalid': submitted && sf.stop_desc.errors }" placeholder="stop_desc">
+                              <div *ngIf="submitted && sf.stop_desc.errors" class="invalid-feedback">
+                                <div *ngIf="sf.stop_desc.errors.required">stop_desc is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="stop_lat">stop_lat</label>
+                              <input id="stop_lat" type="text" class="form-control" formControlName="stop_lat"
+                              [ngClass]="{ 'is-invalid': submitted && sf.stop_lat.errors }" placeholder="stop_lat">
+                              <div *ngIf="submitted && sf.stop_lat.errors" class="invalid-feedback">
+                                <div *ngIf="sf.stop_lat.errors.required">stop_lat is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="stop_lon">stop_lon</label>
+                              <input id="stop_lon" type="text" class="form-control" formControlName="stop_lon"
+                              [ngClass]="{ 'is-invalid': submitted && sf.stop_lon.errors }"  placeholder="stop_lon">
+                              <div *ngIf="submitted && sf.stop_lon.errors" class="invalid-feedback">
+                                <div *ngIf="sf.stop_lon.errors.required">stop_lon is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="zone_id">zone_id</label>
+                              <input id="zone_id" type="text" class="form-control" formControlName="zone_id"
+                              [ngClass]="{ 'is-invalid': submitted && sf.zone_id.errors }"  placeholder="zone_id">
+                              <div *ngIf="submitted && sf.zone_id.errors" class="invalid-feedback">
+                                <div *ngIf="sf.zone_id.errors.required">zone_id is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="stop_url">stop_url</label>
+                              <input id="stop_url" type="text" class="form-control" formControlName="stop_url"
+                              [ngClass]="{ 'is-invalid': submitted && sf.stop_url.errors }" placeholder="stop_url">
+                              <div *ngIf="submitted && sf.stop_url.errors" class="invalid-feedback">
+                                <div *ngIf="sf.stop_url.errors.required">stop_url is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+  
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="location_type">location_type</label>
+                              <input id="location_type" type="text" class="form-control" formControlName="location_type"
+                              [ngClass]="{ 'is-invalid': submitted && sf.location_type.errors }" placeholder="location_type">
+                              <div *ngIf="submitted && sf.location_type.errors" class="invalid-feedback">
+                                <div *ngIf="sf.location_type.errors.required">location_type is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="parent_station">parent_station</label>
+                              <input id="parent_station" type="text" class="form-control" formControlName="parent_station"
+                              [ngClass]="{ 'is-invalid': submitted && sf.parent_station.errors }"  placeholder="parent_station">
+                              <div *ngIf="submitted && sf.parent_station.errors" class="invalid-feedback">
+                                <div *ngIf="sf.parent_station.errors.required">stop_url is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="parent_station">parent_station</label>
+                              <input id="parent_station" type="text" class="form-control" formControlName="parent_station"
+                              [ngClass]="{ 'is-invalid': submitted && sf.parent_station.errors }"
+                              placeholder="parent_station">
+                              <div *ngIf="submitted && sf.parent_station.errors" class="invalid-feedback">
+                                <div *ngIf="sf.parent_station.errors.required">parent_station is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+  
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="wheelchair_boarding">wheelchair_boarding</label>
+                              <select class="form-control" formControlName="wheelchair_boarding"
+                               [ngClass]="{ 'is-invalid': submitted && sf.wheelchair_boarding.errors }" >
+                                <option *ngFor="let wc of wheelchair_boarding" [ngValue]="wc.value">
+                                  {{wc.value}} - {{ wc.name }}
+                                </option>
+                              </select>
+                              <div *ngIf="submitted && sf.wheelchair_boarding.errors" class="invalid-feedback">
+                                <div *ngIf="sf.wheelchair_boarding.errors.required">wheelchair_boardings is required</div>
+                              </div>
+                              <!-- <input id="wheelchair_boarding" type="text" class="form-control" formControlName="wheelchair_boarding" placeholder="wheelchair_boarding"> -->
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="level_id">level_id</label>
+                              <input id="level_id" type="text" class="form-control" formControlName="level_id"
+                              [ngClass]="{ 'is-invalid': submitted && sf.wheelchair_boarding.errors }"  placeholder="level_id">
+                              <div *ngIf="submitted && sf.level_id.errors" class="invalid-feedback">
+                                <div *ngIf="sf.level_id.errors.required">level_id is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="platform_code">platform_code</label>
+                              <input id="platform_code" type="text" class="form-control" formControlName="platform_code"
+                              [ngClass]="{ 'is-invalid': submitted && sf.platform_code.errors }"  placeholder="platform_code">
+                              <div *ngIf="submitted && sf.platform_code.errors" class="invalid-feedback">
+                                <div *ngIf="sf.platform_code.errors.required">platform_codes is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+  
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div id="stop_times_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand">ตารางเวลาเดินรถ Stop Time</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm  btn-light" (click)="viewStoptime()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="stoptimesForm" (ngSubmit)="onStoptimeSubmit(stoptimesForm)">
+                          <!-- {{ stoptimesForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && stf.agency_key.errors }" placeholder="agency_key">
+                              <div *ngIf="submitted && stf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="stf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="trip_id">trip_id</label>
+                              <input id="trip_id" type="text" class="form-control" formControlName="trip_id"
+                              [ngClass]="{ 'is-invalid': submitted && stf.trip_id.errors }" placeholder="trip_id">
+                              <div *ngIf="submitted && stf.trip_id.errors" class="invalid-feedback">
+                                <div *ngIf="stf.trip_id.errors.required">trip_id is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="arrival_time">arrival_time</label>
+                              <input id="arrival_time" type="text" class="form-control" formControlName="arrival_time"
+                              [ngClass]="{ 'is-invalid': submitted && stf.arrival_time.errors }" placeholder="arrival_time">
+                              <div *ngIf="submitted && stf.arrival_time.errors" class="invalid-feedback">
+                                <div *ngIf="stf.arrival_time.errors.required">arrival_time is required</div>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="departure_time">departure_time</label>
+                              <input id="departure_time" type="text" class="form-control" formControlName="departure_time"
+                              [ngClass]="{ 'is-invalid': submitted && stf.departure_time.errors }" placeholder="departure_time">
+                              <div *ngIf="submitted && stf.departure_time.errors" class="invalid-feedback">
+                                <div *ngIf="stf.departure_time.errors.required">departure_time is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="stop_id">stop_id</label>
+                              <input id="stop_id" type="text" class="form-control" formControlName="stop_id"
+                              [ngClass]="{ 'is-invalid': submitted && stf.stop_id.errors }" placeholder="stop_id">
+                              <div *ngIf="submitted && stf.stop_id.errors" class="invalid-feedback">
+                                <div *ngIf="stf.stop_id.errors.required">stop_id is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="stop_sequence">stop_sequence</label>
+                              <input id="stop_sequence" type="text" class="form-control" formControlName="stop_sequence"
+                              [ngClass]="{ 'is-invalid': submitted && stf.stop_sequence.errors }" placeholder="stop_sequence">
+                              <div *ngIf="submitted && stf.stop_sequence.errors" class="invalid-feedback">
+                                <div *ngIf="stf.stop_sequence.errors.required">stop_sequence is required</div>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="stop_headsign">stop_headsign</label>
+                              <input id="stop_headsign" type="text" class="form-control" formControlName="stop_headsign"
+                              [ngClass]="{ 'is-invalid': submitted && stf.stop_headsign.errors }" placeholder="stop_headsign">
+                              <div *ngIf="submitted && stf.stop_headsign.errors" class="invalid-feedback">
+                                <div *ngIf="stf.stop_headsign.errors.required">stop_headsign is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="pickup_type">pickup_type</label>
+                              <input id="pickup_type" type="text" class="form-control" formControlName="pickup_type"
+                              [ngClass]="{ 'is-invalid': submitted && stf.pickup_type.errors }" placeholder="pickup_type">
+                              <div *ngIf="submitted && stf.pickup_type.errors" class="invalid-feedback">
+                                <div *ngIf="stf.pickup_type.errors.required">pickup_type is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="drop_off_type">drop_off_type</label>
+                              <input id="drop_off_type" type="text" class="form-control" formControlName="drop_off_type"
+                              [ngClass]="{ 'is-invalid': submitted && stf.drop_off_type.errors }" placeholder="drop_off_type">
+                              <div *ngIf="submitted && stf.drop_off_type.errors" class="invalid-feedback">
+                                <div *ngIf="stf.drop_off_type.errors.required">drop_off_type is required</div>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="shape_dist_traveled">shape_dist_traveled</label>
+                              <input id="shape_dist_traveled" type="text" class="form-control" formControlName="shape_dist_traveled"
+                              [ngClass]="{ 'is-invalid': submitted && stf.shape_dist_traveled.errors }" placeholder="shape_dist_traveled">
+                              <div *ngIf="submitted && stf.shape_dist_traveled.errors" class="invalid-feedback">
+                                <div *ngIf="stf.shape_dist_traveled.errors.required">shape_dist_traveled is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="timepoint">timepoint</label>
+                              <input id="timepoint" type="text" class="form-control" formControlName="timepoint"
+                              [ngClass]="{ 'is-invalid': submitted && stf.timepoint.errors }" placeholder="timepoint">
+                              <div *ngIf="submitted && stf.timepoint.errors" class="invalid-feedback">
+                                <div *ngIf="stf.timepoint.errors.required">timepoint is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+  
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="calendars_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand"> ปฎิทินเดินรถ Calendar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm btn-light" (click)="viewCalendar()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="calendarForm" (ngSubmit)="onCalendarSubmit(calendarForm)">
+                          <!-- {{ calendarForm.value | json}} -->
+                          <div class="form-group row" >
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && cf.agency_key.errors }" placeholder="agency_key">
+                              <div *ngIf="submitted && cf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="cf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="service_id">service_id</label>
+                              <input id="service_id" type="text" class="form-control" formControlName="service_id"
+                              [ngClass]="{ 'is-invalid': submitted && cf.service_id.errors }" placeholder="service_id">
+                              <div *ngIf="submitted && cf.service_id.errors" class="invalid-feedback">
+                                <div *ngIf="cf.service_id.errors.required">service_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="monday">monday</label>
+                              <input id="monday" type="text" class="form-control" formControlName="monday"
+                              [ngClass]="{ 'is-invalid': submitted && cf.monday.errors }" placeholder="monday">
+                              <div *ngIf="submitted && cf.monday.errors" class="invalid-feedback">
+                                <div *ngIf="cf.monday.errors.required">monday is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="tuesday">tuesday</label>
+                              <input id="tuesday" type="text" class="form-control" formControlName="tuesday"
+                              [ngClass]="{ 'is-invalid': submitted && cf.tuesday.errors }" placeholder="tuesday">
+                              <div *ngIf="submitted && cf.tuesday.errors" class="invalid-feedback">
+                                <div *ngIf="cf.tuesday.errors.required">tuesday is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="wednesday">wednesday</label>
+                              <input id="wednesday" type="text" class="form-control" formControlName="wednesday"
+                              [ngClass]="{ 'is-invalid': submitted && cf.wednesday.errors }" placeholder="wednesday">
+                              <div *ngIf="submitted && cf.wednesday.errors" class="invalid-feedback">
+                                <div *ngIf="cf.wednesday.errors.required">wednesday is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="thursday">thursday</label>
+                              <input id="thursday" type="text" class="form-control" formControlName="thursday"
+                              [ngClass]="{ 'is-invalid': submitted && cf.thursday.errors }" placeholder="thursday">
+                              <div *ngIf="submitted && cf.thursday.errors" class="invalid-feedback">
+                                <div *ngIf="cf.thursday.errors.required">thursday is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="friday">friday</label>
+                              <input id="friday" type="text" class="form-control" formControlName="friday"
+                              [ngClass]="{ 'is-invalid': submitted && cf.friday.errors }" placeholder="friday">
+                              <div *ngIf="submitted && cf.friday.errors" class="invalid-feedback">
+                                <div *ngIf="cf.friday.errors.required">thursday is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="saturday">saturday</label>
+                              <input id="saturday" type="text" class="form-control" formControlName="saturday"
+                              [ngClass]="{ 'is-invalid': submitted && cf.saturday.errors }" placeholder="saturday">
+                              <div *ngIf="submitted && cf.saturday.errors" class="invalid-feedback">
+                                <div *ngIf="cf.saturday.errors.required">saturday is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="sunday">sunday</label>
+                              <input id="sunday" type="text" class="form-control" formControlName="sunday"
+                              [ngClass]="{ 'is-invalid': submitted && cf.sunday.errors }" placeholder="sunday">
+                              <div *ngIf="submitted && cf.sunday.errors" class="invalid-feedback">
+                                <div *ngIf="cf.sunday.errors.required">sunday is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="start_date">start_date</label>
+                              <input id="start_date" type="text" class="form-control" formControlName="start_date"
+                              [ngClass]="{ 'is-invalid': submitted && cf.sunday.errors }" placeholder="start_date">
+                              <div *ngIf="submitted && cf.sunday.errors" class="invalid-feedback">
+                                <div *ngIf="cf.sunday.errors.required">sunday is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="end_date">end_date</label>
+                              <input id="end_dates" type="text" class="form-control" formControlName="end_date"
+                              [ngClass]="{ 'is-invalid': submitted && cf.end_date.errors }" placeholder="end_date">
+                              <div *ngIf="submitted && cf.end_date.errors" class="invalid-feedback">
+                                <div *ngIf="cf.end_date.errors.required">end_date is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+  
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+                <div id="calendar_dates_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand"> ตารางการเดินรถพิเศษ Calendar Date</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm  btn-light"  (click)="viewCalendardate()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="calendardatesForm" (ngSubmit)="onCalendardateSubmit(calendardatesForm)">
+                          <!-- {{ calendardatesForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && cdf.agency_key.errors }"  placeholder="agency_key">
+                              <div *ngIf="submitted && cdf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="cdf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="service_id">service_id</label>
+                              <input id="service_id" type="text" class="form-control" formControlName="service_id"
+                              [ngClass]="{ 'is-invalid': submitted && cdf.service_id.errors }"  placeholder="service_id">
+                              <div *ngIf="submitted && cdf.service_id.errors" class="invalid-feedback">
+                                <div *ngIf="cdf.service_id.errors.required">service_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="date">date</label>
+                              <input id="date" type="text" class="form-control" formControlName="date"
+                              [ngClass]="{ 'is-invalid': submitted && cdf.date.errors }" placeholder="date">
+                              <div *ngIf="submitted && cdf.date.errors" class="invalid-feedback">
+                                <div *ngIf="cdf.date.errors.required">date is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="exception_type">exception_type</label>
+                              <input id="exception_type" type="text" class="form-control" formControlName="exception_type"
+                              [ngClass]="{ 'is-invalid': submitted && cdf.exception_type.errors }"  placeholder="exception_type">
+                              <div *ngIf="submitted && cdf.exception_type.errors" class="invalid-feedback">
+                                <div *ngIf="cdf.exception_type.errors.required">exception_type is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div id="fare_attributes_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand">ตารางค่าโดยสาร Fare Attribute</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm btn-light" (click)="viewFareattribute()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="fareattributesForm"  (ngSubmit)="onFareattributeSubmit(fareattributesForm)">
+                          <!-- {{ fareattributesForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && faf.agency_key.errors }"  placeholder="agency_key">
+                              <div *ngIf="submitted && faf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="faf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="agency_id">agency_id</label>
+                              <input id="agency_id" type="text" class="form-control" formControlName="agency_id"
+                              [ngClass]="{ 'is-invalid': submitted && faf.agency_id.errors }"  placeholder="agency_id">
+                              <div *ngIf="submitted && faf.agency_id.errors" class="invalid-feedback">
+                                <div *ngIf="faf.agency_id.errors.required">agency_id is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="fare_id">fare_id</label>
+                              <input id="fare_id" type="text" class="form-control" formControlName="fare_id"
+                              [ngClass]="{ 'is-invalid': submitted && faf.fare_id.errors }"  placeholder="fare_id">
+                              <div *ngIf="submitted && faf.fare_id.errors" class="invalid-feedback">
+                                <div *ngIf="faf.fare_id.errors.required">fare_id is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+  
+                            <div class="col-sm-4">
+                              <label for="price">price</label>
+                              <input id="price" type="text" class="form-control" formControlName="price"
+                              [ngClass]="{ 'is-invalid': submitted && faf.price.errors }"  placeholder="price">
+                              <div *ngIf="submitted && faf.price.errors" class="invalid-feedback">
+                                <div *ngIf="faf.price.errors.required">price is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="currency_type">currency_type</label>
+                              <input id="currency_type" type="text" class="form-control" formControlName="currency_type"
+                              [ngClass]="{ 'is-invalid': submitted && faf.currency_type.errors }"  placeholder="currency_type">
+                              <div *ngIf="submitted && faf.currency_type.errors" class="invalid-feedback">
+                                <div *ngIf="faf.currency_type.errors.required">currency_type is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="payment_method">payment_method</label>
+                              <input id="payment_method" type="text" class="form-control" formControlName="payment_method"
+                              [ngClass]="{ 'is-invalid': submitted && faf.payment_method.errors }"  placeholder="payment_method">
+                              <div *ngIf="submitted && faf.payment_method.errors" class="invalid-feedback">
+                                <div *ngIf="faf.payment_method.errors.required">payment_method is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="transfers">transfers</label>
+                              <input id="transfers" type="text" class="form-control" formControlName="transfers"
+                              [ngClass]="{ 'is-invalid': submitted && faf.transfers.errors }"  placeholder="transfers">
+                              <div *ngIf="submitted && faf.transfers.errors" class="invalid-feedback">
+                                <div *ngIf="faf.transfers.errors.required">transfers is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="transfer_duration">transfer_duration</label>
+                              <input id="transfer_duration" type="text" class="form-control" formControlName="transfer_duration"
+                              [ngClass]="{ 'is-invalid': submitted && faf.transfer_duration.errors }"   placeholder="transfer_duration">
+                              <div *ngIf="submitted && faf.transfer_duration.errors" class="invalid-feedback">
+                                <div *ngIf="faf.transfer_duration.errors.required">transfer_duration is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div id="fare_rules_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand">เงื่อนไขค่าโดยสาร Fare Rule</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm  btn-light" (click)="viewFarerule()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="farerulesForm" (ngSubmit)="onFareRuleSubmit(farerulesForm)">
+                          <!-- {{ farerulesForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && frf.agency_key.errors }"  placeholder="agency_key">
+                              <div *ngIf="submitted && frf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="frf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="fare_id">fare_id</label>
+                              <input id="fare_id" type="text" class="form-control" formControlName="fare_id"
+                              [ngClass]="{ 'is-invalid': submitted && frf.fare_id.errors }"  placeholder="fare_id">
+                              <div *ngIf="submitted && frf.fare_id.errors" class="invalid-feedback">
+                                <div *ngIf="frf.fare_id.errors.required">fare_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="route_id">route_id</label>
+                              <input id="route_id" type="text" class="form-control" formControlName="route_id"
+                              [ngClass]="{ 'is-invalid': submitted && frf.route_id.errors }"  placeholder="route_id">
+                              <div *ngIf="submitted && frf.route_id.errors" class="invalid-feedback">
+                                <div *ngIf="frf.route_id.errors.required">route_id is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="origin_id">origin_id</label>
+                              <input id="origin_id" type="text" class="form-control" formControlName="origin_id"
+                              [ngClass]="{ 'is-invalid': submitted && frf.origin_id.errors }"  placeholder="origin_id">
+                              <div *ngIf="submitted && frf.origin_id.errors" class="invalid-feedback">
+                                <div *ngIf="frf.origin_id.errors.required">origin_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="destination_id">destination_id</label>
+                              <input id="destination_id" type="text" class="form-control" formControlName="destination_id"
+                              [ngClass]="{ 'is-invalid': submitted && frf.destination_id.errors }"  placeholder="destination_id">
+                              <div *ngIf="submitted && frf.destination_id.errors" class="invalid-feedback">
+                                <div *ngIf="frf.destination_id.errors.required">destination_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="contains_id">contains_id</label>
+                              <input id="contains_id" type="text" class="form-control" formControlName="contains_id"
+                              [ngClass]="{ 'is-invalid': submitted && frf.contains_id.errors }"  placeholder="contains_id">
+                              <div *ngIf="submitted && frf.contains_id.errors" class="invalid-feedback">
+                                <div *ngIf="frf.contains_id.errors.required">contains_id is required</div>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="shapes_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand">เส้นทางการเดินรถ Shape</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm  btn-light" (click)="viewShape()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="shapesForm" (ngSubmit)="onShapeSubmit(shapesForm)">
+                          <!-- {{ shapesForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && shf.agency_key.errors }" placeholder="agency_key">
+                              <div *ngIf="submitted && shf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="shf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="shape_id">shape_id</label>
+                              <input id="shape_id" type="text" class="form-control" formControlName="shape_id"
+                              [ngClass]="{ 'is-invalid': submitted && shf.shape_id.errors }"  placeholder="shape_id">
+                              <div *ngIf="submitted && shf.shape_id.errors" class="invalid-feedback">
+                                <div *ngIf="shf.shape_id.errors.required">shape_id is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="shape_pt_lat">shape_pt_lat</label>
+                              <input id="shape_pt_lat" type="text" class="form-control" formControlName="shape_pt_lat"
+                              [ngClass]="{ 'is-invalid': submitted && shf.shape_pt_lat.errors }"  placeholder="shape_pt_lat">
+                              <div *ngIf="submitted && shf.shape_pt_lat.errors" class="invalid-feedback">
+                                <div *ngIf="shf.shape_pt_lat.errors.required">shape_pt_lat is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="shape_pt_lon">shape_pt_lon</label>
+                              <input id="shape_pt_lon" type="text" class="form-control" formControlName="shape_pt_lon"
+                              [ngClass]="{ 'is-invalid': submitted && shf.shape_pt_lon.errors }"  placeholder="shape_pt_lon">
+                              <div *ngIf="submitted && shf.shape_pt_lon.errors" class="invalid-feedback">
+                                <div *ngIf="shf.shape_pt_lon.errors.required">shape_pt_lon is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="shape_pt_sequence">shape_pt_sequence</label>
+                              <input id="shape_pt_sequence" type="text" class="form-control" formControlName="shape_pt_sequence"
+                              [ngClass]="{ 'is-invalid': submitted && shf.shape_pt_sequence.errors }"  placeholder="shape_pt_sequence">
+                              <div *ngIf="submitted && shf.shape_pt_sequence.errors" class="invalid-feedback">
+                                <div *ngIf="shf.shape_pt_sequence.errors.required">shape_pt_sequence is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="shape_dist_traveled">shape_dist_traveled</label>
+                              <input id="shape_dist_traveled" type="text" class="form-control" formControlName="shape_dist_traveled"
+                              [ngClass]="{ 'is-invalid': submitted && shf.shape_dist_traveled.errors }"  placeholder="shape_dist_traveled">
+                              <div *ngIf="submitted && shf.shape_dist_traveled.errors" class="invalid-feedback">
+                                <div *ngIf="shf.shape_dist_traveled.errors.required">shape_dist_traveled is required</div>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="pathways_info">
+  
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand"> เส้นทาง Pathway </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm  btn-light" (click)="viewPathway()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="pathwaysForm" (ngSubmit)="onPathwaySubmit(pathwaysForm)">
+                          <!-- {{ pathwaysForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && pwf.agency_key.errors }" placeholder="agency_key">
+                              <div *ngIf="submitted && pwf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="pwf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="pathway_id">pathway_id</label>
+                              <input id="pathway_id" type="text" class="form-control" formControlName="pathway_id"
+                              [ngClass]="{ 'is-invalid': submitted && pwf.pathway_id.errors }" placeholder="pathway_id">
+                              <div *ngIf="submitted && pwf.pathway_id.errors" class="invalid-feedback">
+                                <div *ngIf="pwf.pathway_id.errors.required">pathway_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="from_stop_id">from_stop_id</label>
+                              <input id="from_stop_id" type="text" class="form-control" formControlName="from_stop_id"
+                              [ngClass]="{ 'is-invalid': submitted && pwf.from_stop_id.errors }" placeholder="from_stop_id">
+                              <div *ngIf="submitted && pwf.from_stop_id.errors" class="invalid-feedback">
+                                <div *ngIf="pwf.from_stop_id.errors.required">from_stop_id is required</div>
+                              </div>
+                            </div>
+  
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="to_stop_id">to_stop_id</label>
+                              <input id="to_stop_id" type="text" class="form-control" formControlName="to_stop_id"
+                              [ngClass]="{ 'is-invalid': submitted && pwf.to_stop_id.errors }"  placeholder="to_stop_id">
+                              <div *ngIf="submitted && pwf.to_stop_id.errors" class="invalid-feedback">
+                                <div *ngIf="pwf.to_stop_id.errors.required">to_stop_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="pathway_mode">pathway_mode</label>
+                              <input id="pathway_mode" type="text" class="form-control" formControlName="pathway_mode"
+                              [ngClass]="{ 'is-invalid': submitted && pwf.pathway_mode.errors }"  placeholder="pathway_mode">
+                              <div *ngIf="submitted && pwf.pathway_mode.errors" class="invalid-feedback">
+                                <div *ngIf="pwf.pathway_mode.errors.required">pathway_mode is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="is_bidirectional">is_bidirectional</label>
+                              <input id="is_bidirectional" type="text" class="form-control" formControlName="is_bidirectional"
+                              [ngClass]="{ 'is-invalid': submitted && pwf.is_bidirectional.errors }"  placeholder="is_bidirectional">
+                              <div *ngIf="submitted && pwf.is_bidirectional.errors" class="invalid-feedback">
+                                <div *ngIf="pwf.is_bidirectional.errors.required">is_bidirectional is required</div>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div id="frequencies_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand">  ความถี่การเดินรถ Frequency</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm btn-light" (click)="viewFrequency()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="frequenciesForm" (ngSubmit)="onFrequencySubmit(frequenciesForm)">
+                          <!-- {{ frequenciesForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && ff.agency_key.errors }" placeholder="agency_key">
+                              <div *ngIf="submitted && ff.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="ff.agency_key.errors.required">agency_key is required</div>
+                              </div>
+                            </div>
+  
+                            <div class="col-sm-4">
+                              <label for="trip_id">trip_id</label>
+                              <input id="trip_id" type="text" class="form-control" formControlName="trip_id"
+                              [ngClass]="{ 'is-invalid': submitted && ff.trip_id.errors }"  placeholder="trip_id">
+                              <div *ngIf="submitted && ff.trip_id.errors" class="invalid-feedback">
+                                <div *ngIf="ff.trip_id.errors.required">trip_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="start_time">start_time</label>
+                              <input id="start_time" type="text" class="form-control" formControlName="start_time"
+                              [ngClass]="{ 'is-invalid': submitted && ff.start_time.errors }"  placeholder="start_time">
+                              <div *ngIf="submitted && ff.start_time.errors" class="invalid-feedback">
+                                <div *ngIf="ff.start_time.errors.required">trip_id is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="end_time">end_time</label>
+                              <input id="end_time" type="text" class="form-control" formControlName="end_time"
+                              [ngClass]="{ 'is-invalid': submitted && ff.end_time.errors }"   placeholder="end_time">
+                              <div *ngIf="submitted && ff.end_time.errors" class="invalid-feedback">
+                                <div *ngIf="ff.end_time.errors.required">end_time is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="headway_secs">headway_secs</label>
+                              <input id="headway_secs" type="text" class="form-control" formControlName="headway_secs"
+                              [ngClass]="{ 'is-invalid': submitted && ff.headway_secs.errors }"  placeholder="headway_secs">
+                              <div *ngIf="submitted && ff.headway_secs.errors" class="invalid-feedback">
+                                <div *ngIf="ff.headway_secs.errors.required">headway_secs is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="exact_times">exact_times</label>
+                              <input id="exact_times" type="text" class="form-control" formControlName="exact_times"
+                              [ngClass]="{ 'is-invalid': submitted && ff.exact_times.errors }"   placeholder="exact_times">
+                              <div *ngIf="submitted && ff.exact_times.errors" class="invalid-feedback">
+                                <div *ngIf="ff.exact_times.errors.required">exact_times is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+                <div id="transforms_info">
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand"> สถานีเชื่อมต่อ Transfer </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm btn-light" (click)="viewTransfer()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="transfersForm" (ngSubmit)="onTransferSubmit(transfersForm)">
+                          <!-- {{ transfersForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && trf.agency_key.errors }"   placeholder="agency_key">
+                              <div *ngIf="submitted && trf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="trf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="from_stop_id">from_stop_id</label>
+                              <input id="from_stop_id" type="text" class="form-control" formControlName="from_stop_id"
+                              [ngClass]="{ 'is-invalid': submitted && trf.from_stop_id.errors }"  placeholder="from_stop_id">
+                              <div *ngIf="submitted && trf.from_stop_id.errors" class="invalid-feedback">
+                                <div *ngIf="trf.from_stop_id.errors.required">from_stop_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="to_stop_id">to_stop_id</label>
+                              <input id="to_stop_id" type="text" class="form-control" formControlName="to_stop_id"
+                              [ngClass]="{ 'is-invalid': submitted && trf.from_stop_id.errors }"   placeholder="to_stop_id">
+                              <div *ngIf="submitted && trf.to_stop_id.errors" class="invalid-feedback">
+                                <div *ngIf="trf.to_stop_id.errors.required">to_stop_id is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="transfer_type">transfer_type</label>
+                              <input id="transfer_type" type="text" class="form-control" formControlName="transfer_type"
+                              [ngClass]="{ 'is-invalid': submitted && trf.transfer_type.errors }"  placeholder="transfer_type">
+                              <div *ngIf="submitted && trf.transfer_type.errors" class="invalid-feedback">
+                                <div *ngIf="trf.transfer_type.errors.required">transfer_type is required</div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="min_transfer_time">min_transfer_time</label>
+                              <input id="min_transfer_time" type="text" class="form-control" formControlName="min_transfer_time"
+                              [ngClass]="{ 'is-invalid': submitted && trf.min_transfer_time.errors }"  placeholder="min_transfer_time">
+                              <div *ngIf="submitted && trf.min_transfer_time.errors" class="invalid-feedback">
+                                <div *ngIf="trf.min_transfer_time.errors.required">min_transfer_time is required</div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="levels_info">
+  
+  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand"> ขั้นจอดขบวนรถ Levels</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link btn btn-sm  btn-light" (click)="viewLevel()"> View </a>
+                        </li>
+  
+                      </ul>
+                    </div>
+                  </nav>
+  
+  
+                  <div class="container py-2">
+                    <div class="row">
+                      <div class="col-md-10 mx-auto">
+                        <form [formGroup]="levelsForm" (ngSubmit)="onLevelSubmit(levelsForm)">
+                          <!-- {{ levelsForm.value | json}} -->
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="agency_key">agency_key</label>
+                              <input id="agency_key" type="text" class="form-control" formControlName="agency_key"
+                              [ngClass]="{ 'is-invalid': submitted && lf.agency_key.errors }"   placeholder="agency_key">
+                              <div *ngIf="submitted && lf.agency_key.errors" class="invalid-feedback">
+                                <div *ngIf="lf.agency_key.errors.required">agency_key is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="level_id">level_id</label>
+                              <input id="level_id" type="text" class="form-control" formControlName="level_id"
+                              [ngClass]="{ 'is-invalid': submitted && lf.level_id.errors }"   placeholder="level_id">
+                              <div *ngIf="submitted && lf.level_id.errors" class="invalid-feedback">
+                                <div *ngIf="lf.level_id.errors.required">level_id is required</div>
+                              </div>
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <label for="level_index">level_index</label>
+                              <input id="level_index" type="text" class="form-control" formControlName="level_index"
+                              [ngClass]="{ 'is-invalid': submitted && lf.level_index.errors }"   placeholder="level_index">
+                              <div *ngIf="submitted && lf.level_index.errors" class="invalid-feedback">
+                                <div *ngIf="lf.level_index.errors.required">level_index is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-4">
+                              <label for="level_name">level_name</label>
+                              <input id="level_name" type="text" class="form-control" formControlName="level_name"
+                              [ngClass]="{ 'is-invalid': submitted && lf.level_name.errors }" placeholder="level_name">
+                              <div *ngIf="submitted && lf.level_name.errors" class="invalid-feedback">
+                                <div *ngIf="lf.level_name.errors.required">level_name is required</div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <button class="btn btn-primary  px-4 float-left" >Save</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div id="listview" *ngIf="listview" class="listview">
+                <p> รายละเอียดข้อมูล </p>
+                <div class="container py-2">
+  
+                  <ag-grid-angular style="height: 580px;" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs" (cellValueChanged)="onCellValueChanged(model, $event)">
+                  </ag-grid-angular>
+  
+                </div>
+              </div>
+              </div>
+              <!-- <div class="tab-pane" id="map1" role="tabpanel">
+                Map Component
+              </div> -->
+              <div class="tab-pane" id="filedetail" role="tabpanel">
+              </div>
+              <div class="tab-pane" id="messages1" role="tabpanel">
+  
+              </div>
+              <div class="tab-pane" id="settings1" role="tabpanel">
+  
+              </div>
+              <div class="tab-pane" id="verify1" role="tabpanel">
+  
+              </div>
+            </div>
+          </div>
+  
+  
+  
+          <!-- /.col -->
+        </div>
+      </div>
+    </section>
+  
+    <!-- Button trigger modal -->
+    <button id="modalbtn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    </button>
+  
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ modal_title }}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span [innerHTML]="modal_icon"></span><span>{{ modal_body }}</span>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- hiddle button -->
+  <button id="hidelistview" type="button" class="btn btn-light " (click)="hidelistview()"></button>
+  
+  </div>
+  

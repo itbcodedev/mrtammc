@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url
+MRTA_Transit,MRTA Transit,Rapid,Transit,Authority,of,Thailand,https://www.mrta.co.th/,Asia/Bangkok,en,0,2716,4044,

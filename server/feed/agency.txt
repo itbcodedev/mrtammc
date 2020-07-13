@@ -1,0 +1,8 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url
+MRTA_Transit,MRTA Transit Rapid Transit Authority of Thailand,https://www.mrta.co.th/,Asia/Bangkok,en, 02-716-4044,
+BEM,Bangkok Expressway and Metro Public Company Limited,https://www.bemplc.co.th/default.aspx,Asia/Bangkok,en,02-664-6400,https://metro.bemplc.co.th/Fare-Calculation?lang=th
+BTS,Bangkok Mass Transit System Public Company Limited,https://www.bts.co.th/,Asia/Bangkok,en,02-6177300,https://www.bts.co.th/routemap.html
+SRT,State Railway of Thailand,http://www.railway.co.th,Asia/Bangkok,en,1690,http://procurement.railway.co.th/checktime/checktime.asp?lenguage=Eng
+thanakom,The Krungthep Thanako,http://www.thanakom.co.th/thanakom/,Asia/Bangkok,en,02-168-3368,http://www.thanakom.co.th
+EBM,Eastern Bangkok Monorail,http://www.btsgroup.co.th,Asia/Bangkok,en,02-273-8611,
+NBM,Northern Bangkok Monorail,http://www.btsgroup.co.th,Asia/Bangkok,en,02-273-8611,

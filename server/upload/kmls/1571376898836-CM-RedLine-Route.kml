@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>CM-RedLine-Route</name>
+    <Style id="line-A52714-4681-nodesc-normal">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>4.681</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-A52714-4681-nodesc-highlight">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>7.0215</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-A52714-4681-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-A52714-4681-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-A52714-4681-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>CM-RedLine-Route</name>
+      <styleUrl>#line-A52714-4681-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          98.9690556,18.8519405,0
+          98.9727291,18.8425061,0
+          98.9651416,18.8396918,0
+          98.963395,18.831966,0
+          98.9642104,18.8284525,0
+          98.9658412,18.8259951,0
+          98.9657125,18.824878,0
+          98.9742264,18.8189241,0
+          98.9819559,18.8172616,0
+          98.9840426,18.8119369,0
+          98.9849171,18.8095637,0
+          98.9851307,18.8065647,0
+          98.9864191,18.7956292,0
+          98.9782866,18.7959339,0
+          98.977836,18.7887429,0
+          98.9774048,18.7813062,0
+          98.9756903,18.7698699,0
+          98.9730295,18.7714545,0
+          98.9707121,18.7719218,0
+          98.9692445,18.7719748,0
+          98.9691242,18.757009,0
+          98.9594326,18.7434491,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,47 @@
+<div class="content-wrapper" style="height: 100%">
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <!-- /.row -->
+      <!-- Main row -->
+      <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-12 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+          <div class="card">
+            <div class="card-header d-flex p-0">
+
+            </div><!-- /.card-header -->
+            <div class="card-body" style="padding: 0px;">
+              <!-- Google Map -->
+              <div #gmapRef class="paper-card"></div>
+
+              <div id="over_map" class="container ">
+                <h4>KML Layer</h4>
+                <form #dataForm="ngForm">
+                  <div class="input-group mb-1" *ngFor="let line of kmls">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="checkbox" name="{{ line._id }}" ngModel (change)=loadkml(dataForm)>
+                      </div>
+                    </div>
+                     <input type="text" class="form-control"  placeholder="{{ line.line_en }}" readonly>
+                  </div>
+                </form>
+
+              </div>
+
+
+
+            </div><!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          <!-- /.card -->
+        </section>
+        <!-- /.Left col -->
+      </div>
+      <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>

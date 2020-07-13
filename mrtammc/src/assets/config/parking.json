@@ -1,0 +1,97 @@
+[{
+    "code": "CPB_CUL_B",
+    "name": "สถานีศูนย์วัฒนธรรมแห่งประเทศไทย",
+    "latitude": 13.7672589,
+    "longitude": 100.5713195,
+    "image": "./assets/dist/img/uploads/cultural.png",
+    "capacity": 250
+  },
+  {
+    "code": "CPB_HUI_B",
+    "name": "สถานีห้วยขวาง",
+    "latitude": 13.77916,
+    "longitude": 100.574012,
+    "image": "./assets/dist/img/uploads/cultural.png",
+    "capacity": 250
+  },
+  {
+    "code": "CPB_LAT_B",
+    "name": "สถานีลาดพร้าว",
+    "latitude": 13.806697,
+    "longitude": 100.574239,
+    "image": "./assets/dist/img/uploads/ladpraw.png",
+    "capacity": 2200
+  },
+  {
+    "code": "CPB_PET_B",
+    "name": "สถานีเพชรบุรี",
+    "latitude": 13.749648,
+    "longitude": 100.563897,
+    "image": "./assets/dist/img/uploads/petchaburi.png",
+    "capacity": 54
+  },
+  {
+    "code": "CPB_RAM_B",
+    "name": "สถานีพระราม 9",
+    "latitude": 13.760161,
+    "longitude": 100.566161,
+    "image": "./assets/dist/img/uploads/praram9.png",
+    "capacity": 50
+  },
+  {
+    "code": "CPB_RAT_B",
+    "name": "สถานีรัชดาภิเษก",
+    "latitude": 13.798368,
+    "longitude": 100.575199,
+    "image": "./assets/dist/img/uploads/ratchadapisak.png",
+    "capacity": 75
+  },
+  {
+    "code": "CPB_SAM_B",
+    "name": "สถานีสามย่าน",
+    "latitude": 13.731787,
+    "longitude": 100.530569,
+    "image": "./assets/dist/img/uploads/samyan.png",
+    "capacity": 32
+  },
+  {
+    "code": "CPB_SIR_B",
+    "name": "ศูนย์การประชุมแห่งชาติสิริกิติ์",
+    "latitude": 13.720864,
+    "longitude": 100.559019,
+    "image": "./assets/dist/img/uploads/queensirikit.png",
+    "capacity": 79
+  },
+  {
+    "code": "1001",
+    "name": "สถานีคลองบางไผ่",
+    "latitude": 13.89399,
+    "longitude": 100.409231,
+    "image": "./assets/dist/img/uploads/khlongbangphai.jpg",
+    "capacity": 1800
+  },
+  {
+    "code": "1002",
+    "name": "สถานีสามแยกบางใหญ่",
+    "latitude": 13.875345,
+    "longitude": 100.420596,
+    "image": "./assets/dist/img/uploads/samyaekbangyai.jpg",
+    "capacity": 1460
+  },
+  {
+    "code": "1003",
+    "name": "สถานีบางรักน้อยท่าอิฐ่",
+    "latitude": 13.875229,
+    "longitude": 100.456644,
+    "image": "./assets/dist/img/uploads/bangraknoithait.jpg",
+    "capacity": 1070
+  },
+  {
+    "code": "1004",
+    "name": "สถานีแยกนนทบุรี 1",
+    "latitude": 13.866253,
+    "longitude": 100.495065,
+    "image": "./assets/dist/img/uploads/yaeknonthaburi.jpg",
+    "capacity": 435
+  }
+]

@@ -1,0 +1,41 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              <img style="width: 25%;" src="/assets/dist/img/mrtalogo.png" alt="">
+            </h5>
+            <form class="form-signin" [formGroup]="loginForm">
+              <div class="form-label-group">
+                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" formControlName="email" required autofocus>
+                 <label for="inputEmail">Email</label>
+                 <span *ngIf="isValid('email')"> Enter Email is invalid </span>
+              </div>
+
+              <!-- <div class="form-label-group">
+
+                <input type="text" id="inputCn" class="form-control" placeholder="CN Name" formControlName="cnname" required autofocus>
+                <label for="inputCn">CN name</label>
+                <small>CN name ใน OU=mmc,OU=Project,DC=mrta,DC=co,DC=th</small>
+              </div> -->
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" formControlName="password" required>
+                <label for="inputPassword">Password</label>
+                <span *ngIf="isValid('password')"> Password is required</span>
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="login()">Sign In on MRTA LDAP</button>
+
+              <hr class="my-4">
+              <!--
+              <a class="d-block text-center mt-2 small" (click)='movetoregister()'>Register</a>
+              -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

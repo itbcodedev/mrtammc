@@ -1,0 +1,164 @@
+<div class="content-wrapper" style="height: 100%">
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <!-- /.row -->
+      <!-- Main row -->
+      <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-12 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+          <div class="card">
+            <div class="card-header d-flex p-0">
+
+            </div><!-- /.card-header -->
+            <div class="card-body" style="padding: 0px;">
+              <!-- Google Map -->
+              <div #gmapRef class="paper-card"></div>
+
+              <div id="over_map" class="container ">
+                <nav>
+                  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                    href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">เส้นทาง</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                    href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">ขบวนรถ</a>
+                    <a class="nav-item nav-link" id="nav-gtfs-tab" data-toggle="tab"
+                    href="#nav-gtfs" role="tab" aria-controls="nav-gtfs" aria-selected="false">GTFS DATA</a>
+                    <a class="nav-link"  href="#nav-tabContent" data-toggle="collapse"><i class="fa fa-bars"></i></a>
+                  </div>
+                </nav> <!-- end nav-->
+                <div class="tab-content py-3 px-3 px-sm-0 collapse" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="card" *ngFor="let route of stopslist; let i = index">
+                        <div class="card-header" role="tab" id="headingTwo">
+                          <div class="mb-0" style="padding: 0px 0px 0px 0px;">
+                            <div class="checkbox checkbox-danger" >
+                              <input class="styled" type="checkbox" name="route" id="{{route.route}}" value="{{route.route}}" (click)="selectRoute($event)">
+                              <label  for="{{route.route}}">
+                                <a data-toggle="collapse" data-parent="#accordion" href="{{ '#collapse'+ i }}" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                  <i class="fa fa-subway " aria-hidden="true" style="font-size: 14px; color: purple; margin-top: -0.2em;"></i>
+                                    {{route.routename}}
+                                </a>
+                              </label>
+
+                            </div>
+
+
+                          </div>
+                        </div>
+                        <div id="{{ 'collapse' + i }}" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                          <div class="card-block trainline">
+                            <ul class="line line--m2">
+                              <li class="station station--default" *ngFor="let stop of route.stops"> {{stop.stopname}}</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- end tab 1 content-->
+
+                  </div> <!-- end tab 1-->
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <ul class="timeline Content">
+                      <!-- display train -->
+                      <li class="timeline-inverted" *ngFor="let train of myTrains" (mouseover)="gettrainmarker(train)">
+                        <div class="timeline-badge"><i class="fa fa-subway" style="font-size: 15px;"></i></div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <div class="alert alert-primary" role="alert">
+                               ขบวน {{train.trip_id}}
+                              <span (click)="followtrip(train)" class="badge badge-secondary">follow</span>
+                            </div>
+                            <span class="small">
+                            จะถึง {{ train.next_station}}
+                            </span>
+                            <span class="small">
+                            เวลา {{ train.at_time}}
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div> <!-- end tab 2-->
+
+                  <div class="tab-pane fade" id="nav-gtfs" role="tabpanel" aria-labelledby="nav-gtfs-tab">
+                    <div class="card-body" style="min-height: 60px;">
+                      <div>
+                        <select class="custom-select" (change)="onAgencyChange($event)">
+                          <!--<option value="" selected disabled hidden>เลือก Agency</option> -->
+                          <option *ngFor="let agency of agencies" [value]="agency.agencyId">{{agency.agencyName}}</option>
+                        </select>
+                      </div>
+                      <div *ngIf="routes.length > 0">
+                        <h6>
+                          <i class="fa fa-code-fork mr-1"></i>
+                          เลือกเส้นทาง Routes</h6>
+                        <div class="list-group">
+                          <a href="#" *ngFor="let route of routes" [ngClass]="{'active': route === selectedRoute}" class="list-group-item list-group-item-action"
+                            (click)="onRouteClick($event, route)">{{route.routeLongName}}</a>
+                        </div>
+                      </div>
+
+                      <div class="FixedHeightContainer" *ngIf="trips.length > 0">
+                        <h6>
+                          <i class="fa fa-share-alt mr-1"></i>
+                          ทริป {{selectedRoute ? selectedRoute.routeLongName : ''}}
+                        </h6>
+                        <div class="list-group Content">
+                          <a href="#" *ngFor="let trip of trips" [ngClass]="{'active': trip === selectedTrip}" class="list-group-item list-group-item-action"
+                            (click)="onTripClick($event, trip)">{{trip.name}}<br />
+                            {{trip.detail}}</a>
+                        </div>
+                      </div>
+                    </div><!-- /.card-body -->
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </div><!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          <!-- /.card -->
+        </section>
+        <!-- /.Left col -->
+      </div>
+      <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+
+
+<ul class="navbar-side" id="navbarSide">
+  <li class="navbar-side-item">
+    <span id="navbarClose" class="side-link">Close</span>
+  </li>
+  <!-- insert more side-items if you so choose -->
+</ul>
+
+
+<div class="modal" tabindex="-1" role="dialog" #map_popup>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

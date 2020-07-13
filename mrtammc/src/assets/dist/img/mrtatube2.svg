@@ -1,0 +1,1933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 963.3 955.6" style="enable-background:new 0 0 963.3 955.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;}
+	.st3{fill:none;stroke:#A2A2A2;stroke-width:1.01;stroke-miterlimit:10;}
+	.st4{font-family:'SukhumvitSet-Bold';}
+	.st5{font-size:10.9561px;}
+	.st6{fill:#E2E1E1;}
+	.st7{fill:#C92428;}
+	.st8{fill:#FFFFFF;}
+	.st9{font-size:7.0283px;}
+	.st10{fill:#8D3C97;}
+	.st11{fill:#D53985;}
+	.st12{font-size:9.4832px;}
+	.st13{fill:#823E15;}
+	.st14{font-size:6.3357px;}
+	.st15{fill:#7AB93C;}
+	.st16{fill:#1D1D1B;}
+	.st17{font-size:7.3562px;}
+	.st18{fill:#FFBC01;}
+	.st19{fill:#62CBF9;}
+	.st20{font-size:6.3492px;}
+	.st21{fill:#018B38;}
+	.st22{font-size:7.9623px;}
+	.st23{fill:#676766;}
+	.st24{fill:#EF7A19;}
+	.st25{fill:#226EB6;}
+	.st26{fill:#CF5266;}
+	.st27{font-size:6.1525px;}
+	.st28{font-size:4.4964px;}
+	.st29{font-size:7.7951px;}
+	.st30{fill:none;stroke:#80CEF4;stroke-width:11;stroke-miterlimit:10;}
+	.st31{fill:none;stroke:#80CEF4;stroke-width:11.9781;stroke-miterlimit:10;}
+	.st32{fill:#7DC4ED;}
+	.st33{fill:none;stroke:#7DC4ED;stroke-width:8;stroke-miterlimit:10;}
+	.st34{font-size:12px;}
+	.st35{fill:none;stroke:#6FC7DF;stroke-width:2;stroke-miterlimit:10;}
+	.st36{fill:none;stroke:#6FC7DF;stroke-width:1.9894;stroke-miterlimit:10;}
+	.st37{fill:none;stroke:#80CEF4;stroke-width:2;stroke-miterlimit:10;}
+	.st38{fill:#0F6887;stroke:#87CFE9;stroke-miterlimit:10;}
+	.st39{fill:none;stroke:#7F6D51;stroke-miterlimit:10;}
+	.st40{fill:none;stroke:#FCC016;stroke-width:4;stroke-miterlimit:10;}
+	.st41{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:2;stroke-miterlimit:10;}
+	.st42{fill:#FFFFFF;stroke:#1D1D1B;stroke-miterlimit:10;}
+	.st43{font-size:5.2705px;}
+	.st44{font-size:3.8518px;}
+	.st45{font-size:6.0208px;}
+	.st46{font-size:6.3017px;}
+	.st47{fill:none;stroke:#216FB6;stroke-width:4;stroke-miterlimit:10;}
+	.st48{fill:none;stroke:#8E0E8B;stroke-width:4;stroke-miterlimit:10;}
+	.st49{fill:#0F6887;}
+	.st50{font-size:3.2913px;}
+	.st51{font-size:4.1641px;}
+	.st52{fill:#2D95EA;}
+	.st53{font-family:'ArialMT';}
+	.st54{font-size:3.0117px;}
+	.st55{font-size:4.0388px;}
+	.st56{font-size:3.3694px;}
+	.st57{fill:none;stroke:#0C820E;stroke-width:3;stroke-miterlimit:10;}
+	.st58{fill:none;stroke:#138919;stroke-width:3;stroke-miterlimit:10;}
+	.st59{font-size:6.821px;}
+	.st60{fill:none;stroke:#D01317;stroke-width:4;stroke-miterlimit:10;}
+	.st61{fill:none;stroke:#CF5266;stroke-width:4;stroke-miterlimit:10;}
+	.st62{font-size:8.1238px;}
+	.st63{font-size:5.6143px;}
+	.st64{fill:none;stroke:#D53985;stroke-width:3.9866;stroke-miterlimit:10;}
+	.st65{fill:none;stroke:#7AB93C;stroke-width:4;stroke-miterlimit:10;}
+	.st66{fill:none;stroke:#F78B14;stroke-width:4;stroke-miterlimit:10;}
+	.st67{font-size:3.6442px;}
+	.st68{fill:#0C820D;}
+	.st69{fill:none;stroke:#A8260C;stroke-miterlimit:10;}
+	.st70{fill:none;stroke:#1D1D1B;stroke-width:2;stroke-miterlimit:10;}
+	.st71{fill:none;stroke:#925127;stroke-miterlimit:10;}
+	.st72{fill:none;stroke:#925127;stroke-width:4;stroke-miterlimit:10;}
+	.st73{font-size:5.4275px;}
+	.st74{fill:none;stroke:#62CBF9;stroke-width:4;stroke-miterlimit:10;}
+	.st75{font-size:5.4391px;}
+	.st76{fill:#336672;}
+	.st77{font-size:3.6741px;}
+	.st78{fill:none;stroke:#676766;stroke-width:4;stroke-miterlimit:10;}
+	.st79{fill:#7AB93C;stroke:#010202;stroke-width:0.75;stroke-miterlimit:10;}
+	.st80{fill:#FFFFFF;stroke:#010202;stroke-width:0.75;stroke-miterlimit:10;}
+	.st81{fill:#C108AB;stroke:#010202;stroke-width:0.75;stroke-miterlimit:10;}
+	.st82{fill:#226EB6;stroke:#010202;stroke-width:0.75;stroke-miterlimit:10;}
+	.st83{fill:#F78B14;stroke:#010202;stroke-width:0.75;stroke-miterlimit:10;}
+	.st84{fill:#FCC016;stroke:#010202;stroke-width:0.75;stroke-miterlimit:10;}
+	.st85{fill:#0C820D;stroke:#010202;stroke-width:0.75;stroke-miterlimit:10;}
+</style>
+<g id="Base" class="st0">
+	
+		<image style="display:inline;overflow:visible;enable-background:new    ;" width="2052" height="2050" xlink:href="437A3851C0037A2C.jpg"  transform="matrix(0.4795 0 0 0.4795 6.8349 -18.8758)">
+	</image>
+	<g class="st1">
+		<rect x="114.9" y="243.9" class="st2" width="52" height="40"/>
+		<line class="st2" x1="114.9" y1="277.3" x2="166.9" y2="277.3"/>
+		<line class="st2" x1="114.9" y1="270.6" x2="166.9" y2="270.6"/>
+		<line class="st2" x1="114.9" y1="263.9" x2="166.9" y2="263.9"/>
+		<line class="st2" x1="114.9" y1="257.3" x2="166.9" y2="257.3"/>
+		<line class="st2" x1="114.9" y1="250.6" x2="166.9" y2="250.6"/>
+		<line class="st2" x1="158.3" y1="243.9" x2="158.3" y2="283.9"/>
+		<line class="st2" x1="149.6" y1="243.9" x2="149.6" y2="283.9"/>
+		<line class="st2" x1="140.9" y1="243.9" x2="140.9" y2="283.9"/>
+		<line class="st2" x1="132.3" y1="243.9" x2="132.3" y2="283.9"/>
+		<line class="st2" x1="123.6" y1="243.9" x2="123.6" y2="283.9"/>
+	</g>
+	<g class="st1">
+		<rect x="114.9" y="244.9" class="st2" width="52" height="40"/>
+		<line class="st2" x1="114.9" y1="278.3" x2="166.9" y2="278.3"/>
+		<line class="st2" x1="114.9" y1="271.6" x2="166.9" y2="271.6"/>
+		<line class="st2" x1="114.9" y1="264.9" x2="166.9" y2="264.9"/>
+		<line class="st2" x1="114.9" y1="258.3" x2="166.9" y2="258.3"/>
+		<line class="st2" x1="114.9" y1="251.6" x2="166.9" y2="251.6"/>
+		<line class="st2" x1="158.3" y1="244.9" x2="158.3" y2="284.9"/>
+		<line class="st2" x1="149.6" y1="244.9" x2="149.6" y2="284.9"/>
+		<line class="st2" x1="140.9" y1="244.9" x2="140.9" y2="284.9"/>
+		<line class="st2" x1="132.3" y1="244.9" x2="132.3" y2="284.9"/>
+		<line class="st2" x1="123.6" y1="244.9" x2="123.6" y2="284.9"/>
+	</g>
+	<g class="st1">
+		<rect x="114.9" y="245.9" class="st2" width="52" height="40"/>
+		<line class="st2" x1="114.9" y1="279.3" x2="166.9" y2="279.3"/>
+		<line class="st2" x1="114.9" y1="272.6" x2="166.9" y2="272.6"/>
+		<line class="st2" x1="114.9" y1="265.9" x2="166.9" y2="265.9"/>
+		<line class="st2" x1="114.9" y1="259.3" x2="166.9" y2="259.3"/>
+		<line class="st2" x1="114.9" y1="252.6" x2="166.9" y2="252.6"/>
+		<line class="st2" x1="158.3" y1="245.9" x2="158.3" y2="285.9"/>
+		<line class="st2" x1="149.6" y1="245.9" x2="149.6" y2="285.9"/>
+		<line class="st2" x1="140.9" y1="245.9" x2="140.9" y2="285.9"/>
+		<line class="st2" x1="132.3" y1="245.9" x2="132.3" y2="285.9"/>
+		<line class="st2" x1="123.6" y1="245.9" x2="123.6" y2="285.9"/>
+	</g>
+	<g class="st1">
+		<rect x="-9.6" y="-12.9" class="st2" width="938" height="933"/>
+		<line class="st2" x1="-9.6" y1="764.6" x2="928.4" y2="764.6"/>
+		<line class="st2" x1="-9.6" y1="609.1" x2="928.4" y2="609.1"/>
+		<line class="st2" x1="-9.6" y1="453.6" x2="928.4" y2="453.6"/>
+		<line class="st2" x1="-9.6" y1="298.1" x2="928.4" y2="298.1"/>
+		<line class="st2" x1="-9.6" y1="142.6" x2="928.4" y2="142.6"/>
+		<line class="st2" x1="772.1" y1="-12.9" x2="772.1" y2="920.1"/>
+		<line class="st2" x1="615.8" y1="-12.9" x2="615.8" y2="920.1"/>
+		<line class="st2" x1="459.4" y1="-12.9" x2="459.4" y2="920.1"/>
+		<line class="st2" x1="303.1" y1="-12.9" x2="303.1" y2="920.1"/>
+		<line class="st2" x1="146.8" y1="-12.9" x2="146.8" y2="920.1"/>
+	</g>
+</g>
+<g id="logo_text">
+	<g>
+		<rect x="5.9" y="5.6" class="st3" width="955.5" height="937.8"/>
+		<line class="st3" x1="5.9" y1="787.1" x2="961.4" y2="787.1"/>
+		<line class="st3" x1="5.9" y1="630.8" x2="961.4" y2="630.8"/>
+		<line class="st3" x1="5.9" y1="474.5" x2="961.4" y2="474.5"/>
+		<line class="st3" x1="5.9" y1="318.2" x2="961.4" y2="318.2"/>
+		<line class="st3" x1="5.9" y1="161.9" x2="961.4" y2="161.9"/>
+		<line class="st3" x1="802.2" y1="5.6" x2="802.2" y2="943.4"/>
+		<line class="st3" x1="642.9" y1="5.6" x2="642.9" y2="943.4"/>
+		<line class="st3" x1="483.7" y1="5.6" x2="483.7" y2="943.4"/>
+		<line class="st3" x1="324.4" y1="5.6" x2="324.4" y2="943.4"/>
+		<line class="st3" x1="165.2" y1="5.6" x2="165.2" y2="943.4"/>
+	</g>
+	<g id="AmPhS4.tif">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1210" height="527" id="Layer_0_4_" xlink:href="437A3851C0037A2C.png"  transform="matrix(4.959365e-02 0 0 4.959365e-02 36.4668 28.0737)">
+		</image>
+	</g>
+	<text transform="matrix(1 0 0 1 104.1177 36.0899)" class="st4 st5">การรถไฟฟ้าขนส่งมวลชนแห่งประเทศไทย</text>
+	<text transform="matrix(1 0 0 1 104.1177 49.1899)" class="st4 st5">Mass Rapid Transit Authority of Thailand</text>
+	<g>
+		<path class="st6" d="M202,436.8H33.4c-1.4,0-2.5-1.1-2.5-2.5v-90c0-1.4,1.1-2.5,2.5-2.5H202c1.4,0,2.5,1.1,2.5,2.5v90
+			C204.5,435.7,203.4,436.8,202,436.8z"/>
+		<circle class="st7" cx="39.5" cy="351.8" r="4.8"/>
+		<text transform="matrix(1 0 0 1 37.823 354.4008)" class="st8 st4 st9">1</text>
+		<circle class="st10" cx="38.8" cy="429.7" r="4.8"/>
+		<text transform="matrix(1 0 0 1 36.9451 431.7846)" class="st8 st4 st9">7</text>
+		<circle class="st11" cx="153.8" cy="365.4" r="4.8"/>
+		<text transform="matrix(1 0 0 1 151.1453 368.4604)" class="st8 st4 st12">9</text>
+		<circle class="st13" cx="153.8" cy="423.5" r="4.8"/>
+		<text transform="matrix(1 0 0 1 150.1834 425.4448)" class="st8 st4 st14">13</text>
+		<circle class="st15" cx="39.4" cy="403.2" r="4.8"/>
+		<text transform="matrix(1 0 0 1 37.4012 405.8774)" class="st16 st4 st17">5</text>
+		<circle class="st18" cx="153.6" cy="378.9" r="4.8"/>
+		<text transform="matrix(1 0 0 1 149.1541 381.0883)" class="st16 st4 st9">10</text>
+		<circle class="st19" cx="153.8" cy="407.1" r="4.8"/>
+		<text transform="matrix(1 0 0 1 150.032 408.6284)" class="st16 st4 st20">12</text>
+		<circle class="st7" cx="39.7" cy="377.6" r="4.8"/>
+		<text transform="matrix(1 0 0 1 37.9695 380.2143)" class="st8 st4 st9">3</text>
+		<circle class="st21" cx="39.7" cy="390.4" r="4.8"/>
+		<text transform="matrix(1.1496 0 0 1 36.7988 392.8984)" class="st8 st4 st22">4</text>
+		<circle class="st23" cx="153.8" cy="392.4" r="4.8"/>
+		<text transform="matrix(1 0 0 1 149.8631 394.0171)" class="st8 st4 st20">11</text>
+		<circle class="st24" cx="153.8" cy="351.8" r="4.8"/>
+		<text transform="matrix(1 0 0 1 150.8543 355.0532)" class="st16 st4 st12">8</text>
+		<circle class="st25" cx="39.4" cy="416.4" r="4.8"/>
+		<text transform="matrix(1 0 0 1 36.409 419.6469)" class="st8 st4 st12">6</text>
+		<circle class="st26" cx="39.7" cy="365.2" r="4.8"/>
+		<text transform="matrix(1 0 0 1 37.076 368.5688)" class="st8 st4 st12">2</text>
+		<text transform="matrix(1 0 0 1 50.3387 351.6538)" class="st4 st27">สายสีแดงเข้ม</text>
+		<text transform="matrix(1 0 0 1 50.3396 356.1372)" class="st4 st28">Dark Red Line</text>
+		<text transform="matrix(1 0 0 1 50.3387 364.4946)" class="st4 st27">สายสีแดงอ่อน</text>
+		<text transform="matrix(1 0 0 1 50.3396 368.978)" class="st4 st28">Light Red Line</text>
+		<text transform="matrix(1 0 0 1 50.3387 376.9165)" class="st4 st27">สายท่าอากาศยาน</text>
+		<text transform="matrix(1 0 0 1 50.3396 381.3999)" class="st4 st28">Airport Line</text>
+		<text transform="matrix(1 0 0 1 50.3387 389.1538)" class="st4 st27">สายสีเขียวเข้ม</text>
+		<text transform="matrix(1 0 0 1 50.3396 393.6372)" class="st4 st28">Dark Green Line</text>
+		<text transform="matrix(1 0 0 1 50.3387 402.1958)" class="st4 st27">สายสีเขียวอ่อน</text>
+		<text transform="matrix(1 0 0 1 50.3387 406.6782)" class="st4 st28">Light Green Line</text>
+		<text transform="matrix(1 0 0 1 50.3387 415.5366)" class="st4 st27">สายสีน้ำเงิน</text>
+		<text transform="matrix(1 0 0 1 50.3387 420.02)" class="st4 st28">Blue Line</text>
+		<text transform="matrix(1 0 0 1 50.3387 429.5424)" class="st4 st27">สายสีม่วง</text>
+		<text transform="matrix(1 0 0 1 50.3387 434.0249)" class="st4 st28">Purple Line</text>
+		<text transform="matrix(1 0 0 1 163.7273 350.5551)" class="st4 st27">สายสีส้ม</text>
+		<text transform="matrix(1 0 0 1 163.7283 355.0385)" class="st4 st28">Orange Line</text>
+		<text transform="matrix(1 0 0 1 162.5603 365.3686)" class="st4 st27">สายสีชมพู</text>
+		<text transform="matrix(1 0 0 1 162.5613 369.852)" class="st4 st28">Pink Line</text>
+		<text transform="matrix(1 0 0 1 162.3289 378.6108)" class="st4 st27">สายสีเหลือง</text>
+		<text transform="matrix(1 0 0 1 162.3299 383.0932)" class="st4 st28">Yellow Line</text>
+		<text transform="matrix(1 0 0 1 162.5603 391.396)" class="st4 st27">สายสีเทา</text>
+		<text transform="matrix(1 0 0 1 162.5613 395.8784)" class="st4 st28">gray Line</text>
+		<text transform="matrix(1 0 0 1 162.3289 406.3872)" class="st4 st27">สายสีฟ้า</text>
+		<text transform="matrix(1 0 0 1 162.3299 410.8696)" class="st4 st28">Light Blue Line</text>
+		<text transform="matrix(1 0 0 1 162.3289 422.5962)" class="st4 st27">สายสีน้ำตาล</text>
+		<text transform="matrix(1 0 0 1 162.3299 427.0786)" class="st4 st28">Brown  Line</text>
+		<text transform="matrix(1 0 0 1 34.5457 340.8755)" class="st4 st29">เส้นทางรถไฟฟ้า MRTA Line</text>
+	</g>
+	<g id="B4BVpN.tif">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="763" height="897" id="Layer_0_18_" xlink:href="437A3851C0037A2B.png"  transform="matrix(2.138752e-02 0 0 2.138752e-02 454.4757 428.3003)">
+		</image>
+	</g>
+</g>
+<g id="water">
+	<g>
+		<path class="st30" d="M186.4,98.8v14.3c0,5.5,0,14.5,0,20v140.4c0,5.5,3.2,13.2,7.1,17.1l118.8,118.6c3.9,3.9,7.1,11.6,7.1,17.1
+			v189.4c0,5.5,4.5,10,10,10h69.5c5.5,0,13.2,3.2,17.1,7.1l54.9,54.8c3.9,3.9,3.9,10.2,0,14.1l-25.4,25.4c-3.9,3.9-3.9,10.2,0,14.1
+			l53.2,53.2c3.9,3.9,10.3,3.9,14.1,0l120.1-120c3.9-3.9,10.3-3.9,14.1,0l33.3,33.3c3.9,3.9,3.9,10.2,0,14.1l-64.5,64.4
+			c-3.9,3.9-10.3,3.9-14.1,0L585,769.6c-3.9-3.9-10.3-3.9-14.1,0l-21.6,21.6c-3.9,3.9-7.1,11.6-7.1,17.1v25.2c0,5.5,4.5,10,10,9.9
+			c0,0,133.9-0.9,133.9,0.1s0,83.9,0,83.9"/>
+	</g>
+	<g>
+		<path class="st31" d="M184.6,145.4h-23.2c-6,0-11.1,4.9-11.3,10.9l-0.6,15.1c-0.2,6,4.5,10.9,10.5,10.9h20.8"/>
+	</g>
+	<g>
+		<path class="st32" d="M103.6,932.8v-17.4c0-4.4-2.3-10.8-5-14.2l-40.1-49.7c-2.8-3.4-8.6-6.2-13-6.2H38c-4.4,0-8,3.6-8,8v79.6"/>
+		<path class="st33" d="M103.6,932.8v-17.4c0-4.4-2.3-10.8-5-14.2l-40.1-49.7c-2.8-3.4-8.6-6.2-13-6.2H38c-4.4,0-8,3.6-8,8v79.6"/>
+	</g>
+	<text transform="matrix(1 0 0 1 45.4858 908.3464)" class="st8 st4 st34">อ่าวไทย</text>
+	<g>
+		<path class="st35" d="M520.4,105.3l-37.6,37.6c-1.9,1.9-3.5,5.8-3.5,8.5v45.3c0,2.8,1.6,6.6,3.5,8.5l15.9,15.9
+			c1.9,1.9,3.5,5.8,3.5,8.5v48.2c0,2.8,1.6,6.6,3.5,8.5L614,394.7c1.9,1.9,3.5,5.8,3.5,8.5v34c0,2.8,1.6,6.6,3.5,8.5l13.9,13.9"/>
+	</g>
+	<g>
+		<path class="st36" d="M523.7,543.1l54.6-54c1.9-1.9,5.8-3.5,8.5-3.5H630c2.7,0,5-2.2,5-5v-46.4c0-2.7,1.6-6.5,3.5-8.5l17.4-17.2
+			c1.9-1.9,5.8-3.5,8.5-3.5h109.1"/>
+	</g>
+	<g>
+		<path class="st37" d="M689.2,587.7h36.2c2.8,0,5-2.2,5-5v-36.9c0-2.8,2.2-5,5-5H780"/>
+	</g>
+	<g>
+		<path class="st36" d="M368.6,549.3l40.6,0.3c2.7,0,6.6-1.5,8.5-3.5l2.3-2.3c1.9-1.9,5.8-3.5,8.5-3.5h97.8"/>
+	</g>
+	<path class="st38" d="M440.2,724.9"/>
+	<g>
+		<path class="st39" d="M309.4,689.8l34.4,34.4c1.9,1.9,5.8,3.5,8.5,3.5h77c2.8,0,7.2,0,10,0h14.6c2.8,0,6.7,0,8.8,0
+			s5.4,1.6,7.3,3.5l38.9,38.9c1.9,1.9,5.1,1.9,7.1,0l53.9-53.9c1.9-1.9,1.9-5.1,0-7.1l-64.7-64.7"/>
+	</g>
+</g>
+<g id="_x31_0yellow_x5F_line">
+	<g>
+		<path class="st40" d="M519,335.1h172.1c4.4,0,10.5,2.5,13.7,5.7l83.1,83.1c3.1,3.1,5.7,9.3,5.7,13.7V721c0,4.4-3.6,8-8,8h-73.2"/>
+	</g>
+	<path class="st41" d="M523,340.3c0,2.2-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-1,0-4,0-5c0-2.1,1.7-3.9,3.9-3.9c2.1,0,3.9,1.7,3.9,3.9
+		C523,336.3,523,339.4,523,340.3z"/>
+	<circle class="st42" cx="552.2" cy="335" r="2.7"/>
+	<circle class="st42" cx="583.9" cy="335" r="2.7"/>
+	<circle class="st42" cx="615.6" cy="335" r="2.7"/>
+	<circle class="st41" cx="648.3" cy="335" r="3.9"/>
+	<circle class="st42" cx="711.2" cy="346.6" r="2.7"/>
+	<circle class="st42" cx="731.6" cy="366.5" r="2.7"/>
+	<circle class="st42" cx="751.4" cy="387.8" r="2.7"/>
+	<circle class="st42" cx="793.6" cy="513.2" r="2.7"/>
+	<circle class="st42" cx="793.6" cy="539.6" r="2.7"/>
+	<circle class="st42" cx="793.6" cy="565.9" r="2.7"/>
+	<circle class="st42" cx="793.6" cy="592.1" r="2.7"/>
+	<circle class="st42" cx="793.5" cy="617.9" r="2.7"/>
+	<circle class="st42" cx="793.6" cy="682.9" r="2.7"/>
+	<circle class="st42" cx="793.6" cy="703" r="2.7"/>
+	<circle class="st42" cx="793.6" cy="720" r="2.7"/>
+	<circle class="st42" cx="768.2" cy="729.1" r="2.7"/>
+	<circle class="st42" cx="741.4" cy="728.6" r="2.7"/>
+	<circle class="st42" cx="793.6" cy="449" r="2.7"/>
+	<circle class="st41" cx="773.6" cy="408.2" r="3.9"/>
+	<circle class="st41" cx="793.6" cy="476.8" r="3.9"/>
+	<text transform="matrix(1 0 0 1 557.1227 317.7856)" class="st4 st43">ภาวนา</text>
+	<text transform="matrix(1 0 0 1 557.5852 321.7918)" class="st4 st44">Phawana</text>
+	<text transform="matrix(1 0 0 1 575.0854 324.9507)" class="st4 st43">โชคชัย 4</text>
+	<text transform="matrix(1 0 0 1 575.0854 330.2838)" class="st4 st44">Chokchai 4</text>
+	<text transform="matrix(1 0 0 1 602.7093 324.9507)" class="st4 st43">ลาดพร้าว 71</text>
+	<text transform="matrix(1 0 0 1 602.7094 330.2839)" class="st4 st44">Lad Phrao 71</text>
+	<text transform="matrix(1 0 0 1 755.8484 379.284)" class="st4 st43">บางกะปิ</text>
+	<text transform="matrix(1 0 0 1 755.8486 384.6171)" class="st4 st44">Bang Kapi</text>
+	<text transform="matrix(1 0 0 1 736.0151 357.853)" class="st4 st43">ลาดพร้าว 101</text>
+	<text transform="matrix(1 0 0 1 736.0152 363.1862)" class="st4 st44">Lat Phrao 101</text>
+	<text transform="matrix(1 0 0 1 765.8484 423.5197)" class="st4 st43">ลำสาลี</text>
+	<text transform="matrix(1 0 0 1 765.8486 428.8528)" class="st4 st44">Lum Sali</text>
+	<text transform="matrix(1 0 0 1 798.3484 449.2998)" class="st4 st43">ศรีกรีฑา</text>
+	<text transform="matrix(1 0 0 1 798.3486 454.6329)" class="st4 st44">Si Kritha</text>
+	<text transform="matrix(1 0 0 1 798.3486 485.2999)" class="st4 st43">พัฒนาการ</text>
+	<text transform="matrix(1 0 0 1 798.3487 490.6331)" class="st4 st44">Phatthanakarn</text>
+	<text transform="matrix(1 0 0 1 798.3485 513.7999)" class="st4 st43">กลันตัน</text>
+	<text transform="matrix(1 0 0 1 798.3486 519.1331)" class="st4 st44">Kalan Tan</text>
+	<text transform="matrix(1 0 0 1 798.3488 540.7999)" class="st4 st43">ศรีนุช</text>
+	<text transform="matrix(1 0 0 1 798.3489 546.1331)" class="st4 st44">Si Nut</text>
+	<text transform="matrix(1 0 0 1 798.349 567.1333)" class="st4 st43">ศรีนครินทร์ 38</text>
+	<text transform="matrix(1 0 0 1 798.3491 572.4664)" class="st4 st44">Srinagarindra 38</text>
+	<text transform="matrix(1 0 0 1 798.3481 593.4666)" class="st4 st43">สวนหลวง ร.9</text>
+	<text transform="matrix(1 0 0 1 798.3482 598.7997)" class="st4 st44">King Rama 9 Royal Park</text>
+	<text transform="matrix(1 0 0 1 798.3488 618.9221)" class="st4 st43">ศรีอุดม</text>
+	<text transform="matrix(1 0 0 1 798.3489 624.2552)" class="st4 st44">Si Udom</text>
+	<text transform="matrix(1 0 0 1 798.348 648.2555)" class="st4 st43">ศรีเอี่ยม</text>
+	<text transform="matrix(1 0 0 1 798.3481 653.5886)" class="st4 st44">Si Iam</text>
+	<text transform="matrix(1 0 0 1 798.3491 684.0894)" class="st4 st43">ศรีลาซาล</text>
+	<text transform="matrix(1 0 0 1 798.3492 689.4225)" class="st4 st44">Si Ia Salle</text>
+	<text transform="matrix(1 0 0 1 798.3492 704.5894)" class="st4 st43">ศรีแบริ่ง</text>
+	<text transform="matrix(1 0 0 1 798.3493 709.9225)" class="st4 st44">Si Bearing</text>
+	<text transform="matrix(1 0 0 1 798.3491 721.1389)" class="st4 st43">ศรีด่าน</text>
+	<text transform="matrix(1 0 0 1 798.3492 726.472)" class="st4 st44">Si Dan</text>
+	<text transform="matrix(1 0 0 1 760.1824 718.1443)" class="st4 st43">ศรีเทพา</text>
+	<text transform="matrix(1 0 0 1 760.1826 723.4774)" class="st4 st44">Si Thepha</text>
+	<text transform="matrix(1 0 0 1 734.6826 717.297)" class="st4 st43">ทิพวัล</text>
+	<text transform="matrix(1 0 0 1 734.6827 722.6301)" class="st4 st44">Tippawan</text>
+	<text transform="matrix(1 0 0 1 716.3484 337.6304)" class="st4 st43">มหาดไทย</text>
+	<text transform="matrix(1 0 0 1 716.3486 342.9636)" class="st4 st44">Mahadthai</text>
+	<text transform="matrix(1 0 0 1 653.6818 324.1304)" class="st4 st43">ลาดพร้าว 83</text>
+	<text transform="matrix(1 0 0 1 653.6819 329.4636)" class="st4 st44">Lad Phrao 83 </text>
+	<text transform="matrix(1 0 0 1 500.8781 324.9509)" class="st4 st43">รัชดา-ลาดพร้าว</text>
+	<text transform="matrix(1 0 0 1 500.8781 329.4634)" class="st4 st44">Ratchada-Lat Phrao</text>
+	<circle class="st41" cx="793.6" cy="657.5" r="3.9"/>
+	<circle class="st41" cx="712.4" cy="728.9" r="3.9"/>
+	<circle class="st18" cx="538.7" cy="328.6" r="4.1"/>
+	<text transform="matrix(1 0 0 1 534.8881 330.4438)" class="st16 st4 st45">10</text>
+	<circle class="st18" cx="721.8" cy="720" r="4.1"/>
+	<text transform="matrix(1 0 0 1 718.0461 721.8317)" class="st16 st4 st46">10</text>
+</g>
+<g id="_x36_blueline_x5F_line">
+	<g>
+		<path class="st47" d="M52.4,625.4h256.9c5.5,0,13.1-3.3,16.8-7.3l17.6-18.7c3.8-4,11.3-7.3,16.8-7.3h231c5.5,0,10-4.5,10-10V412
+			c0-5.5-3.2-13.2-7.1-17.1L543.5,344c-3.9-3.9-11.6-7.1-17.1-7.1H492c-5.5,0-10,4.5-10,10v34c0,5.5-4.5,10-10,10H351
+			c-5.5,0-13.2,3.2-17.1,7.1l-47.7,47.7c-3.9,3.9-7.1,11.6-7.1,17.1l-0.3,160.8"/>
+	</g>
+	<circle class="st41" cx="51" cy="625.4" r="3.9"/>
+	<circle class="st42" cx="72.7" cy="625.4" r="2.7"/>
+	<circle class="st42" cx="93.8" cy="625.4" r="2.7"/>
+	<circle class="st42" cx="115" cy="625.3" r="2.7"/>
+	<circle class="st42" cx="136.2" cy="625.3" r="2.7"/>
+	<circle class="st42" cx="157.3" cy="625.7" r="2.7"/>
+	<circle class="st42" cx="178.2" cy="625.7" r="2.7"/>
+	<circle class="st42" cx="199.4" cy="625.7" r="2.7"/>
+	<circle class="st42" cx="249.5" cy="625.4" r="2.7"/>
+	<circle class="st42" cx="277.1" cy="568.9" r="2.7"/>
+	<circle class="st42" cx="277.2" cy="592.4" r="2.7"/>
+	<circle class="st42" cx="305.5" cy="625.7" r="2.7"/>
+	<circle class="st42" cx="392.6" cy="593.7" r="2.7"/>
+	<circle class="st42" cx="459.5" cy="594" r="2.7"/>
+	<circle class="st42" cx="575.5" cy="593.3" r="2.7"/>
+	<circle class="st42" cx="599.9" cy="569.4" r="2.7"/>
+	<circle class="st42" cx="599.7" cy="450.4" r="2.7"/>
+	<circle class="st42" cx="585.2" cy="389.1" r="2.7"/>
+	<circle class="st42" cx="568.8" cy="372.7" r="2.7"/>
+	<circle class="st42" cx="551.9" cy="355" r="2.7"/>
+	<circle class="st41" cx="222.2" cy="625.4" r="3.9"/>
+	<circle class="st41" cx="278.5" cy="625.4" r="3.9"/>
+	<circle class="st41" cx="331.4" cy="612.5" r="3.9"/>
+	<circle class="st42" cx="454.6" cy="392.8" r="2.7"/>
+	<circle class="st42" cx="277.1" cy="504.7" r="2.7"/>
+	<circle class="st41" cx="277.1" cy="463.8" r="3.9"/>
+	<circle class="st41" cx="277.1" cy="544.2" r="3.9"/>
+	<circle class="st42" cx="326.9" cy="404.9" r="2.7"/>
+	<circle class="st42" cx="307.1" cy="424.3" r="2.7"/>
+	<circle class="st42" cx="288.9" cy="442.6" r="2.7"/>
+	<path class="st41" d="M432.8,400.5c0,2.1-1.7,3.9-3.9,3.9c-1.6,0-5.6,0-7.2,0c-2.2,0-3.9-1.7-3.9-3.9c0-0.6-3.4-3.8-3.7-3.8
+		c-2.1,0-3.9-1.7-3.9-3.9s1.7-3.9,3.9-3.9c2.2,0,3.9,1.7,3.9,3.9c0,0.3,3.2,3.8,3.7,3.8c1.6,0,5.6,0,7.2,0
+		C431,396.6,432.8,398.4,432.8,400.5z"/>
+	<path class="st41" d="M490.6,346.6c0.1,2.1-1.6,3.9-3.8,4c-1.6,0-5.5-0.1-7.1,0c-2.1,0.1-3.9-1.6-4-3.8c-0.1-2.1,1.6-3.9,3.8-4
+		c1.6,0,5.5,0.1,7.1,0C488.8,342.7,490.6,344.4,490.6,346.6z"/>
+	<circle class="st41" cx="601.5" cy="415.5" r="3.9"/>
+	<circle class="st41" cx="422.2" cy="594.5" r="3.9"/>
+	<path class="st41" d="M507.1,598.6c0,2.2-1.7,3.9-3.9,3.9c-2.1,0-3.9-1.7-3.9-3.9c0-0.4-0.4-1-0.8-1c-2.1,0-3.9-1.7-3.9-3.9
+		s1.8-3.9,3.9-3.9c2.2,0,3.9,1.7,3.9,3.9c0,0.4,0.4,1,0.8,1C505.3,594.7,507.1,596.4,507.1,598.6z"/>
+	<circle class="st41" cx="551.7" cy="593.6" r="3.9"/>
+	<circle class="st41" cx="599.7" cy="544.3" r="3.9"/>
+	<circle class="st41" cx="599.7" cy="488.7" r="3.9"/>
+	<text transform="matrix(1 0 0 1 39.4841 604.5684)" class="st4 st43">พุทธมณฑล</text>
+	<text transform="matrix(1 0 0 1 43.4841 610.8684)" class="st4 st43">สาย 4   </text>
+	<text transform="matrix(1 0 0 1 36.4543 615.1172)" class="st4 st44">Phutthamonthon</text>
+	<text transform="matrix(1 0 0 1 46.9543 619.7172)" class="st4 st44">Sai 4</text>
+	<text transform="matrix(1 0 0 1 82.6215 616.2845)" class="st4 st43">ทวีวัฒนา   </text>
+	<text transform="matrix(1 0 0 1 82.6213 620.2836)" class="st4 st44">Tawi Watthana</text>
+	<text transform="matrix(1 0 0 1 167.9545 615.2845)" class="st4 st43">ภาษีเจริญ   </text>
+	<text transform="matrix(1 0 0 1 167.9546 620.6176)" class="st4 st44">Pasi Charoen</text>
+	<text transform="matrix(1 0 0 1 224.2878 615.2849)" class="st4 st43">บางหว้า   </text>
+	<text transform="matrix(1 0 0 1 224.288 620.618)" class="st4 st44">Bang Wa</text>
+	<text transform="matrix(1 0 0 1 295.7878 633.2842)" class="st4 st43">อิสรภาพ   </text>
+	<text transform="matrix(1 0 0 1 295.788 638.6173)" class="st4 st44">Itsaraphap</text>
+	<text transform="matrix(1 0 0 1 242.7879 546.743)" class="st4 st43">บางขุนนนท์   </text>
+	<text transform="matrix(1 0 0 1 242.788 550.5756)" class="st4 st44">Bang Khun Non</text>
+	<text transform="matrix(1 0 0 1 255.5018 471.4909)" class="st4 st43">สิรินธร</text>
+	<text transform="matrix(1 0 0 1 255.502 476.8241)" class="st4 st44">Sirindhorn</text>
+	<text transform="matrix(1 0 0 1 266.0447 433.8243)" class="st4 st43">บางพลัด</text>
+	<text transform="matrix(1 0 0 1 266.0449 439.1574)" class="st4 st44">Bang Phlat</text>
+	<text transform="matrix(1 0 0 1 288.9366 415.4742)" class="st4 st43">บางอ้อ</text>
+	<text transform="matrix(1 0 0 1 288.9368 420.8074)" class="st4 st44">Bang O</text>
+	<text transform="matrix(1 0 0 1 331.8781 407.8864)" class="st4 st43">บางโพ</text>
+	<text transform="matrix(1 0 0 1 331.8781 411.9231)" class="st4 st44">Bang Pho</text>
+	<text transform="matrix(1 0 0 1 362.5447 382.6177)" class="st4 st43">เตาปูน</text>
+	<text transform="matrix(1 0 0 1 362.5447 386.5766)" class="st4 st44">Tao Poon</text>
+	<text transform="matrix(1 0 0 1 398.8608 382.6837)" class="st4 st43">บางซื่อ</text>
+	<text transform="matrix(1 0 0 1 399.1932 386.701)" class="st4 st44">Bang Sue</text>
+	<text transform="matrix(1 0 0 1 441.8781 400.9509)" class="st4 st43">กำแพงเพชร</text>
+	<text transform="matrix(1 0 0 1 441.8782 406.284)" class="st4 st44">Kamphaeng Phet</text>
+	<text transform="matrix(1 0 0 1 438.2115 350.4509)" class="st4 st44">Ha Yaek Lat Phrao</text>
+	<text transform="matrix(1 0 0 1 446.2114 376.6176)" class="st4 st43">สวนจตุจัตร</text>
+	<text transform="matrix(1 0 0 1 446.2115 381.9507)" class="st4 st44">Chatuchak Park</text>
+	<text transform="matrix(1 0 0 1 451.155 361.2449)" class="st4 st43">พหลโยธิน</text>
+	<text transform="matrix(1 0 0 1 451.1552 366.5781)" class="st4 st44">Pahonyothin</text>
+	<text transform="matrix(1 0 0 1 500.8781 324.9505)" class="st4 st43">รัชดา-ลาดพร้าว</text>
+	<text transform="matrix(1 0 0 1 500.8777 329.4637)" class="st4 st44">Ratchada-Lat Phrao</text>
+	<text transform="matrix(1 0 0 1 555.5447 346.562)" class="st4 st43">รัชดาภิเษก</text>
+	<text transform="matrix(1 0 0 1 555.5449 351.8952)" class="st4 st44">Ratchadaphisek</text>
+	<text transform="matrix(1 0 0 1 573.5447 364.0067)" class="st4 st43">สุทธิสาร</text>
+	<text transform="matrix(1 0 0 1 573.5448 369.3398)" class="st4 st44">Sutthisan</text>
+	<text transform="matrix(1 0 0 1 589.2114 379.9511)" class="st4 st43">ห้วยขวาง</text>
+	<text transform="matrix(1 0 0 1 589.2115 385.2842)" class="st4 st44">Huai Khwang</text>
+	<text transform="matrix(1 0 0 1 604.6285 451.5345)" class="st4 st43">พระราม 9</text>
+	<text transform="matrix(1 0 0 1 604.6286 456.8676)" class="st4 st44">Phra Ram 9</text>
+	<text transform="matrix(1 0 0 1 605.3785 490.9511)" class="st4 st43">เพชรบุรี</text>
+	<text transform="matrix(1 0 0 1 605.3786 496.2843)" class="st4 st44">Phetchaburi</text>
+	<text transform="matrix(1 0 0 1 604.6288 552.5345)" class="st4 st43">อโศก</text>
+	<text transform="matrix(1 0 0 1 604.6288 557.8676)" class="st4 st44">Asok</text>
+	<text transform="matrix(1 0 0 1 565.0038 601.9021)" class="st4 st43">คลองเตย</text>
+	<text transform="matrix(1 0 0 1 565.0038 607.2352)" class="st4 st44">Khlong Toei</text>
+	<text transform="matrix(1 0 0 1 556.5038 583.369)" class="st4 st43">ลุมพินี</text>
+	<text transform="matrix(1 0 0 1 556.5038 588.7021)" class="st4 st44">Lumphini</text>
+	<text transform="matrix(1 0 0 1 486.4853 582.744)" class="st4 st43">สีลม</text>
+	<text transform="matrix(1 0 0 1 486.4854 588.0771)" class="st4 st44">Si Lom</text>
+	<text transform="matrix(1 0 0 1 427.155 583.3687)" class="st4 st43">หัวลำโพง</text>
+	<text transform="matrix(1 0 0 1 427.1551 588.7018)" class="st4 st44">Hua Lamphong</text>
+	<text transform="matrix(1 0 0 1 382.405 601.2433)" class="st4 st43">วัดมังกรฯ</text>
+	<text transform="matrix(1 0 0 1 382.4051 606.5764)" class="st4 st44">Wat Mangkon</text>
+	<text transform="matrix(1 0 0 1 451.155 601.2437)" class="st4 st43">สามย่าน</text>
+	<text transform="matrix(1 0 0 1 451.1551 606.5768)" class="st4 st44">Sam Yan</text>
+	<text transform="matrix(1 0 0 1 605.3786 571.1019)" class="st4 st43">ศูนย์การประชุม</text>
+	<text transform="matrix(1 0 0 1 605.3786 577.4019)" class="st4 st43">แห่งชาติสิริกิิต</text>
+	<text transform="matrix(1 0 0 1 604.6284 582.1942)" class="st4 st44">Queen Sirikit National</text>
+	<text transform="matrix(1 0 0 1 604.6284 586.7942)" class="st4 st44">Convention Center</text>
+	<text transform="matrix(1 0 0 1 604.6282 423.8219)" class="st4 st43">ศูนย์วัฒนธรรม</text>
+	<text transform="matrix(1 0 0 1 604.6282 430.1219)" class="st4 st43">แห่งประเทศไทย</text>
+	<text transform="matrix(1 0 0 1 604.6282 435.2842)" class="st4 st44">Thailand Cultural</text>
+	<text transform="matrix(1 0 0 1 604.6282 439.8842)" class="st4 st44">Center</text>
+	<text transform="matrix(1 0 0 1 253.5643 505.8653)" class="st4 st43">บางยี่ขัน</text>
+	<text transform="matrix(1 0 0 1 249.502 510.4485)" class="st4 st44">Bang Yi Khan</text>
+	<text transform="matrix(1 0 0 1 247.598 568.9019)" class="st4 st43">แยกไฟฉาย   </text>
+	<text transform="matrix(1 0 0 1 247.5981 574.235)" class="st4 st44">Yaek Fai Chai</text>
+	<text transform="matrix(1 0 0 1 235.3585 591.6516)" class="st4 st43">จรัญสนิทวงศ์ 13   </text>
+	<text transform="matrix(1 0 0 1 235.3586 596.9847)" class="st4 st44">Charansanitwong 13</text>
+	<text transform="matrix(1 0 0 1 308.1555 603.2496)" class="st4 st43">สนามไชย   </text>
+	<text transform="matrix(1 0 0 1 308.1556 608.5828)" class="st4 st44">Sanam Chai</text>
+	<text transform="matrix(1 0 0 1 269.9131 633.7852)" class="st4 st43">ท่าพระ   </text>
+	<text transform="matrix(1 0 0 1 269.9132 639.1183)" class="st4 st44">Tha Phra</text>
+	<text transform="matrix(1 0 0 1 242.7878 632.9515)" class="st4 st43">บางไผ่   </text>
+	<text transform="matrix(1 0 0 1 242.788 638.2847)" class="st4 st44">Bang Phai</text>
+	<text transform="matrix(1 0 0 1 149.6217 633.2845)" class="st4 st43">บางแค   </text>
+	<text transform="matrix(1 0 0 1 149.6218 638.6176)" class="st4 st44">Bang Khae</text>
+	<text transform="matrix(1 0 0 1 102.5789 633.2838)" class="st4 st43">พุทธมณฑล</text>
+	<text transform="matrix(1 0 0 1 105.9789 639.5838)" class="st4 st43">สาย 2    </text>
+	<text transform="matrix(1 0 0 1 100.022 644.7843)" class="st4 st44">Phutthamonthon </text>
+	<text transform="matrix(1 0 0 1 110.922 649.3843)" class="st4 st44">Sai 2</text>
+	<text transform="matrix(1 0 0 1 60.235 633.2841)" class="st4 st43">พุทธมณฑล</text>
+	<text transform="matrix(1 0 0 1 63.635 639.5841)" class="st4 st43">สาย 3    </text>
+	<text transform="matrix(1 0 0 1 57.6782 644.7845)" class="st4 st44">Phutthamonthon </text>
+	<text transform="matrix(1 0 0 1 68.5782 649.3845)" class="st4 st44">Sai 3</text>
+	<text transform="matrix(1 0 0 1 183.955 633.2844)" class="st4 st43">เพชรเกษม 48   </text>
+	<text transform="matrix(1 0 0 1 183.9548 638.6177)" class="st4 st44">Phetkasem 48</text>
+	<text transform="matrix(1 0 0 1 126.4545 615.2842)" class="st4 st43">หลักสอง   </text>
+	<text transform="matrix(1 0 0 1 126.4548 620.2834)" class="st4 st44">Lak Song</text>
+	<circle class="st41" cx="358" cy="392.8" r="3.9"/>
+	<path class="st41" d="M522.9,340.3c0,2.2-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-1,0-4,0-5c0-2.1,1.7-3.9,3.9-3.9
+		c2.1,0,3.9,1.7,3.9,3.9C522.9,336.3,522.9,339.4,522.9,340.3z"/>
+	<text transform="matrix(1 0 0 1 438.2116 350.4507)" class="st4 st44">Ha Yaek Lat Phrao</text>
+	<text transform="matrix(1 0 0 1 438.2118 346.5621)" class="st4 st43">ห้าแยกลาดพร้าว</text>
+	<text transform="matrix(1 0 0 1 438.212 350.4509)" class="st4 st44">Ha Yaek Lat Phrao</text>
+</g>
+<g id="_x37_purple_x5F_line">
+	<g>
+		<path class="st48" d="M51,225v25.8c0,3.9,3.1,7,7,7h230c3.9,0,9.3,2.2,12,4.9l53,51.7c2.8,2.7,5,8,5,11.9v365.3
+			c0,3.8,2.2,9.2,4.9,12l139,139.7"/>
+	</g>
+	<circle class="st41" cx="51" cy="225" r="3.9"/>
+	<circle class="st41" cx="192" cy="257.8" r="3.9"/>
+	<circle class="st41" cx="277.2" cy="257.3" r="3.9"/>
+	<circle class="st42" cx="51" cy="241.6" r="2.7"/>
+	
+		<ellipse transform="matrix(9.053497e-02 -0.9959 0.9959 9.053497e-02 -200.2382 295.9294)" class="st42" cx="61.9" cy="257.6" rx="2.7" ry="2.7"/>
+	<circle class="st42" cx="87.8" cy="257.7" r="2.7"/>
+	<circle class="st42" cx="113" cy="257.9" r="2.7"/>
+	<circle class="st42" cx="139.4" cy="257.9" r="2.7"/>
+	<circle class="st42" cx="165" cy="257.9" r="2.7"/>
+	<circle class="st42" cx="222.8" cy="257.9" r="2.7"/>
+	<circle class="st42" cx="250" cy="257.9" r="2.7"/>
+	<circle class="st42" cx="350.1" cy="311.4" r="2.7"/>
+	<circle class="st42" cx="357.9" cy="335.7" r="2.7"/>
+	<circle class="st42" cx="330.2" cy="291.9" r="2.7"/>
+	<circle class="st41" cx="358" cy="464" r="3.9"/>
+	<path class="st41" d="M369.1,392.8c0,2.2-1.7,3.9-3.9,3.9c-1.6,0-5.6,0-7.2,0c-2.2,0-3.9-1.7-3.9-3.9s1.7-3.9,3.9-3.9
+		c1.6,0,5.6,0,7.2,0C367.4,388.9,369.1,390.6,369.1,392.8z"/>
+	<circle class="st41" cx="358" cy="364" r="3.9"/>
+	<circle class="st42" cx="357.5" cy="417" r="2.7"/>
+	<circle class="st42" cx="357.6" cy="439.9" r="2.7"/>
+	<circle class="st42" cx="357.8" cy="491.4" r="2.7"/>
+	<circle class="st42" cx="357.6" cy="517.5" r="2.7"/>
+	<path class="st41" d="M365.7,544.1c0,2.1-1.7,3.9-3.9,3.9c-2.2,0-3.9-1.7-3.9-3.9c0-0.5,0.1-1.3,0-1.3c-2.2,0-3.9-1.7-3.9-3.9
+		c0-2.1,1.7-3.9,3.9-3.9c2.1,0,3.9,1.7,3.9,3.9c0,0.5-0.1,1.3,0,1.3C364,540.2,365.7,541.9,365.7,544.1z"/>
+	<circle class="st42" cx="358" cy="641.4" r="2.7"/>
+	<circle class="st41" cx="357.8" cy="593.7" r="3.9"/>
+	<circle class="st41" cx="358" cy="657.8" r="3.9"/>
+	<circle class="st42" cx="370.4" cy="711.5" r="2.7"/>
+	<circle class="st42" cx="389.5" cy="730.7" r="2.7"/>
+	<circle class="st42" cx="408.8" cy="749.7" r="2.7"/>
+	<circle class="st42" cx="425.9" cy="767.2" r="2.7"/>
+	<circle class="st42" cx="463.8" cy="805.1" r="2.7"/>
+	<circle class="st42" cx="483.3" cy="823.8" r="2.7"/>
+	<circle class="st41" cx="445.8" cy="787.6" r="3.9"/>
+	<circle class="st41" cx="502" cy="843.3" r="3.9"/>
+	<text transform="matrix(1 0 0 1 55.9022 243.796)" class="st4 st43">ตลาดบางใหญ่</text>
+	<text transform="matrix(1 0 0 1 55.9021 248.1886)" class="st4 st44">Talat Bang Yai</text>
+	<text transform="matrix(1 0 0 1 78.9855 266.2127)" class="st4 st43">บางพลู</text>
+	<text transform="matrix(1 0 0 1 78.9853 270.7961)" class="st4 st44">Bang Phlu</text>
+	<text transform="matrix(1 0 0 1 101.0687 266.0182)" class="st4 st43">บางรักใหญ่</text>
+	<text transform="matrix(1 0 0 1 101.0686 270.7961)" class="st4 st44">Bang Rak Yai</text>
+	<text transform="matrix(1 0 0 1 158.2353 266.0185)" class="st4 st43">ไทรม้า</text>
+	<text transform="matrix(1 0 0 1 158.2352 270.522)" class="st4 st44">Sai Ma</text>
+	<g>
+		<text transform="matrix(0.9678 0 0 1 194.4629 230.04)" class="st49 st4 st50">กระทรวงพาณิชย์</text>
+	</g>
+	<text transform="matrix(0.9678 0 0 1 162.291 287.7422)" class="st49 st4 st50">นนทบุรี (พิบูลสงคราม 3)</text>
+	<text transform="matrix(0.9678 0 0 1 215.9629 301.7783)" class="st49 st4 st50">พิบูลสงคราม 2</text>
+	<text transform="matrix(0.9678 0 0 1 194.373 315.7422)" class="st49 st4 st50">วัดเขียน</text>
+	<text transform="matrix(0.9678 0 0 1 208.2578 326.2637)" class="st49 st4 st50">วัดตึก</text>
+	<text transform="matrix(0.9678 0 0 1 251.2422 336.6748)" class="st49 st4 st50">วัดเขมา</text>
+	<text transform="matrix(0.9678 0 0 1 270.8271 358.3633)" class="st49 st4 st50">พิบูลสงคราม 1</text>
+	<text transform="matrix(0.9678 0 0 1 309.4453 394.2373)" class="st49 st4 st50">วัดสร้อยทอง</text>
+	<text transform="matrix(0.9678 0 0 1 327.2656 420.8076)" class="st49 st4 st50">เกียกกาย</text>
+	<text transform="matrix(0.9678 0 0 1 327.0771 429.6484)" class="st49 st4 st50">เขียวไข่กา</text>
+	<text transform="matrix(0.9678 0 0 1 326.7929 441.4062)" class="st49 st4 st50">กรมชลประทาน</text>
+	<text transform="matrix(0.9678 0 0 1 327.7675 454.8018)" class="st49 st4 st50">พายัพ</text>
+	<text transform="matrix(0.9678 0 0 1 260.8418 383.0938)" class="st49 st4 st50">พระราม 7</text>
+	<g>
+		<text transform="matrix(0.9678 0 0 1 193.7754 164.5059)" class="st49 st4 st50">วัดกลางเกร็ด</text>
+	</g>
+	<g>
+		<text transform="matrix(0.9678 0 0 1 194.5107 130.3623)" class="st49 st4 st50">ปากเกร็ด</text>
+	</g>
+	<text transform="matrix(1 0 0 1 132.5688 265.685)" class="st4 st43">ท่าอิฐ</text>
+	<text transform="matrix(1 0 0 1 132.5686 270.7961)" class="st4 st44">Tha It</text>
+	<text transform="matrix(1 0 0 1 52.2356 266.0182)" class="st4 st43">สามแยก</text>
+	<text transform="matrix(1 0 0 1 52.2356 272.3182)" class="st4 st43">บางใหญ่</text>
+	<text transform="matrix(1 0 0 1 53.3109 277.5219)" class="st4 st44">Sam Yaek</text>
+	<text transform="matrix(1 0 0 1 53.3109 282.1219)" class="st4 st44">Bang Yai</text>
+	<text transform="matrix(1 0 0 1 57.7006 224.9507)" class="st4 st43">คลองบางไผ่</text>
+	<text transform="matrix(1 0 0 1 57.7003 228.8396)" class="st4 st44">Khlong Bang Phai</text>
+	<text transform="matrix(1 0 0 1 238.2879 266.0186)" class="st4 st43">บางกระสอ</text>
+	<text transform="matrix(1 0 0 1 238.2879 270.5221)" class="st4 st43">Ban krasor</text>
+	<text transform="matrix(1 0 0 1 204.4998 266.0181)" class="st4 st43">แยกนนทบุรี 1</text>
+	<text transform="matrix(1 0 0 1 146.2375 243.796)" class="st4 st43">สะพานพระนั่งเกล้า</text>
+	<text transform="matrix(1 0 0 1 137.8999 248.0001)" class="st4 st43">Pra NangKlao Bridge</text>
+	<text transform="matrix(1 0 0 1 199.2374 270.522)" class="st4 st43">Yak nontaburi 1</text>
+	<text transform="matrix(1 0 0 1 286.0478 298.5132)" class="st4 st43">กระทรวงสาธารณสุข  </text>
+	<text transform="matrix(1 0 0 1 286.0478 303.6471)" class="st4 st44">Ministry of Public Health</text>
+	<text transform="matrix(1 0 0 1 317.9228 318.7007)" class="st4 st43">แยกติวานนท์  </text>
+	<text transform="matrix(1 0 0 1 317.9228 323.8346)" class="st4 st44">Yaek Tiwanon</text>
+	<text transform="matrix(1 0 0 1 331.2353 337.3129)" class="st4 st43">วงค์สว่าง  </text>
+	<text transform="matrix(1 0 0 1 331.2353 342.4468)" class="st4 st44">Wong Sawang</text>
+	<text transform="matrix(1 0 0 1 362.6103 354.1879)" class="st4 st43">บางซ่อน  </text>
+	<text transform="matrix(1 0 0 1 363.0158 357.8531)" class="st4 st44">Bang Son</text>
+	<text transform="matrix(1 0 0 1 362.5449 382.6177)" class="st4 st43">เตาปูน  </text>
+	<text transform="matrix(1 0 0 1 362.5449 386.5763)" class="st4 st44">Tao Poon</text>
+	<text transform="matrix(1 0 0 1 362.6103 418.6879)" class="st4 st43">รัฐสภา  </text>
+	<text transform="matrix(1 0 0 1 362.6103 423.8218)" class="st4 st44">Parliament</text>
+	<text transform="matrix(1 0 0 1 362.6104 441.2504)" class="st4 st43">ศรีย่าน  </text>
+	<text transform="matrix(1 0 0 1 362.6103 446.3843)" class="st4 st44">Si Yan</text>
+	<text transform="matrix(1 0 0 1 362.6103 457.1208)" class="st4 st43">สามเสน  </text>
+	<text transform="matrix(1 0 0 1 362.6102 461.2547)" class="st4 st44">Sam Sen</text>
+	<text transform="matrix(1 0 0 1 362.6102 492.3129)" class="st4 st43">หอสมุดแห่งชาติ  </text>
+	<text transform="matrix(1 0 0 1 362.6102 497.4468)" class="st4 st44">National Library</text>
+	<text transform="matrix(1 0 0 1 363.016 518.8129)" class="st4 st43">บางขุนพรหม  </text>
+	<text transform="matrix(1 0 0 1 363.0159 523.9468)" class="st4 st44">Bang Khun Phrom</text>
+	<text transform="matrix(1 0 0 1 363.0157 532.9877)" class="st4 st43">ผ่านฟ้า  </text>
+	<text transform="matrix(1 0 0 1 363.0156 536.2539)" class="st4 st44">Phan Fa</text>
+	<text transform="matrix(1 0 0 1 362.6103 583.5684)" class="st4 st43">สามยอด</text>
+	<text transform="matrix(1 0 0 1 362.6102 588.7022)" class="st4 st44">Sam Yot</text>
+	<text transform="matrix(1 0 0 1 326.6103 642.8809)" class="st4 st43">สะพานพุทธ  </text>
+	<text transform="matrix(1 0 0 1 326.6102 648.0147)" class="st4 st44">Memorial Bridge</text>
+	<text transform="matrix(1 0 0 1 362.6104 665.7559)" class="st4 st43">วงเวียนใหญ่  </text>
+	<text transform="matrix(1 0 0 1 362.6103 670.8897)" class="st4 st44">Wongwian Yai</text>
+	<text transform="matrix(1 0 0 1 354.5478 718.7559)" class="st4 st43">สำเหร่  </text>
+	<text transform="matrix(1 0 0 1 354.5478 723.8897)" class="st4 st44">Samre</text>
+	<text transform="matrix(1 0 0 1 367.4228 737.6934)" class="st4 st43">จอมทอง  </text>
+	<text transform="matrix(1 0 0 1 367.4228 742.8272)" class="st4 st44">Chom Thong</text>
+	<text transform="matrix(1 0 0 1 381.5479 756.5237)" class="st4 st43">ดาวคะนอง  </text>
+	<text transform="matrix(1 0 0 1 381.5478 761.6575)" class="st4 st44">Dao Khanong</text>
+	<text transform="matrix(1 0 0 1 398.8604 773.6534)" class="st4 st43">บางปะกอก  </text>
+	<text transform="matrix(1 0 0 1 398.8603 778.7872)" class="st4 st44">Bang Pakok</text>
+	<text transform="matrix(1 0 0 1 418.9854 794.5283)" class="st4 st43">ประชาอุทิศ  </text>
+	<text transform="matrix(1 0 0 1 418.9853 799.6622)" class="st4 st44">Pracha Uthit</text>
+	<text transform="matrix(1 0 0 1 432.4229 811.6533)" class="st4 st43">ราษฎร์บูรณะ  </text>
+	<text transform="matrix(1 0 0 1 432.4228 816.7872)" class="st4 st44">Rat Burana</text>
+	<text transform="matrix(1 0 0 1 453.7979 830.5908)" class="st4 st43">พระประแดง  </text>
+	<text transform="matrix(1 0 0 1 453.7978 835.7247)" class="st4 st44">Phra Pra Daeng</text>
+	<text transform="matrix(1 0 0 1 486.4854 851.0283)" class="st4 st43">ครุใน  </text>
+	<text transform="matrix(1 0 0 1 486.4853 856.1622)" class="st4 st44">Kru nai</text>
+	<text transform="matrix(1 0 0 1 383.1954 558.8079)" class="st4 st51">อนุสาวรีย์</text>
+	<text transform="matrix(1 0 0 1 383.1954 563.8079)" class="st4 st51">ประชาธิปไตย  </text>
+	<text transform="matrix(1 0 0 1 370.3464 567.7271)" class="st4 st44">Democracy Monument</text>
+	<text transform="matrix(1 0 0 1 264.4458 266.018)" class="st4 st43">ศูนย์ราชการ</text>
+	<text transform="matrix(1 0 0 1 268.6458 272.318)" class="st4 st43">นนทบุรี  </text>
+	<text transform="matrix(1 0 0 1 267.2353 277.2305)" class="st4 st44">Nonthaburi</text>
+	<text transform="matrix(1 0 0 1 267.2353 281.8305)" class="st4 st44">Civic Center</text>
+	<circle class="st10" cx="51" cy="215.5" r="4.1"/>
+	<text transform="matrix(1 0 0 1 49.4595 217.2771)" class="st8 st4 st45">7</text>
+	<circle class="st10" cx="507.6" cy="850.8" r="4.1"/>
+	<text transform="matrix(1 0 0 1 506.022 852.6208)" class="st8 st4 st45">7</text>
+	<path class="st52" d="M191,116L191,116c1.4,0,2.6,1.2,2.6,2.6l0,0c0,1.4-1.2,2.6-2.6,2.6l0,0c-1.4,0-2.6-1.2-2.6-2.6l0,0
+		C188.3,117.1,189.5,116,191,116z"/>
+	<text transform="matrix(1.3351 0 0 1 188.8706 119.4941)" class="st53 st54">EB</text>
+	<text transform="matrix(1 0 0 1 326.8618 471.6752)" class="st4 st55">วชิรพยาบาล</text>
+	<text transform="matrix(1 0 0 1 326.8618 474.8041)" class="st4 st56">Vajira Hospital</text>
+	<text transform="matrix(1 0 0 1 333.7027 523.9464)" class="st4 st44">สะพาน</text>
+	<text transform="matrix(1 0 0 1 333.7027 528.5464)" class="st4 st44">พระปิ่นเกล้า</text>
+	<text transform="matrix(1 0 0 1 331.8782 481.9902)" class="st4 st44">สะพาน</text>
+	<text transform="matrix(1 0 0 1 331.8782 486.5902)" class="st4 st44">กรุงธน</text>
+	<g id="MyMA5K.tif">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="276" height="276" id="Layer_0_27_" xlink:href="437A3851C0037A34.png"  transform="matrix(3.922567e-02 0 0 3.922567e-02 370.6955 554.267)">
+		</image>
+	</g>
+</g>
+<g id="_x34_dark_x5F_green_x5F_line">
+	<g>
+		<path class="st57" d="M778.9,56.6H589.2c-4.4,0-10.5,2.5-13.7,5.7l-83.2,83.2c-3.1,3.1-5.7,9.3-5.7,13.7v377.5c0,4.4,3.6,8,8,8
+			h128.7c4.4,0,10.5,2.5,13.7,5.7l70.3,70.3c3.1,3.1,5.7,9.3,5.7,13.7v257.5c0,4.4,3.6,8,8,8h117"/>
+	</g>
+	<g>
+		<path class="st58" d="M713,653.5c0,0,1,1,2.3,2.3s5.9,2.3,10.3,2.3h216.8"/>
+	</g>
+	<g>
+		<path class="st58" d="M906.7,556.6v93.2c0,4.4-3.6,8-8,8H890"/>
+	</g>
+	<circle class="st42" cx="733.5" cy="56.6" r="2.7"/>
+	<circle class="st42" cx="701.7" cy="56.6" r="2.7"/>
+	<circle class="st42" cx="667.7" cy="56.5" r="2.7"/>
+	<circle class="st42" cx="633.5" cy="56.6" r="2.7"/>
+	<circle class="st42" cx="600" cy="56.5" r="2.7"/>
+	<circle class="st42" cx="563.2" cy="73.6" r="2.7"/>
+	<circle class="st42" cx="548.3" cy="90.1" r="2.7"/>
+	
+		<ellipse transform="matrix(0.3828 -0.9238 0.9238 0.3828 231.2867 556.7374)" class="st42" cx="532.3" cy="105.3" rx="2.7" ry="2.7"/>
+	<circle class="st42" cx="517" cy="120.9" r="2.7"/>
+	<circle class="st42" cx="501" cy="136.4" r="2.7"/>
+	<circle class="st42" cx="487" cy="181.2" r="2.7"/>
+	<circle class="st41" cx="486.7" cy="157.5" r="3.9"/>
+	<circle class="st42" cx="487" cy="181.2" r="2.7"/>
+	<circle class="st42" cx="486.9" cy="205.8" r="2.7"/>
+	<circle class="st42" cx="487" cy="229.8" r="2.7"/>
+	<circle class="st42" cx="486.9" cy="277.5" r="2.7"/>
+	<circle class="st42" cx="486.9" cy="300.7" r="2.7"/>
+	<circle class="st42" cx="486.9" cy="324.5" r="2.7"/>
+	<circle class="st42" cx="487.4" cy="394" r="2.7"/>
+	<circle class="st42" cx="486.9" cy="417.5" r="2.7"/>
+	<circle class="st42" cx="487.2" cy="441.3" r="2.7"/>
+	<circle class="st42" cx="523.7" cy="544.5" r="2.7"/>
+	<circle class="st42" cx="575.7" cy="544.5" r="2.7"/>
+	<circle class="st42" cx="624" cy="544.3" r="2.7"/>
+	<circle class="st42" cx="661.7" cy="574.9" r="2.7"/>
+	<circle class="st42" cx="688.7" cy="601.9" r="2.7"/>
+	<circle class="st42" cx="702.4" cy="615.4" r="2.7"/>
+	<circle class="st42" cx="712.3" cy="631.9" r="2.7"/>
+	<circle class="st42" cx="712.3" cy="648.4" r="2.7"/>
+	<circle class="st42" cx="732.9" cy="657.4" r="2.7"/>
+	<circle class="st42" cx="712.9" cy="670.5" r="2.7"/>
+	<circle class="st42" cx="713.2" cy="693.8" r="2.7"/>
+	<circle class="st42" cx="712.9" cy="756.7" r="2.7"/>
+	<circle class="st42" cx="712.9" cy="779.4" r="2.7"/>
+	<circle class="st42" cx="712.7" cy="800.3" r="2.7"/>
+	<circle class="st42" cx="712.9" cy="821.6" r="2.7"/>
+	<circle class="st42" cx="712.7" cy="843.3" r="2.7"/>
+	<circle class="st42" cx="712.7" cy="865.1" r="2.7"/>
+	<circle class="st42" cx="713" cy="885.5" r="2.7"/>
+	<circle class="st42" cx="735.2" cy="899.7" r="2.7"/>
+	<circle class="st42" cx="757.9" cy="900" r="2.7"/>
+	<circle class="st42" cx="780.5" cy="899.4" r="2.7"/>
+	<circle class="st42" cx="803.2" cy="899.9" r="2.7"/>
+	<circle class="st42" cx="753.4" cy="657.4" r="2.7"/>
+	<circle class="st42" cx="773.4" cy="657.6" r="2.7"/>
+	<circle class="st42" cx="813.4" cy="657.4" r="2.7"/>
+	<circle class="st42" cx="831.4" cy="657.4" r="2.7"/>
+	<circle class="st42" cx="849.2" cy="657.4" r="2.7"/>
+	<circle class="st42" cx="866.9" cy="657.4" r="2.7"/>
+	<circle class="st42" cx="886.7" cy="657.4" r="2.7"/>
+	<circle class="st42" cx="924.2" cy="657.6" r="2.7"/>
+	<circle class="st42" cx="906.2" cy="618.2" r="2.7"/>
+	<circle class="st41" cx="778.8" cy="56.6" r="3.9"/>
+	<circle class="st41" cx="486.7" cy="157.5" r="3.9"/>
+	<circle class="st41" cx="486.7" cy="254.3" r="3.9"/>
+	<circle class="st41" cx="486.8" cy="512.6" r="3.9"/>
+	<path class="st41" d="M498.3,546.9c0.5,0.7,0.8,1.5,0.8,2.4c0,2.1-1.7,3.9-3.9,3.9c-2.2,0-3.9-1.7-3.9-3.9c0-0.9,0.3-1.7,0.8-2.4
+		c-0.5-0.7-0.8-1.5-0.8-2.4c0-2.2,1.7-3.9,3.9-3.9c2.1,0,3.9,1.7,3.9,3.9C499.1,545.4,498.8,546.3,498.3,546.9z"/>
+	<circle class="st41" cx="487" cy="464.1" r="3.9"/>
+	<text transform="matrix(1 0 0 1 759.7354 65.2841)" class="st4 st43">วงแหวนตะวันออก  </text>
+	<text transform="matrix(1 0 0 1 760.4023 70.0219)" class="st4 st44">East Outer Ring Road</text>
+	<text transform="matrix(1 0 0 1 724.7354 64.6174)" class="st4 st43">คลองห้า</text>
+	<text transform="matrix(1 0 0 1 724.7358 70.0219)" class="st4 st44">Khlong Ha</text>
+	<text transform="matrix(1 0 0 1 693.9018 64.6172)" class="st4 st43">คลองสี่</text>
+	<text transform="matrix(1 0 0 1 693.9023 70.0217)" class="st4 st44">Khlong Si</text>
+	<text transform="matrix(1 0 0 1 656.8936 64.6172)" class="st4 st43">คลองสาม</text>
+	<text transform="matrix(1 0 0 1 656.8941 70.0217)" class="st4 st44">Khlong Sam</text>
+	<text transform="matrix(1 0 0 1 627.727 64.6172)" class="st4 st43">คูคต</text>
+	<text transform="matrix(1 0 0 1 627.7275 70.0217)" class="st4 st44">Khu Khot</text>
+	<text transform="matrix(1 0 0 1 591.5604 64.6174)" class="st4 st43">ก.ม. 25</text>
+	<text transform="matrix(1 0 0 1 591.5608 70.0218)" class="st4 st44">Kor Mor 25</text>
+	<text transform="matrix(1 0 0 1 567.0604 79.784)" class="st4 st43">พิพิธภัณฑ์กองทัพอากาศ</text>
+	<text transform="matrix(1 0 0 1 567.0608 85.1885)" class="st4 st44">Royal Air Force Museum </text>
+	<text transform="matrix(1 0 0 1 552.2271 95.4507)" class="st4 st43">โรงพยาบาลภูมิพลอดุลยเดช</text>
+	<text transform="matrix(1 0 0 1 552.2275 100.8552)" class="st4 st44">Bhumiphol Adulyadej Hospital</text>
+	<text transform="matrix(1 0 0 1 536.727 110.5548)" class="st4 st43">สะพานใหม่</text>
+	<text transform="matrix(1 0 0 1 536.7275 115.9594)" class="st4 st44">Saphan Mai</text>
+	<text transform="matrix(1 0 0 1 520.3937 126.7571)" class="st4 st43">สายหยุด</text>
+	<text transform="matrix(1 0 0 1 520.3941 132.1616)" class="st4 st44">Sai Yut   </text>
+	<text transform="matrix(1 0 0 1 505.3937 138.4267)" class="st4 st43">อนุสาวรีหลักสี่</text>
+	<text transform="matrix(1 0 0 1 505.3942 143.5607)" class="st4 st44">Laksi Monument </text>
+	<text transform="matrix(1 0 0 1 492.227 182.3284)" class="st4 st43">กรมทหารราบ 11</text>
+	<text transform="matrix(1 0 0 1 492.2274 187.7329)" class="st4 st44">11th Infantry Regiment</text>
+	<text transform="matrix(1 0 0 1 491.3605 206.6617)" class="st4 st43">บางบัว</text>
+	<text transform="matrix(1 0 0 1 491.3609 212.0662)" class="st4 st44">Bang Bua</text>
+	<text transform="matrix(1 0 0 1 492.2272 231.1051)" class="st4 st43">กรมป่าไม้</text>
+	<text transform="matrix(1 0 0 1 492.2276 236.5097)" class="st4 st44">Forest Department</text>
+	<text transform="matrix(1 0 0 1 489.4279 262.2798)" class="st4 st43">ม เกษตรศาสตร์</text>
+	<text transform="matrix(1 0 0 1 490.0197 266.213)" class="st4 st44">Kasetsart</text>
+	<text transform="matrix(1 0 0 1 461.3939 278.3123)" class="st4 st43">เสนานิคม</text>
+	<text transform="matrix(1 0 0 1 460.3943 282.8834)" class="st4 st44">Sena Nikhom</text>
+	<text transform="matrix(1 0 0 1 465.227 301.7783)" class="st4 st43">รัชโยธิน</text>
+	<text transform="matrix(1 0 0 1 460.394 306.3495)" class="st4 st44">Ratcha Yothin</text>
+	<text transform="matrix(1 0 0 1 452.227 325.5621)" class="st4 st43">พหลโยธิน 24</text>
+	<text transform="matrix(1 0 0 1 452.2274 330.9666)" class="st4 st44">Phahon Yothin 24</text>
+	<text transform="matrix(1 0 0 1 438.2117 346.5622)" class="st4 st43">ห้าแยกลาดพร้าว</text>
+	<text transform="matrix(1 0 0 1 494.3421 375.9916)" class="st4 st43">หมอชิต</text>
+	<text transform="matrix(1 0 0 1 494.3421 381.23)" class="st4 st44">Mo Chit</text>
+	<text transform="matrix(1 0 0 1 493.0087 395.7287)" class="st4 st43">สะพานควาย</text>
+	<text transform="matrix(1 0 0 1 493.0086 400.9668)" class="st4 st44">Saphan Khwai</text>
+	<text transform="matrix(1 0 0 1 493.0086 418.6876)" class="st4 st43">อารีย์</text>
+	<text transform="matrix(1 0 0 1 493.0086 423.9256)" class="st4 st44">Ari</text>
+	<text transform="matrix(1 0 0 1 493.0087 442.1876)" class="st4 st43">สนามเป้า</text>
+	<text transform="matrix(1 0 0 1 493.0086 447.4256)" class="st4 st44">Sanam Pao</text>
+	<text transform="matrix(0.9701 0 0 1 463.375 491.7061)" class="st4 st43">พญาไท</text>
+	<text transform="matrix(1 0 0 1 463.375 495.9447)" class="st4 st44">Phaya Thai</text>
+	<text transform="matrix(1 0 0 1 466.0652 520.3002)" class="st4 st43">ราชเทวี</text>
+	<text transform="matrix(1 0 0 1 463.375 524.7739)" class="st4 st44">Ratchathewi</text>
+	<text transform="matrix(1 0 0 1 494.3418 534.8184)" class="st4 st43">สยาม</text>
+	<text transform="matrix(1 0 0 1 494.3417 539.3552)" class="st4 st44">Siam</text>
+	<text transform="matrix(1 0 0 1 516.716 534.8187)" class="st4 st43">ชิดลม</text>
+	<text transform="matrix(1 0 0 1 516.7161 539.3555)" class="st4 st44">Chit  Lom</text>
+	<text transform="matrix(1 0 0 1 528.0493 553.1871)" class="st4 st43">เพลินจิต</text>
+	<text transform="matrix(1 0 0 1 528.0494 557.7238)" class="st4 st44">Phloen Chit</text>
+	<text transform="matrix(1 0 0 1 570.216 535.3321)" class="st4 st43">นานา</text>
+	<text transform="matrix(1 0 0 1 570.2161 539.8689)" class="st4 st44">Nana</text>
+	<text transform="matrix(1 0 0 1 611.8749 534.8187)" class="st4 st43">พร้อมพงษ์</text>
+	<text transform="matrix(1 0 0 1 611.875 539.3555)" class="st4 st44">Phrom Phong</text>
+	<text transform="matrix(1 0 0 1 653.5416 554.0825)" class="st4 st43">ทองหล่อ</text>
+	<text transform="matrix(1 0 0 1 653.5417 558.6193)" class="st4 st44">Thong Lo</text>
+	<text transform="matrix(1 0 0 1 666.0416 567.116)" class="st4 st43">เอกมัย</text>
+	<text transform="matrix(1 0 0 1 666.0417 571.6528)" class="st4 st44">Ekkamai</text>
+	<text transform="matrix(1 0 0 1 683.0964 571.6525)" class="st4 st43">พระโขนง</text>
+	<text transform="matrix(1 0 0 1 685.1008 577.5789)" class="st4 st44">Phra Khanong</text>
+	<text transform="matrix(1 0 0 1 692.7083 593.6501)" class="st4 st43">อ่อนนุช</text>
+	<text transform="matrix(1 0 0 1 692.7083 598.1869)" class="st4 st44">On Nut</text>
+	<text transform="matrix(1 0 0 1 706.2762 607.455)" class="st4 st43">บางจาก</text>
+	<text transform="matrix(1 0 0 1 706.2763 611.9918)" class="st4 st44">Bang Chak</text>
+	<text transform="matrix(1 0 0 1 688.7078 632.7575)" class="st4 st43">ปุณณวิถี</text>
+	<text transform="matrix(1 0 0 1 688.7079 637.2943)" class="st4 st44">Punnawithi</text>
+	<text transform="matrix(1 0 0 1 691.3669 648.7931)" class="st4 st43">อุดมสุข</text>
+	<text transform="matrix(1 0 0 1 691.367 653.3298)" class="st4 st44">Udom Suk</text>
+	<text transform="matrix(1 0 0 1 741.0336 648.0151)" class="st4 st43">ถาวรนิเวศน์</text>
+	<text transform="matrix(1 0 0 1 741.0337 652.5519)" class="st4 st44">Thawon Niwet</text>
+	<text transform="matrix(1 0 0 1 726.7837 665.5788)" class="st4 st43">ไบเทค</text>
+	<text transform="matrix(1 0 0 1 726.7838 670.1156)" class="st4 st44">BITEC</text>
+	<text transform="matrix(1 0 0 1 762.2837 665.5787)" class="st4 st43">เซ็นทรัลซิตี้</text>
+	<text transform="matrix(1 0 0 1 762.2838 670.1155)" class="st4 st44">Central City</text>
+	<text transform="matrix(1 0 0 1 798.3478 648.2554)" class="st4 st43">ศรีเอี่ยม</text>
+	<text transform="matrix(1 0 0 1 798.3476 653.6804)" class="st4 st44">Si Iam</text>
+	<text transform="matrix(1 0 0 1 821.7914 648.0149)" class="st4 st43">บางแก้ว</text>
+	<text transform="matrix(1 0 0 1 821.7914 652.5516)" class="st4 st44">Bang Kaew</text>
+	<text transform="matrix(1 0 0 1 859.2914 648.0143)" class="st4 st43">บางพลี</text>
+	<text transform="matrix(1 0 0 1 859.2914 652.551)" class="st4 st44">Bang Phli</text>
+	<text transform="matrix(1 0 0 1 802.958 665.5784)" class="st4 st43">ปลัดเปรียง</text>
+	<text transform="matrix(1 0 0 1 802.9581 670.1152)" class="st4 st44">Palad Priang</text>
+	<text transform="matrix(1 0 0 1 840.9498 665.5785)" class="st4 st43">วัดสกุล</text>
+	<text transform="matrix(1 0 0 1 840.9499 670.1153)" class="st4 st44">Wat Sakul</text>
+	<text transform="matrix(1 0 0 1 878.5471 665.5786)" class="st4 st43">ธนาซิตี้</text>
+	<text transform="matrix(1 0 0 1 878.5472 670.1154)" class="st4 st44">Thana City</text>
+	<text transform="matrix(1 0 0 1 913.7366 648.0147)" class="st4 st43">บางโฉลง</text>
+	<text transform="matrix(1 0 0 1 913.7367 652.5515)" class="st4 st44">Bang Chalong</text>
+	<text transform="matrix(1 0 0 1 864.202 620.2838)" class="st4 st43">มหาวิทยาลัยเกริก</text>
+	<text transform="matrix(1 0 0 1 864.202 624.8206)" class="st4 st44">Krirk University</text>
+	<text transform="matrix(1 0 0 1 870.1943 542.304)" class="st4 st43">ท่าอากาศยาน</text>
+	<text transform="matrix(1 0 0 1 870.1943 548.604)" class="st4 st43">สุวรรณภูมิ</text>
+	<text transform="matrix(1 0 0 1 870.1943 554.9789)" class="st4 st44">Suvannabhumi</text>
+	<text transform="matrix(1 0 0 1 870.1943 559.5789)" class="st4 st44">Airport</text>
+	<text transform="matrix(1 0 0 1 927.5701 667.0358)" class="st4 st43">วัดศรีวารีน้อย</text>
+	<text transform="matrix(1 0 0 1 927.5702 671.5726)" class="st4 st44">Wat Si Wari Noi</text>
+	<text transform="matrix(1 0 0 1 692.7079 670.8967)" class="st4 st43">บางนา</text>
+	<text transform="matrix(1 0 0 1 692.708 675.4335)" class="st4 st44">Bang Na</text>
+	<text transform="matrix(1 0 0 1 696.0413 695.0602)" class="st4 st43">แบริ่ง</text>
+	<text transform="matrix(1 0 0 1 696.0413 699.597)" class="st4 st44">Bearing</text>
+	<text transform="matrix(1 0 0 1 694.7079 718.4093)" class="st4 st43">สำโรง</text>
+	<text transform="matrix(1 0 0 1 694.7079 722.946)" class="st4 st44">Samrong</text>
+	<text transform="matrix(1 0 0 1 718.3745 758.4093)" class="st4 st43">ปู่เจ้าสมิงพราย</text>
+	<text transform="matrix(1 0 0 1 718.3746 762.946)" class="st4 st44">Pu Chao Saming Phrai</text>
+	<text transform="matrix(1 0 0 1 717.7078 779.8029)" class="st4 st43">พิพิธภัณฑ์เอราวัณ</text>
+	<text transform="matrix(1 0 0 1 717.7079 784.3397)" class="st4 st44">Erawan Museum</text>
+	<text transform="matrix(1 0 0 1 717.7075 801.6362)" class="st4 st43">โรงเรียนนายเรือ</text>
+	<text transform="matrix(1 0 0 1 717.7076 806.173)" class="st4 st44">Royal Thai Naval Academy</text>
+	<text transform="matrix(1 0 0 1 717.7076 822.0145)" class="st4 st43">ปากน้ำ</text>
+	<text transform="matrix(1 0 0 1 717.7077 826.5513)" class="st4 st44">Paknam</text>
+	<text transform="matrix(1 0 0 1 717.7079 844.7448)" class="st4 st43">ศรีนครินทร์</text>
+	<text transform="matrix(1 0 0 1 717.7079 849.2816)" class="st4 st44">Srinagarindra</text>
+	<text transform="matrix(1 0 0 1 717.7076 866.4114)" class="st4 st43">แพรกษา</text>
+	<text transform="matrix(1 0 0 1 717.7077 870.9482)" class="st4 st44">Phraek Sa</text>
+	<text transform="matrix(1 0 0 1 717.7081 886.7448)" class="st4 st43">สายลวด</text>
+	<text transform="matrix(1 0 0 1 717.7082 891.2816)" class="st4 st44">Sai Luat</text>
+	<text transform="matrix(1 0 0 1 744.5415 889.0129)" class="st4 st43">สว่างคนิวาส</text>
+	<text transform="matrix(1 0 0 1 744.5416 893.5497)" class="st4 st44">Sawangkha Niwat</text>
+	<text transform="matrix(1 0 0 1 785.5416 889.0132)" class="st4 st43">ศรีจันทร์ประดิษฐ์</text>
+	<text transform="matrix(1 0 0 1 786.3749 893.5502)" class="st4 st44">Si Chan Pradit</text>
+	<text transform="matrix(1 0 0 1 716.5416 908.3467)" class="st4 st43">เคหะสมุทรปราการ</text>
+	<text transform="matrix(1 0 0 1 716.5416 912.8835)" class="st4 st44">Kheha Samut Prakan</text>
+	<text transform="matrix(1 0 0 1 768.3826 908.3467)" class="st4 st43">เมืองโบราณ</text>
+	<text transform="matrix(1 0 0 1 768.3826 912.8835)" class="st4 st44">Ancient City</text>
+	<text transform="matrix(1 0 0 1 815.1464 908.3466)" class="st4 st43">บางปู</text>
+	<text transform="matrix(1 0 0 1 815.1467 912.8831)" class="st4 st44">Bang Pu</text>
+	<text transform="matrix(1 0 0 1 832.6964 888.4853)" class="st4 st43">ตำหรุ</text>
+	<text transform="matrix(1 0 0 1 832.6967 893.0218)" class="st4 st44">Tam ru</text>
+	<text transform="matrix(1 0 0 1 604.6292 552.5345)" class="st4 st43">อโศก</text>
+	<text transform="matrix(1 0 0 1 604.6285 557.8673)" class="st4 st44">Asok</text>
+	<text transform="matrix(1 0 0 1 438.8936 454.0511)" class="st4 st43">อนุสาวรีย์ชัยสมรภูมิ</text>
+	<text transform="matrix(1 0 0 1 449.8419 459.2589)" class="st4 st44">Victory Monument</text>
+	<g id="LsccCF.tif_5_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="228" height="221" id="Layer_0_7_" xlink:href="437A3851C0037A34.jpg"  transform="matrix(4.558568e-04 5.456109e-02 -7.307310e-02 6.105242e-04 915.9825 540.4551)">
+		</image>
+	</g>
+	<circle class="st41" cx="712.4" cy="728.6" r="3.9"/>
+	<circle class="st41" cx="793.6" cy="657.6" r="3.9"/>
+	<circle class="st41" cx="552.4" cy="545.8" r="3.9"/>
+	<circle class="st41" cx="599.7" cy="544.3" r="3.9"/>
+	<circle class="st41" cx="649.2" cy="562.5" r="3.9"/>
+	<circle class="st41" cx="712.4" cy="728.6" r="3.9"/>
+	<circle class="st41" cx="942.4" cy="658" r="3.9"/>
+	<circle class="st41" cx="907.7" cy="560" r="3.9"/>
+	<circle class="st41" cx="838" cy="899.7" r="3.9"/>
+	<circle class="st21" cx="942.4" cy="648.3" r="4.1"/>
+	<text transform="matrix(1.1496 0 0 1 939.916 650.3779)" class="st8 st4 st59">4</text>
+	<circle class="st21" cx="847.2" cy="899.4" r="4.1"/>
+	<text transform="matrix(1.1496 0 0 1 844.4316 901.5439)" class="st8 st4 st59">4</text>
+	<path class="st41" d="M490.6,346.6c0.1,2.1-1.6,3.9-3.8,4c-1.6,0-5.5-0.1-7.1,0c-2.1,0.1-3.9-1.6-4-3.8c-0.1-2.1,1.6-3.9,3.8-4
+		c1.6,0,5.5,0.1,7.1,0C488.8,342.7,490.6,344.4,490.6,346.6z"/>
+	<path class="st41" d="M490.7,378c0,2.1-1.7,3.9-3.9,3.9c-1.6,0-5.5,0-7.1,0c-2.2,0-3.9-1.7-3.9-3.9c0-2.2,1.7-3.9,3.9-3.9
+		c1.6,0,5.5,0,7.1,0C488.9,374.1,490.7,375.8,490.7,378z"/>
+	<path class="st41" d="M490.7,362.5c0,2.1-1.7,3.9-3.9,3.9c-1.6,0-5.5,0-7.1,0c-2.2,0-3.9-1.7-3.9-3.9c0-2.2,1.7-3.9,3.9-3.9
+		c1.6,0,5.5,0,7.1,0C488.9,358.6,490.7,360.3,490.7,362.5z"/>
+	<circle class="st42" cx="820.8" cy="899.9" r="2.7"/>
+</g>
+<g id="_x31_dark_x5F_red_x5F_line">
+	<g>
+		<path class="st60" d="M422.4,24v587c0,4.4-2.5,10.5-5.7,13.7l-28.1,28.1c-3.1,3.1-9.3,5.7-13.7,5.7h-89.2
+			c-4.4,0-10.5,2.5-13.7,5.7L79.5,856.6"/>
+	</g>
+	<circle class="st41" cx="422.4" cy="24" r="3.9"/>
+	<circle class="st41" cx="422.4" cy="79.8" r="3.9"/>
+	<path class="st41" d="M432.8,116c0.1,2.1-1.5,4-3.7,4.1c-1.4,0.1-5.2-0.1-6.5-0.1c-2.1,0.1-4-1.5-4.1-3.7c-0.1-2.1,1.5-4,3.7-4.1
+		c1.4-0.1,5.2,0.1,6.5,0C430.8,112.2,432.6,113.8,432.8,116z"/>
+	<circle class="st41" cx="422.4" cy="156.8" r="3.9"/>
+	<path class="st41" d="M431.8,258.2c0,2.1-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-0.2-1-0.2-1.5-0.2c-2.2,0-3.9-1.7-3.9-3.9
+		c0-2.2,1.7-3.9,3.9-3.9s3.9,1.7,3.9,3.9c0,0.2,1,0.2,1.5,0.2C430,254.3,431.8,256,431.8,258.2z"/>
+	<circle class="st41" cx="422.4" cy="512.6" r="3.9"/>
+	<circle class="st41" cx="421.4" cy="547.8" r="3.9"/>
+	<circle class="st41" cx="422.2" cy="594.5" r="3.9"/>
+	<circle class="st41" cx="358" cy="658.4" r="3.9"/>
+	<circle class="st41" cx="358" cy="657.8" r="3.9"/>
+	<path class="st41" d="M430.8,472.9c0,2.2-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-0.8-2.3-6-2.8-6c-2.1,0-3.9-1.7-3.9-3.9
+		c0-2.2,1.8-3.9,3.9-3.9s3.9,1.7,3.9,3.9c0,1,2.6,6,2.8,6C429.1,469.1,430.8,470.8,430.8,472.9z"/>
+	<circle class="st42" cx="95.9" cy="839.8" r="2.7"/>
+	<circle class="st42" cx="108.9" cy="826.2" r="2.7"/>
+	<circle class="st42" cx="123.8" cy="812.2" r="2.7"/>
+	<circle class="st42" cx="136.3" cy="799.7" r="2.7"/>
+	<circle class="st42" cx="149.7" cy="786.1" r="2.7"/>
+	<circle class="st42" cx="163.6" cy="772.5" r="2.7"/>
+	<circle class="st42" cx="177.1" cy="759" r="2.7"/>
+	<circle class="st42" cx="190.6" cy="745.7" r="2.7"/>
+	<circle class="st42" cx="203.7" cy="732.4" r="2.7"/>
+	<circle class="st42" cx="217.3" cy="718.8" r="2.7"/>
+	<circle class="st42" cx="230.7" cy="705.4" r="2.7"/>
+	<circle class="st42" cx="244.3" cy="691.8" r="2.7"/>
+	<circle class="st42" cx="309.4" cy="658" r="2.7"/>
+	<circle class="st42" cx="394.9" cy="646.5" r="2.7"/>
+	<circle class="st42" cx="422.4" cy="347.1" r="2.7"/>
+	<circle class="st42" cx="422.4" cy="301" r="2.7"/>
+	<circle class="st42" cx="422.4" cy="205.3" r="2.7"/>
+	<circle class="st42" cx="422.4" cy="136.3" r="2.7"/>
+	<circle class="st42" cx="422.4" cy="98.8" r="2.7"/>
+	<circle class="st42" cx="422.4" cy="61.5" r="2.7"/>
+	<circle class="st42" cx="422.4" cy="43.1" r="2.7"/>
+	<text transform="matrix(1 0 0 1 377.8698 25.2728)" class="st4 st43">ธรรมศาสตร์รังสิต  </text>
+	<text transform="matrix(1 0 0 1 377.8697 30.4067)" class="st4 st44">Thammasat Rangsit</text>
+	<text transform="matrix(1 0 0 1 398.0364 44.1061)" class="st4 st43">เชียงราก  </text>
+	<text transform="matrix(1 0 0 1 398.0363 49.24)" class="st4 st44">Chiang Rak</text>
+	<text transform="matrix(1 0 0 1 395.1829 62.6057)" class="st4 st43">คลองหนึ่ง</text>
+	<text transform="matrix(1 0 0 1 395.1828 67.7396)" class="st4 st44">Khlong Nueng</text>
+	<text transform="matrix(1 0 0 1 404.1827 81.1054)" class="st4 st43">รังสิต</text>
+	<text transform="matrix(1 0 0 1 404.1827 86.2393)" class="st4 st44">Rangsit</text>
+	<text transform="matrix(1 0 0 1 401.3494 99.7721)" class="st4 st43">หลักหก</text>
+	<text transform="matrix(1 0 0 1 401.3493 104.906)" class="st4 st44">Lak Hok</text>
+	<text transform="matrix(1 0 0 1 395.1831 118.2721)" class="st4 st43">ดอนเมือง</text>
+	<text transform="matrix(1 0 0 1 395.183 123.406)" class="st4 st44">Don Mueang</text>
+	<text transform="matrix(1 0 0 1 398.8606 138.4267)" class="st4 st43">การเคหะ</text>
+	<text transform="matrix(1 0 0 1 398.8605 143.5606)" class="st4 st44">Karn Keha</text>
+	<text transform="matrix(1 0 0 1 391.527 206.5934)" class="st4 st43">ทุ่งสองห้อง</text>
+	<text transform="matrix(1 0 0 1 391.5269 211.7272)" class="st4 st44">Tung Song Hong</text>
+	<text transform="matrix(1 0 0 1 434.2973 165.0935)" class="st4 st43">หลักสี่</text>
+	<text transform="matrix(1 0 0 1 434.2973 170.1252)" class="st4 st44">Lak Si</text>
+	<text transform="matrix(1 0 0 1 437.6723 147.2174)" class="st4 st43">ราชภัฎพระนคร</text>
+	<text transform="matrix(1 0 0 1 437.6723 152.3513)" class="st4 st44">Ratchaphat Phra Nakhon</text>
+	<text transform="matrix(1 0 0 1 494.2274 149.4272)" class="st4 st43">วัดพระศรีมหาธาตุ</text>
+	<text transform="matrix(1 0 0 1 492.2273 153.1545)" class="st4 st44">Wat PraSri Mahadhat</text>
+	<text transform="matrix(1 0 0 1 433.7971 261.9267)" class="st4 st43">บางเขน</text>
+	<text transform="matrix(1 0 0 1 433.7971 267.0606)" class="st4 st44">Bang Khen</text>
+	<text transform="matrix(1 0 0 1 388.9638 302.7171)" class="st4 st43">วัดเสมียนนารี</text>
+	<text transform="matrix(1 0 0 1 388.9637 307.8509)" class="st4 st44">Wat Samien Nari</text>
+	<text transform="matrix(1 0 0 1 401.3492 347.884)" class="st4 st43">จตุจักร</text>
+	<text transform="matrix(1 0 0 1 401.3492 353.0179)" class="st4 st44">Chatuchak</text>
+	<text transform="matrix(1 0 0 1 398.8601 382.6835)" class="st4 st43">บางซื่อ</text>
+	<text transform="matrix(1 0 0 1 399.1934 386.7012)" class="st4 st44">Bang Sue</text>
+	<text transform="matrix(1 0 0 1 398.8601 401.8203)" class="st4 st43">บางซื่อ</text>
+	<text transform="matrix(1 0 0 1 398.8601 406.9541)" class="st4 st44">Bang Sue</text>
+	<text transform="matrix(1 0 0 1 395.183 453.5539)" class="st4 st43">ราชวิถี</text>
+	<text transform="matrix(1 0 0 1 395.183 458.6877)" class="st4 st44">Ratchawithi</text>
+	<text transform="matrix(1 0 0 1 427.5247 502.551)" class="st4 st43">ยมราช</text>
+	<text transform="matrix(1 0 0 1 427.5247 507.6849)" class="st4 st44">Yomarat</text>
+	<text transform="matrix(1 0 0 1 427.1549 583.3694)" class="st4 st43">หัวลำโพง</text>
+	<text transform="matrix(1 0 0 1 427.1551 588.7018)" class="st4 st44">Hua Lamphong</text>
+	<text transform="matrix(1 0 0 1 396.696 652.8999)" class="st4 st43">คลองสาน</text>
+	<text transform="matrix(1 0 0 1 396.6959 658.0338)" class="st4 st44">Khlong San</text>
+	<text transform="matrix(1 0 0 1 300.3626 665.8719)" class="st4 st43">ตลาดพลู</text>
+	<text transform="matrix(1 0 0 1 300.3626 671.0059)" class="st4 st44">Talat Phlu</text>
+	<text transform="matrix(1 0 0 1 276.696 666.7053)" class="st4 st43">ตากสิน</text>
+	<text transform="matrix(1 0 0 1 276.6959 671.8392)" class="st4 st44">Taksin</text>
+	<text transform="matrix(1 0 0 1 246.8627 697.5386)" class="st4 st43">จอมทอง</text>
+	<text transform="matrix(1 0 0 1 246.8626 702.6725)" class="st4 st44">Chom Thong</text>
+	<text transform="matrix(1 0 0 1 233.196 711.6376)" class="st4 st43">วัดไทร</text>
+	<text transform="matrix(1 0 0 1 233.1959 716.7715)" class="st4 st44">Wat Sai</text>
+	<text transform="matrix(1 0 0 1 206.8627 738.4713)" class="st4 st43">บางบอน</text>
+	<text transform="matrix(1 0 0 1 206.8626 743.6051)" class="st4 st44">Bang Bon</text>
+	<text transform="matrix(1 0 0 1 192.696 752.2258)" class="st4 st43">รางสะแก</text>
+	<text transform="matrix(1 0 0 1 192.6959 757.3596)" class="st4 st44">Rang Sakae</text>
+	<text transform="matrix(1 0 0 1 179.3627 765.8135)" class="st4 st43">รางโพธิ์</text>
+	<text transform="matrix(1 0 0 1 179.3626 770.9474)" class="st4 st44">Rang Pho</text>
+	<text transform="matrix(1 0 0 1 166.196 778.7876)" class="st4 st43">สามแยก</text>
+	<text transform="matrix(1 0 0 1 166.1959 783.9214)" class="st4 st44">Sam Yaek</text>
+	<text transform="matrix(1 0 0 1 153.0293 791.9612)" class="st4 st43">พรมแดน</text>
+	<text transform="matrix(1 0 0 1 153.0293 797.0951)" class="st4 st44">Phrom Dan</text>
+	<text transform="matrix(1 0 0 1 138.8645 805.6844)" class="st4 st43">ทุ่งสีทอง</text>
+	<text transform="matrix(1 0 0 1 138.8644 810.8183)" class="st4 st44">Tung Si Thong</text>
+	<text transform="matrix(1 0 0 1 125.8645 819.0178)" class="st4 st43">บางน้ำจืด</text>
+	<text transform="matrix(1 0 0 1 125.8644 824.1516)" class="st4 st44">Bang Nam Chuet</text>
+	<text transform="matrix(1 0 0 1 112.7389 832.1876)" class="st4 st43">คอกควาย</text>
+	<text transform="matrix(1 0 0 1 112.7388 837.3214)" class="st4 st44">Khok Khwai</text>
+	<text transform="matrix(1 0 0 1 98.4056 845.8943)" class="st4 st43">บ้านขอม</text>
+	<text transform="matrix(1 0 0 1 98.4055 851.0281)" class="st4 st44">Ban Khow</text>
+	<text transform="matrix(1 0 0 1 84.4467 862.0614)" class="st4 st43">มหาชัย</text>
+	<text transform="matrix(1 0 0 1 84.4467 867.1953)" class="st4 st44">Mahachai</text>
+	<text transform="matrix(1 0 0 1 219.2785 725.3043)" class="st4 st43">วัดสิงห์</text>
+	<text transform="matrix(1 0 0 1 219.2785 730.4382)" class="st4 st44">Wat Singh</text>
+	<text transform="matrix(1 0 0 1 427.8581 556.3843)" class="st4 st43">ยศเส</text>
+	<text transform="matrix(1 0 0 1 427.858 561.5182)" class="st4 st44">Yot Se</text>
+	<circle class="st41" cx="79.5" cy="856.2" r="3.9"/>
+	<circle class="st7" cx="422.4" cy="14.3" r="4.1"/>
+	<text transform="matrix(1 0 0 1 420.9178 16.4854)" class="st8 st4 st45">1</text>
+	<circle class="st7" cx="68.6" cy="854" r="4.1"/>
+	<text transform="matrix(1 0 0 1 66.8353 855.8546)" class="st8 st4 st45">1</text>
+	<g id="LsccCF.tif_1_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="228" height="221" id="Layer_0_2_" xlink:href="437A3851C0037A35.jpg"  transform="matrix(4.558568e-04 5.456109e-02 -7.307310e-02 6.105242e-04 451.435 109.6719)">
+		</image>
+	</g>
+	<text transform="matrix(1 0 0 1 445.0997 120.247)" class="st4 st44">Don Mueang</text>
+	<text transform="matrix(1 0 0 1 445.0997 124.847)" class="st4 st44">AirPort</text>
+	<g id="LsccCF.tif_2_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="228" height="221" id="Layer_0_3_" xlink:href="437A3851C0037A3B.jpg"  transform="matrix(1.691639e-04 2.024708e-02 -2.711670e-02 2.265594e-04 580.1121 463.2151)">
+		</image>
+	</g>
+	<text transform="matrix(1 0 0 1 288.9366 698.2861)" class="st4 st43">ตลาดพลู</text>
+</g>
+<g id="_x32_red_x5F_Light">
+	<g>
+		<path class="st61" d="M51,464h121.2c4.4,0,10.5,2.5,13.7,5.7l63,63c3.1,3.1,9.3,5.7,13.7,5.7h36"/>
+	</g>
+	<circle class="st41" cx="296.6" cy="537.5" r="3.9"/>
+	<circle class="st26" cx="288" cy="528.8" r="4.1"/>
+	<text transform="matrix(1 0 0 1 285.96 531.5797)" class="st8 st4 st62">2</text>
+	<circle class="st26" cx="41.4" cy="463.4" r="4.1"/>
+	<text transform="matrix(1 0 0 1 39.1521 466.234)" class="st8 st4 st62">2</text>
+	<circle class="st42" cx="134.3" cy="464" r="2.7"/>
+	<circle class="st42" cx="104.1" cy="463.9" r="2.7"/>
+	<circle class="st42" cx="80.4" cy="464.2" r="2.7"/>
+	<circle class="st41" cx="51" cy="464.2" r="3.9"/>
+	<circle class="st42" cx="226.1" cy="510" r="2.7"/>
+	<text transform="matrix(1 0 0 1 65.2425 454.5135)" class="st4 st43">ศาลาธรรมสพน์</text>
+	<text transform="matrix(1 0 0 1 65.2426 459.2219)" class="st4 st44">Sala Thammasop</text>
+	<text transform="matrix(1 0 0 1 186.3608 454.6586)" class="st4 st43">บางบำหรุ</text>
+	<text transform="matrix(1 0 0 1 186.3609 459.3669)" class="st4 st44">Bang Bumru</text>
+	<text transform="matrix(1 0 0 1 238.2879 392.7843)" class="st4 st43">บางกรวย-กฟผ</text>
+	<text transform="matrix(1 0 0 1 238.2877 397.4213)" class="st4 st44">Bang Kruai-EGAT</text>
+	<text transform="matrix(1 0 0 1 305.1629 376.9655)" class="st4 st43">สะพานพระราม 6</text>
+	<text transform="matrix(1 0 0 1 305.1627 381.6024)" class="st4 st44">Rama VI  Bridge</text>
+	<text transform="matrix(1 0 0 1 398.0363 426.5349)" class="st4 st43">สามเสน</text>
+	<text transform="matrix(1 0 0 1 398.0361 431.1719)" class="st4 st44">Sam Sen</text>
+	<text transform="matrix(1 0 0 1 89.1261 471.8755)" class="st4 st43">กาญจนาภิเษก</text>
+	<text transform="matrix(1 0 0 1 92.702 475.6644)" class="st4 st44">Kanchanapisek</text>
+	<text transform="matrix(1 0 0 1 188.5381 517.1818)" class="st4 st43">ตลาดน้ำตลิ่งชัน</text>
+	<text transform="matrix(1 0 0 1 188.5382 521.8901)" class="st4 st44">Talat Nam Taling Chan</text>
+	<g>
+		<path class="st61" d="M168.7,464.1h18.8c4.4,0,11.1,0,15,0s10.6,0,15,0h294.3c4.4,0,10.5,2.5,13.7,5.7l7.7,7.7
+			c3.1,3.1,9.3,5.7,13.7,5.7h239.6"/>
+	</g>
+	<g>
+		<path class="st61" d="M208.2,463.8l94.2-94.2c3.1-3.1,9.3-5.7,13.7-5.7H411c4.4,0,8,3.6,8,8v104c0,4.4,3.6,8,8,8h106.8
+			c4.4,0,9.4,0,11,0s3.8,0,4.8,0s5.4,0,9.8,0h32.3"/>
+	</g>
+	<circle class="st42" cx="196.1" cy="464" r="2.7"/>
+	<circle class="st42" cx="272.2" cy="399.5" r="2.7"/>
+	<circle class="st42" cx="302" cy="370.1" r="2.7"/>
+	<circle class="st41" cx="277.1" cy="464" r="3.9"/>
+	<circle class="st41" cx="358" cy="464.2" r="3.9"/>
+	<circle class="st41" cx="487" cy="464.1" r="3.9"/>
+	<circle class="st41" cx="599.9" cy="488.5" r="3.9"/>
+	<circle class="st26" cx="776.9" cy="492" r="4.1"/>
+	<text transform="matrix(1 0 0 1 43.3587 473.5579)" class="st4 st43">ศาลายา</text>
+	<text transform="matrix(1 0 0 1 43.3588 478.2662)" class="st4 st44">Sala Ya</text>
+	<text transform="matrix(0.9388 0 0 1 124.0508 456.5078)" class="st4 st63">บ้านฉิมพลี</text>
+	<text transform="matrix(1 0 0 1 124.5619 460.0677)" class="st4 st44">Ban Chimplee</text>
+</g>
+<g id="_x39_pink_x5F_line">
+	<g>
+		<path class="st64" d="M281.3,256.5c0,0,0-1.3,0-2.8s-2.5-5.4-5.6-8.5l-41-41.3c-3.1-3.1-5.6-9.2-5.6-13.6v-25.2c0-4.4,3.6-8,8-8
+			h526.1c4.4,0,10.5,2.5,13.6,5.7l120.6,121.4"/>
+	</g>
+	<circle class="st42" cx="519.4" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="454.6" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="396.7" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="372.1" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="347.7" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="323.2" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="299" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="274.9" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="250" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="229.1" cy="165.8" r="2.7"/>
+	<circle class="st42" cx="229.1" cy="186.6" r="2.7"/>
+	<circle class="st42" cx="239.3" cy="208.5" r="2.7"/>
+	<circle class="st42" cx="252.3" cy="221.8" r="2.7"/>
+	<circle class="st42" cx="267" cy="236.4" r="2.7"/>
+	<circle class="st42" cx="552.2" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="584.1" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="616.1" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="687.4" cy="157.5" r="2.7"/>
+	<circle class="st42" cx="724.2" cy="157.5" r="2.7"/>
+	<circle class="st42" cx="761" cy="157.2" r="2.7"/>
+	<circle class="st42" cx="787.7" cy="174.6" r="2.7"/>
+	<circle class="st42" cx="809.9" cy="196.8" r="2.7"/>
+	<circle class="st42" cx="831.9" cy="218.7" r="2.7"/>
+	<circle class="st42" cx="831.9" cy="218.7" r="2.7"/>
+	<circle class="st42" cx="853.7" cy="240.7" r="2.7"/>
+	<circle class="st42" cx="875.9" cy="262.8" r="2.7"/>
+	<circle class="st41" cx="486.7" cy="157.5" r="3.9"/>
+	<circle class="st41" cx="648.4" cy="157.5" r="3.9"/>
+	<circle class="st41" cx="897.3" cy="284.2" r="3.9"/>
+	<circle class="st41" cx="277.2" cy="257.3" r="3.9"/>
+	<text transform="matrix(1 0 0 1 268.2354 230.0403)" class="st4 st43">แคราย</text>
+	<text transform="matrix(1 0 0 1 268.2353 233.1116)" class="st4 st44">Khae Rai</text>
+	<text transform="matrix(1 0 0 1 253.3604 215.0684)" class="st4 st43">สนามบินน้ำ</text>
+	<text transform="matrix(1 0 0 1 253.5642 218.464)" class="st4 st44">Sanambin Nam</text>
+	<text transform="matrix(1 0 0 1 240.5375 201.7979)" class="st4 st43">สามัคคี</text>
+	<text transform="matrix(1 0 0 1 240.5378 204.8457)" class="st4 st44">Samakkhi</text>
+	<text transform="matrix(1 0 0 1 233.1959 187.7331)" class="st4 st43">ชลประทาน</text>
+	<text transform="matrix(1 0 0 1 231.4124 192.8045)" class="st4 st44">Chonlaprathan</text>
+	<text transform="matrix(1 0 0 1 205.3626 171.1918)" class="st4 st43">ปากเกร็ด</text>
+	<text transform="matrix(1 0 0 1 210.2874 175.0131)" class="st4 st44">Pak Kret</text>
+	<text transform="matrix(1 0 0 1 233.1959 165.156)" class="st4 st43">เลี่ยงเมืองปากเกร็ด</text>
+	<text transform="matrix(1 0 0 1 233.1957 170.0294)" class="st4 st44">Liang Mueang Pak Kret</text>
+	<text transform="matrix(1 0 0 1 283.9125 165.1561)" class="st4 st43">เมืองทองธานี</text>
+	<text transform="matrix(1 0 0 1 283.9124 170.2275)" class="st4 st44">Mueang Thong Thani</text>
+	<text transform="matrix(1 0 0 1 261.136 146.356)" class="st4 st43">แจ้งวัฒนะ-ปากเกร็ด28</text>
+	<text transform="matrix(1 0 0 1 261.136 151.4274)" class="st4 st44">JangWattana-Pak kret 28</text>
+	<text transform="matrix(1 0 0 1 317.3608 147.2484)" class="st4 st43">ศรีรัช</text>
+	<text transform="matrix(1 0 0 1 317.3607 152.3197)" class="st4 st44">Si Rat</text>
+	<text transform="matrix(1 0 0 1 334.7698 165.3734)" class="st4 st43">แจ้งวัฒนะ 14</text>
+	<text transform="matrix(1 0 0 1 334.7697 170.4447)" class="st4 st44">JangWattana 14</text>
+	<text transform="matrix(1 0 0 1 356.6448 147.2483)" class="st4 st43">ศูนย์ราชการฯ</text>
+	<text transform="matrix(1 0 0 1 356.6447 152.3197)" class="st4 st44">Government Complex</text>
+	<text transform="matrix(1 0 0 1 390.8948 165.3732)" class="st4 st43">ทีโอที</text>
+	<text transform="matrix(1 0 0 1 390.8947 170.4445)" class="st4 st44">TOT</text>
+	<text transform="matrix(1 0 0 1 509.3037 164.9912)" class="st4 st43">รามอินทรา 3</text>
+	<text transform="matrix(1 0 0 1 509.3036 170.1251)" class="st4 st44">Ram Inthra 3</text>
+	<text transform="matrix(1 0 0 1 541.8036 164.991)" class="st4 st43">ลาดปลาเค้า</text>
+	<text transform="matrix(1 0 0 1 541.8036 170.1248)" class="st4 st44">Lat Pla Khao</text>
+	<text transform="matrix(1 0 0 1 570.8289 165.2398)" class="st4 st43">รามอินทรา กม4</text>
+	<text transform="matrix(1 0 0 1 570.8289 170.3737)" class="st4 st44">Ram Intra Km4</text>
+	<text transform="matrix(1 0 0 1 608.2039 165.1249)" class="st4 st43">มัยลาภ</text>
+	<text transform="matrix(1 0 0 1 608.2039 170.2587)" class="st4 st44">Maiyalap  </text>
+	<text transform="matrix(1 0 0 1 638.1699 146.8996)" class="st4 st43">วัชรพล</text>
+	<text transform="matrix(1 0 0 1 638.1699 152.0335)" class="st4 st44">Watcharaphon</text>
+	<text transform="matrix(1 0 0 1 673.3011 147.2173)" class="st4 st43">รามอินทรา กม 6</text>
+	<text transform="matrix(1 0 0 1 673.301 152.3511)" class="st4 st44">Ram Inthra Km 6</text>
+	<text transform="matrix(1 0 0 1 717.7074 147.2173)" class="st4 st43">คู้บอน</text>
+	<text transform="matrix(1 0 0 1 717.7073 152.3511)" class="st4 st44">Ku Bon</text>
+	<text transform="matrix(1 0 0 1 747.8324 147.8423)" class="st4 st43">รพ สินแพทย์</text>
+	<text transform="matrix(1 0 0 1 747.8323 152.9761)" class="st4 st44">SYNPHAET HOSPITAL</text>
+	<text transform="matrix(1 0 0 1 746.7074 181.4958)" class="st4 st43">วงแหวนตะวันออก</text>
+	<text transform="matrix(1 0 0 1 746.7073 186.6297)" class="st4 st44">East Outer Ring Road</text>
+	<text transform="matrix(1 0 0 1 770.5824 203.3708)" class="st4 st43">นพรัตนราชธานี</text>
+	<text transform="matrix(1 0 0 1 770.5823 208.5047)" class="st4 st44">Noppharat Ratchathani</text>
+	<text transform="matrix(1 0 0 1 811.0824 224.1457)" class="st4 st43">บางชัน</text>
+	<text transform="matrix(1 0 0 1 811.0823 229.2795)" class="st4 st44">Bang Chan</text>
+	<text transform="matrix(1 0 0 1 811.0823 247.7707)" class="st4 st43">เศรษฐบุตรบำเพ็ญ</text>
+	<text transform="matrix(1 0 0 1 811.0823 252.9045)" class="st4 st44">Settabut Bamphen</text>
+	<text transform="matrix(1 0 0 1 845.2073 267.9552)" class="st4 st43">ตลาดมีนบุรี</text>
+	<text transform="matrix(1 0 0 1 845.2073 273.0891)" class="st4 st44">Thalad Min Buri</text>
+	<circle class="st11" cx="886.6" cy="284.2" r="4.1"/>
+	<text transform="matrix(1 0 0 1 884.3315 286.8701)" class="st8 st4 st62">9</text>
+	<circle class="st11" cx="257.5" cy="250.2" r="4.1"/>
+	<text transform="matrix(1 0 0 1 255.2061 252.8845)" class="st8 st4 st62">9</text>
+</g>
+<g id="_x35_green_x5F_light">
+	<g>
+		<path class="st65" d="M422.2,548.5h73c4.4,0,8,3.6,8,8v83.9c0,4.4-2.5,10.5-5.7,13.7l-30.8,30.8c-3.1,3.1-9.3,5.7-13.7,5.7H295.2
+			c-4.4,0-10.5-2.5-13.7-5.7l-53.3-53.3c-3.1-3.1-8.2-8.2-11.3-11.3l-44.5-44.5c-3.1-3.1-5.7-9.3-5.7-13.7V464"/>
+	</g>
+	<circle class="st41" cx="421.4" cy="548.1" r="3.9"/>
+	<circle class="st42" cx="459.5" cy="548.1" r="2.7"/>
+	<circle class="st42" cx="503" cy="570.4" r="2.7"/>
+	<circle class="st42" cx="436.9" cy="690.7" r="2.7"/>
+	<circle class="st42" cx="389.2" cy="689.9" r="2.7"/>
+	<circle class="st42" cx="341.4" cy="689.8" r="2.7"/>
+	<circle class="st41" cx="503" cy="642.5" r="3.9"/>
+	<circle class="st41" cx="309.4" cy="689.8" r="3.9"/>
+	<path class="st41" d="M273.8,667.5c0.1,2.1-1.6,4-3.7,4.1s-5.8-0.1-7.8,0c-2.1,0.1-4-1.6-4.1-3.7c-0.1-2.1,1.6-4,3.7-4
+		c2.1-0.1,5.7,0.1,7.8,0C271.9,663.7,273.7,665.3,273.8,667.5z"/>
+	<circle class="st41" cx="222.2" cy="625.5" r="3.9"/>
+	<circle class="st42" cx="194.7" cy="597.7" r="2.7"/>
+	<circle class="st42" cx="170.9" cy="574.1" r="2.7"/>
+	<circle class="st42" cx="166.9" cy="544.7" r="2.7"/>
+	<circle class="st42" cx="167.1" cy="518.1" r="2.7"/>
+	<circle class="st42" cx="167.1" cy="491.4" r="2.7"/>
+	<circle class="st41" cx="166.7" cy="464" r="3.9"/>
+	<path class="st41" d="M369.5,364c0,2.2-1.7,3.9-3.9,3.9c-1.8,0-5.7,0-7.6,0c-2,0-5.7,0-7.7,0c-2.2,0-3.9-1.7-3.9-3.9
+		c0-2.2,1.7-3.9,3.9-3.9c2,0,5.7,0,7.7,0c1.8,0,5.7,0,7.6,0C367.7,360.1,369.5,361.8,369.5,364z"/>
+	<text transform="matrix(1 0 0 1 134.8768 493.3258)" class="st4 st43">บรมราชชนนี</text>
+	<text transform="matrix(1 0 0 1 115.0384 498.034)" class="st4 st44">Baromma Ratcha Chonnani</text>
+	<text transform="matrix(1 0 0 1 140.3767 519.7005)" class="st4 st43">อินทรวาส</text>
+	<text transform="matrix(1 0 0 1 143.3767 524.6966)" class="st4 st44">Intrarawat</text>
+	<text transform="matrix(1 0 0 1 142.8913 546.7428)" class="st4 st43">บางพรม</text>
+	<text transform="matrix(1 0 0 1 141.1413 551.1966)" class="st4 st44">Bang Phrom</text>
+	<text transform="matrix(1 0 0 1 142.375 580.2488)" class="st4 st43">กระโจมทอง</text>
+	<text transform="matrix(1 0 0 1 141.1415 585.0776)" class="st4 st44">Krachom Thong</text>
+	<text transform="matrix(1 0 0 1 196.7666 589.6238)" class="st4 st43">บางแวก</text>
+	<text transform="matrix(1 0 0 1 196.7665 594.3276)" class="st4 st44">Bang Waek</text>
+	<text transform="matrix(1 0 0 1 224.2879 615.3736)" class="st4 st43">บางหว้า</text>
+	<text transform="matrix(1 0 0 1 224.2878 620.618)" class="st4 st44">Bang Wa</text>
+	<text transform="matrix(1 0 0 1 235.3587 667.0358)" class="st4 st43">วุฒากาศ</text>
+	<text transform="matrix(1 0 0 1 235.3586 671.7396)" class="st4 st44">Watthakat</text>
+	<text transform="matrix(1 0 0 1 290.2997 701.7754)" class="st4 st44">Talat Phlu</text>
+	<text transform="matrix(1 0 0 1 333.3588 680.4108)" class="st4 st43">โพธิ์นิมิต</text>
+	<text transform="matrix(1 0 0 1 333.3586 685.1146)" class="st4 st44">Talat Phlu</text>
+	<text transform="matrix(1 0 0 1 376.1088 698.2859)" class="st4 st43">วงเวียนใหญ่</text>
+	<text transform="matrix(1 0 0 1 376.1086 702.9897)" class="st4 st44">Wongwian Yai</text>
+	<text transform="matrix(1 0 0 1 423.5856 680.4106)" class="st4 st43">กรุงธนบุรี</text>
+	<text transform="matrix(1 0 0 1 423.5855 685.1144)" class="st4 st44">Krung Thon Buri</text>
+	<text transform="matrix(1 0 0 1 495.4851 664.1432)" class="st4 st43">สุรศักด์</text>
+	<text transform="matrix(1 0 0 1 495.4856 668.21)" class="st4 st44">Surasak</text>
+	<text transform="matrix(1 0 0 1 474.5675 642.8804)" class="st4 st43">ช่องนนทรี</text>
+	<text transform="matrix(1 0 0 1 474.5671 647.5978)" class="st4 st44">Chong Nonsi</text>
+	<text transform="matrix(1 0 0 1 508.6096 600.8976)" class="st4 st43">ศาลาแดง</text>
+	<text transform="matrix(1 0 0 1 508.6095 605.6014)" class="st4 st44">Sala Daeng</text>
+	<text transform="matrix(1 0 0 1 508.1096 571.883)" class="st4 st43">ราชดำริ</text>
+	<text transform="matrix(1 0 0 1 508.1095 576.5868)" class="st4 st44">Rachadamri</text>
+	<text transform="matrix(1 0 0 1 494.3419 534.8192)" class="st4 st43">สยาม</text>
+	<text transform="matrix(1 0 0 1 494.3417 539.355)" class="st4 st44">Siam</text>
+	<text transform="matrix(1 0 0 1 446.4068 556.9963)" class="st4 st43">สนามกีฬาแห่งชาติ</text>
+	<text transform="matrix(1 0 0 1 448.2052 561.3655)" class="st4 st44">National Stadium</text>
+	<text transform="matrix(1 0 0 1 142.3752 471.491)" class="st4 st43">ตลิ่งชัน</text>
+	<text transform="matrix(1 0 0 1 142.3754 476.8242)" class="st4 st44">Taling Chan</text>
+	<circle class="st15" cx="431.3" cy="538.9" r="4.1"/>
+	<text transform="matrix(1 0 0 1 429.6013 541.2383)" class="st16 st4 st46">5</text>
+	<circle class="st15" cx="166.7" cy="454.1" r="4.1"/>
+	<text transform="matrix(1 0 0 1 165.0693 456.346)" class="st16 st4 st46">5</text>
+	<path class="st41" d="M507.1,598.6c0,2.2-1.7,3.9-3.9,3.9c-2.1,0-3.9-1.7-3.9-3.9c0-0.4-0.4-1-0.8-1c-2.1,0-3.9-1.7-3.9-3.9
+		s1.8-3.9,3.9-3.9c2.2,0,3.9,1.7,3.9,3.9c0,0.4,0.4,1,0.8,1C505.3,594.7,507.1,596.4,507.1,598.6z"/>
+	<path class="st41" d="M499.1,549.1c0,2.1-1.7,3.9-3.9,3.9c-2.2,0-3.9-1.7-3.9-3.9c0-0.9,0-3.9,0-4.8c0-2.2,1.7-3.9,3.9-3.9
+		c2.1,0,3.9,1.7,3.9,3.9C499.1,545.3,499.1,548.2,499.1,549.1z"/>
+	<text transform="matrix(1 0 0 1 310.151 701.7758)" class="st4 st44">BRT</text>
+	<text transform="matrix(1 0 0 1 479.1943 678.7631)" class="st4 st43">สะพานตากสิน</text>
+	<g id="WW5oHd.tif">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1123" height="306" id="Layer_0_15_" xlink:href="437A3851C0037A3C.png"  transform="matrix(1.830532e-02 0 0 1.459399e-02 461.9327 689.7409)">
+		</image>
+	</g>
+	<g id="WW5oHd.tif_1_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="980" height="386" id="Layer_0_16_" xlink:href="437A3851C0037A3F.png"  transform="matrix(-3.632301e-04 2.106725e-02 -1.556935e-02 -2.684383e-04 381.5478 617.0399)">
+		</image>
+	</g>
+	<g id="WW5oHd.tif_2_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1023" height="341" id="Layer_0_17_" xlink:href="C0AA23D0C080A8BB.png"  transform="matrix(2.009470e-02 0 0 1.602058e-02 310.0124 480.3817)">
+		</image>
+	</g>
+	<g id="WW5oHd.tif_4_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1023" height="341" id="Layer_0_19_" xlink:href="C0AA23D0C080A8B9.png"  transform="matrix(2.009470e-02 0 0 1.602058e-02 309.4177 496.2542)">
+		</image>
+	</g>
+	<circle class="st42" cx="474.7" cy="677.3" r="2.7"/>
+	<circle class="st42" cx="489.4" cy="662.6" r="2.7"/>
+	<text transform="matrix(1 0 0 1 515.5557 653.3299)" class="st4 st44">BRT</text>
+</g>
+<g id="_x38_orange_x5F_line">
+	<g>
+		<path class="st66" d="M277.1,544.9h98.6c4.4,0,10.5-2.5,13.7-5.7l20.9-20.9c3.1-3.1,9.3-5.7,13.7-5.7h93.6c4.4,0,8-3.6,8-8v-81.1
+			c0-4.4,3.6-8,8-8h224c4.4,0,10.5-2.5,13.7-5.7l145.1-145.1"/>
+	</g>
+	<circle class="st42" cx="336.4" cy="544.9" r="2.7"/>
+	<circle class="st42" cx="397.4" cy="531.1" r="2.7"/>
+	<path class="st41" d="M281,543.7c0,2.1-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-0.3-0.4-0.8-0.7-0.8c-2.2,0-3.9-1.7-3.9-3.9
+		s1.7-3.9,3.9-3.9s3.9,1.7,3.9,3.9c0,0.3,0.4,0.8,0.7,0.8C279.2,539.8,281,541.5,281,543.7z"/>
+	<circle class="st41" cx="422.3" cy="512.3" r="3.9"/>
+	<circle class="st41" cx="486.9" cy="512.7" r="3.9"/>
+	<circle class="st41" cx="525.5" cy="483.5" r="3.9"/>
+	<circle class="st41" cx="561" cy="415.7" r="3.9"/>
+	<circle class="st41" cx="601.5" cy="415.5" r="3.9"/>
+	<circle class="st41" cx="648.2" cy="415.7" r="3.9"/>
+	<circle class="st41" cx="773.6" cy="408.2" r="3.9"/>
+	<circle class="st41" cx="814.8" cy="366.3" r="3.9"/>
+	<circle class="st41" cx="897.6" cy="284.2" r="3.9"/>
+	<circle class="st41" cx="916.3" cy="264.8" r="3.9"/>
+	<circle class="st42" cx="507.1" cy="512.7" r="2.7"/>
+	<circle class="st42" cx="525.5" cy="450.4" r="2.7"/>
+	<circle class="st42" cx="623.9" cy="415.5" r="2.7"/>
+	<circle class="st42" cx="675.7" cy="415.7" r="2.7"/>
+	<circle class="st42" cx="703.8" cy="415.7" r="2.7"/>
+	<circle class="st42" cx="725.7" cy="415.7" r="2.7"/>
+	<circle class="st42" cx="746" cy="415.7" r="2.7"/>
+	<circle class="st42" cx="800" cy="381.2" r="2.7"/>
+	<circle class="st42" cx="833.3" cy="347.8" r="2.7"/>
+	<circle class="st42" cx="850" cy="332.1" r="2.7"/>
+	<circle class="st42" cx="865.7" cy="316.3" r="2.7"/>
+	<circle class="st42" cx="881.2" cy="300" r="2.7"/>
+	<circle class="st42" cx="785.7" cy="395.5" r="2.7"/>
+	<circle class="st42" cx="525.5" cy="429" r="2.7"/>
+	<circle class="st24" cx="924.3" cy="257.8" r="4.1"/>
+	<text transform="matrix(1 0 0 1 921.8148 260.5516)" class="st16 st4 st62">8</text>
+	<circle class="st24" cx="270.7" cy="529.8" r="4.1"/>
+	<text transform="matrix(1 0 0 1 268.1611 532.5516)" class="st16 st4 st62">8</text>
+	<path class="st41" d="M300.5,544.6c0,2.2-1.7,3.9-3.9,3.9c-2.2,0-3.9-1.7-3.9-3.9c0-1.5,0-5.3,0-6.8c0-2.2,1.7-3.9,3.9-3.9
+		c2.1,0,3.9,1.7,3.9,3.9C300.5,539.3,300.5,543.2,300.5,544.6z"/>
+	<text transform="matrix(1 0 0 1 400.0321 537.4172)" class="st4 st43">หลาน</text>
+	<text transform="matrix(1 0 0 1 400.0321 543.7172)" class="st4 st43">หลวง   </text>
+	<text transform="matrix(1 0 0 1 400.0322 548.5845)" class="st4 st44">Lan</text>
+	<text transform="matrix(1 0 0 1 400.0322 553.1844)" class="st4 st44">Luang</text>
+	<text transform="matrix(1 0 0 1 326.0894 537.4171)" class="st4 st43">สนามหลวง   </text>
+	<text transform="matrix(1 0 0 1 326.0892 541.2383)" class="st4 st67">Thonburi - Siriraj</text>
+	<text transform="matrix(1 0 0 1 427.5249 502.5512)" class="st4 st43">ยมราช   </text>
+	<text transform="matrix(1 0 0 1 427.5246 507.6847)" class="st4 st44">Yomarat</text>
+	<text transform="matrix(1 0 0 1 466.0651 520.3003)" class="st4 st43">ราชเทวี   </text>
+	<text transform="matrix(1 0 0 1 463.3749 524.7736)" class="st4 st44">Ratchathewi</text>
+	<text transform="matrix(1 0 0 1 496.8154 502.4177)" class="st4 st43">ประตูน้ำ</text>
+	<text transform="matrix(1 0 0 1 496.8152 507.0081)" class="st4 st44">Pratu Nam</text>
+	<text transform="matrix(1 0 0 1 530.4404 491.1677)" class="st4 st43">ราชปรารภ</text>
+	<text transform="matrix(1 0 0 1 530.4402 495.7581)" class="st4 st44">Ratchaprarop</text>
+	<text transform="matrix(1 0 0 1 530.4404 451.9177)" class="st4 st43">รางน้ำ</text>
+	<text transform="matrix(1 0 0 1 530.4402 456.5081)" class="st4 st44">Rang Name</text>
+	<text transform="matrix(1 0 0 1 530.4404 429.8463)" class="st4 st43">ดินแดง</text>
+	<text transform="matrix(1 0 0 1 530.4402 434.4366)" class="st4 st44">Din Daeng</text>
+	<text transform="matrix(1 0 0 1 543.6904 405.6797)" class="st4 st43">ประชาสงเคราะห์</text>
+	<text transform="matrix(1 0 0 1 547.1069 410.1867)" class="st4 st44">Pracha Songkhro</text>
+	<text transform="matrix(1 0 0 1 618.8572 405.5964)" class="st4 st43">รฟม</text>
+	<text transform="matrix(1 0 0 1 618.8571 410.1867)" class="st4 st44">MRTA</text>
+	<text transform="matrix(1 0 0 1 604.6295 423.8218)" class="st4 st43">ศูนย์วัฒนธรรม</text>
+	<text transform="matrix(1 0 0 1 604.6295 430.1218)" class="st4 st43">แห่งประเทศไทย</text>
+	<text transform="matrix(1 0 0 1 604.6293 435.2843)" class="st4 st44">Thailand Cultural</text>
+	<text transform="matrix(1 0 0 1 604.6293 439.8843)" class="st4 st44">Center</text>
+	<text transform="matrix(1 0 0 1 653.2408 423.7633)" class="st4 st43">ประดิษฐ์</text>
+	<text transform="matrix(1 0 0 1 653.2408 430.0633)" class="st4 st43">มนูธรรม</text>
+	<text transform="matrix(1 0 0 1 653.2404 435.2703)" class="st4 st44">Pradit Manutham</text>
+	<text transform="matrix(1 0 0 1 660.0746 405.6798)" class="st4 st43">รามคำแหง 12 </text>
+	<text transform="matrix(1 0 0 1 660.0742 409.7703)" class="st4 st44">Ramkhamhaeng 12</text>
+	<text transform="matrix(1 0 0 1 283.9123 568.9017)" class="st4 st43">ธนบุรี - ศิริราช   </text>
+	<text transform="matrix(1 0 0 1 283.2461 573.235)" class="st4 st44">Thonburi - Siriraj</text>
+	<text transform="matrix(1 0 0 1 692.7082 424.7632)" class="st4 st43">รามคำแหง </text>
+	<text transform="matrix(1 0 0 1 692.7084 428.027)" class="st4 st44">Ramkhamhaeng</text>
+	<text transform="matrix(1 0 0 1 713.408 405.5963)" class="st4 st43">ราชมังคลา</text>
+	<text transform="matrix(1 0 0 1 713.4075 409.6869)" class="st4 st44">Ratchamangala</text>
+	<text transform="matrix(1 0 0 1 737.2414 424.763)" class="st4 st43">หัวหมาก</text>
+	<text transform="matrix(1 0 0 1 737.2409 428.8535)" class="st4 st44">Hua Mak</text>
+	<text transform="matrix(1 0 0 1 765.8487 423.5196)" class="st4 st43">ลำสาสี</text>
+	<text transform="matrix(1 0 0 1 788.8247 402.5274)" class="st4 st43">ศรีบูรพา</text>
+	<text transform="matrix(1 0 0 1 788.8242 406.618)" class="st4 st44">Si Burapha</text>
+	<text transform="matrix(1 0 0 1 803.3247 388.1941)" class="st4 st43">คลองบ้านม้า</text>
+	<text transform="matrix(1 0 0 1 803.3242 392.2846)" class="st4 st44">Khlong Ban Ma</text>
+	<text transform="matrix(1 0 0 1 819.2413 373.8608)" class="st4 st43">สัมมากร</text>
+	<text transform="matrix(1 0 0 1 819.2408 377.9513)" class="st4 st44">Sammakorn</text>
+	<text transform="matrix(1 0 0 1 836.408 354.6941)" class="st4 st43">น้อมเกล้า</text>
+	<text transform="matrix(1 0 0 1 836.4075 358.7846)" class="st4 st44">Nom Klao</text>
+	<text transform="matrix(1 0 0 1 852.7015 338.3677)" class="st4 st43">ราษฎร์พัฒนา</text>
+	<text transform="matrix(1 0 0 1 852.7014 343.2083)" class="st4 st44">Rat Phatthana</text>
+	<text transform="matrix(1 0 0 1 868.3203 323.201)" class="st4 st43">มีนพัฒนา</text>
+	<text transform="matrix(1 0 0 1 868.3202 328.0416)" class="st4 st44">Min Phatthana</text>
+	<text transform="matrix(1 0 0 1 884.6536 306.451)" class="st4 st43">เคหะรามคำแหง</text>
+	<text transform="matrix(1 0 0 1 884.6535 311.2916)" class="st4 st44">Khaha Ramkhamhaeng</text>
+	<text transform="matrix(1 0 0 1 901.9869 291.201)" class="st4 st43">มีนบุรี</text>
+	<text transform="matrix(1 0 0 1 901.9868 296.0416)" class="st4 st44">Min Buri</text>
+	<text transform="matrix(1 0 0 1 920.2189 271.8677)" class="st4 st43">สุวินทวงค์</text>
+	<text transform="matrix(1 0 0 1 920.2188 276.7082)" class="st4 st44">Suwinthawong</text>
+	<path class="st41" d="M365.7,543.9c0,2.1-1.7,3.9-3.9,3.9c-2.2,0-3.9-1.7-3.9-3.9c0-0.5,0.1-1.3,0-1.3c-2.2,0-3.9-1.7-3.9-3.9
+		c0-2.1,1.7-3.9,3.9-3.9c2.1,0,3.9,1.7,3.9,3.9c0,0.5-0.1,1.3,0,1.3C364,540,365.7,541.7,365.7,543.9z"/>
+	<circle class="st25" cx="40.5" cy="625.3" r="4.1"/>
+	<text transform="matrix(1 0 0 1 37.9597 628.044)" class="st8 st4 st62">6</text>
+	<circle class="st25" cx="288.5" cy="617.3" r="4.1"/>
+	<text transform="matrix(1 0 0 1 285.9597 620.044)" class="st8 st4 st62">6</text>
+	<circle class="st25" cx="530.4" cy="347.3" r="4.1"/>
+	<text transform="matrix(1 0 0 1 527.9116 350.0931)" class="st8 st4 st62">6</text>
+	<path class="st68" d="M789.3,60.9c-2.3,0-4.1-1.8-4.1-4.1s1.8-4.1,4.1-4.1s4.1,1.8,4.1,4.1C793.5,59.1,791.6,60.9,789.3,60.9"/>
+	<text transform="matrix(1 0 0 1 786.8148 59.5516)" class="st8 st4 st62">4</text>
+</g>
+<g id="_x33_airport_x5F_link">
+	<g>
+		<path class="st69" d="M906.4,517.4c-0.5,0-1-1.8-1-4v-31.5c0-2.2-1.8-4-4-4H431.9c-2.2,0-4-1.8-4-4V121.4c0-2.2,0.4-4,1-4
+			c0.5,0,1,1.8,1,4v350.5c0,2.2,1.8,4,4,4h469.5c2.2,0,4,1.8,4,4v33.5C907.4,515.6,906.9,517.4,906.4,517.4z"/>
+	</g>
+	<path class="st41" d="M490.9,483.6c0,2.2-1.7,3.9-3.9,3.9c-2.1,0-3.9-1.7-3.9-3.9c0-0.3-1.8-2.9-2-2.9c-2.1,0-3.9-1.7-3.9-3.9
+		c0-2.1,1.7-3.9,3.9-3.9c2.2,0,3.9,1.7,3.9,3.9c0,0.3,1.9,2.9,2,2.9C489.1,479.7,490.9,481.5,490.9,483.6z"/>
+	<path class="st41" d="M594.4,481.3c0.3,0.6,0.5,1.2,0.5,1.9c0,2-1.5,3.6-3.5,3.9c0.2,0.5,0.4,1,0.4,1.6c0,2.2-1.7,3.9-3.9,3.9
+		s-3.9-1.7-3.9-3.9c0-2,1.5-3.6,3.5-3.9c-0.2-0.5-0.4-1-0.4-1.6c0-2,1.5-3.7,3.5-3.9c-0.3-0.6-0.5-1.2-0.5-1.9
+		c0-2.1,1.7-3.9,3.9-3.9c2.1,0,3.9,1.7,3.9,3.9C598,479.5,596.4,481.1,594.4,481.3z"/>
+	<path class="st41" d="M723,480.3v1.9c0.4,0.5,0.7,1.1,0.7,1.7c0,1.5-1.2,2.7-2.7,2.7s-2.7-1.2-2.7-2.7c0-0.6,0.2-1.2,0.6-1.7v-2
+		c-1.1-0.7-1.8-1.9-1.8-3.3c0-2.1,1.7-3.9,3.9-3.9s3.9,1.7,3.9,3.9C724.9,478.4,724.1,479.6,723,480.3z"/>
+	<path class="st41" d="M797.5,477c0,2.1-1.7,3.9-3.9,3.9c-0.2,0-2.6,2.5-2.6,2.7c0,2.1-1.8,3.9-3.9,3.9c-2.1,0-3.9-1.7-3.9-3.9
+		c0-2.1,1.7-3.9,3.9-3.9c0,0,2.6-2.6,2.6-2.7c0-2.1,1.7-3.9,3.9-3.9C795.7,473.1,797.5,474.8,797.5,477z"/>
+	<circle class="st42" cx="835.2" cy="477" r="2.7"/>
+	<circle class="st42" cx="874.7" cy="477" r="2.7"/>
+	<circle class="st41" cx="906.4" cy="516.8" r="3.9"/>
+	<path class="st41" d="M432.8,116c0.1,2.1-1.6,4-3.7,4.1c-1.4,0.1-5.2-0.2-6.5-0.1c-2.1,0.1-4-1.6-4.1-3.7s1.6-4,3.7-4.1
+		c1.4-0.1,5.2,0.2,6.5,0.1C430.8,112.2,432.7,113.9,432.8,116z"/>
+	<circle class="st7" cx="429.2" cy="106.7" r="4.1"/>
+	<text transform="matrix(1 0 0 1 427.7928 108.9229)" class="st8 st4 st45">3</text>
+	<circle class="st7" cx="906.2" cy="526.2" r="4.1"/>
+	<text transform="matrix(1 0 0 1 904.767 528.4229)" class="st8 st4 st45">3</text>
+	<path class="st41" d="M432.8,400.5c0,2.1-1.7,3.9-3.9,3.9c-1.6,0-5.6,0-7.2,0c-2.2,0-3.9-1.7-3.9-3.9c0-0.6-3.4-3.8-3.7-3.8
+		c-2.1,0-3.9-1.7-3.9-3.9s1.7-3.9,3.9-3.9c2.2,0,3.9,1.7,3.9,3.9c0,0.3,3.2,3.8,3.7,3.8c1.6,0,5.6,0,7.2,0
+		C431,396.6,432.8,398.4,432.8,400.5z"/>
+	<path class="st41" d="M430.9,472.8c0,2.2-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-0.8-2.3-6-2.8-6c-2.1,0-3.9-1.7-3.9-3.9
+		c0-2.2,1.8-3.9,3.9-3.9s3.9,1.7,3.9,3.9c0,1,2.6,6,2.8,6C429.1,468.9,430.9,470.7,430.9,472.8z"/>
+	<line class="st70" x1="591.8" y1="489.3" x2="595.6" y2="489.3"/>
+	<line class="st70" x1="594.4" y1="485.1" x2="596.2" y2="486.3"/>
+	<path class="st41" d="M431.8,258.2c0,2.1-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-0.2-1-0.2-1.5-0.2c-2.2,0-3.9-1.7-3.9-3.9
+		c0-2.2,1.7-3.9,3.9-3.9s3.9,1.7,3.9,3.9c0,0.2,1,0.2,1.5,0.2C430.1,254.3,431.8,256,431.8,258.2z"/>
+	<path class="st41" d="M432.7,164.3c0,2.2-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-0.3-2.5-3.5-2.6-3.5c-2.2,0-3.9-1.7-3.9-3.9
+		s1.7-3.9,3.9-3.9c2.1,0,3.9,1.7,3.9,3.9c0,0.5,2.2,3.5,2.6,3.5C431,160.4,432.7,162.1,432.7,164.3z"/>
+	<line class="st70" x1="596" y1="480.8" x2="598" y2="485.3"/>
+</g>
+<g id="_x31_3brown_x5F_line">
+	<path class="st71" d="M277.1,254.2"/>
+	<g>
+		<path class="st72" d="M277.1,254.5c0.7,0,417.5,0,417.5,0c4.4,0,10.5,2.5,13.7,5.7L812.1,364"/>
+	</g>
+	<circle class="st41" cx="814.8" cy="366.3" r="3.9"/>
+	<circle class="st42" cx="795.3" cy="346.9" r="2.7"/>
+	<circle class="st42" cx="778.4" cy="330" r="2.7"/>
+	<circle class="st42" cx="761.2" cy="312.5" r="2.7"/>
+	<circle class="st42" cx="743.5" cy="295.1" r="2.7"/>
+	<circle class="st42" cx="726.5" cy="277.5" r="2.7"/>
+	<circle class="st42" cx="709" cy="260.6" r="2.7"/>
+	<circle class="st42" cx="679.5" cy="254.2" r="2.7"/>
+	<circle class="st42" cx="615.9" cy="254.3" r="2.7"/>
+	<circle class="st42" cx="585.6" cy="254.2" r="2.7"/>
+	<circle class="st42" cx="554.9" cy="254.2" r="2.7"/>
+	<circle class="st42" cx="524.8" cy="254.2" r="2.7"/>
+	<circle class="st42" cx="454.5" cy="254.2" r="2.7"/>
+	<circle class="st42" cx="402.2" cy="254.2" r="2.7"/>
+	<circle class="st42" cx="379.1" cy="254.1" r="2.7"/>
+	<circle class="st42" cx="355.6" cy="254.2" r="2.7"/>
+	<circle class="st42" cx="332.4" cy="254.5" r="2.7"/>
+	<circle class="st42" cx="309.1" cy="254.2" r="2.7"/>
+	<circle class="st41" cx="648.2" cy="254.2" r="3.9"/>
+	<circle class="st41" cx="486.7" cy="254.3" r="3.9"/>
+	<path class="st41" d="M287.5,254.5c0,2.2-1.7,3.9-3.9,3.9c-1,0-1.9-0.4-2.6-1l0,0c0,2.1-1.7,3.9-3.9,3.9c-2.1,0-3.9-1.7-3.9-3.9
+		v-6.8c0-2.1,1.7-3.9,3.9-3.9c2.2,0,3.9,1.7,3.9,3.9v0.9c0.7-0.6,1.6-1,2.6-1C285.8,250.6,287.5,252.3,287.5,254.5z"/>
+	<text transform="matrix(1 0 0 1 302.0992 244.1316)" class="st4 st43">แคราย</text>
+	<text transform="matrix(1 0 0 1 302.0991 249.203)" class="st4 st44">Khae Rai</text>
+	<text transform="matrix(1 0 0 1 345.4751 244.5434)" class="st4 st43">ประชาชื่น</text>
+	<text transform="matrix(1 0 0 1 345.475 249.6148)" class="st4 st44">Prachachuen</text>
+	<text transform="matrix(1 0 0 1 390.8949 244.1316)" class="st4 st43">คลองเปรม</text>
+	<text transform="matrix(1 0 0 1 390.8948 249.2029)" class="st4 st44">Khlong Prem</text>
+	<text transform="matrix(1 0 0 1 441.8779 244.1315)" class="st4 st43">เกษตรศาสตร์</text>
+	<text transform="matrix(1 0 0 1 447.3685 249.2032)" class="st4 st44">Kasetsart</text>
+	<text transform="matrix(1 0 0 1 517.6274 243.796)" class="st4 st43">บางบัว</text>
+	<text transform="matrix(1 0 0 1 517.3528 248.9287)" class="st4 st44">Bang Bua</text>
+	<text transform="matrix(1 0 0 1 542.9529 262.2798)" class="st4 st43">ลาดปลาเค้า</text>
+	<text transform="matrix(1 0 0 1 545.0446 267.351)" class="st4 st44">Lat Pla Khao</text>
+	<text transform="matrix(1 0 0 1 568.2952 244.1314)" class="st4 st43">ประเสริฐมนูกิจ 18</text>
+	<text transform="matrix(1 0 0 1 570.3868 249.2027)" class="st4 st44">Prasert Manukit 18</text>
+	<text transform="matrix(1 0 0 1 653.6815 244.1312)" class="st4 st43">เกษตรนวมินทร์</text>
+	<text transform="matrix(1 0 0 1 654.0573 249.2025)" class="st4 st44">Kaset Nawamin</text>
+	<text transform="matrix(1 0 0 1 664.3182 262.2798)" class="st4 st43">คลองลำเจียก</text>
+	<text transform="matrix(1 0 0 1 664.694 267.3511)" class="st4 st44">Khlong Lum Chiak</text>
+	<text transform="matrix(1 0 0 1 712.6732 251.9413)" class="st4 st43">นวลจันทร์ 11</text>
+	<text transform="matrix(1 0 0 1 713.049 257.0126)" class="st4 st44">นวลจันทร์ 11</text>
+	<text transform="matrix(1 0 0 1 730.0373 269.3322)" class="st4 st43">นวมินทร์</text>
+	<text transform="matrix(1 0 0 1 730.4131 274.4036)" class="st4 st44">Nawamin</text>
+	<text transform="matrix(1 0 0 1 747.457 286.8699)" class="st4 st43">นวมินทร์ 50</text>
+	<text transform="matrix(1 0 0 1 747.8328 291.9412)" class="st4 st44">Nawamin 50</text>
+	<text transform="matrix(1 0 0 1 764.9583 303.9152)" class="st4 st43">นวมินทร์ 42</text>
+	<text transform="matrix(1 0 0 1 765.3341 308.9865)" class="st4 st44">Nawamin 42</text>
+	<text transform="matrix(1 0 0 1 781.8927 321.2989)" class="st4 st43">บึงกุ่ม</text>
+	<text transform="matrix(1 0 0 1 782.2685 326.3702)" class="st4 st44">Bung Kum</text>
+	<text transform="matrix(1 0 0 1 799.2402 339.6274)" class="st4 st43">เสรีไทย</text>
+	<text transform="matrix(1 0 0 1 799.616 344.6987)" class="st4 st44">Seri Thai</text>
+	<text transform="matrix(1 0 0 1 603.1606 262.0659)" class="st4 st43">สุคนธสวัสดิ์</text>
+	<text transform="matrix(1 0 0 1 603.5364 267.1372)" class="st4 st44">Sukhontasawat</text>
+	<text transform="matrix(1 0 0 1 372.0895 262.2798)" class="st4 st43">ชินเขต</text>
+	<text transform="matrix(1 0 0 1 372.0894 267.3512)" class="st4 st44">Chinnakhet</text>
+	<text transform="matrix(1 0 0 1 316.4682 262.2798)" class="st4 st43">งานวงค์วาน 12</text>
+	<text transform="matrix(1 0 0 1 316.4681 267.3512)" class="st4 st44">Ngamwongwan 12</text>
+	<path class="st41" d="M431.8,258.2c0,2.1-1.7,3.9-3.9,3.9s-3.9-1.7-3.9-3.9c0-0.2-1-0.2-1.5-0.2c-2.2,0-3.9-1.7-3.9-3.9
+		c0-2.2,1.7-3.9,3.9-3.9s3.9,1.7,3.9,3.9c0,0.2,1,0.2,1.5,0.2C430,254.3,431.8,256,431.8,258.2z"/>
+	<circle class="st13" cx="802.5" cy="366.6" r="4.1"/>
+	<text transform="matrix(1 0 0 1 799.3696 368.2432)" class="st8 st4 st73">13</text>
+	<circle class="st13" cx="266" cy="250.2" r="4.1"/>
+	<text transform="matrix(1 0 0 1 262.9419 251.8965)" class="st8 st4 st73">13</text>
+</g>
+<g id="_x31_2light_x5F_blue_x5F_line">
+	<g>
+		<path class="st74" d="M503,642.5c0,0,2.3,0,5.1,0s7.6-2.5,10.8-5.7l27.4-27.4c3.1-3.1,5.7-9.3,5.7-13.7V546
+			c0-4.4,2.5-10.5,5.7-13.7L586,504c3.1-3.1,5.7-7.1,5.7-8.9s-2.5-5.8-5.7-8.9l-19.1-19.1c-3.1-3.1-5.7-9.3-5.7-13.7v-37.1"/>
+	</g>
+	<circle class="st41" cx="561" cy="415.7" r="3.9"/>
+	<circle class="st42" cx="561" cy="428.3" r="2.7"/>
+	<circle class="st42" cx="561.3" cy="450.5" r="2.7"/>
+	<circle class="st42" cx="571.4" cy="518.4" r="2.7"/>
+	<circle class="st42" cx="531" cy="624.8" r="2.7"/>
+	<circle class="st41" cx="503" cy="642.6" r="3.9"/>
+	<circle class="st41" cx="551.7" cy="593.7" r="3.9"/>
+	<circle class="st41" cx="552.4" cy="545.8" r="3.9"/>
+	<path class="st41" d="M594.4,481.3c0.3,0.6,0.5,1.2,0.5,1.9c0,2-1.5,3.6-3.5,3.9c0.2,0.5,0.4,1,0.4,1.6c0,2.2-1.7,3.9-3.9,3.9
+		s-3.9-1.7-3.9-3.9c0-2,1.5-3.6,3.5-3.9c-0.2-0.5-0.4-1-0.4-1.6c0-2,1.5-3.7,3.5-3.9c-0.3-0.6-0.5-1.2-0.5-1.9
+		c0-2.1,1.7-3.9,3.9-3.9c2.1,0,3.9,1.7,3.9,3.9C598,479.5,596.4,481.1,594.4,481.3z"/>
+	<text transform="matrix(1 0 0 1 566.1071 429.3265)" class="st4 st43">มิตรไมตรี</text>
+	<text transform="matrix(1 0 0 1 566.1069 433.9169)" class="st4 st44">Mit Maitri</text>
+	<text transform="matrix(1 0 0 1 566.1072 452.2432)" class="st4 st43">ดินแดง</text>
+	<text transform="matrix(1 0 0 1 566.1071 456.5079)" class="st4 st44">Din Daeng</text>
+	<text transform="matrix(1 0 0 1 580.775 467.6105)" class="st4 st43">ในเมือง</text>
+	<text transform="matrix(1 0 0 1 575.6914 471.8754)" class="st4 st44">City Air Term</text>
+	<text transform="matrix(1 0 0 1 563.936 491.1679)" class="st4 st43">มักกะสัน</text>
+	<text transform="matrix(1 0 0 1 550.6861 510.0109)" class="st4 st43">เพชรบุรี</text>
+	<text transform="matrix(1 0 0 1 566.1064 496.2847)" class="st4 st44">Makkasan</text>
+	<text transform="matrix(1 0 0 1 547.8752 514.2629)" class="st4 st44">Phetchaburi</text>
+	<text transform="matrix(1 0 0 1 535.1107 630.8257)" class="st4 st43">สวนพลู</text>
+	<text transform="matrix(1 0 0 1 534.5498 635.9296)" class="st4 st44">Suan Phlu</text>
+	<circle class="st19" cx="510.1" cy="650.1" r="4.1"/>
+	<text transform="matrix(1 0 0 1 506.9146 651.4287)" class="st16 st4 st75">12</text>
+	<circle class="st19" cx="561.2" cy="395.7" r="4.1"/>
+	<text transform="matrix(1 0 0 1 557.9894 397.0743)" class="st16 st4 st75">12</text>
+	<text transform="matrix(1 0 0 1 775.2436 493.3254)" class="st8 st4 st75">2</text>
+	<text transform="matrix(0.7043 -0.7099 0.7099 0.7043 539.6618 535.2975)" class="st76 st4 st77">คลองแสนแสบ</text>
+	<text transform="matrix(1 -4.010000e-03 4.010000e-03 1 703.9583 585.5959)" class="st76 st4 st77">คลองพระโขนง</text>
+</g>
+<g id="_x31_1gray_x5F_line">
+	<g>
+		<path class="st78" d="M479.2,754l163.4-163.4c3.1-3.1,5.7-9.3,5.7-13.7V157.5"/>
+	</g>
+	<circle class="st42" cx="648.3" cy="205.6" r="2.7"/>
+	<circle class="st41" cx="648.3" cy="157.5" r="3.9"/>
+	<circle class="st42" cx="648.2" cy="307.9" r="2.7"/>
+	<circle class="st42" cx="648.2" cy="375.4" r="2.7"/>
+	<circle class="st42" cx="648.2" cy="450.4" r="2.7"/>
+	<circle class="st42" cx="648.3" cy="490.6" r="2.7"/>
+	<circle class="st42" cx="648.2" cy="523.9" r="2.7"/>
+	<circle class="st42" cx="642.6" cy="590.6" r="2.7"/>
+	<circle class="st42" cx="622" cy="611.3" r="2.7"/>
+	<circle class="st42" cx="601.2" cy="632.1" r="2.7"/>
+	<circle class="st42" cx="580.8" cy="652.6" r="2.7"/>
+	<circle class="st42" cx="560.1" cy="673.1" r="2.7"/>
+	<circle class="st42" cx="539.6" cy="693.6" r="2.7"/>
+	<circle class="st42" cx="498.3" cy="734.9" r="2.7"/>
+	<circle class="st42" cx="648.3" cy="281.5" r="2.7"/>
+	<circle class="st41" cx="479.2" cy="754" r="3.9"/>
+	<circle class="st41" cx="519" cy="714.2" r="3.9"/>
+	<circle class="st23" cx="470.2" cy="755.3" r="4.1"/>
+	<text transform="matrix(1 0 0 1 466.8123 756.6787)" class="st8 st4 st75">11</text>
+	<text transform="matrix(1 0 0 1 484.0918 760.7544)" class="st4 st43">สะพานพระราม 9</text>
+	<text transform="matrix(1 0 0 1 484.0918 765.3333)" class="st4 st44">Rama IX Bridge</text>
+	<text transform="matrix(1 0 0 1 500.9998 741.316)" class="st4 st43">สาธุประดิษฐ์</text>
+	<text transform="matrix(1 0 0 1 500.9998 745.8949)" class="st4 st44">Sathu Pradit</text>
+	<text transform="matrix(1 0 0 1 523.8248 720.6568)" class="st4 st43">นราธิวาสฯ</text>
+	<text transform="matrix(1 0 0 1 523.8248 725.2357)" class="st4 st44">Narathiwat</text>
+	<text transform="matrix(1 0 0 1 542.9532 700.6998)" class="st4 st43">พระราม 3</text>
+	<text transform="matrix(1 0 0 1 542.9532 705.2787)" class="st4 st44">Rama 3</text>
+	<text transform="matrix(1 0 0 1 563.7245 679.5524)" class="st4 st43">คลองเตย</text>
+	<text transform="matrix(1 0 0 1 563.7245 684.1312)" class="st4 st44">Khlong Toei</text>
+	<text transform="matrix(1 0 0 1 583.9427 659.0107)" class="st4 st43">รัชดา-พระราม 4</text>
+	<text transform="matrix(1 0 0 1 583.9427 663.5896)" class="st4 st44">Ratchada Rama IV</text>
+	<text transform="matrix(1 0 0 1 604.6281 638.2847)" class="st4 st43">คลองตัน</text>
+	<text transform="matrix(1 0 0 1 604.6281 642.8636)" class="st4 st44">Khlong Tan</text>
+	<text transform="matrix(1 0 0 1 625.3781 617.994)" class="st4 st43">พระราม 4 </text>
+	<text transform="matrix(1 0 0 1 625.3781 622.5729)" class="st4 st44">Rama 4</text>
+	<text transform="matrix(1 0 0 1 654.0572 525.3972)" class="st4 st43">ทองหล่อ 10</text>
+	<text transform="matrix(1 0 0 1 646.1281 601.5322)" class="st4 st44">Sukhumvit 38</text>
+	<text transform="matrix(1 0 0 1 654.0575 529.5063)" class="st4 st44">Thong Lo 10</text>
+	<text transform="matrix(1 0 0 1 654.0573 491.2376)" class="st4 st43">ทองหล่อ 25</text>
+	<text transform="matrix(1 0 0 1 654.0576 495.3467)" class="st4 st44">Thong Lo 25</text>
+	<text transform="matrix(1 0 0 1 653.5413 451.9964)" class="st4 st43">ศูนย์วิจัย</text>
+	<text transform="matrix(1 0 0 1 653.5416 456.1055)" class="st4 st44">Sun Wichai</text>
+	<text transform="matrix(1 0 0 1 653.6816 377.1066)" class="st4 st43">นวศรี</text>
+	<text transform="matrix(1 0 0 1 653.6819 381.2157)" class="st4 st44">Navasi</text>
+	<text transform="matrix(1 0 0 1 653.2408 342.9779)" class="st4 st43">ฉลองรัช</text>
+	<text transform="matrix(1 0 0 1 653.2411 347.087)" class="st4 st44">Chalong Rat</text>
+	<text transform="matrix(1 0 0 1 653.541 309.237)" class="st4 st43">ลาดพร้าว 87</text>
+	<text transform="matrix(1 0 0 1 653.5412 314.0961)" class="st4 st44">Lat Phrao 87</text>
+	<text transform="matrix(1 0 0 1 653.6811 282.8836)" class="st4 st43">โยธินพัฒนา</text>
+	<text transform="matrix(1 0 0 1 653.6813 287.7427)" class="st4 st44">Yothin Patthana</text>
+	<circle class="st41" cx="649.2" cy="562.5" r="3.9"/>
+	<circle class="st41" cx="648.3" cy="415.7" r="3.9"/>
+	<circle class="st41" cx="648.3" cy="335" r="3.9"/>
+	<circle class="st41" cx="648.3" cy="254.3" r="3.9"/>
+	<text transform="matrix(1 0 0 1 653.2404 205.44)" class="st4 st43">นวลจันทร์</text>
+	<text transform="matrix(1 0 0 1 653.2405 210.2991)" class="st4 st44">Nuan Chan</text>
+	<circle class="st23" cx="655.9" cy="164.2" r="4.1"/>
+	<text transform="matrix(1 0 0 1 652.5714 165.5805)" class="st8 st4 st75">11</text>
+</g>
+<g id="icon">
+	<path class="st79" d="M459.7,551.1h-0.5c-2.3,0-4.1-1.9-4.1-4.1v-13.3c0-2.3,1.9-4.1,4.1-4.1h0.5c2.3,0,4.1,1.9,4.1,4.1V547
+		C463.9,549.2,462,551.1,459.7,551.1z"/>
+	<path class="st80" d="M459.5,543.4L459.5,543.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C462.6,542,461.2,543.4,459.5,543.4z"/>
+	<path class="st2" d="M446.2,530.4L446.2,530.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C449.3,529,447.9,530.4,446.2,530.4z"/>
+	<path class="st80" d="M459.5,536.6L459.5,536.6c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C462.6,535.1,461.2,536.6,459.5,536.6z"/>
+	<g id="YAosUs.tif_10_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1465" height="1465" id="Layer_0_45_" xlink:href="C0AA23D0C080A8BF.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 457.5158 531.2899)">
+		</image>
+	</g>
+	<g id="zDk8hP.tif_10_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_44_" xlink:href="C0AA23D0C080A8BA.png"  transform="matrix(2.427495e-03 0 0 2.622194e-03 457.5663 537.7211)">
+		</image>
+	</g>
+	<g>
+		<path class="st81" d="M192.1,262.1h-0.2c-2.2,0-4-1.8-4-4v-14c0-2.2,1.8-4,4-4h0.2c2.2,0,4,1.8,4,4v14
+			C196.1,260.3,194.3,262.1,192.1,262.1z"/>
+		<path class="st80" d="M192.2,247.5L192.2,247.5c-1.7,0-3.1-1.4-3.1-3.1v-0.2c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1v0.2
+			C195.3,246.1,193.9,247.5,192.2,247.5z"/>
+		<path class="st80" d="M192.2,254.4L192.2,254.4c-1.7,0-3.1-1.4-3.1-3.1v-0.2c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1v0.2
+			C195.4,253,194,254.4,192.2,254.4z"/>
+		<path class="st80" d="M192.1,261.3L192.1,261.3c-1.7,0-3.1-1.4-3.1-3.1V258c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1v0.2
+			C195.2,259.9,193.8,261.3,192.1,261.3z"/>
+		<g id="YAosUs.tif">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1465" height="1465" id="Layer_0_1_" xlink:href="C0AA23D0C080A8A5.png"  transform="matrix(2.701934e-03 0 0 2.374850e-03 190.0911 242.5481)">
+			</image>
+		</g>
+		<g id="zDk8hP.tif">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_6_" xlink:href="C0AA23D0C080A8A6.png"  transform="matrix(2.427495e-03 0 0 2.686668e-03 190.2142 248.8488)">
+			</image>
+		</g>
+		<g id="vnmZUW.tif_1_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_5_" xlink:href="C0AA23D0C080A8A7.png"  transform="matrix(2.709332e-03 0 0 2.684838e-03 190.1636 256.1115)">
+			</image>
+		</g>
+	</g>
+	<g>
+		<path class="st82" d="M327.1,416.9h-0.5c-2.3,0-4.1-1.9-4.1-4.1v-13.3c0-2.3,1.9-4.1,4.1-4.1h0.5c2.3,0,4.1,1.9,4.1,4.1v13.3
+			C331.2,415.1,329.4,416.9,327.1,416.9z"/>
+		<path class="st80" d="M326.9,402.7L326.9,402.7c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C330,401.3,328.6,402.7,326.9,402.7z"/>
+		<path class="st80" d="M326.9,409.4L326.9,409.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C330,408,328.6,409.4,326.9,409.4z"/>
+		<path class="st80" d="M326.9,416.2L326.9,416.2c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C330,414.8,328.6,416.2,326.9,416.2z"/>
+		<g id="YAosUs.tif_1_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1465" height="1172" id="Layer_0_9_" xlink:href="C0AA23D0C080A8A9.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 325.0777 398.2515)">
+			</image>
+		</g>
+		<g id="zDk8hP.tif_1_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_8_" xlink:href="C0AA23D0C080A8AB.png"  transform="matrix(2.427495e-03 0 0 2.622194e-03 324.9268 410.9817)">
+			</image>
+		</g>
+		<g id="vnmZUW.tif_2_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_10_" xlink:href="C0AA23D0C080A8AE.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 324.8763 404.5676)">
+			</image>
+		</g>
+	</g>
+	<path class="st83" d="M296.6,561.9L296.6,561.9c-2.4,0-4.4-2-4.4-4.4v-19.9c0-2.4,2-4.4,4.4-4.4l0,0c2.4,0,4.4,2,4.4,4.4v19.9
+		C301,559.9,299,561.9,296.6,561.9z"/>
+	<path class="st83" d="M364.5,561.4H364c-2.3,0-4.1-1.9-4.1-4.1V544c0-2.3,1.9-4.1,4.1-4.1h0.5c2.3,0,4.1,1.9,4.1,4.1v13.3
+		C368.6,559.5,366.8,561.4,364.5,561.4z"/>
+	<path class="st80" d="M296.8,561L296.8,561c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C299.9,559.6,298.5,561,296.8,561z"/>
+	<path class="st80" d="M296.9,554.2L296.9,554.2c-1.7,0.2-3.3-1.1-3.4-2.8l0,0c-0.2-1.7,1.1-3.3,2.8-3.4l0,0
+		c1.7-0.2,3.3,1.1,3.4,2.8l0,0C299.9,552.5,298.6,554,296.9,554.2z"/>
+	<path class="st80" d="M296.6,540.7L296.6,540.7c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C299.7,539.3,298.3,540.7,296.6,540.7z"/>
+	<path class="st80" d="M296.6,547.3L296.6,547.3c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C299.7,545.9,298.3,547.3,296.6,547.3z"/>
+	<g id="YAosUs.tif_2_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1465" height="1172" id="Layer_0_13_" xlink:href="C0AA23D0C080A8C2.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 295.0767 556.5093)">
+		</image>
+	</g>
+	<g id="zDk8hP.tif_2_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_12_" xlink:href="C0AA23D0C080A8C1.png"  transform="matrix(2.427495e-03 0 0 2.622194e-03 294.6758 549.0056)">
+		</image>
+	</g>
+	<g id="vnmZUW.tif_3_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_11_" xlink:href="C0AA23D0C080A8CE.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 294.6253 535.5031)">
+		</image>
+	</g>
+	<g id="vnmZUW.tif_4_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_14_" xlink:href="C0AA23D0C080A8C0.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 294.6253 542.265)">
+		</image>
+	</g>
+	<g>
+		<path class="st80" d="M364.2,547.1L364.2,547.1c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C367.4,545.6,366,547.1,364.2,547.1z"/>
+	</g>
+	<path class="st80" d="M364.2,553.7L364.2,553.7c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C367.4,552.3,366,553.7,364.2,553.7z"/>
+	<path class="st80" d="M364.2,560.4L364.2,560.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C367.4,559,366,560.4,364.2,560.4z"/>
+	<g id="YAosUs.tif_4_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1465" height="1465" id="Layer_0_25_" xlink:href="C0AA23D0C080A8C3.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 362.2701 555.2989)">
+		</image>
+	</g>
+	<g id="vnmZUW.tif_6_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_24_" xlink:href="C0AA23D0C080A8C7.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 362.2701 542.0049)">
+		</image>
+	</g>
+	<g id="zDk8hP.tif_4_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1526" height="2290" id="Layer_0_23_" xlink:href="C0AA23D0C080A8C6.png"  transform="matrix(1.684405e-03 0 0 1.819505e-03 362.9641 548.4923)">
+		</image>
+	</g>
+	<g id="vnmZUW.tif_7_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_26_" xlink:href="C0AA23D0C080A8FD.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 355.8403 537.0291)">
+		</image>
+	</g>
+	<path class="st83" d="M704.7,419.5h-0.5c-2.3,0-4.1-1.9-4.1-4.1V402c0-2.3,1.9-4.1,4.1-4.1h0.5c2.3,0,4.1,1.9,4.1,4.1v13.3
+		C708.8,417.6,707,419.5,704.7,419.5z"/>
+	<path class="st80" d="M704.5,405.2L704.5,405.2c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C707.6,403.8,706.2,405.2,704.5,405.2z"/>
+	<path class="st80" d="M704.5,412L704.5,412c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C707.6,410.6,706.2,412,704.5,412z"/>
+	<path class="st80" d="M704.5,418.9L704.5,418.9c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C707.6,417.4,706.2,418.9,704.5,418.9z"/>
+	<g id="vnmZUW.tif_5_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_21_" xlink:href="C0AA23D0C080A8FE.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 702.536 413.7974)">
+		</image>
+	</g>
+	<g id="zDk8hP.tif_3_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_22_" xlink:href="C0AA23D0C080A8FF.png"  transform="matrix(2.427495e-03 0 0 2.622194e-03 702.5865 406.7876)">
+		</image>
+	</g>
+	<g id="YAosUs.tif_3_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1465" height="1465" id="Layer_0_20_" xlink:href="C0AA23D0C080A8E5.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 702.536 400.3325)">
+		</image>
+	</g>
+	<path class="st84" d="M552.5,339.4H552c-2.3,0-4.1-1.9-4.1-4.1V322c0-2.3,1.9-4.1,4.1-4.1h0.5c2.3,0,4.1,1.9,4.1,4.1v13.3
+		C556.6,337.5,554.7,339.4,552.5,339.4z"/>
+	<path class="st80" d="M552.2,324.9L552.2,324.9c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C555.4,323.5,554,324.9,552.2,324.9z"/>
+	<path class="st80" d="M552.2,331.7L552.2,331.7c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C555.4,330.3,554,331.7,552.2,331.7z"/>
+	<path class="st80" d="M552.2,338.2L552.2,338.2c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C555.4,336.8,554,338.2,552.2,338.2z"/>
+	<g id="YAosUs.tif_6_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1465" height="1172" id="Layer_0_33_" xlink:href="C0AA23D0C080A8E3.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 550.2483 320.4336)">
+		</image>
+	</g>
+	<g id="zDk8hP.tif_6_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1526" height="2290" id="Layer_0_32_" xlink:href="C0AA23D0C080A8DD.png"  transform="matrix(1.684405e-03 0 0 1.819505e-03 550.9423 326.4926)">
+		</image>
+	</g>
+	<g id="vnmZUW.tif_9_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_31_" xlink:href="C0AA23D0C080A8DF.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 550.2483 333.1693)">
+		</image>
+	</g>
+	<g>
+		<path class="st85" d="M535.9,105.1v0.5c0,2.3-1.9,4.1-4.1,4.1h-13.3c-2.3,0-4.1-1.9-4.1-4.1v-0.5c0-2.3,1.9-4.1,4.1-4.1h13.3
+			C534,101,535.9,102.8,535.9,105.1z"/>
+		<path class="st80" d="M531.9,108.5L531.9,108.5c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C535.1,107.1,533.7,108.5,531.9,108.5z"/>
+		<path class="st80" d="M518.3,108.5L518.3,108.5c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C521.4,107.1,520,108.5,518.3,108.5z"/>
+		<path class="st80" d="M525.1,108.5L525.1,108.5c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C528.2,107.1,526.8,108.5,525.1,108.5z"/>
+		<g id="YAosUs.tif_5_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1465" height="1465" id="Layer_0_30_" xlink:href="C0AA23D0C080A8DC.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 523.1423 103.5206)">
+			</image>
+		</g>
+		<g id="zDk8hP.tif_5_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_29_" xlink:href="C0AA23D0C080A923.png"  transform="matrix(2.427495e-03 0 0 2.622194e-03 516.3666 103.2634)">
+			</image>
+		</g>
+		<g id="vnmZUW.tif_8_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_28_" xlink:href="C0AA23D0C080A925.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 529.9684 103.3042)">
+			</image>
+		</g>
+	</g>
+	<g>
+		<circle class="st80" cx="675.5" cy="588.7" r="2.7"/>
+		<path class="st85" d="M692.9,587.5v0.5c0,2.3-1.9,4.1-4.1,4.1h-13.3c-2.3,0-4.1-1.9-4.1-4.1v-0.5c0-2.3,1.9-4.1,4.1-4.1h13.3
+			C691,583.3,692.9,585.2,692.9,587.5z"/>
+		<path class="st80" d="M675.5,590.8L675.5,590.8c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C678.6,589.4,677.2,590.8,675.5,590.8z"/>
+		<path class="st80" d="M689.2,590.8L689.2,590.8c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C692.3,589.4,690.9,590.8,689.2,590.8z"/>
+		<path class="st80" d="M682.3,590.8L682.3,590.8c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C685.5,589.4,684.1,590.8,682.3,590.8z"/>
+		<g id="YAosUs.tif_7_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1465" height="1172" id="Layer_0_36_" xlink:href="C0AA23D0C080A927.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 680.3702 586.3439)">
+			</image>
+		</g>
+		<g id="zDk8hP.tif_7_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_35_" xlink:href="C0AA23D0C080A924.png"  transform="matrix(2.427495e-03 0 0 2.622194e-03 687.2621 585.6189)">
+			</image>
+		</g>
+		<g id="vnmZUW.tif_10_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_34_" xlink:href="C0AA23D0C080A92C.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 673.5287 585.7879)">
+			</image>
+		</g>
+	</g>
+	<g>
+		<path class="st84" d="M797.6,539.4v0.5c0,2.3-1.9,4.1-4.1,4.1h-13.3c-2.3,0-4.1-1.9-4.1-4.1v-0.5c0-2.3,1.9-4.1,4.1-4.1h13.3
+			C795.7,535.3,797.6,537.1,797.6,539.4z"/>
+		<path class="st80" d="M780,542.8L780,542.8c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C783.2,541.4,781.7,542.8,780,542.8z"/>
+		<path class="st80" d="M786.8,542.8L786.8,542.8c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C790,541.4,788.5,542.8,786.8,542.8z"/>
+		<path class="st80" d="M793.7,542.8L793.7,542.8c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C796.8,541.4,795.4,542.8,793.7,542.8z"/>
+		<g id="YAosUs.tif_8_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1465" height="1172" id="Layer_0_39_" xlink:href="C0AA23D0C080A908.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 784.8608 538.1386)">
+			</image>
+		</g>
+		<g id="zDk8hP.tif_8_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1526" height="2290" id="Layer_0_38_" xlink:href="C0AA23D0C080A90B.png"  transform="matrix(1.684405e-03 0 0 1.819505e-03 778.7287 537.5419)">
+			</image>
+		</g>
+		<g id="vnmZUW.tif_11_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_37_" xlink:href="C0AA23D0C080A909.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 791.6869 537.5827)">
+			</image>
+		</g>
+	</g>
+	<path class="st82" d="M345,606.7l-0.2-0.2c-1.7-1.7-1.7-4.4,0-6l10.1-10.1c1.7-1.7,4.4-1.7,6,0l0.2,0.2c1.7,1.7,1.7,4.4,0,6
+		L351,606.7C349.4,608.4,346.7,608.4,345,606.7z"/>
+	<path class="st80" d="M353.3,601.4L353.3,601.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C356.5,600,355.1,601.4,353.3,601.4z"/>
+	<path class="st80" d="M358,596.7L358,596.7c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C361.2,595.3,359.7,596.7,358,596.7z"/>
+	<path class="st80" d="M348.4,606.4L348.4,606.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C351.5,605,350.1,606.4,348.4,606.4z"/>
+	<g id="YAosUs.tif_9_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1465" height="1465" id="Layer_0_42_" xlink:href="C0AA23D0C080A90F.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 351.4577 596.5951)">
+		</image>
+	</g>
+	<g id="zDk8hP.tif_9_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_41_" xlink:href="C0AA23D0C080A90A.png"  transform="matrix(2.427495e-03 0 0 2.622194e-03 346.4455 601.3763)">
+		</image>
+	</g>
+	<g id="vnmZUW.tif_12_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_40_" xlink:href="C0AA23D0C080A915.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 356.178 591.5524)">
+		</image>
+	</g>
+	<path class="st80" d="M459.5,550.3L459.5,550.3c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+		C462.6,548.9,461.2,550.3,459.5,550.3z"/>
+	<g id="vnmZUW.tif_13_">
+		
+			<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_43_" xlink:href="C0AA23D0C080A916.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 457.5977 545.5429)">
+		</image>
+	</g>
+	<g>
+		<path class="st79" d="M478.3,677v0.5c0,2.3-1.9,4.1-4.1,4.1h-13.3c-2.3,0-4.1-1.9-4.1-4.1V677c0-2.3,1.9-4.1,4.1-4.1h13.3
+			C476.4,672.9,478.3,674.8,478.3,677z"/>
+		<path class="st80" d="M474.4,680.4L474.4,680.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C477.5,679,476.1,680.4,474.4,680.4z"/>
+		<path class="st80" d="M460.7,680.4L460.7,680.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C463.8,679,462.4,680.4,460.7,680.4z"/>
+		<path class="st80" d="M467.5,680.4L467.5,680.4c-1.7,0-3.1-1.4-3.1-3.1l0,0c0-1.7,1.4-3.1,3.1-3.1l0,0c1.7,0,3.1,1.4,3.1,3.1l0,0
+			C470.6,679,469.2,680.4,467.5,680.4z"/>
+		<g id="YAosUs.tif_11_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1465" height="1465" id="Layer_0_48_" xlink:href="C0AA23D0C080A917.png"  transform="matrix(2.701934e-03 0 0 2.317859e-03 465.5511 675.4412)">
+			</image>
+		</g>
+		<g id="zDk8hP.tif_11_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1589" height="1589" id="Layer_0_47_" xlink:href="C0AA23D0C080A918.png"  transform="matrix(2.427495e-03 0 0 2.622194e-03 458.7755 675.1839)">
+			</image>
+		</g>
+		<g id="vnmZUW.tif_14_">
+			
+				<image style="overflow:visible;enable-background:new    ;" width="1461" height="1461" id="Layer_0_46_" xlink:href="C0AA23D0C080A91B.png"  transform="matrix(2.709332e-03 0 0 2.620409e-03 472.3772 675.2247)">
+			</image>
+		</g>
+	</g>
+</g>
+<g id="Ports">
+	<polygon class="st52" points="192.6,226.9 189.9,226.9 188.5,229.3 189.9,231.6 192.6,231.6 193.9,229.3 	"/>
+	<polygon class="st52" points="200.1,284.5 197.4,284.5 196,286.9 197.4,289.2 200.1,289.2 201.4,286.9 	"/>
+	<polygon class="st52" points="211.6,298.5 208.9,298.5 207.6,300.9 208.9,303.2 211.6,303.2 213,300.9 	"/>
+	<polygon class="st52" points="209.8,311.7 207.1,311.7 205.8,314 207.1,316.4 209.8,316.4 211.2,314 	"/>
+	<polygon class="st52" points="220.8,323.2 218.1,323.2 216.8,325.5 218.1,327.9 220.8,327.9 222.2,325.5 	"/>
+	<polygon class="st52" points="249.1,333.3 246.5,333.3 245.1,335.7 246.5,338 249.1,338 250.5,335.7 	"/>
+	<polygon class="st52" points="268.8,355 266.1,355 264.8,357.4 266.1,359.7 268.8,359.7 270.2,357.4 	"/>
+	<polygon class="st52" points="306,390.9 303.3,390.9 301.9,393.2 303.3,395.6 306,395.6 307.3,393.2 	"/>
+	<polygon class="st52" points="324.9,417.6 322.2,417.6 320.8,420 322.2,422.3 324.9,422.3 326.2,420 	"/>
+	<polygon class="st52" points="324.9,426.5 322.2,426.5 320.8,428.8 322.2,431.1 324.9,431.1 326.2,428.8 	"/>
+	<polygon class="st52" points="324.7,438.2 322,438.2 320.6,440.6 322,442.9 324.7,442.9 326,440.6 	"/>
+	<polygon class="st52" points="325.1,451.6 322.4,451.6 321.1,453.9 322.4,456.3 325.1,456.3 326.5,453.9 	"/>
+	<polygon class="st52" points="278.3,379.4 275.6,379.4 274.3,381.8 275.6,384.1 278.3,384.1 279.7,381.8 	"/>
+	<polygon class="st52" points="192.6,165.4 189.9,165.4 188.5,167.7 189.9,170 192.6,170 193.9,167.7 	"/>
+	<polygon class="st52" points="192.3,130.6 189.6,130.6 188.3,132.9 189.6,135.3 192.3,135.3 193.7,132.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 293.9746 470.7998)" class="st49 st4 st50">วัดเทพนารี</text>
+	<polygon class="st52" points="313.8,467.6 311.1,467.6 309.7,469.9 311.1,472.3 313.8,472.3 315.1,469.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 291.3535 489.5498)" class="st49 st4 st50">สะพานกรุงธน </text>
+	<text transform="matrix(0.9678 0 0 1 296.9668 493.4502)" class="st49 st4 st50">(ซังฮี้)</text>
+	<polygon class="st52" points="314.1,487.9 311.4,487.9 310,490.2 311.4,492.6 314.1,492.6 315.4,490.2 	"/>
+	<text transform="matrix(0.9678 0 0 1 295.3379 519.7002)" class="st49 st4 st50">พระปิ่นเกล้า</text>
+	<polygon class="st52" points="315.2,516.5 312.5,516.5 311.1,518.8 312.5,521.2 315.2,521.2 316.5,518.8 	"/>
+	<text transform="matrix(0.9678 0 0 1 307.6015 529.9902)" class="st49 st4 st50">รถไฟ</text>
+	<polygon class="st52" points="315.1,531.6 312.4,531.6 311.1,533.9 312.4,536.3 315.1,536.3 316.5,533.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 305.9023 550.04)" class="st49 st4 st50">วังหลัง </text>
+	<text transform="matrix(0.9678 0 0 1 304.0634 553.9404)" class="st49 st4 st50">(พรานนก)</text>
+	<polygon class="st52" points="313.5,554.7 310.9,554.7 309.5,557.1 310.9,559.4 313.5,559.4 314.9,557.1 	"/>
+	<text transform="matrix(0.9678 0 0 1 328.4785 565.0752)" class="st49 st4 st50">มหาราช</text>
+	<polygon class="st52" points="326.7,561.9 324,561.9 322.6,564.2 324,566.6 326.7,566.6 328,564.2 	"/>
+	<text transform="matrix(0.9678 0 0 1 328.8662 576.4248)" class="st49 st4 st50">ท่าช้าง</text>
+	<polygon class="st52" points="326.2,573.2 323.5,573.2 322.2,575.6 323.5,577.9 326.2,577.9 327.6,575.6 	"/>
+	<text transform="matrix(0.9678 0 0 1 327.9013 590.4756)" class="st49 st4 st50">ท่าเตียน</text>
+	<polygon class="st52" points="326.1,587.3 323.4,587.3 322,589.6 323.4,592 326.1,592 327.4,589.6 	"/>
+	<text transform="matrix(0.9678 0 0 1 342.8437 617.3857)" class="st49 st4 st50">ราชินี</text>
+	<polygon class="st52" points="346.9,617.9 344.2,617.9 342.8,620.3 344.2,622.6 346.9,622.6 348.2,620.3 	"/>
+	<text transform="matrix(0.9678 0 0 1 360.5761 617.0039)" class="st49 st4 st50">สะพานพุทธ</text>
+	<polygon class="st52" points="368.3,617.6 365.6,617.6 364.3,619.9 365.6,622.2 368.3,622.2 369.7,619.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 393.4043 617.0039)" class="st49 st4 st50">ราชวงศ์</text>
+	<polygon class="st52" points="398.9,617.6 396.2,617.6 394.9,619.9 396.2,622.2 398.9,622.2 400.2,619.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 421.9111 630.8262)" class="st49 st4 st50">กรมการขนส่งทางน้ำ</text>
+	<polygon class="st52" points="427.6,631.7 424.9,631.7 423.6,634.1 424.9,636.4 427.6,636.4 429,634.1 	"/>
+	<text transform="matrix(0.9678 0 0 1 439.205 641.8945)" class="st49 st4 st50">สี่พระยา</text>
+	<polygon class="st52" points="438.8,641.9 436.1,641.9 434.8,644.2 436.1,646.6 438.8,646.6 440.2,644.2 	"/>
+	<text transform="matrix(0.9678 0 0 1 451.3867 654.7275)" class="st49 st4 st50">วัดม่วงแค</text>
+	<polygon class="st52" points="451.5,654.7 448.8,654.7 447.4,657.1 448.8,659.4 451.5,659.4 452.8,657.1 	"/>
+	<text transform="matrix(0.9678 0 0 1 459.542 663.5342)" class="st49 st4 st50">โอเรียนเต็ล</text>
+	<polygon class="st52" points="460.2,663.5 457.5,663.5 456.2,665.9 457.5,668.2 460.2,668.2 461.6,665.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 483.33 698.9219)" class="st49 st4 st50">สาธร</text>
+	<polygon class="st52" points="481.1,695.6 478.4,695.6 477.1,697.9 478.4,700.3 481.1,700.3 482.5,697.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 328.4013 494.0273)" class="st49 st4 st50">เทเวศน์</text>
+	<polygon class="st52" points="326.5,491 323.8,491 322.4,493.3 323.8,495.7 326.5,495.7 327.8,493.3 	"/>
+	<text transform="matrix(0.9678 0 0 1 328.375 505.8652)" class="st49 st4 st50">พระราม 8</text>
+	<polygon class="st52" points="326.1,502.8 323.4,502.8 322.1,505.1 323.4,507.5 326.1,507.5 327.5,505.1 	"/>
+	<text transform="matrix(0.9678 0 0 1 328.3769 512.1846)" class="st49 st4 st50">ท่าพระอาทิตย์</text>
+	<polygon class="st52" points="325.8,509.1 323.1,509.1 321.7,511.5 323.1,513.8 325.8,513.8 327.1,511.5 	"/>
+	<text transform="matrix(0.9678 0 0 1 328.5722 553.6934)" class="st49 st4 st50">ท่าพระจันทร์</text>
+	<polygon class="st52" points="326.6,550.2 323.9,550.2 322.5,552.5 323.9,554.9 326.6,554.9 327.9,552.5 	"/>
+	<text transform="matrix(0.9678 0 0 1 444.8027 699.877)" class="st49 st4 st50">วัดเศวตฉัตร</text>
+	<polygon class="st52" points="465,697.5 462.3,697.5 461,699.9 462.3,702.2 465,702.2 466.4,699.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 474.5175 709.9219)" class="st49 st4 st50">วัดวรจรรยาวาส</text>
+	<polygon class="st52" points="472.6,706.5 469.9,706.5 468.5,708.9 469.9,711.2 472.6,711.2 473.9,708.9 	"/>
+	<text transform="matrix(0.9678 0 0 1 465.9843 719.793)" class="st49 st4 st50">วัดราชสิงขร</text>
+	<polygon class="st52" points="463.4,716.4 460.7,716.4 459.4,718.8 460.7,721.1 463.4,721.1 464.8,718.8 	"/>
+	<text transform="matrix(0.9678 0 0 1 423.1416 747.4893)" class="st49 st4 st50">ราษฎร์บูรณะ</text>
+	<polygon class="st52" points="444.4,744.7 441.7,744.7 440.4,747 441.7,749.3 444.4,749.3 445.8,747 	"/>
+</g>
+</svg>

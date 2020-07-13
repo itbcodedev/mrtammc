@@ -1,0 +1,103 @@
+<div class="content-wrapper">
+  <section class="content">
+    <div class="row" style="padding-top: 2rem;">
+      <div class="col-md-8">
+        <h4> List Ldap user @ OU=mmc,OU=Project,DC=mrta,DC=co,DC=th </h4>
+
+        <table>
+           <thead>
+          <tr>
+            <th scope="col">dn</th>
+            <th scope="col">userPrincipalName</th>
+            <th scope="col">sAMAccountName</th>
+            <th scope="col">lastLogon</th>
+            <th scope="col">accountExpires</th>
+          </tr>
+          </thead>
+          <tr *ngFor="let user of users">
+            <td>{{ user.dn }}</td>
+            <td>{{ user.userPrincipalName }}</td>
+            <td>{{ user.sAMAccountName }}</td>
+            <td>{{ user.lastLogon  }}</td>
+            <td>{{ user.accountExpires  }}</td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="col-md-4">
+        <div class="col-sm-10 col-md-10 col-lg-10 mx-auto">
+
+        </div>
+      </div>
+
+    </div>
+  </section> 
+
+  <section class="content">
+      <h4> Manage User Role Admin</h4>
+
+      <form class="form-inline" [formGroup]="userForm"  (ngSubmit)="onSubmit()">
+          <div class="form-group mb-2">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <input id="text" name="email" type="text" class="form-control" formControlName="email">
+            
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="fullname"class="col-sm-2 col-form-label">Fullname</label>
+            <input id="text2" name="fullname" type="text" class="form-control" formControlName="fullname">
+            
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+              <label for="role" class="col-sm-2 col-form-label">role</label>
+              <select id="select" name="role" required="required" class="custom-select" formControlName="role">
+                  <option value="admin">admin</option>
+                  <option value="user">user</option>
+                </select>
+               
+            </div>
+          <button type="submit" class="btn btn-primary mb-2" [disabled]="!userForm.valid" >Create User</button>
+        </form> 
+  
+  </section>
+
+  <section class="content">
+    <div class="row" style="padding-top: 2rem;">
+      <div class="col-md-8">
+        <h4> List Users</h4>
+
+        <table>
+           <thead>
+          <tr>
+            <th scope="col">Email</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Role</th>
+            <th scope="col">Action</th>
+          
+          </tr>
+          </thead>
+          <tr *ngFor="let ldapuser of ldapusers">
+            <td>{{ ldapuser.email }}</td>
+            <td>{{ ldapuser.fullname }}</td>
+            <td>{{ ldapuser.role }}</td>
+            <td>
+              <button type="button" class="btn btn-danger" (click)="deleteUser(ldapuser)">
+                  <i class="fa fa-trash" aria-hidden="true"> Delete</i>
+              </button>
+            </td>
+
+          </tr>
+        </table>
+
+      </div>
+      <div class="col-md-4">
+        <div class="col-sm-10 col-md-10 col-lg-10 mx-auto">
+
+        </div>
+      </div>
+
+    </div>
+  </section> 
+</div>
+
+
+

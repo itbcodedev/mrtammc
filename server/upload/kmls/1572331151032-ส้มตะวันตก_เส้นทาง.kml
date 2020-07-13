@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>ส้มตะวันตก</name>
+    <Style id="line-F8971B-4000-normal">
+      <LineStyle>
+        <color>ff1b97f8</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-F8971B-4000-highlight">
+      <LineStyle>
+        <color>ff1b97f8</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-F8971B-4000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-F8971B-4000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-F8971B-4000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>รถไฟฟ้าสายสีส้ม</name>
+      <description>ศูนย์วัฒนธรรม - มีนบุรี</description>
+      <styleUrl>#line-F8971B-4000</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          100.57051,13.766494,0
+          100.552943,13.773094,0
+          100.548217,13.764159,0
+          100.542455,13.762615,0
+          100.542406,13.755998,0
+          100.542184,13.754885,0
+          100.541854,13.753387,0
+          100.54121,13.750891,0
+          100.541049,13.749932,0
+          100.520659,13.757292,0
+          100.518541,13.756816,0
+          100.516423,13.756633,0
+          100.514806,13.756558,0
+          100.506017,13.756409,0
+          100.50535,13.755986,0
+          100.498486,13.757354,0
+          100.495915,13.757884,0
+          100.494353,13.758465,0
+          100.493579,13.758815,0
+          100.493027,13.758942,0
+          100.482695,13.759707,0
+          100.478067,13.76035,0
+          100.476609,13.760615,0
+          100.475757,13.760883,0
+          100.47491,13.761198,0
+          100.474063,13.761713,0
+          100.4440356,13.7855636,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

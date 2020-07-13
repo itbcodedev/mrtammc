@@ -1,0 +1,517 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <nav class="navbar navbar-expand-lg  primary-color">
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-table mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/config">File config mgmt</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-database mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/mrtaline">GTFS DB config mgmt</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-camera mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/cctv">CCTV mgmt</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-car mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/parking">Parking mgmt</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-train mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/routeformat">Route Format</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-car mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/ratioparking">Ratio Parking</a>
+          </h6>
+        </li>
+        <li class="nav-item mr-2">
+          <h6 class="m-0 text-dark btn btn-outline-primary">
+            <i class="fa fa-map-o mr-1 ml-1" aria-hidden="true"></i>
+            <a href="/auth/kmltoroute">KML to Route</a>
+          </h6>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#treemenulist" role="tab"
+                aria-controls="home" aria-selected="true">
+                <i class="fa fa-upload" aria-hidden="true"></i> Upload
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                aria-selected="false" (click)="refresh()" style="cursor: pointer">
+                <i class="fa fa-server" aria-hidden="true"></i>
+                List File
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent"
+            style="padding: 10px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;">
+            <div class="tab-pane fade show active" id="treemenulist" role="tabpanel" aria-labelledby="home-tab">
+              <div id="treemenu">
+                <ul>
+                  <li>GTFS File
+                    <ul>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#agency_info"> agency.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#calendar_dates_info"> calendar_dates.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#calendar_info"> calendar.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#frequencies_info"> frequencies.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#periods_info">periods.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#routes_info">routes.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#shape_details_info">shape_details.txt </a>
+
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#shapes_info">shapes.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#stop_times_info">stop_times.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#stops_info">stops.txt </a>
+                      </li>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#trips_info">trips.txt</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    MAP Component
+                    <ul>
+                      <li data-jstree='{"icon":"fa fa-file-code-o"}'>
+                        <a href="#kml_info">KML Layer</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <ul class="list-group">
+                <li class="list-group-item" *ngFor="let file of dirfiles">
+                  {{ file }} &nbsp;
+                  <div class="btn-group pull-right" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-danger btn-sm" (click)="deleteFile(file)">Delete</button>
+                    <button type="button" class="btn btn-secondary btn-sm" (click)="viewfileOnlists(file)">View</button>
+                    <button type="button" class="btn btn-success btn-sm" (click)="testFile(file)">Verify</button>
+                    <button type="button" class="btn btn-info btn-sm" (click)="deployconfigfile(file)">Deploy</button>
+                    <button type="button" class="btn btn-danger btn-sm" (click)="savedbFile(file)">Save DB</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /.col -->
+        <!-- <div class="col-7" *ngIf="showfile"> -->
+        <div class="col-9">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a id="uploadfiletab" class="nav-link active" data-toggle="tab" href="#upload1" role="tab"
+                aria-controls="home">Upload info</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#map1" role="tab" aria-controls="profile">Map Component</a>
+            </li> -->
+            <li class="nav-item">
+              <a id="filedetailtab" class="nav-link" data-toggle="tab" href="#filedetail" role="tab"
+                aria-controls="profile">File Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#messages1" role="tab" aria-controls="messages">GTFS Spec</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#settings1" role="tab" aria-controls="settings">Error Code</a>
+            </li>
+            <li class="nav-item">
+              <a id="verifytab" class="nav-link" data-toggle="tab" href="#verify1" role="tab"
+                aria-controls="verify">GTFS Verify</a>
+            </li>
+          </ul>
+
+          <div class="tab-content"
+            style="padding: 10px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;">
+            <div class="tab-pane active" id="upload1" role="tabpanel">
+              <!-- upload agency -->
+              <div id="agency_info">
+                <p>
+                  กรุณา upload file agency.txt
+                </p>
+                <input #input_file id="agency.txt" type="file" name="agency.txt"
+                  (change)="browseFile($event,'agency.txt',0)" /> &nbsp; &nbsp;
+                <button class="btn btn-primary" (click)="uploadFile('agency.txt',0)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+              </div> <!-- end agency upload -->
+
+              <!-- upload calendar_datesinfo -->
+              <div id="calendar_dates_info">
+                <p>
+                  กรุณา upload file calendar_dates.txt
+                </p>
+                <input id="calendar_dates.txt " type="file" name="calendar_dates.txt"
+                  (change)="browseFile($event,'calendar_dates.txt',1)" /> &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('calendar_dates.txt',1)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+
+              </div> <!-- end upload -->
+
+              <!-- upload calendar_datesinfo -->
+              <div id="calendar_info">
+                <p>
+                  กรุณา upload file calendar.txt
+                </p>
+                <input id="calendar.txt" type="file" name="calendar.txt"
+                  (change)="browseFile($event,'calendar.txt',2)" /> &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('calendar.txt',2)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+
+              </div> <!-- end upload -->
+              <!-- upload frequencies.txt -->
+              <div id="frequencies_info">
+                <p>
+                  กรุณา upload file frequencies.txt
+                </p>
+                <input id="frequencies.txt" type="file" name="frequencies.txt"
+                  (change)="browseFile($event,'frequencies.txt',3)" /> &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('frequencies.txt',3)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+
+              </div> <!-- end upload -->
+              <!-- upload periods.txt -->
+              <div id="periods_info">
+                <p>
+                  กรุณา upload file periods.txt
+                </p>
+                <input id="periods.txt" type="file" name="periods.txt" (change)="browseFile($event,'periods.txt',4)" />
+                &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('periods.txt',4)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+
+              </div> <!-- end upload -->
+
+              <!-- routes.txt -->
+              <div id="routes_info">
+                <p>
+                  กรุณา upload file routes.txt
+                </p>
+                <input id="routes.txt" type="file" name="routes.txt" (change)="browseFile($event,'routes.txt',5)" />
+                &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('routes.txt',5)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+
+
+              </div> <!-- end upload -->
+
+              <!-- shape_details.txt -->
+              <div id="shape_details_info">
+                <p>
+                  กรุณา upload file shape_details.txt
+                </p>
+                <input id="shape_details.txt" type="file" name="shape_details.txt"
+                  (change)="browseFile($event,'shape_details.txt',6)" /> &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('shape_details.txt',6)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+
+              </div> <!-- end upload -->
+
+              <!--shapes.txt -->
+              <div id="shapes_info">
+                <p>
+                  กรุณา upload file shapes.txt
+                </p>
+                <input id="shapes.txt" type="file" name="shapes.txt" (change)="browseFile($event,'shapes.txt',7)" />
+                &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('shapes.txt',7)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+
+
+              </div> <!-- end upload -->
+
+              <!--stop_times.txt-->
+              <div id="stop_times_info">
+                <p>
+                  กรุณา upload file stop_times.txt
+                </p>
+                <input id="stop_times.txt" type="file" name="stop_times.txt"
+                  (change)="browseFile($event,'stop_times.txt',8)" /> &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('stop_times.txt',8)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+                <!--
+                <p>
+                  แสดงผลไฟล์ {{agfile}}
+                </p>
+                <ag-grid-angular style="height: 580px;" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+                </ag-grid-angular> -->
+              </div> <!-- end upload -->
+              <!-- stops.txt -->
+              <div id="stops_info">
+                <p>
+                  กรุณา upload file stops.txt
+                </p>
+                <input id="stops.txt" type="file" name="stops.txt" (change)="browseFile($event,'stops.txt',9)" /> &nbsp;
+                &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('stops.txt',9)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+                <!-- <p>
+                  แสดงผลไฟล์ {{agfile}}
+                </p>
+                <ag-grid-angular style="height: 580px;" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+                </ag-grid-angular> -->
+              </div> <!-- end upload -->
+              <!-- trips.txt -->
+              <div id="trips_info">
+                <p>
+                  กรุณา upload file trips.txt
+                </p>
+                <input id="trips.txt" type="file" name="trips.txt" (change)="browseFile($event,'trips.txt',10)" />
+                &nbsp; &nbsp;
+                <button class="btn btn-primary btn-sm" (click)="uploadFile('trips.txt',10)">
+                  <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                </button>
+                <!-- <p>
+                  แสดงผลไฟล์ {{agfile}}
+                </p>
+                <ag-grid-angular style="height: 580px;" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+                </ag-grid-angular> -->
+              </div> <!-- end upload -->
+
+              <!-- kml -->
+              <div id="kml_info">
+                <div class="row">
+                  <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">KML Layer</h4>
+                    <form class="needs-validation" [formGroup]="kmlForm" novalidate>
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <label for="line_en">line_en</label>
+                          <input type="text" class="form-control" id="line_en" placeholder="ชื่อเส้นทาง ภาษาอังกฤษ"
+                            value="" required="true" formControlName="line_en">
+                          <div class="invalid-feedback">
+                            Valid line name is required.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="line_th">line_th</label>
+                          <input type="text" class="form-control" id="line_th" placeholder="ชื่อเส้นทาง ภาษาไทย"
+                            value="" required="true" formControlName="line_th">
+                          <div class="invalid-feedback">
+                            Valid line name is required.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="url">url</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-link" aria-hidden="true"></i></span>
+                          </div>
+                          <input type="text" class="form-control" id="url" placeholder="ลิงค์ของ kml ที่เป็นสาธารณะ"
+                            required="" formControlName="url">
+                          <div class="invalid-feedback" style="width: 100%;">
+                            Your url is required.
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-md-5 mb-3">
+                          <label for="statuss">status</label>
+                          <select class="custom-select d-block w-100" id="status" required="" formControlName="status">
+                            <option selected>เลือกสถานะ...</option>
+                            <option value="1">Enable</option>
+                            <option value="0">Disable</option>
+                          </select>
+                        </div>
+                        <div class="col-md-5 mb-3">
+                          <label for="statuss">Actions</label>
+                          <button class="btn btn-primary btn-md btn-block" type="submit"
+                            (click)="uploadkml()">{{ kmlaction }}</button>
+                        </div>
+                      </div>
+                      <hr class="mb-4">
+
+                    </form>
+                  </div>
+                </div>
+                <div class="row">
+                  <h4 class="mb-3">List KML</h4>
+
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">line_en</th>
+                        <th scope="col">line_th</th>
+                        <th scope="col">url</th>
+                        <th scope="col">status</th>
+                        <th scope="col">action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <ng-container *ngFor="let kml of kmls; let i = index">
+                        <tr [attr.data-index]="i">
+                          <th scope="row">{{i}}</th>
+                          <td>{{kml.line_en}}</td>
+                          <td>{{kml.line_th}}</td>
+                          <td>{{kml.url}}</td>
+                          <td>{{kml.status}}</td>
+                          <td>
+                            <div class="btn-group pull-right" role="group" aria-label="Basic example">
+                              <button type="button" class="btn btn-danger btn-sm"
+                                (click)="deletekml(kml._id)">Delete</button>
+                              <button type="button" class="btn btn-info btn-sm" (click)="editkml(kml._id)">Edit</button>
+
+                            </div>
+                          </td>
+                        </tr>
+                      </ng-container>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div> <!-- end kml -->
+
+
+            </div>
+            <!-- <div class="tab-pane" id="map1" role="tabpanel">
+              Map Component
+            </div> -->
+            <div class="tab-pane" id="filedetail" role="tabpanel">
+              <p>
+                แสดงผลไฟล์ {{agfile}}
+              </p>
+              <ag-grid-angular #agGrid style="height: 680px;" class="ag-theme-balham" [rowData]="rowData"
+                [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" (gridReady)="onGridReady($event)"
+                (cellValueChanged)="onCellValueChanged(agfile,$event)">
+              </ag-grid-angular>
+            </div>
+            <div class="tab-pane" id="messages1" role="tabpanel">
+              <div class="col">
+                <p>
+                  ตัวอย่าง ไฟล์ GTFS Specification
+                </p>
+                <app-gtfsspec></app-gtfsspec>
+              </div>
+            </div>
+            <div class="tab-pane" id="settings1" role="tabpanel">
+              <div class="col">
+                <app-validate-spec></app-validate-spec>
+              </div>
+            </div>
+            <div class="tab-pane" id="verify1" role="tabpanel">
+              <div class="col" *ngIf="showverify">
+                <div class="row">
+                  <div class="col-5">
+                    <div [innerHtml]="verifyTable">
+
+                    </div>
+                    <div [innerHtml]="E8Table">
+
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div [innerHtml]="E7Table">
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- /.col -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Button trigger modal -->
+  <button id="modalbtn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  </button>
+
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">{{ modal_title }}</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span [innerHTML]="modal_icon"></span><span>{{ modal_body }}</span>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

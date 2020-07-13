@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-xl-9 mx-auto">
+      <div class="card card-signin flex-row my-5">
+        <div class="card-img-left d-none d-md-flex">
+          <!-- Background image for card set in CSS! -->
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Register</h5>
+          <form class="form-signin" [formGroup]="FormData">
+            <div class="form-label-group">
+              <input type="text" id="inputUserame" class="form-control" placeholder="Username" formControlName="username"
+                required autofocus>
+              <label for="inputUserame">Username</label>
+              <span *ngIf="isValid('username')"> Username is required</span>
+
+            </div>
+
+            <div class="form-label-group">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" formControlName="email"
+                required>
+              <label for="inputEmail">Email address</label>
+              <span *ngIf="isValid('email')"> Enter Email is invalid </span>
+            </div>
+
+
+
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" formControlName="password"
+                required>
+              <label for="inputPassword">Password</label>
+              <span *ngIf="isValid('password')"> Password is required</span>
+            </div>
+
+            <div class="form-label-group">
+              <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password"
+                formControlName="cnfpass" required>
+              <label for="inputConfirmPassword">Confirm password</label>
+              <span *ngIf="isValid('cnfpass')">Password and confirm password should match</span>
+            </div>
+            <hr>
+            <div class="form-label-group">
+              <input type="text" id="firstname" class="form-control" placeholder="firstname" formControlName="firstname"
+                required autofocus>
+              <label for="firstname">Firstname</label>
+              <span *ngIf="isValid('firstname')"> Firstname is required</span>
+            </div>
+
+            <div class="form-label-group">
+              <input type="text" id="lastname" class="form-control" placeholder="lastname" formControlName="lastname"
+                required autofocus>
+              <label for="lastname">Lastname</label>
+              <span *ngIf="isValid('lastname')"> Lastname is required</span>
+
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="register()">Register</button>
+            <div style="text-align: center;">
+              {{successMessage}}
+            </div>
+            <hr class="my-4">
+            <a class="d-block text-center mt-2 small" (click)='movetologin()'>Sign In on MRTA LDAP</a>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

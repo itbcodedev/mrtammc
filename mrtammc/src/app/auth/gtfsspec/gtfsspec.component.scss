@@ -1,0 +1,18 @@
+pre, .pre-style {
+    font: 14px/20px Roboto Mono,monospace;
+    margin: 16px 0;
+    overflow-x: auto;
+    padding: 8px;
+    position: relative;
+}
+
+code, pre, .pre-style {
+    background: #f7f7f7;
+    color: #37474f;
+    padding: 1px 4px;
+
+}
+
+.prettyprint {
+  border-left: 6px solid red;
+}

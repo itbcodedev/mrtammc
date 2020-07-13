@@ -1,0 +1,202 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <nav class="navbar navbar-expand-lg  primary-color">
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active mr-2">
+                    <h6 class="m-0 text-dark btn btn-outline-primary">
+                        <i class="fa fa-table mr-1 ml-1" aria-hidden="true"></i>
+                        <a href="/auth/config">File config mgmt</a>
+                    </h6>
+                </li>
+                <li class="nav-item mr-2">
+                    <h6 class="m-0 text-dark btn btn-outline-primary">
+                        <i class="fa fa-database mr-1 ml-1" aria-hidden="true"></i>
+                        <a href="/auth/mrtaline">GTFS DB config mgmt</a>
+                    </h6>
+                </li>
+                <li class="nav-item mr-2">
+                    <h6 class="m-0 text-dark btn btn-outline-primary">
+                        <i class="fa fa-camera mr-1 ml-1" aria-hidden="true"></i>
+                        <a href="/auth/cctv">CCTV mgmt</a>
+                    </h6>
+                </li>
+                <li class="nav-item mr-2">
+                    <h6 class="m-0 text-dark btn btn-outline-primary">
+                        <i class="fa fa-car mr-1 ml-1" aria-hidden="true"></i>
+                        <a href="/auth/parking">Parking mgmt</a>
+                    </h6>
+                </li>
+                <li class="nav-item mr-2">
+                    <h6 class="m-0 text-dark btn btn-outline-primary">
+                        <i class="fa fa-train mr-1 ml-1" aria-hidden="true"></i>
+                        <a href="/auth/routeformat">Route Format</a>
+                    </h6>
+                </li>
+                <li class="nav-item mr-2">
+                    <h6 class="m-0 text-dark btn btn-outline-primary">
+                        <i class="fa fa-car mr-1 ml-1" aria-hidden="true"></i>
+                        <a href="/auth/ratioparking">Ratio Parking</a>
+                    </h6>
+                </li>
+                <li class="nav-item mr-2">
+                    <h6 class="m-0 text-dark btn btn-outline-primary">
+                        <i class="fa fa-map-o ml-1" aria-hidden="true"></i>
+                        <a href="/auth/kmltoroute">KML to Route</a>
+                    </h6>
+                </li>
+            </ul>
+
+        </div>
+        <!-- Collapsible content -->
+
+    </nav>
+    <!-- /.content-header -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <ul class="nav nav-tabs border-secondary" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active " id="home-tab" data-toggle="tab" href="#parkingform" role="tab"
+                                aria-controls="home" aria-selected="true">
+                                <i class="fa fa-car" aria-hidden="true"></i> Parking Location Form
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent"
+                        style="padding: 10px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;">
+                        <div class="tab-pane fade show active" id="parkingform" role="tabpanel"
+                            aria-labelledby="home-tab">
+                            <div id="cctvformdiv">
+                                <!-- <p>CCTV form</p>-->
+                                <p>กรุณากรอกข้อมูลตำแหน่งสถานีจอดรถ</p>
+                                <form [formGroup]="parkingForm" (ngSubmit)="submitParkingData()" novalidate>
+
+                                    <div class="form-group row">
+                                        <label for="code" class="col-sm-2 col-form-label">code*</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm" id="code"
+                                                placeholder="code" formControlName="code">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="name" class="col-sm-2 col-form-label">name*</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control form-control-sm" id="name"
+                                                placeholder="name" formControlName="name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="icon" class="col-sm-2 col-form-label">icon*</label>
+                                        <div class="col-sm-9">
+                                            <input type="file" class="form-control form-control-sm" id="parking_icon"
+                                                name="icon" (change)="onFileChange_icon($event)">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="image" class="col-sm-2 col-form-label">image*</label>
+                                        <div class="col-sm-9">
+                                            <input type="file" class="form-control form-control-sm" id="parking_image"
+                                                name="image" (change)="onFileChange_image($event)">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="capacity" class="col-sm-2 col-form-label">capacity*</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm" id="capacity"
+                                                placeholder="capacity" formControlName="capacity">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-2 col-form-label">location*</label>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control form-control-sm" id="latitude"
+                                                placeholder="latitude" formControlName="latitude"
+                                                [(ngModel)]="latitude">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control form-control-sm" id="longitude"
+                                                placeholder="longitude" formControlName="longitude"
+                                                [(ngModel)]="longitude">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-sm">เพิ่ม Parking</button>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a id="uploadfiletab" class="nav-link active" data-toggle="tab" href="#cctvlist" role="tab"
+                                aria-controls="home">
+                                <i class="fa fa-map-o" aria-hidden="true"></i> Parking Map
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#map1" role="tab" aria-controls="profile">Map Component</a>
+                                </li> -->
+                        <li class="nav-item">
+                            <a id="onmaptab" class="nav-link" data-toggle="tab" href="#onmap" role="tab"
+                                aria-controls="profile" (click)="refresh()">
+                                <i class="fa fa-table" aria-hidden="true"></i> Parking List
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="well">
+                                <div class="m-1">
+
+                                    <button type="button" class="btn btn-outline-danger btn-sm"
+                                        (click)="deleteParking()">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tab-content"
+                        style="padding: 0px; background-color: white; border-style: solid; border-width: 1px;  height: 80vh; overflow-y: scroll;">
+                        <div #mapdiv class="tab-pane active" id="cctvlist" role="tabpanel">
+                            <div #map id="map" [style.height]="height" style="width: 100%;">
+
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="onmap" role="tabpanel">
+
+                            <ag-grid-angular style="width: 100%; height: 600px;" class="ag-theme-balham"
+                                (gridReady)="onGridReady($event)" [columnDefs]="columnDefs" [rowData]="rowData"
+                                rowSelection="single" pagination="true" paginationPageSize=25
+                                (selectionChanged)="onSelectionChanged($event)"
+                                (cellEditingStopped)="onCellEditingStopped($event)"
+                                (dataChanged)="onrowValueChanged($event)">
+                            </ag-grid-angular>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

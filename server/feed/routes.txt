@@ -1,0 +1,5 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type
+00011,BEM,South,PP01:Khong Bang Phaie to PP16: Tao Poon,จากสถานีคลองบางไผ่ ไปสถานีเตาปูน (PP01 – PP16),2
+00012,BEM,North,PP16: Tao Poon to PP01:Khong Bang Phai,จากสถานีสถานีเตาปูน ไปสถานีคลองบางไผ่ (PP16 – PP01),2
+00001,BEM,South,BL01:Tha Phra - BL38:Lak Song,จากสถานีท่าพระ ไปสถานีหลักสอง (BL01-BL38),2
+00002,BEM,North,BL38:Lak Song - BL01:Tha Phra,จากสถานีหลักสอง ไปสถานีท่าพระ (BL38-BL01),2

@@ -1,0 +1,11 @@
+[
+  {
+    "code": "cctv_1",
+    "name": "MMC control room",
+    "latitude": 13.76026741,
+    "longitude": 100.57676512,
+    "protocol": "ws",
+    "host": "192.168.3.48",
+    "port": 5000
+  }
+]

@@ -1,0 +1,733 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputFirstname">First name</label>
+                        <input type="text" class="form-control" id="inputFirstname" placeholder="First name">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputLastname">Last name</label>
+                        <input type="text" class="form-control" id="inputLastname" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputAddressLine1">Address</label>
+                        <input type="text" class="form-control" id="inputAddressLine1" placeholder="Street Address">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputAddressLine2">Address (Line 2)</label>
+                        <input type="text" class="form-control" id="inputAddressLine2" placeholder="Line 2">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="inputState">State</label>
+                        <input type="text" class="form-control" id="inputState" placeholder="State">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="inputPostalCode">Postal Code</label>
+                        <input type="text" class="form-control" id="inputPostalCode" placeholder="Postal Code">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputContactNumber">Contact Number</label>
+                        <input type="number" class="form-control" id="inputContactNumber" placeholder="Contact Number">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputWebsite">Website</label>
+                        <input type="text" class="form-control" id="inputWebsite" placeholder="Website">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary px-4 float-right">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!----------  Agengy --------------->
+<p> ผู้เดินรถ Agency </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="agencyForm">
+              <!-- {{ agencyForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="agency_id">agency_id</label>
+                        <input id="agency_id" type="text" class="form-control" formControlName="agency_id" placeholder="agency_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="agency_name">agency_name</label>
+                        <input id="agency_name" type="text" class="form-control" formControlName="agency_name" placeholder="agency_name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="agency_url">agency_url</label>
+                        <input id="agency_url" type="text" class="form-control" formControlName="agency_url" placeholder="agency_url">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="agency_timezone">agency_timezone</label>
+                        <input id="agency_timezone" type="text" class="form-control" formControlName="agency_timezone" placeholder="agency_timezone">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="agency_phone">agency_phone</label>
+                        <input id="agency_phone" type="text" class="form-control" formControlName="agency_timezone" placeholder="agency_phone">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addAgency()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!----------  end Agengy form --------------->
+
+
+<!----------  Agengy --------------->
+<p> เส้นทาง route </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="routesForm">
+              <!-- {{ agencyForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="route_id">route_id</label>
+                        <input id="route_id" type="text" class="form-control" formControlName="route_id" placeholder="route_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="route_short_name">route_short_name</label>
+                        <input id="route_short_name" type="text" class="form-control" formControlName="route_short_name" placeholder="route_short_name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="route_long_name">route_long_name</label>
+                        <input  id="route_long_name" type="text" class="form-control" formControlName="route_long_name" placeholder="route_long_name">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="route_desc">route_desc</label>
+                        <input id="route_desc" type="text" class="form-control" formControlName="route_desc" placeholder="route_desc">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="route_type">route_type</label>
+                        <input id="route_type" type="text" class="form-control" formControlName="route_type" placeholder="route_type">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addRoute">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!----------  route --------------->
+<p> ขบวน Trip </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="tripsForm">
+              <!-- {{ agencyForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="route_id">route_id</label>
+                        <input id="route_id" type="text" class="form-control" formControlName="route_id" placeholder="route_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="service_id">service_id</label>
+                        <input id="service_id" type="text" class="form-control" formControlName="service_id" placeholder="service_id">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="trip_id">trip_id</label>
+                        <input id="trip_id" type="text" class="form-control" formControlName="trip_id" placeholder="trip_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="trip_headsign">trip_headsign</label>
+                        <input id="trip_headsign" type="text" class="form-control" formControlName="trip_headsign" placeholder="trip_headsign">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="block_id">block_id</label>
+                        <input id="block_id" type="text" class="form-control" formControlName="block_id" placeholder="block_id">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  stop --------------->
+<p> สถานีรถไฟฟ้า Station </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="stopsForm">
+               {{ stopsForm.value | json}}
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="stop_id">stop_id</label>
+                        <input id="stop_id" type="text" class="form-control" formControlName="stop_id" placeholder="stop_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="level_id">level_id</label>
+                        <input id="level_id" type="text" class="form-control" formControlName="level_id" placeholder="level_id">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="stop_name">stop_name</label>
+                        <input id="stop_name" type="text" class="form-control" formControlName="stop_name" placeholder="stop_name">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="stop_lat">stop_lat</label>
+                        <input id="stop_lat" type="text" class="form-control" formControlName="stop_lat" placeholder="stop_lat">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="stop_lon">stop_lon</label>
+                        <input id="stop_lon" type="text" class="form-control" formControlName="stop_lon" placeholder="stop_lon">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="location_type">location_type</label>
+                        <input id="location_type" type="text" class="form-control" formControlName="location_type" placeholder="location_type">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="parent_station">parent_station</label>
+                        <input id="parent_station" type="text" class="form-control" formControlName="parent_station" placeholder="parent_station">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!----------  stops --------------->
+<p> ตารางเวลาเดินรถ Stop Time </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="stoptimesForm">
+              <!-- {{ stoptimesForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="trip_id">trip_id</label>
+                        <input id="trip_id" type="text" class="form-control" formControlName="trip_id" placeholder="trip_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="arrival_time">arrival_time</label>
+                        <input id="arrival_time" type="text" class="form-control" formControlName="arrival_time" placeholder="arrival_time">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="departure_time">departure_time</label>
+                        <input id="departure_time" type="text" class="form-control" formControlName="departure_time" placeholder="departure_time">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="stop_id">stop_id</label>
+                        <input id="stop_id" type="text" class="form-control" formControlName="stop_id" placeholder="stop_id">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="stop_sequence">stop_sequence</label>
+                        <input id="stop_sequence" type="text" class="form-control" formControlName="stop_sequence" placeholder="stop_sequence">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="pickup_type">pickup_type</label>
+                        <input id="pickup_type" type="text" class="form-control" formControlName="pickup_type" placeholder="pickup_type">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="drop_off_type">drop_off_type</label>
+                        <input id="drop_off_type" type="text" class="form-control" formControlName="drop_off_type" placeholder="drop_off_type">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addStoptime()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  stop time --------------->
+<p> ปฎิทินเดินรถ Calendar </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="calendarForm">
+              <!-- {{ calendarForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="service_id">service_id</label>
+                        <input id="service_id" type="text" class="form-control" formControlName="service_id" placeholder="service_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputLastname">monday</label>
+                        <input id="monday" type="text" class="form-control" formControlName="monday" placeholder="monday">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="tuesday">tuesday</label>
+                        <input id="tuesday" type="text" class="form-control" formControlName="tuesday" placeholder="tuesday">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="wednesday">wednesday</label>
+                        <input id="wednesday" type="text" class="form-control" formControlName="wednesday" placeholder="wednesday">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="thursday">thursday</label>
+                        <input id="thursday" type="text" class="form-control" formControlName="thursday" placeholder="thursday">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="friday">friday</label>
+                        <input id="friday" type="text" class="form-control" formControlName="friday" placeholder="friday">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="saturday">saturday</label>
+                        <input id="saturday" type="text" class="form-control" formControlName="saturday" placeholder="saturday">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="sunday">sunday</label>
+                        <input id="sunday" type="text" class="form-control" formControlName="sunday" placeholder="sunday">
+                    </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                      <label for="start_date">start_date</label>
+                      <input id="start_date" type="text" class="form-control" formControlName="start_date" placeholder="start_date">
+                  </div>
+                  <div class="col-sm-6">
+                      <label for="end_date">end_date</label>
+                      <input id="end_date" type="text" class="form-control" formControlName="end_date" placeholder="end_date">
+                  </div>
+              </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addCalendar()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  calendar --------------->
+<p> ตารางการเดินรถ Calendar Date </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="calendardatesForm">
+              <!-- {{ calendardatesForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="service_id">service_id</label>
+                        <input id="service_id" type="text" class="form-control" formControlName="service_id" placeholder="service_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="date">date</label>
+                        <input id="date" type="text" class="form-control" formControlName="date" placeholder="date">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="exception_type">exception_type</label>
+                        <input id="exception_type" type="text" class="form-control" formControlName="exception_type" placeholder="exception_type">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addCalendardate()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  calendardate --------------->
+<p> ตารางค่าโดยสาร Fare Attribute </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="fareattributesForm">
+              <!-- {{ fareattributesForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="fare_id">fare_id</label>
+                        <input id="fare_id" type="text" class="form-control" formControlName="fare_id" placeholder="fare_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="price">price</label>
+                        <input id="price" type="text" class="form-control" formControlName="price" placeholder="price">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="currency_type">currency_type</label>
+                        <input id="currency_type" type="text" class="form-control" formControlName="currency_type" placeholder="currency_type">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="payment_method">payment_method</label>
+                        <input id="payment_method" type="text" class="form-control" formControlName="payment_method" placeholder="payment_method">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="transfers">transfers</label>
+                        <input id="transfers" type="text" class="form-control" formControlName="transfers" placeholder="transfers">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="transfer_duration">transfer_duration</label>
+                        <input id="transfer_duration" type="text" class="form-control" formControlName="transfer_duration" placeholder="transfer_duration">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addFareattribute()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  faire fareattributesForm --------------->
+<p> ผู้เดินรถ Fare Rule </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="farerulesForm">
+              <!-- {{ farerulesForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="fare_id">fare_id</label>
+                        <input id="fare_id" type="text" class="form-control" formControlName="fare_id" placeholder="fare_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="route_id">route_id</label>
+                        <input id="route_id" type="text" class="form-control" formControlName="route_id" placeholder="route_id">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="origin_id">origin_id</label>
+                        <input id="origin_id" type="text" class="form-control" formControlName="origin_id" placeholder="origin_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="destination_id">destination_id</label>
+                        <input id="destination_id" type="text" class="form-control" formControlName="destination_id" placeholder="destination_id">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="contains_id">contains_id</label>
+                        <input id="contains_id" type="text" class="form-control" formControlName="contains_id" placeholder="contains_id">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addFarerule()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  farerules --------------->
+<p> เส้นทางการเดินรถ Shape </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="shapesForm">
+              <!-- {{ agencyForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="shape_id">shape_id</label>
+                        <input id="shape_id" type="text" class="form-control" formControlName="shape_id" placeholder="shape_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="shape_pt_lat">shape_pt_lat</label>
+                        <input id="shape_pt_lat" type="text" class="form-control" formControlName="shape_pt_lat" placeholder="shape_pt_lat">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="shape_pt_lon">shape_pt_lon</label>
+                        <input id="shape_pt_lon" type="text" class="form-control" formControlName="shape_pt_lon" placeholder="shape_pt_lon">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="shape_pt_sequence">shape_pt_sequence</label>
+                        <input id="shape_pt_sequence" type="text" class="form-control" formControlName="shape_pt_sequence" placeholder="shape_pt_sequence">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="shape_dist_traveled">shape_dist_traveled</label>
+                        <input id="shape_dist_traveled" type="text" class="form-control" formControlName="shape_dist_traveled" placeholder="shape_dist_traveled">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addShape()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  shape --------------->
+<p> Path way </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="pathwaysForm">
+              <!-- {{ agencyForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="pathway_id">pathway_id</label>
+                        <input id="pathway_id" type="text" class="form-control" formControlName="pathway_id" placeholder="pathway_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="from_stop_id">from_stop_id</label>
+                        <input id="from_stop_id" type="text" class="form-control" formControlName="from_stop_id" placeholder="from_stop_id">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="to_stop_id">to_stop_id</label>
+                        <input id="to_stop_id" type="text" class="form-control" formControlName="to_stop_id" placeholder="to_stop_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="pathway_mode">pathway_mode</label>
+                        <input id="pathway_mode" type="text" class="form-control" formControlName="pathway_mode" placeholder="pathway_mode">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="is_bidirectional">is_bidirectional</label>
+                        <input id="is_bidirectional" type="text" class="form-control" formControlName="is_bidirectional" placeholder="is_bidirectional">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addPathway()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  pathway --------------->
+<p> ความถี่การเดินรถ Frequency </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="frequenciesForm">
+              <!-- {{ frequenciesForm.value | json}} -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputFirstname">trip_id</label>
+                        <input type="text" class="form-control" formControlName="agency_id" placeholder="agency_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="start_time">start_time</label>
+                        <input id="start_time" type="text" class="form-control" formControlName="start_time" placeholder="start_time">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="headway_secs">headway_secs</label>
+                        <input id="headway_secs" type="text" class="form-control" formControlName="headway_secs" placeholder="headway_secs">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addFrequency()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!----------  frequency --------------->
+<p> สถานเชื่อมต่อ Transfer </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="transfersForm">
+              {{ transfersForm.value | json}}
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="from_stop_id">from_stop_id</label>
+                        <input id="from_stop_id" type="text" class="form-control" formControlName="from_stop_id" placeholder="from_stop_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="to_stop_id">to_stop_id</label>
+                        <input id="to_stop_id" type="text" class="form-control" formControlName="to_stop_id" placeholder="to_stop_id">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="transfer_type">transfer_type</label>
+                        <input id="transfer_type" type="text" class="form-control" formControlName="transfer_type" placeholder="transfer_type">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="min_transfer_time">min_transfer_time</label>
+                        <input id="min_transfer_time" type="text" class="form-control" formControlName="min_transfer_time" placeholder="min_transfer_time">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addTransfer()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!----------  Level --------------->
+<p> ขั้นอาคารสถานี Level </p>
+<div class="container py-2">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form [formGroup]="levelsForm">
+              {{ levelsForm.value | json}}
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="level_id">level_id</label>
+                        <input id="level_id" type="text" class="form-control" formControlName="level_id" placeholder="level_id">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="level_index">level_index</label>
+                        <input id="level_index" type="text" class="form-control" formControlName="level_index" placeholder="level_index">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="level_name">level_name</label>
+                        <input id="level_name" type="text" class="form-control" formControlName="level_name" placeholder="level_name">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="elevation">elevation</label>
+                        <input id="elevation" type="text" class="form-control" formControlName="elevation" placeholder="elevation">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm px-4 float-left" (click)="addLevel()">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+===========  list view
+
+
+<!-- List view -->
+<div class="listview">
+  <p> รายละเอียดข้อมูล  </p>
+  <div class="container py-2">
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">agency_key</th>
+          <th scope="col">agency_id</th>
+          <th scope="col">agency_name</th>
+          <th scope="col">agency_url</th>
+          <th scope="col">agency_timezone</th>
+          <th scope="col">agency_lang</th>
+          <th scope="col">agency_phone</th>
+          <th scope="col">agency_fare_url</th>
+          <th scope="col">agency_email</th>
+          <th scope="col">agency_bounds</th>
+          <th scope="col">agency_center</th>
+          <th scope="col">actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let agency of agencies; let i = index">
+          <tr [attr.data-index]="i">
+            <th scope="row">{{i}}</th>
+            <td>{{ agency.agency_key}}</td>
+            <td>{{ agency.agency_id}}</td>
+            <td>{{ agency.agency_name}}</td>
+            <td>{{ agency.agency_url}}</td>
+            <td>{{ agency.agency_timezone}}</td>
+            <td>{{ agency.agency_phone}}</td>
+            <td>{{ agency.agency_fare_url}}</td>
+            <td>{{ agency.agency_email}}</td>
+            <td>{{ agency.agency_bounds}}</td>
+            <td>{{ agency.agency_center}}</td>
+            <td>
+              <div class="btn-group pull-right" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-danger btn-sm" (click)="deleteAgency(agency._id)">Delete</button>
+                <button type="button" class="btn btn-info btn-sm" (click)="editAgency(agency._id)">Edit</button>
+
+              </div>
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+=====
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"> ผู้เดินรถ Agency</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link btn btn-light" (click)="viewAgency()"> View </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-light" (click)="viewAgency()"> </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<select class="form-control" formControlName="wheelchair_accessible">
+  <option *ngFor="let wheelchair of wheelchair_boarding" [ngValue]="wheelchair.value">
+    {{ wheelchair.name }}
+  </option>
+</select>
+
+
+route_type
+
+<select class="form-control" formControlName="route_type">
+  <option *ngFor="let rt of route_type" [ngValue]="rt.value">
+    {{ rt.name }}
+  </option>
+</select>
+
+timezone
+
+<select class="form-control" formControlName="route_type">
+  <option *ngFor="let tz of timezone" [ngValue]="tz.value">
+    {{ tz.name }}
+  </option>
+</select>
+
+
+agency_lang 
+
+
+<select class="form-control" formControlName="agency_lang">
+  <option *ngFor="let l of agency_lang" [ngValue]="l.value">
+    {{ l.name }}
+  </option>
+</select>
