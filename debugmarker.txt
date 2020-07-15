@@ -47,7 +47,7 @@ Environment=NODE_ENV=production PORT=3000
 WantedBy=multi-user.target
 
 
-unlink /home/mee/AngularProj/mrtammcproj/mrtammc/dist/mrtammc/assets/dist/public
+unlink /home/mee/AngularProj/mrtammc/mrtammc/dist/mrtammc/assets/dist/public
 ng build
 
 Could not find module "@angular-devkit/build-angular"
