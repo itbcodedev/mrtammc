@@ -99,7 +99,7 @@ exports.TrainSimulator = class {
         const headsign = `${stoptime.start_point} to ${stoptime.end_point}`
         const tripId = stoptime.trip_id
         const route_id = stoptime.route_id
-
+        const calendar = stoptime.calendar
         const latitude = stoptime.location.latitude
         const longitude = stoptime.location.longitude
 
@@ -124,7 +124,8 @@ exports.TrainSimulator = class {
             "route_id": "${route_id}",
             "direction": "${direction}",
             "headsign": "${headsign}",
-            "runtime": "${runtime}"
+            "runtime": "${runtime}",
+            "calendar": "${calendar}"
             
           },
           "entity": {
@@ -254,16 +255,16 @@ exports.TrainSimulator = class {
         trip.end_time_secs = getsecond(trip.end_time)
         trip.runtime_secs = trip.end_time_secs - trip.start_time_secs
         trip.runtime = Math.round(trip.runtime_secs/60)
-        // console.log("236  trip.trip_id  trip.runtime_secs  trip.calendar")
-        // 236 5404252 4728 WD  , runtime_secs fully scale
-        // console.log("236", trip.trip_id, trip.runtime_secs, trip.calendar)
+        console.log("=== 257  trip_id  runtime_secs  calendar Start/End", trip.trip_id, trip.runtime_secs, trip.calendar, trip.start_time,"/", trip.end_time)
+
         return trip
 
       })
 
-      // console.log('237  total | active | calendar ', routeinfos.length, routeinfos_now.length, routeinfos_addsec.length)
+      console.log('=== 263  routeinfos.length | routeinfos_now.length | routeinfos_addsec.length ', routeinfos.length, routeinfos_now.length, routeinfos_addsec.length)
 
       const routeinfos_stoptimes = await addStoptime(this.gtfs, routeinfos_addsec)
+      console.log("=== 266 total number", routeinfos_stoptimes.length)
       const trip_gtfs = await transformFormat(routeinfos_stoptimes)
       return trip_gtfs
     } catch (err) {

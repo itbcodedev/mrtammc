@@ -108,9 +108,12 @@
                         aria-controls="profile"
                         aria-selected="false"
                       >
-                        No
+                      No
                         <span class="badge badge-info">
-                          {{ totalTrips.length }}
+                         {{ tripbycalendar.length }} ขบวน
+                        </span>
+                        <span class="badge badge-danger">
+                          <i class="fa fa-calendar" aria-hidden="true"> </i> {{ tripcalendar}}
                         </span>
                       </a>
                     </li>
@@ -131,6 +134,7 @@
                             width: 270px;
                             height: 310px;
                             overflow-y: scroll;
+                            scrollbar-width: thin;
                           "
                         >
                           <li *ngFor="let item of activeRoutes; let i = index">
@@ -149,17 +153,17 @@
                     >
                       <ul
                         class="list-group list-group-flush"
-                        style="height: 380px; overflow-y: scroll;"
+                        style="height: 380px; overflow-y: scroll; scrollbar-width: thin;"
                       >
                         <li
-                          *ngFor="let item of totalTrips; let i = index"
+                          *ngFor="let item of tripbycalendar; let i = index"
                           class="btn btn-outline-success btn-sm"
                           style="margin: 1px; width: 260px;"
                         >
                           <div>
-                            {{ item.trip_id }}
+                             {{i+1}} - <i class="fa fa-train" aria-hidden="true"></i> {{ item.trip_id }}
                             <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            start {{ item.start_time }} to {{ item.end_time }}
+                             {{ item.start_time }} - {{ item.end_time }}
                           </div>
                         </li>
                       </ul>
