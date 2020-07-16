@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production node index.js",
-    "server": "NODE_ENV=production nodemon index.js",
+    "start": "NODE_ENV=production node app.js",
+    "server": "NODE_ENV=production nodemon app.js",
     "mrtammc": "npm run start --prefix ../mrtammc",
     "dev": "concurrently \"npm run server\" \"npm run mrtammc\"",
     "stage": "concurrently \"npm run server_stage\" \"npm run mrtammc_stage\""
