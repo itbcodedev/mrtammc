@@ -337,7 +337,7 @@ export class OpenstreetmapComponent implements OnInit {
         start_time_secs
       );
       const delta_t = time_now_sec - start_time_secs;
-
+      const totaltime = end_time_secs - start_time_secs;
       const runtime_secs = runtime * 60;
 
       let loc_length;
@@ -349,7 +349,8 @@ export class OpenstreetmapComponent implements OnInit {
       switch (route_name) {
         case 'purple':
           loc_length = this.csvData.length;
-          loc_order = Math.round((delta_t / runtime_secs) * loc_length);
+          // loc_order = Math.round((delta_t / runtime_secs) * loc_length);
+          loc_order = Math.round((delta_t / totaltime) * loc_length);
           // console.log('trip_id,delta_t,loc_order,loc_length',trip_id,delta_t,loc_order,loc_length)
 
           if (+direction) {
@@ -364,7 +365,8 @@ export class OpenstreetmapComponent implements OnInit {
           break;
         case 'blue':
           loc_length = this.blue_csvData.length;
-          loc_order = Math.round((delta_t / runtime_secs) * loc_length);
+          //loc_order = Math.round((delta_t / runtime_secs) * loc_length);
+          loc_order = Math.round((delta_t / totaltime) * loc_length);
           // console.log('trip_id,delta_t,loc_order,loc_length',trip_id,delta_t,loc_order,loc_length)
 
           if (+direction) {
@@ -395,9 +397,9 @@ export class OpenstreetmapComponent implements OnInit {
                 fill="${e.target.color}"></path>
             </g>
           </svg>
-  
+
           <button id="button-submit" class="badge badge-danger " type="button">Follow</button>
-  
+
           </div>
           <div class="col-md-3">
             <p style="color: #ffffff; margin: 2px 0;">เส้นทาง</p>
@@ -418,19 +420,19 @@ export class OpenstreetmapComponent implements OnInit {
         <i class="fa fa-refresh" aria-hidden="true"></i>
         </button>
         </div>
-  
+
         </div>
       </div>
         <ul class="list-group list-group-flush">
         <li class="list-group-item m-0">
-  
+
        <p class="m-0">
        <img src="${e.target.track}"  height="32" width="15">
        สถานีถัดไป: <b>${e.target.nextstop}</b> ใช้เวลา
        ${Math.floor(e.target.difftime / 60)} นาที  ${
         e.target.difftime % 60
       } วินาที
-  
+
        </p>
      </li>
      <li class="list-group-item">
