@@ -173,9 +173,6 @@ exports.TrainSimulator = class {
       let location;
       let delta_p;
       let delta_b;
-      let filemodule;
-      let loc_b;
-      let loc_p;
       const blue_length = 46558;
       const purple_length = 20986;
       const mapdistance = 5;
@@ -185,43 +182,40 @@ exports.TrainSimulator = class {
         const delta_t = trip.time_now_sec - trip.start_time_secs 
         const totaltime = trip.runtime_secs
         
-        filemodule = getPathfile(trip)
-        // loc_length = path[`${filemodule}`].points.length
-        // loc_order = Math.round((delta_t/ totaltime) * loc_length) 
-        // location = path[`${filemodule}`].points[loc_order]
+        const filemodule = getPathfile(trip)
+        // v1 const loc_length = path[`${filemodule}`].points.length
+        // v1 const loc_order = Math.round((delta_t/ totaltime) * loc_length) 
+        // v1 const location = path[`${filemodule}`].points[loc_order]
 
         if (trip.route_name === "blue") {
-            loc_length = path[`${filemodule}`].points.length;
-            delta_b = Math.round((delta_t / totaltime) * blue_length);
-            loc_order = Math.round(delta_b / mapdistance)
-            location = path[`${filemodule}`].points[loc_order]
-            trip.file = filemodule
-            trip.location = location
-            trip.loc_order = loc_order
-
-          console.log('== 183', trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
+          
+          delta_b = Math.round((delta_t / totaltime) * blue_length);
+          loc_order = Math.round(delta_b / mapdistance);
+          location = path[`${filemodule}`].points[loc_order];
+          console.log('== 183', trip.route_name, trip.route_id, location.latitude, location.longitude);
 
         } else if (trip.route_name === "purple") {
-            loc_length = path[`${filemodule}`].points.length
-            delta_p = Math.round((delta_t/ totaltime) * purple_length)
-            loc_order = Math.round(delta_p / mapdistance)
-            location = path[`${filemodule}`].points[loc_order]
-            trip.file = filemodule
-            trip.location = location
-            trip.loc_order = loc_order
-        
-
-          console.log('== 183', trip.route_name, trip.route_id, filemodule, delta_p, purple_length,  loc_order)
-
+          
+          delta_p = Math.round((delta_t / totaltime) * purple_length);
+          loc_order = Math.round(delta_p / mapdistance);
+          location = path[`${filemodule}`].points[loc_order]
+          console.log('== 183', trip.route_name, trip.route_id, location.latitude, location.longitude)
 
         } else {
-           console.log('== 183', trip.route_id, "missing routename")
+          console.log('== 183', trip.route_id, "missing routename")
         }
 
+        
+
+        //console.log("181 filemodule | trip_id | route_id | runtime_sec | loc_order | loc_length")
+        //console.log("181 ", "<",filemodule, ">", trip.route_name, trip.route_id, trip.trip_id, "[", trip.direction,  "]",  runtime_secs, loc_order,loc_length)
+
+       // 181 filemodule | trip_id | route_id | runtime_sec | loc_order | loc_length
+       // 181  < purplenorth_in > purple 00011 01816 [ 0 ] 2118 3474 4285
       
-        // trip.file = filemodule
-        // trip.location = location
-        // trip.loc_order = loc_order
+        trip.file = filemodule
+        trip.location = location
+        trip.loc_order = loc_order
 
         // add stoptimes
         try {
@@ -287,7 +281,7 @@ exports.TrainSimulator = class {
         trip.end_time_secs = getsecond(trip.end_time)
         trip.runtime_secs = trip.end_time_secs - trip.start_time_secs
         trip.runtime = Math.round(trip.runtime_secs/60)
-        console.log("=== 257  trip_id  runtime_secs  calendar Start/End", trip.trip_id, trip.runtime_secs, trip.calendar, trip.start_time,"/", trip.end_time)
+        // console.log("=== 257  trip_id  runtime_secs  calendar Start/End", trip.trip_id, trip.runtime_secs, trip.calendar, trip.start_time,"/", trip.end_time)
 
         return trip
 

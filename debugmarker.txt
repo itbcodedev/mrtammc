@@ -333,3 +333,26 @@ ng build
 
 
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+source ~/.bashrc
+nvm use --delete-prefix v14.5.0 --silent
+node use 14
+
+cd mrtammc/
+unlink /home/sawangpong/app/mrtammc/mrtammc/dist/mrtammc/assets/dist/public
+
+sudo vim /etc/systemd/system/mrta-app1.service
+
+[Service]
+WorkingDirectory=/home/sawangpong/app/mrtammc/server
+ExecStart=/home/sawangpong/.nvm/versions/node/v14.5.0/bin/node index.js
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=mrta-app1
+User=sawangpong
+Group=sawangpong
+Environment=NODE_ENV=production PORT=3000
+
+[Install]
+WantedBy=multi-user.target

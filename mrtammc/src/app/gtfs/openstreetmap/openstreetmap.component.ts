@@ -22,12 +22,9 @@ export class OpenstreetmapComponent implements OnInit {
   wsdata;
   path;
   CurrentDate;
-  // csvUrl = 'assets/tubemapdata/testlatlng.csv';
-  csvUrl = 'assets/tubemapdata/purplecoordinate.csv';
-  //purple_csvUrl = 'assets/tubemapdata/purplecoordinate.csv';
-  //blue_csvUrl = 'assets/tubemapdata/blueline_coordinate.csv';
-  purple_csvUrl = 'assets/tubemapdata/purpledotmaptube.csv';
-  blue_csvUrl = 'assets/tubemapdata/bluedotmaptube.csv';
+
+  purple_csvUrl = 'assets/tubemapdata/v2/purpledotmaptube.csv';
+  blue_csvUrl = 'assets/tubemapdata/v2/bluedotmaptube.csv';
   // array store data
   csvData: any[] = [];
   blue_csvData: any[] = [];
@@ -344,13 +341,18 @@ export class OpenstreetmapComponent implements OnInit {
       let loc_order;
       let position;
       let trainLocation;
-
+      let delta_p;
+      let delta_b;
+      const blue_length = 46558;
+      const purple_length = 20986;
+      const mapdistance = 5;
       // select route_name and csvData to get location
       switch (route_name) {
         case 'purple':
           loc_length = this.csvData.length;
-          // loc_order = Math.round((delta_t / runtime_secs) * loc_length);
-          loc_order = Math.round((delta_t / totaltime) * loc_length);
+          //  =loc_order Math.round((delta_t / runtime_secs) * loc_length);
+          delta_p = Math.round((delta_t / totaltime) * purple_length);
+          loc_order = Math.round(delta_p / mapdistance);
           // console.log('trip_id,delta_t,loc_order,loc_length',trip_id,delta_t,loc_order,loc_length)
 
           if (+direction) {
@@ -365,8 +367,9 @@ export class OpenstreetmapComponent implements OnInit {
           break;
         case 'blue':
           loc_length = this.blue_csvData.length;
-          //loc_order = Math.round((delta_t / runtime_secs) * loc_length);
-          loc_order = Math.round((delta_t / totaltime) * loc_length);
+          // loc_order = Math.round((delta_t / runtime_secs) * loc_length);
+          delta_b = Math.round((delta_t / totaltime) * blue_length);
+          loc_order = Math.round(delta_b / mapdistance);
           // console.log('trip_id,delta_t,loc_order,loc_length',trip_id,delta_t,loc_order,loc_length)
 
           if (+direction) {

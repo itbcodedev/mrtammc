@@ -217,7 +217,7 @@ export class GtfsrtComponent implements OnInit {
       // console.log( ' debug Time for routeinfowithtrips ' + (t1 - t0) + ' millisec');
       // filter again filter only active trip
       const t2 = performance.now();
-      // filter  ontrack
+      // filter  ontrack  routetrips
       const routetrips = routeinfowithtrips.filter((obj) => {
         return this.checktime(obj.start_time, obj.end_time);
       });
@@ -227,32 +227,17 @@ export class GtfsrtComponent implements OnInit {
       // console.log('218..gtfs.component ', trip_id, loc_order, latitude, longitude );
       // 2 find next station and add information to marker
       const nextstation = routetrips.map((obj) => {
-        // purple 00118 224
-        // console.log(obj.route_name, obj.trip_id, obj.stoptimes.length)
-        // filter stoptime
         const selectStoptimes = obj.stoptimes.filter((st_obj) => {
-          // filter next time check depature_time less than timenow [0]
-          //   {
-          //     "_id": "5d2a8f3f1473da58b879e4f8",
-          //     "agency_key": "MRTA_Transit",
-          //     "trip_id": "041921",
-          //     "arrival_time": "16:44:31",
-          //     "departure_time": "16:44:31",
-          //     "stop_id": "BL13",
-          //     "stop_sequence": 4,
-          //     "__v": 0
-          // },
-
           return this.findNextTrip60min(st_obj.arrival_time);
         });
-        // console.log(241, selectStoptimes.length)
+        // console.log(' === 248 ', selectStoptimes.length)
+        // console.log(' === 248 ', selectStoptimes)
         obj.selectStoptimes = _.first(selectStoptimes);
         return obj;
       });
 
-      console.log("=== 253", nextstation)
-      // tslint:disable-next-line: triple-equals
-      if (nextstation[0] != undefined) {
+      // console.log(' === 253 ', nextstation)
+      if (nextstation[0] !== undefined) {
         const nextstop = nextstation[0].selectStoptimes;
         const timenow = this.CurrentDate.format('HH:mm:ss');
         // find difftime to station
@@ -281,7 +266,7 @@ export class GtfsrtComponent implements OnInit {
             marker_trip.arrival_time = nextstop.arrival_time;
             marker_trip.departure_time = nextstop.departure_time;
             marker_trip.difftime = nextstop.difftime;
-            console.log(" === 284 marker update exist", marker_trip.stop_id,marker_trip.trip_id,marker_trip.arrival_time,marker_trip.direction, marker_trip.loc_order)
+            console.log(' === 284 marker update exist', marker_trip.stop_id,marker_trip.trip_id,marker_trip.arrival_time,marker_trip.direction, marker_trip.loc_order)
             this.setStationInfo(
               marker_trip.stop_id,
               marker_trip.trip_id,
@@ -323,7 +308,7 @@ export class GtfsrtComponent implements OnInit {
           marker.arrival_time = nextstop.arrival_time;
           marker.departure_time = nextstop.departure_time;
           marker.difftime = nextstop.difftime;
-          console.log(" === 326 marker add new", marker.stop_id,marker.trip_id,marker.arrival_time,marker.direction, marker.loc_order)
+          console.log(' === 326 marker add new', marker.stop_id,marker.trip_id,marker.arrival_time,marker.direction, marker.loc_order)
           marker.bindPopup('Trip info');
 
           marker.on('mouseover', this.onTrainClick, this);
@@ -415,7 +400,7 @@ export class GtfsrtComponent implements OnInit {
     const marker = e.target;
     marker.passengerNum = this.getRandom();
     this.selectMarker = marker;
-    console.log("==== 418" , e.target)
+    console.log('==== 418' , e.target)
 
     const html = `
     <div class="card" style="width: 18rem;">
@@ -1112,7 +1097,7 @@ export class GtfsrtComponent implements OnInit {
       marker.setIcon(icon);
       marker.setLatLng(stationLatLng);
       marker.bindPopup(
-        "<img width='45' src='" + '/assets/dist/img/loading.gif' + "'/>"
+        '<img width=\'45\' src=\'' + '/assets/dist/img/loading.gif' + '\'/>'
       );
       marker.stop_id = stop.stop_id;
       marker.stop_url = stop.stop_url;
@@ -1143,8 +1128,8 @@ export class GtfsrtComponent implements OnInit {
           if (direction === 1) {
             name = 'ขาออก';
             li +=
-              "<li class='list-group-item'>" +
-              "<i class='fa fa-arrow-circle-left' style='color:blue'></i>" +
+              '<li class=\'list-group-item\'>' +
+              '<i class=\'fa fa-arrow-circle-left\' style=\'color:blue\'></i>' +
               '  ' +
               name +
               ' trip: ' +
@@ -1158,8 +1143,8 @@ export class GtfsrtComponent implements OnInit {
           if (direction === 0) {
             name = 'ขาเข้า';
             li +=
-              "<li class='list-group-item'>" +
-              "<i class='fa fa-arrow-circle-right' style='color:red'></i>" +
+              '<li class=\'list-group-item\'>' +
+              '<i class=\'fa fa-arrow-circle-right\' style=\'color:red\'></i>' +
               name +
               ' trip: ' +
               st.trip_id +
@@ -1484,7 +1469,7 @@ export class GtfsrtComponent implements OnInit {
   async getKmltoroute() {
     let objects = [];
     await this.kmlroutes.forEach( async (obj) => {
-      console.log("1426", obj.geojsonline_file)
+      console.log('1426', obj.geojsonline_file)
       const line = new L.GeoJSON.AJAX(obj.geojsonline_file, {
         style: function (feature) {
           return { color: obj.color };
