@@ -199,7 +199,7 @@ exports.TrainSimulator = class {
             trip.location = location
             trip.loc_order = loc_order
 
-          console.log('== 183', trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
+          console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
 
         } else if (trip.route_name === "purple") {
             loc_length = path[`${filemodule}`].points.length
@@ -211,7 +211,7 @@ exports.TrainSimulator = class {
             trip.loc_order = loc_order
         
 
-          console.log('== 183', trip.route_name, trip.route_id, filemodule, delta_p, purple_length,  loc_order)
+          console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_p, purple_length,  loc_order)
 
 
         } else {
