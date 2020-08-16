@@ -146,10 +146,10 @@ io.on('connection', (socket) => {
 
 //simulate()
 const { simulate } = require('./simulation');
-setInterval(simulate, 10000);
+setInterval(simulate, 7000);
 
 server.listen(PORT, () => {
-  console.log(`>>>> Application Server start port ${PORT}`);
+  console.log(`>>>> Applicatddion Server start port ${PORT}`);
 });
 
 //echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p  zjkoC]6p
