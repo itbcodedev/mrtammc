@@ -11,7 +11,7 @@ import { StopTime } from '../models/stop_time.model';
 import { Shape } from '../models/shape.model';
 import { ShapeDetail } from '../models/shape_detail';
 
-const BASE_API_ENDPOINT = '/api/v1';
+const BASE_API_ENDPOINT = '/api/v2';
 
 @Injectable({
   providedIn: 'root'

@@ -47,37 +47,37 @@ export class EditorComponent implements OnInit {
       case 'agency':
         this.columnDefs = new GtfsEditor().GTFS_COLUMNDEFS.agency;
         this.agencies = await this.gtfsService.getAgencies();
-        console.log(this.agencies);
+        // console.log(this.agencies);
         this.rowData = this.agencies;
         break;
       case 'stops':
         this.columnDefs = new GtfsEditor().GTFS_COLUMNDEFS.stops;
         this.stops = await this.gtfsService.getStops();
-        console.log(this.stops);
+        console.log(this.stops.length);
         this.rowData = this.stops;
         break;
       case 'routes':
         this.columnDefs = new GtfsEditor().GTFS_COLUMNDEFS.routes;
         this.routes = await this.gtfsService.getRoutes();
-        console.log(this.routes);
+        // console.log(this.routes);
         this.rowData = this.routes;
         break;
       case 'trips':
         this.columnDefs = new GtfsEditor().GTFS_COLUMNDEFS.trips;
         this.trips = await this.gtfsService.getTrips();
-        console.log(this.trips);
+        // console.log(this.trips);
         this.rowData = this.trips;
         break;
       case 'stop_times':
         this.columnDefs = new GtfsEditor().GTFS_COLUMNDEFS.stop_times;
         this.stop_times = await this.gtfsService.getStopTimes();
-        console.log(this.stop_times);
+        // console.log(this.stop_times);
         this.rowData = this.stop_times;
         break;
       case 'calendar':
         this.columnDefs = new GtfsEditor().GTFS_COLUMNDEFS.calendar;
         this.calendars = await this.gtfsService.getCalendars();
-        console.log(this.calendars);
+        // console.log(this.calendars);
         this.rowData = this.calendars;
         break;
       case 'calendar_dates':

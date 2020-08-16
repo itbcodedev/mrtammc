@@ -230,9 +230,13 @@ export class GtfsrtComponent implements OnInit {
         const selectStoptimes = obj.stoptimes.filter((st_obj) => {
           return this.findNextTrip60min(st_obj.arrival_time);
         });
-        // console.log(' === 248 ', selectStoptimes.length)
-        // console.log(' === 248 ', selectStoptimes)
-        obj.selectStoptimes = _.first(selectStoptimes);
+        console.log(' === 233 ', selectStoptimes.length)
+        console.log(' === 234 ', selectStoptimes)
+        // obj.selectStoptimes = _.first(selectStoptimes);
+        // Test
+        obj.selectStoptimes = this.findNearestTrip(selectStoptimes)
+        // console.log(' === 238 ', testresult)
+        
         return obj;
       });
 
@@ -1314,6 +1318,18 @@ export class GtfsrtComponent implements OnInit {
       // console.log('false')
       return false;
     }
+  }
+
+  // find the nearest 
+  findNearestTrip(stoptimes: any): any {
+    const timenow = this.CurrentDate.format('HH:mm:ss');
+    const timenow_secs = this.getsecond(timenow);
+    const out1 = _.each(stoptimes, (doc) => {
+      doc.arrival_time_sec = this.getsecond(doc.arrival_time)
+      doc.diff_sec = doc.arrival_time_sec - timenow_secs
+    })
+    const result = _.minBy(out1, "diff_sec")
+    return result
   }
 
   getColor(color) {
