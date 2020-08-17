@@ -241,10 +241,12 @@ export class GtfsrtComponent implements OnInit {
       });
 
       // console.log(' === 253 ', nextstation)
-      if (nextstation[0] !== undefined) {
+      if (nextstation[0] !== undefined && nextstation[0].selectStoptimes !== undefined ) {
         const nextstop = nextstation[0].selectStoptimes;
         const timenow = this.CurrentDate.format('HH:mm:ss');
         // find difftime to station
+        // console.log(' +++ 248', nextstation[0])
+        // console.log(' +++ 249', nextstop)
         const arr_time = this.getsecond(nextstop.arrival_time);
         const arr_now = this.getsecond(timenow);
         // console.log('arr_time,arr_now', arr_time, arr_now);
@@ -983,12 +985,17 @@ export class GtfsrtComponent implements OnInit {
   }
 
   getdirection(trip_id) {
-    console.log('965..', trip_id);
+    console.log('987..', trip_id);
     const trip = this.trips.find((t) => {
       return t.trip_id == trip_id;
     });
-    console.log('968 ..', trip);
-    return trip.direction_id;
+    console.log('987 ..', trip);
+    if (trip !== undefined) {
+      return trip.direction_id;
+    } else {
+      return 2
+    }
+    
   }
 
   getRandom() {
