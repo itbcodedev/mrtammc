@@ -12,24 +12,24 @@ export class ParkingService {
   constructor(private _http: HttpClient) { }
 
   AddParking(data) {
-    const url = this.baseUrl + '/api/v2/parkings/create'
-    return this._http.post(url, data)
+    const url = this.baseUrl + '/api/v2/parkings/create';
+    return this._http.post(url, data);
   }
 
   getParking() {
-    const url = this.baseUrl + '/api/v2/parkings'
-    return this._http.get(url)
+    const url = this.baseUrl + '/api/v2/parkings';
+    return this._http.get(url);
   }
 
   deleteParking(id: any) {
-    let url = this.baseUrl + '/api/v2/parkings/' + id
-    return this._http.delete(url)
+    const url = this.baseUrl + '/api/v2/parkings/' + id;
+    return this._http.delete(url);
   }
 
   updateParking(data: any) {
-    console.log("40",data)
-    let url = this.baseUrl + '/api/v2/parkings/' + data._id
+    console.log('40', data);
+    const url = this.baseUrl + '/api/v2/parkings/' + data._id;
 
-    return this._http.put(url, data)
+    return this._http.put(url, data);
   }
 }

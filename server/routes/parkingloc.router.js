@@ -39,24 +39,32 @@ router.put('/:id', async (req, res) => {
     }
 })
 
-router.post('/create',  upload.any(), async (req, res, next) => {
+router.post('/create',  upload.any(), (req, res, next) => {
 
     let icon_path = ""
     let image_path  = ""
-
+    
     if (req.files) {
         req.files.forEach((file) => {
-            console.log(file)
+            console.log('==49', file)
+            console.log('==50', __dirname)
             var filename = (new Date).valueOf() + "-" + file.originalname
             fs.rename(file.path, 'upload/images/' + filename, (err) => {
-                if (err) throw err;
+                if (err) {
+                    throw err
+                  } else {
+                    console.log("Successfully renamed the file!")
+                }
                 
             })
-            fs.copyFile('upload/images/' + filename, 'backupimages/' + filename, (err) => {
-                if (err) throw err;
+            // fs.copyFile(`../upload/images/${filename}`, `../backupimages/${filename}`, (err) => {
+            //     if (err) throw err;
                 
-            })
-            
+            // })
+        
+
+
+
             if (file.fieldname == "icon") {
                 icon_path = '/assets/dist/public/images/' + filename
             }
@@ -77,12 +85,16 @@ router.post('/create',  upload.any(), async (req, res, next) => {
         capacity: req.body.capacity
     })
 
-    try {
-        const parkingsave = await parking.save()
-        res.status(200).json(parkingsave);
-    } catch (error) {
-        res.status(500).json({ message: error})
-    }
+    // try {
+    //     const parkingsave = parking.save()
+    //     res.status(200).json(parkingsave);
+    // } catch (error) {
+    //     res.status(500).json({ message: error})
+    // }
+    parking.save((err, parking ) => {
+        if (err) return res.status(500).json({ message: error});
+        res.status(200).json(parking);
+    })
 });
 
 module.exports = router
