@@ -64,6 +64,7 @@ export class GtfsEditor {
             {headerName: 'timepoint', field: 'timepoint'}
         ],
         calendar: [
+            {headername: 'agency_key', field: 'agency_key'},
             {headerName: 'service_id', field: 'service_id'},
             {headerName: 'monday', field: 'monday'},
             {headerName: 'tuesday', field: 'tuesday'},
