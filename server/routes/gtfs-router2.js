@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 const gtfs = require('../controllers/gtfs')
-
+const calendar = require('../process/getCalendar');
 
 //routers
 module.exports = function(io) {
@@ -254,7 +254,9 @@ router.get("/routeinfos", (req, res, next) => {
 // localhost:3000/api/v2/routeinfowithtrip/041921
 router.get("/routeinfowithtrip/:trip_id", (req, res, next) => {
   const {trip_id} = req.params
-  const query = {trip_id: trip_id}
+  const query = {trip_id: trip_id, }
+  query.calendar = calendar.gtfsCalendar()[0];
+  // console.log("== 259", "test....", query );
   //console.log(query)
   gtfs.getRouteInfoWithTrip(query).then(routeinfowithtrip => {
     //console.log(routeinfowithtrip)
