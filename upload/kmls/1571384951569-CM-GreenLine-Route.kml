@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>CM-GreenLine-Route</name>
+    <Style id="line-0F9D58-6038-nodesc-normal">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>6.038</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0F9D58-6038-nodesc-highlight">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>9.057</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0F9D58-6038-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0F9D58-6038-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0F9D58-6038-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>เส้น 1</name>
+      <styleUrl>#line-0F9D58-6038-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          99.0117746,18.8231559,0
+          99.0110929,18.8094923,0
+          99.0135391,18.8087611,0
+          99.0165002,18.8065674,0
+          99.0182597,18.8037237,0
+          99.0103281,18.7983591,0
+          98.9995381,18.7931267,0
+          99.0010705,18.787793,0
+          98.9998276,18.7811144,0
+          98.998862,18.7738211,0
+          98.9985616,18.7699204,0
+          98.9989049,18.7690265,0
+          98.9923402,18.7641927,0
+          98.9906652,18.7654101,0
+          98.9844639,18.7674824,0
+          98.9814813,18.7678481,0
+          98.9779837,18.7687014,0
+          98.9767343,18.7692138,0
+          98.9756903,18.7698699,0
+          98.9730295,18.7714545,0
+          98.9707121,18.7719218,0
+          98.9692445,18.7719748,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

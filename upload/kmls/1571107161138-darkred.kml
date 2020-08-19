@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>สายสีแดงเข้ม</name>
+    <Style id="line-A61B4A-4000-normal">
+      <LineStyle>
+        <color>ff4a1ba6</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-A61B4A-4000-highlight">
+      <LineStyle>
+        <color>ff4a1ba6</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-A61B4A-4000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-A61B4A-4000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-A61B4A-4000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>รถไฟฟ้าสายสีแดงเข้ม</name>
+      <description>บางซื่อ - รังสิต</description>
+      <styleUrl>#line-A61B4A-4000</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          100.516333,13.737827,0
+          100.515547,13.741292,0
+          100.516198,13.745592,0
+          100.516678,13.749016,0
+          100.520659,13.757292,0
+          100.523516,13.764425,0
+          100.53961,13.802728,0
+          100.546489,13.818703,0
+          100.54731,13.821685,0
+          100.548624,13.824646,0
+          100.55151,13.830048,0
+          100.558494,13.843122,0
+          100.570776,13.8658,0
+          100.576446,13.87615,0
+          100.579357,13.881324,0
+          100.582374,13.886603,0
+          100.607422,13.931248,0
+          100.60797,13.932581,0
+          100.60841,13.934205,0
+          100.608635,13.935808,0
+          100.608646,13.938036,0
+          100.603789,13.9769,0
+          100.597553,14.027439,0
+          100.589254,14.074648,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

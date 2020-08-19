@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>สายสีน้ำเงินส่วนต่อขยาย</name>
+    <Style id="line-1A237E-4000-nodesc-normal">
+      <LineStyle>
+        <color>ff7e231a</color>
+        <width>4</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-1A237E-4000-nodesc-highlight">
+      <LineStyle>
+        <color>ff7e231a</color>
+        <width>6</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-1A237E-4000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-1A237E-4000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-1A237E-4000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>รถไฟฟ้าสายสีน้ำเงิน (ต่อ)</name>
+      <styleUrl>#line-1A237E-4000-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          100.474133,13.729661,0
+          100.472509,13.728805,0
+          100.471373,13.727929,0
+          100.47052,13.72747,0
+          100.469665,13.727017,0
+          100.467458,13.725835,0
+          100.466351,13.725263,0
+          100.46525,13.724635,0
+          100.46223,13.723017,0
+          100.461168,13.72245,0
+          100.459253,13.721372,0
+          100.456268,13.719753,0
+          100.453938,13.718501,0
+          100.453095,13.718052,0
+          100.452242,13.717707,0
+          100.44854,13.716503,0
+          100.44015,13.713796,0
+          100.439199,13.713482,0
+          100.438238,13.713242,0
+          100.404037,13.710395,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
