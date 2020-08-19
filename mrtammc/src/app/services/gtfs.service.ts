@@ -12,7 +12,7 @@ import { Shape } from '../models/shape.model';
 import { ShapeDetail } from '../models/shape_detail';
 
 const BASE_API_ENDPOINT = '/api/v2';
-
+const BASE_API_ENDPOINT1 = '/api/v1';
 @Injectable({
   providedIn: 'root'
 })
@@ -28,7 +28,7 @@ export class GtfsService {
   }
 
   public getRoutes(): Promise<Route[]> {
-    return this.http.get<Route[]>(`${BASE_API_ENDPOINT}/routes`).toPromise();
+    return this.http.get<Route[]>(`${BASE_API_ENDPOINT1}/routes`).toPromise();
   }
 
   public getShapeDetail(): Promise<ShapeDetail[]> {
