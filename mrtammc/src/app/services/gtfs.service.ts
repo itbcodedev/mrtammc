@@ -44,7 +44,7 @@ export class GtfsService {
   }
 
   public getStopTimes(): Promise<StopTime[]> {
-    return this.http.get<StopTime[]>(`${BASE_API_ENDPOINT}/stoptimes`).toPromise();
+    return this.http.get<StopTime[]>(`${BASE_API_ENDPOINT1}/stoptimes`).toPromise();
   }
 
   public getStopTimesByTrip(tripId: any): Promise<StopTime[]> {
