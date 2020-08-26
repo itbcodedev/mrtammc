@@ -313,9 +313,9 @@ export class OpenstreetmapComponent implements OnInit {
       const nextstation = routetrips.map((obj) => {
         const selectStoptimes = obj.stoptimes.filter((st_obj) => {
           // filter next time check depature_time less than timenow [0]
-          return this.findNextTrip(st_obj.arrival_time);
+          return this.findNextTrip(st_obj.departure_time);
         });
-        obj.selectStoptimes = _.first(selectStoptimes);
+        obj.selectStoptimes = selectStoptimes;
         return obj;
       });
 

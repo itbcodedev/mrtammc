@@ -221,40 +221,66 @@ export class GtfsrtComponent implements OnInit {
       const routetrips = routeinfowithtrips.filter((obj) => {
         return this.checktime(obj.start_time, obj.end_time);
       });
+
+      // console.log("=== 225", routetrips)
       const t3 = performance.now();
       // console.log( 'debug Time for routetrips ' + (t3 - t2) + ' millisec');
-      // debug
       // console.log('218..gtfs.component ', trip_id, loc_order, latitude, longitude );
       // 2 find next station and add information to marker
       const nextstation = routetrips.map((obj) => {
-        const selectStoptimes = obj.stoptimes.filter((st_obj) => {
-          return this.findNextTrip60min(st_obj.arrival_time);
+        // console.log('=== 231', obj)
+        const selectStoptimes = obj.stoptimes.filter((st_obj) => { 
+          return this.findNextTrip(st_obj.departure_time);
         });
-        console.log(' === 233 ', selectStoptimes.length);
-        console.log(' === 234 ', selectStoptimes);
-        // obj.selectStoptimes = _.first(selectStoptimes);
-        // Test
-        obj.selectStoptimes = this.findNearestTrip(selectStoptimes);
-        // console.log(' === 238 ', testresult)
-
+        // console.log('== 237 selectStoptimes', obj.trip_id, selectStoptimes.length, selectStoptimes)
+        obj.selectStoptimes = selectStoptimes;
         return obj;
       });
-
-      // console.log(' === 253 ', nextstation)
+      // list stoptime at stop of each trip
+      // console.log(' === 240', tripEntity, this.ActiveTrain)
+      console.log(' === 239 nextstation ', nextstation.length, nextstation);
       if (nextstation[0] !== undefined && nextstation[0].selectStoptimes !== undefined ) {
-        const nextstop = nextstation[0].selectStoptimes;
-        const timenow = this.CurrentDate.format('HH:mm:ss');
+        // console.log('+++  242 nextstation[0] !== undefined && nextstation[0].selectStoptimes !== undefined')
+        // 0
+        const timenow = this.getsecond(this.CurrentDate.format('HH:mm:ss'));
+
+        // console.log(' === 243 nextstation ', nextstation.length, nextstation);
+        // 1
+        // const sort = _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'));
+        const sort = _.orderBy(nextstation[0].selectStoptimes, 'arr_sec');
+        // 2
+        const map = _.each(sort, function(o){
+          const seconds = moment(o.arrival_time, 'HH:mm:ss: A').diff(moment().startOf('day'), 'seconds');
+          o.arr_sec = seconds;
+        });
+        // 3
+        const filter = _.filter(map, function(obj){
+          // console.log(' === 244 filter' , obj.arr_sec, timenow)
+          return obj.arr_sec >= timenow;
+        });
+        
+        // console.log(' === 245 nextstation sort', sort.length, sort);
+        // console.log(' === 245 nextstation map', map.length, map);
+        console.log(' === 246 nextstation filter', filter.length, filter);
+        // const nextstop =  _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'))[0];
+        // const nextstop =  nextstation[0].selectStoptimes[0];
+
+        const nextstop =  filter[0];
+        
+
+        
         // find difftime to station
-        // console.log(' +++ 248', nextstation[0])
-        // console.log(' +++ 249', nextstop)
+
         const arr_time = this.getsecond(nextstop.arrival_time);
-        const arr_now = this.getsecond(timenow);
-        // console.log('arr_time,arr_now', arr_time, arr_now);
+        const time = this.getsecond(this.CurrentDate.format('HH:mm:ss'));
+        const arr_now = time;
+        // console.log(' == 276  arr_time,time, arr_now', arr_time, time,  arr_now);
         // 1 sec = 0.0166666667 min
         nextstop.difftime = (arr_time - arr_now).toFixed(2);
         // cal random number
+        // console.log(' +++ 256 nextstop', nextstop)
         const number = this.getRandom();
-
+        // hasOwnProperty() method returns a boolean indicating whether the object has the specified property
         if (this.ActiveTrain.hasOwnProperty(tripEntity)) {
           // exist
           if (trainLocationMarkers[tripEntity] !== undefined) {
@@ -272,7 +298,7 @@ export class GtfsrtComponent implements OnInit {
             marker_trip.arrival_time = nextstop.arrival_time;
             marker_trip.departure_time = nextstop.departure_time;
             marker_trip.difftime = nextstop.difftime;
-            console.log(' === 284 marker update exist', marker_trip.stop_id, marker_trip.trip_id, marker_trip.arrival_time, marker_trip.direction, marker_trip.loc_order);
+            // console.log(' === 284 marker update exist', marker_trip.stop_id, marker_trip.trip_id, marker_trip.arrival_time, marker_trip.direction, marker_trip.loc_order);
             this.setStationInfo(
               marker_trip.stop_id,
               marker_trip.trip_id,
@@ -355,7 +381,9 @@ export class GtfsrtComponent implements OnInit {
             marker.direction
           );
         }
-      }
+      } else {
+        // console.log('---- 242 nextstation[0] !== undefined && nextstation[0].selectStoptimes !== undefined')
+      } //nextstation[0] !== undefined && nextstation[0].selectStoptimes !== undefined
 
       if (this.selectMarker != undefined) {
         this.updateTrain();
@@ -406,7 +434,7 @@ export class GtfsrtComponent implements OnInit {
     const marker = e.target;
     marker.passengerNum = this.getRandom();
     this.selectMarker = marker;
-    console.log('==== 418' , e.target);
+    // console.log('==== 418' , e.target.nextstop);
 
     const html = `
     <div class="card" style="width: 18rem;">
@@ -1272,7 +1300,7 @@ export class GtfsrtComponent implements OnInit {
     if (selectedStoptimes.length > 0) {
       const intime = selectedStoptimes.filter((stoptime) => {
         // return this.checktime(stoptime.arrival_time, stoptime.departure_time)
-        return this.findNextTrip60min(stoptime.arrival_time);
+        return this.findNextTrip(stoptime.departure_time);
       });
       // lastest
       console.log(1251, intime.length);
@@ -1281,16 +1309,13 @@ export class GtfsrtComponent implements OnInit {
     }
   }
 
-  findNextTrip(arrival_time: any): any {
+  findNextTrip(departure_time: any): boolean {
     const timenow = this.CurrentDate.format('HH:mm:ss');
-    const arrival_time_secs = this.getsecond(arrival_time);
+    const departure_time_secs = this.getsecond(departure_time);
     const timenow_secs = this.getsecond(timenow);
-
-    if (arrival_time_secs > timenow_secs) {
-      // console.log('true')
+    if (departure_time_secs > timenow_secs) {
       return true;
     } else {
-      // console.log('false')
       return false;
     }
   }
