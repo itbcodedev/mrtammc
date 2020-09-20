@@ -18,12 +18,13 @@ export class HeaderComponent implements OnInit {
   constructor(private _userservice: UserServiceService,
     private _toastr: ToastrService,
     private _router: Router) {
+    
     this._userservice.getUserName().subscribe(
       data => {
         console.log("21", data)
         this.username = data['username']
         this.role = data['role']
-        //console.log("-------------------------------")
+        // console.log("-------------------------------")
         console.log("26", this.username)
         console.log("27", this.role)
         this.isLogin = true;
@@ -35,7 +36,7 @@ export class HeaderComponent implements OnInit {
     )
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timezone: 'Asia/Bangkok' };
     const currentDate = new Date();
-    //this.today = currentDate.toLocaleDateString('th-TH', options) + ' ' + currentDate.toLocaleTimeString();
+    // this.today = currentDate.toLocaleDateString('th-TH', options) + ' ' + currentDate.toLocaleTimeString();
     this.today = currentDate.toLocaleDateString('th-TH', options);
   }
 

@@ -21,7 +21,7 @@ declare let L;
   styleUrls: ['./parking.component.scss']
 })
 export class ParkingComponent implements OnInit {
-  processStyle
+  processStyle: any;
   parkings: any;
   parkinglocations: any;
   apikey = 'OFCE5UCISN.A6u3fH6hKP.uhcTNtKFfk==';

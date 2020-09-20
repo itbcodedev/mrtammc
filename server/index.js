@@ -126,10 +126,9 @@ if (process.env.NODE_ENV === 'production') {
 const mongoose = require('mongoose');
 
 //2 Set up default mongoose connection
-//mongoose.connect('mongodb://localhost/mmcmrtadb',{ useNewUrlParser: true });
 mongoose.set('useCreateIndex', true);
 //mongoose.set('debug', true);
-// mongoose.connect('mongodb://localhost/mmcmrtadb', { useNewUrlParser: true });
+//mongoose.connect('mongodb://localhost/mmcmrtadb', { useNewUrlParser: true });
 //mongoose.connect('mongodb://root:secret@localhost:27017/mmcmrtadb?authSource=admin', { useNewUrlParser: true });
 mongoose.connect('mongodb://192.168.3.48/mmcmrtadb', { useNewUrlParser: true });
 
@@ -137,10 +136,14 @@ mongoose.connect('mongodb://192.168.3.48/mmcmrtadb', { useNewUrlParser: true });
 var db = mongoose.connection;
 
 //4 Bind connection to error event (to get notification of connection errors)
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.on('error', console.error.bind(console, 'Mongodb notify:  MongoDB connection error:'));
+db.once('open', function() {
+  // we're connected!
+  console.log("Connect to Mongodb Database:   Done!!!")
+});
 
 io.on('connection', (socket) => {
-  console.log('>>>> User connect from angular');
+  console.log('>>>> User connect from angular: Done !!!');
   // socket.emit('message', 'here is simulate data aaa')
 });
 
@@ -149,7 +152,7 @@ const { simulate } = require('./simulation');
 setInterval(simulate, 7000);
 
 server.listen(PORT, () => {
-  console.log(`>>>> Applicatddion Server start port ${PORT}`);
+  console.log(`Applicatddion Server start port ${PORT} Done!!!`);
 });
 
 //echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p  zjkoC]6p
