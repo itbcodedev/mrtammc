@@ -232,7 +232,7 @@ export class GtfsrtComponent implements OnInit {
         const selectStoptimes = obj.stoptimes.filter((st_obj) => { 
           return this.findNextTrip(st_obj.departure_time);
         });
-        // console.log('== 237 selectStoptimes', obj.trip_id, selectStoptimes.length, selectStoptimes)
+        console.log('== 237 selectStoptimes', obj.trip_id, selectStoptimes.length, selectStoptimes)
         obj.selectStoptimes = selectStoptimes;
         return obj;
       });
@@ -255,8 +255,9 @@ export class GtfsrtComponent implements OnInit {
         });
         // 3
         const filter = _.filter(map, function(obj){
-          // console.log(' === 244 filter' , obj.arr_sec, timenow)
-          return obj.arr_sec >= timenow;
+          console.log(' === 258 filter' , obj.arr_sec, obj.calendar, timenow, calendar)
+          // not arrive
+          return (obj.arr_sec >  timenow && obj.calendar == calendar) ;
         });
         
         // console.log(' === 245 nextstation sort', sort.length, sort);
@@ -276,6 +277,7 @@ export class GtfsrtComponent implements OnInit {
         const arr_now = time;
         // console.log(' == 276  arr_time,time, arr_now', arr_time, time,  arr_now);
         // 1 sec = 0.0166666667 min
+        
         nextstop.difftime = (arr_time - arr_now).toFixed(2);
         // cal random number
         // console.log(' +++ 256 nextstop', nextstop)
@@ -1313,6 +1315,7 @@ export class GtfsrtComponent implements OnInit {
     const timenow = this.CurrentDate.format('HH:mm:ss');
     const departure_time_secs = this.getsecond(departure_time);
     const timenow_secs = this.getsecond(timenow);
+    // train not reach station
     if (departure_time_secs > timenow_secs) {
       return true;
     } else {

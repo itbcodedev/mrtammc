@@ -1,0 +1,52 @@
+
+> server@1.0.0 dev /home/mee/AngularProj/mrtammc/server
+> concurrently "npm run server" "npm run mrtammc"
+
+[0] 
+[0] > server@1.0.0 server /home/mee/AngularProj/mrtammc/server
+[0] > NODE_ENV=production nodemon app.js
+[0] 
+[1] 
+[1] > server@1.0.0 mrtammc /home/mee/AngularProj/mrtammc/server
+[1] > npm run start --prefix ../mrtammc
+[1] 
+[1] 
+[1] > mrtammc@0.0.0 start /home/mee/AngularProj/mrtammc/mrtammc
+[1] > ng serve
+[1] 
+[0] [33m[nodemon] 1.19.4[39m
+[0] [33m[nodemon] to restart at any time, enter `rs`[39m
+[0] [33m[nodemon] watching dir(s): *.*[39m
+[0] [33m[nodemon] watching extensions: js,mjs,json[39m
+[0] [32m[nodemon] starting `node app.js`[39m
+[0] NODE_ENV...... production
+[0] [HPM] Proxy created: /  ->  http://122.155.204.80
+[0] process.env.NODE_ENV :production
+[0] (node:5806) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+[0] (Use `node --trace-deprecation ...` to show where the warning was created)
+[0] >>>> Application Server start port 3000
+[0] ----------------err---------------------
+[0] [Error: EEXIST: file already exists, symlink '/home/mee/AngularProj/mrtammc/server/upload' -> '../mrtammc/dist/mrtammc/assets/dist/public'] {
+[0]   errno: -17,
+[0]   code: 'EEXIST',
+[0]   syscall: 'symlink',
+[0]   path: '/home/mee/AngularProj/mrtammc/server/upload',
+[0]   dest: '../mrtammc/dist/mrtammc/assets/dist/public'
+[0] }
+[0] connect to database
+[1] [34mℹ[39m [90m｢wds｣[39m: Project is running at http://localhost:4200/webpack-dev-server/
+[1] [34mℹ[39m [90m｢wds｣[39m: webpack output is served from /
+[1] [34mℹ[39m [90m｢wds｣[39m: 404s will fallback to //index.html
+[1] 
+[1] chunk {admin-admin-module} admin-admin-module.js, admin-admin-module.js.map (admin-admin-module) 6.57 kB  [rendered]
+[1] chunk {main} main.js, main.js.map (main) 1.14 MB [initial] [rendered]
+[1] chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 308 kB [initial] [rendered]
+[1] chunk {runtime} runtime.js, runtime.js.map (runtime) 9.01 kB [entry] [rendered]
+[1] chunk {scripts} scripts.js, scripts.js.map (scripts) 698 kB [entry] [rendered]
+[1] chunk {styles} styles.js, styles.js.map (styles) 900 kB [initial] [rendered]
+[1] chunk {vendor} vendor.js, vendor.js.map (vendor) 9.11 MB [initial] [rendered]
+Date: 2020-10-19T05:32:29.358Z - Hash: 13258131b5ef681f2827 - Time: 38056ms
+[1] ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+[1] [34mℹ[39m [90m｢wdm｣[39m: Compiled successfully.
+[0] npm run server exited with code 0
+[1] npm run mrtammc exited with code 0

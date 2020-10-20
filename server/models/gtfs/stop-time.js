@@ -46,6 +46,9 @@ const stopTimeSchema = new mongoose.Schema({
     type: Number,
     min: 0,
     max: 1
+  },
+  calendar: {
+    type: String
   }
 });
 

@@ -199,7 +199,7 @@ exports.TrainSimulator = class {
             trip.location = location
             trip.loc_order = loc_order
 
-          console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
+          // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
 
         } else if (trip.route_name === "purple") {
             loc_length = path[`${filemodule}`].points.length
@@ -211,7 +211,7 @@ exports.TrainSimulator = class {
             trip.loc_order = loc_order
         
 
-          console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_p, purple_length,  loc_order)
+          // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_p, purple_length,  loc_order)
 
 
         } else {
@@ -279,15 +279,17 @@ exports.TrainSimulator = class {
       // step 3 find active train  start_time   - now - endtime)
       
       const routeinfos_now = routeinfos.filter(trip => {
+            
             return checktime(trip, trip.start_time, trip.end_time)
       })
 
       const routeinfos_addsec = routeinfos_now.filter(trip => c.includes(trip.calendar)).map(trip => {  
+        console.log("=== 287 trip start_time end_time", trip.trip_id, trip.start_time, trip.end_time)
         trip.start_time_secs = getsecond(trip.start_time)
         trip.end_time_secs = getsecond(trip.end_time)
         trip.runtime_secs = trip.end_time_secs - trip.start_time_secs
         trip.runtime = Math.round(trip.runtime_secs/60)
-        console.log("=== 257  trip_id  runtime_secs  calendar Start/End", trip.trip_id, trip.runtime_secs, trip.calendar, trip.start_time,"/", trip.end_time)
+        //console.log("=== 290  trip_id  runtime_secs  calendar Start/End", trip.trip_id, trip.runtime_secs, trip.calendar, trip.start_time,"/", trip.end_time)
 
         return trip
 
