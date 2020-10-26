@@ -9,7 +9,11 @@ let filename = "";
 
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/mmcmrtadb',{ useNewUrlParser: true }).catch(error => handleError(error));
+//mongoose.connect('mongodb://localhost/mmcmrtadb',{ useNewUrlParser: true }).catch(error => handleError(error));
+
+mongoose.connect('mongodb://192.168.3.48/mmcmrtadb', { useNewUrlParser: true });
+
+
 const conn = mongoose.connection;
 conn.on('connected', function() {
     console.log("connect to database")
