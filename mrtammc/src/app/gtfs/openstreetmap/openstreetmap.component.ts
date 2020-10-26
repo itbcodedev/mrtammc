@@ -299,6 +299,7 @@ export class OpenstreetmapComponent implements OnInit {
       const latitude = data['entity']['vehicle']['position']['latitude'];
       const longitude = data['entity']['vehicle']['position']['longitude'];
       const stoptimes = data['entity']['vehicle']['stoptimes'];
+      const calendar = data['header']['calendar'];
 
       // getdata
       const routeinfowithtrips = await this.gtfsService.getrouteinfowithtrip(
@@ -322,7 +323,30 @@ export class OpenstreetmapComponent implements OnInit {
       // // DEBUG: success ? filter next station
       this.CurrentDate = moment();
       const timenow = this.CurrentDate.format('HH:mm:ss');
-      const nexttrip = nextstation[0].selectStoptimes;
+      // const nexttrip = nextstation[0].selectStoptimes;
+// ------------------------------------------      
+      const sort = _.orderBy(nextstation[0].selectStoptimes, 'arr_sec');
+      // 2
+      const map = _.each(sort, function(o){
+        const seconds = moment(o.arrival_time, 'HH:mm:ss: A').diff(moment().startOf('day'), 'seconds');
+        o.arr_sec = seconds;
+      });
+      // 3
+      const filter = _.filter(map, function(obj){
+        console.log(' === 336 filter' , obj.arr_sec, obj.calendar, timenow, calendar)
+        // not arrive
+        return (obj.arr_sec >  timenow && obj.calendar == calendar) ;
+      });
+      
+      // console.log(' === 245 nextstation sort', sort.length, sort);
+      // console.log(' === 245 nextstation map', map.length, map);
+      console.log(' === 246 nextstation filter', filter.length, filter);
+      // const nextstop =  _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'))[0];
+      // const nextstop =  nextstation[0].selectStoptimes[0];
+
+      const nexttrip =  filter[0];
+// ------------------------------------------
+
       const arr_time = this.getsecond(nexttrip.arrival_time);
       const arr_now = this.getsecond(timenow);
       nexttrip.difftime = (arr_time - arr_now).toFixed(2);
