@@ -322,7 +322,7 @@ export class OpenstreetmapComponent implements OnInit {
 
       // // DEBUG: success ? filter next station
       this.CurrentDate = moment();
-      const timenow = this.CurrentDate.format('HH:mm:ss');
+      const timenow = this.getsecond(this.CurrentDate.format('HH:mm:ss'));
       // const nexttrip = nextstation[0].selectStoptimes;
 // ------------------------------------------      
       const sort = _.orderBy(nextstation[0].selectStoptimes, 'arr_sec');
@@ -340,7 +340,7 @@ export class OpenstreetmapComponent implements OnInit {
       
       // console.log(' === 245 nextstation sort', sort.length, sort);
       // console.log(' === 245 nextstation map', map.length, map);
-      console.log(' === 246 nextstation filter', filter.length, filter);
+      // console.log(' === 246 nextstation filter', filter.length, filter);
       // const nextstop =  _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'))[0];
       // const nextstop =  nextstation[0].selectStoptimes[0];
 
