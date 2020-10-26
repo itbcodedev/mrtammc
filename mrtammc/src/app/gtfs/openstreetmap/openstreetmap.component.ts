@@ -348,15 +348,16 @@ export class OpenstreetmapComponent implements OnInit {
 // ------------------------------------------
 
       const arr_time = this.getsecond(nexttrip.arrival_time);
-      const arr_now = this.getsecond(timenow);
+      const time = this.getsecond(this.CurrentDate.format('HH:mm:ss'));
+      const arr_now = time;
       nexttrip.difftime = (arr_time - arr_now).toFixed(2);
       // console.log('130....',nexttrip)
       // // TODO: filter with time select next station
-      console.log(
-        'time_now_sec - start_time_secs',
-        time_now_sec,
-        start_time_secs
-      );
+      // console.log(
+      //  'time_now_sec - start_time_secs',
+      //  time_now_sec,
+      //  start_time_secs
+      // );
       const delta_t = time_now_sec - start_time_secs;
       const totaltime = end_time_secs - start_time_secs;
       const runtime_secs = runtime * 60;
@@ -453,7 +454,7 @@ export class OpenstreetmapComponent implements OnInit {
         marker.on('mouseover', this.onTrainClick, this);
         marker.on('mouseout', this.onTrainClick, this);
 
-        // marker.on('mouseover', onTrainClick, marker);
+        marker.on('mouseover', this.onTrainClick, marker);
         marker.on(
           'click',
           function (event) {
