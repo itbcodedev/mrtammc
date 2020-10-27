@@ -1,5 +1,5 @@
 var fs = require('fs');
-const file = './geojsonpath5m/purpleline5meter.geojson'
+const file = './geojsonpath10m/BL02-BL01.geojson'
 let rawdata = fs.readFileSync(file, 'utf8')
 let geojson = JSON.parse(rawdata);
 
