@@ -191,14 +191,22 @@ exports.TrainSimulator = class {
         // location = path[`${filemodule}`].points[loc_order]
 
         if (trip.route_name === "blue") {
+            //loc_length = path[`${filemodule}`].points.length;
+            //delta_b = Math.round((delta_t / totaltime) * blue_length);
+            //loc_order = Math.round(delta_b / mapdistance)
+            //location = path[`${filemodule}`].points[loc_order]
+            //trip.file = filemodule
+            //trip.location = location
+            //trip.loc_order = loc_order
+
+
             loc_length = path[`${filemodule}`].points.length;
-            delta_b = Math.round((delta_t / totaltime) * blue_length);
-            loc_order = Math.round(delta_b / mapdistance)
-            location = path[`${filemodule}`].points[loc_order]
+            delta_b = Math.round((delta_t / totaltime) * loc_length) - 75;
+            location = path[`${filemodule}`].points[delta_b]
             trip.file = filemodule
             trip.location = location
-            trip.loc_order = loc_order
 
+            console.log("== 209", delta_b, "/", loc_length, totaltime )
           // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
 
         } else if (trip.route_name === "purple") {
