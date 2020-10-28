@@ -45,7 +45,7 @@ exports.TrainSimulator = class {
       return seconds
     }
 
-    // find active trip 
+    // find active trip
     function checktime(trip, start_time, endtime_time) {
       const format = 'hh:mm:ss'
 
@@ -67,7 +67,7 @@ exports.TrainSimulator = class {
       }
     }
 
-    // find path 
+    // find path
     function getPathfile(trip) {
       // console.log("71..trip id...", trip.trip_id)
       // console.log("71..trip direction.............", trip.direction)
@@ -87,9 +87,9 @@ exports.TrainSimulator = class {
 
     }
 
-    
+
     function transformFormat(stoptimes) {
-      //each trip 
+      //each trip
       return Promise.all(stoptimes.map(stoptime => {
         // console.log("85...", stoptime)
         // console.log("85......................")
@@ -126,7 +126,7 @@ exports.TrainSimulator = class {
             "headsign": "${headsign}",
             "runtime": "${runtime}",
             "calendar": "${calendar}"
-            
+
           },
           "entity": {
             "id": "${tripEntity}",
@@ -165,8 +165,8 @@ exports.TrainSimulator = class {
     //    |--------------|
     //  start_time      time_now
     // 2 loc_order = % of loc_lenght
-    
-    
+
+
     function addStoptime(gtfs,trips){
       let loc_length;
       let loc_order;
@@ -181,15 +181,11 @@ exports.TrainSimulator = class {
       const mapdistance = 5;
 
       return Promise.all(trips.map( async trip => {
-    
-        const delta_t = trip.time_now_sec - trip.start_time_secs 
-        const totaltime = trip.runtime_secs
-        
-        filemodule = getPathfile(trip)
-        // loc_length = path[`${filemodule}`].points.length
-        // loc_order = Math.round((delta_t/ totaltime) * loc_length) 
-        // location = path[`${filemodule}`].points[loc_order]
 
+        
+        const totaltime = trip.runtime_secs
+        // get file
+        filemodule = getPathfile(trip)
         if (trip.route_name === "blue") {
             //loc_length = path[`${filemodule}`].points.length;
             //delta_b = Math.round((delta_t / totaltime) * blue_length);
@@ -199,17 +195,18 @@ exports.TrainSimulator = class {
             //trip.location = location
             //trip.loc_order = loc_order
 
-
+            const delta_t = trip.time_now_sec - trip.start_time_secs
             loc_length = path[`${filemodule}`].points.length;
-            delta_b = Math.round((delta_t / totaltime) * loc_length) - 75;
+            delta_b = Math.round((delta_t / totaltime) * loc_length);
             location = path[`${filemodule}`].points[delta_b]
             trip.file = filemodule
             trip.location = location
 
-            console.log("== 209", delta_b, "/", loc_length, totaltime )
+            console.log("== 209", `${filemodule}`,  delta_b, "/", loc_length, totaltime )
           // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
 
         } else if (trip.route_name === "purple") {
+            const delta_t = trip.time_now_sec - trip.start_time_secs
             loc_length = path[`${filemodule}`].points.length
             delta_p = Math.round((delta_t/ totaltime) * purple_length)
             loc_order = Math.round(delta_p / mapdistance)
@@ -217,7 +214,7 @@ exports.TrainSimulator = class {
             trip.file = filemodule
             trip.location = location
             trip.loc_order = loc_order
-        
+
 
           // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_p, purple_length,  loc_order)
 
@@ -226,7 +223,7 @@ exports.TrainSimulator = class {
            console.log('== 183', trip.route_id, "missing routename")
         }
 
-      
+
         // trip.file = filemodule
         // trip.location = location
         // trip.loc_order = loc_order
@@ -245,7 +242,7 @@ exports.TrainSimulator = class {
           // start_time , end_time trip property
           const start_time = result[0].start_time
           const end_time = result[0].end_time
-          // get stoptime 
+          // get stoptime
           const stoptimes = result[0].stoptimes
           // trip + stoptime
           trip.stoptimes = stoptimes
@@ -270,7 +267,7 @@ exports.TrainSimulator = class {
   // [0]     stop_sequence: 1,
   // [0]     __v: 0
   // [0]   },
-  
+
 
     let routeinfos = []
     try {
@@ -285,13 +282,13 @@ exports.TrainSimulator = class {
       const c = calendar.gtfsCalendar()
       // console.log(234, c)
       // step 3 find active train  start_time   - now - endtime)
-      
+
       const routeinfos_now = routeinfos.filter(trip => {
-            
+
             return checktime(trip, trip.start_time, trip.end_time)
       })
 
-      const routeinfos_addsec = routeinfos_now.filter(trip => c.includes(trip.calendar)).map(trip => {  
+      const routeinfos_addsec = routeinfos_now.filter(trip => c.includes(trip.calendar)).map(trip => {
         console.log("=== 287 trip start_time end_time", trip.trip_id, trip.start_time, trip.end_time)
         trip.start_time_secs = getsecond(trip.start_time)
         trip.end_time_secs = getsecond(trip.end_time)

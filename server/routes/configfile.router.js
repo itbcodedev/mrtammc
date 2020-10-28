@@ -141,7 +141,7 @@ router.get("/savedb/:filename", (req, res) => {
   console.log("save to database move file  ./configfiles/  -> database")
   let filename = req.params.filename;
   const csvFilePath = `./configfiles/${filename}`
-  
+
   const name = filename.split('-')[1].split('.')[0];
   const csv = require('csvtojson');
   // read csv
@@ -167,7 +167,7 @@ router.get("/savedb/:filename", (req, res) => {
 router.post("/liveupdate/:filename", (req, res) => {
   let filename = req.params.filename;
   let data = JSON.stringify(req.body,null,2);
-  
+
   console.log(data)
   const csvData = csvjson.toCSV(data, {
     headers: 'key'
