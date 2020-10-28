@@ -183,7 +183,7 @@ exports.TrainSimulator = class {
       return Promise.all(trips.map( async trip => {
 
         
-        const totaltime = trip.runtime_secs
+        
         // get file
         filemodule = getPathfile(trip)
         if (trip.route_name === "blue") {
@@ -194,7 +194,7 @@ exports.TrainSimulator = class {
             //trip.file = filemodule
             //trip.location = location
             //trip.loc_order = loc_order
-
+            const totaltime = trip.runtime_secs
             const delta_t = trip.time_now_sec - trip.start_time_secs
             loc_length = path[`${filemodule}`].points.length;
             delta_b = Math.round((delta_t / totaltime) * loc_length);
@@ -206,6 +206,7 @@ exports.TrainSimulator = class {
           // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
 
         } else if (trip.route_name === "purple") {
+            const totaltime = trip.runtime_secs
             const delta_t = trip.time_now_sec - trip.start_time_secs
             loc_length = path[`${filemodule}`].points.length
             delta_p = Math.round((delta_t/ totaltime) * purple_length)
