@@ -166,6 +166,16 @@ exports.TrainSimulator = class {
     //  start_time      time_now
     // 2 loc_order = % of loc_lenght
 
+    function getStationfile(trip) {
+      console.log(trip.route_name, trip.direction)
+      const index = path.station.findIndex(c => {
+        return (c.route_name == trip.route_name && c.direction == trip.direction )
+      })
+      if (index > -1) {
+        console.log("175 ",index)
+        return path.station[3].file
+      }
+    }
 
     function addStoptime(gtfs,trips){
       let loc_length;
@@ -182,10 +192,12 @@ exports.TrainSimulator = class {
 
       return Promise.all(trips.map( async trip => {
 
-        
-        
+
+
         // get file
         filemodule = getPathfile(trip)
+        //stoptimesfile = getStationfile(trip)
+        //console.log(" === 199",stoptimesfile )
         if (trip.route_name === "blue") {
             //loc_length = path[`${filemodule}`].points.length;
             //delta_b = Math.round((delta_t / totaltime) * blue_length);
@@ -206,15 +218,15 @@ exports.TrainSimulator = class {
           // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
 
         } else if (trip.route_name === "purple") {
-            const totaltime = trip.runtime_secs
-            const delta_t = trip.time_now_sec - trip.start_time_secs
-            loc_length = path[`${filemodule}`].points.length
-            delta_p = Math.round((delta_t/ totaltime) * purple_length)
-            loc_order = Math.round(delta_p / mapdistance)
-            location = path[`${filemodule}`].points[loc_order]
-            trip.file = filemodule
-            trip.location = location
-            trip.loc_order = loc_order
+          const totaltime = trip.runtime_secs
+          const delta_t = trip.time_now_sec - trip.start_time_secs
+          loc_length = path[`${filemodule}`].points.length
+          delta_p = Math.round((delta_t/ totaltime) * loc_length)
+          location = path[`${filemodule}`].points[delta_p]
+          trip.file = filemodule
+          trip.location = location
+
+          console.log("== 218", `${filemodule}`,  trip.trip_id, delta_p, "/", loc_length, totaltime)
 
 
           // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_p, purple_length,  loc_order)

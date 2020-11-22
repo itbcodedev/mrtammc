@@ -184,7 +184,7 @@ export class GtfsrtComponent implements OnInit {
       this.CurrentDate = moment();
       this.wsdata = JSON.stringify(data, null, 2);
       // // DEBUG: data from webservice
-      // console.log('181..........', this.wsdata);
+      console.log('==== 187..........', this.wsdata);
       const route_name = data['header']['route_name'];
       const route_id = data['header']['route_id'];
       const direction = data['header']['direction'];
@@ -198,7 +198,7 @@ export class GtfsrtComponent implements OnInit {
       const start_time = data['entity']['vehicle']['trip']['start_time'];
       const end_time = data['entity']['vehicle']['trip']['end_time'];
       const trip_id = data['entity']['vehicle']['trip']['trip_id'];
-      const loc_order = data['entity']['vehicle']['trip']['loc_order'];
+      
       // // TODO: display info on marker
       // tripEntity = `${stoptime.route_name}-${stoptime.trip_id}`
       const tripEntity = data['entity']['id'];
@@ -225,7 +225,6 @@ export class GtfsrtComponent implements OnInit {
       // console.log("=== 225", routetrips)
       const t3 = performance.now();
       // console.log( 'debug Time for routetrips ' + (t3 - t2) + ' millisec');
-      // console.log('218..gtfs.component ', trip_id, loc_order, latitude, longitude );
       // 2 find next station and add information to marker
       const nextstation = routetrips.map((obj) => {
         // console.log('=== 231', obj)
@@ -294,13 +293,12 @@ export class GtfsrtComponent implements OnInit {
 
             marker_trip.runtime = runtime;
             marker_trip.calendar = calendar;
-            marker_trip.loc_order = loc_order;
+            
             // markerinfo
             marker_trip.nextstop = nextstop.stop_id;
             marker_trip.arrival_time = nextstop.arrival_time;
             marker_trip.departure_time = nextstop.departure_time;
             marker_trip.difftime = nextstop.difftime;
-            // console.log(' === 284 marker update exist', marker_trip.stop_id, marker_trip.trip_id, marker_trip.arrival_time, marker_trip.direction, marker_trip.loc_order);
             this.setStationInfo(
               marker_trip.stop_id,
               marker_trip.trip_id,
@@ -333,7 +331,7 @@ export class GtfsrtComponent implements OnInit {
           marker.headsign = headsign;
           marker.runtime = runtime;
           marker.calendar = calendar;
-          marker.loc_order = loc_order;
+;
 
           marker.map = this.map;
           marker.controllerLayer = this.controllerLayer;
@@ -342,7 +340,7 @@ export class GtfsrtComponent implements OnInit {
           marker.arrival_time = nextstop.arrival_time;
           marker.departure_time = nextstop.departure_time;
           marker.difftime = nextstop.difftime;
-          console.log(' === 326 marker add new', marker.stop_id, marker.trip_id, marker.arrival_time, marker.direction, marker.loc_order);
+          console.log(' === 326 marker add new', marker.stop_id, marker.trip_id, marker.arrival_time, marker.direction);
           marker.bindPopup('Trip info');
 
           marker.on('mouseover', this.onTrainClick, this);
@@ -466,7 +464,7 @@ export class GtfsrtComponent implements OnInit {
         </div>
         <div class="col-md-4">
           <p style="color: #ffffff; margin: 2px 0;">${e.target.headsign}</p>
-          <p style="color: #ffffff; margin: 2px 0;">${e.target.runtime} นาที ${e.target.loc_order}</p>
+          <p style="color: #ffffff; margin: 2px 0;">${e.target.runtime} นาที </p>
           <p style="color: #ffffff; margin: 2px 0;">${e.target.trip_id}</p>
           <p style="color: #ffffff; margin: 2px 0;">${e.target.calendar}</p>
           <p style="color: #ffffff; margin: 2px 0;">
@@ -586,7 +584,7 @@ export class GtfsrtComponent implements OnInit {
         </div>
         <div class="col-md-4">
           <p style="color: #ffffff; margin: 2px 0;">${marker.headsign}</p>
-          <p style="color: #ffffff; margin: 2px 0;">${marker.runtime} นาที ${marker.target.loc_order}</p>
+          <p style="color: #ffffff; margin: 2px 0;">${marker.runtime} นาที </p>
           <p style="color: #ffffff; margin: 2px 0;">${marker.trip_id}</p>
           <p style="color: #ffffff; margin: 2px 0;">${marker.calendar}</p>
           <p style="color: #ffffff; margin: 2px 0;">
@@ -1145,7 +1143,7 @@ export class GtfsrtComponent implements OnInit {
       marker.stop_name = stop.stop_name;
       this.StationMarkers[stop.stop_id] = marker;
       const unique_route_ids = await this.getRoutebyStop(stop.stop_id);
-      console.log(unique_route_ids);
+      console.log("=== 1148", unique_route_ids, stop);
       if (unique_route_ids.length > 0) {
         unique_route_ids.forEach((route_id) => {
           this.layerRouteGroup[`${route_id}`].addLayer(marker);

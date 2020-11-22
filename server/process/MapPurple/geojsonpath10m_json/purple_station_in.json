@@ -1,0 +1,106 @@
+{
+    "path": {
+        "name": "purple",
+        "dicrection": "in"
+    },
+    "stations": [
+        {
+            "station": "PL01",
+            "latitude": 13.892515,
+            "longitude": 100.40821,
+            "index": 0
+        },
+        {
+            "station": "PL02",
+            "latitude": 13.881056,
+            "longitude": 100.409263,
+            "index": 127
+        },
+        {
+            "station": "PL03",
+            "latitude": 13.874715,
+            "longitude": 100.419513,
+            "index": 290
+        },
+        {
+            "station": "PL04",
+            "latitude": 13.875674,
+            "longitude": 100.433932,
+            "index": 453
+        },
+        {
+            "station": "PL05",
+            "latitude": 13.876527,
+            "longitude": 100.445005,
+            "index": 576
+        },
+        {
+            "station": "PL06",
+            "latitude": 13.874661,
+            "longitude": 100.455954,
+            "index": 702
+        },
+        {
+            "station": "PL07",
+            "latitude": 13.870538,
+            "longitude": 100.466763,
+            "index": 832
+        },
+        {
+            "station": "PL08",
+            "latitude": 13.870335,
+            "longitude": 100.480428,
+            "index": 985
+        },
+        {
+            "station": "PL09",
+            "latitude": 13.86587,
+            "longitude": 100.494212,
+            "index": 1151
+        },
+        {
+            "station": "PL10",
+            "latitude": 13.861668,
+            "longitude": 100.504548,
+            "index": 1275
+        },
+        {
+            "station": "PL11",
+            "latitude": 13.860121,
+            "longitude": 100.513197,
+            "index": 1373
+        },
+        {
+            "station": "PL12",
+            "latitude": 13.848559,
+            "longitude": 100.514849,
+            "index": 1552
+        },
+        {
+            "station": "PL13",
+            "latitude": 13.83958,
+            "longitude": 100.514862,
+            "index": 1674
+        },
+        {
+            "station": "PL14",
+            "latitude": 13.829778,
+            "longitude": 100.526544,
+            "index": 1844
+        },
+        {
+            "station": "PL15",
+            "latitude": 13.820255,
+            "longitude": 100.532506,
+            "index": 1981
+        },
+        {
+            "station": "PL16",
+            "latitude": 13.806159919022862,
+            "longitude": 100.53083780172885,
+            "index": 2139
+        }
+
+
+    ]
+}

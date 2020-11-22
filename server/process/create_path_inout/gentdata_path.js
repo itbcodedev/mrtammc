@@ -1,5 +1,5 @@
 var fs = require('fs');
-const file = './geojsonpath10m/BL38-BL37.geojson'
+const file = './geojsonpath10m/BL02-BL01.geojson'
 let rawdata = fs.readFileSync(file, 'utf8')
 let geojson = JSON.parse(rawdata);
 
@@ -9,7 +9,7 @@ source.path = {
     "direction": "out"
 }
 source.points = []
-geojson.features.reverse().map( (feature,index)  => {
+geojson.features.map( (feature,index)  => {
     // console.log(feature.geometry.coordinates)
     let lat = feature.geometry.coordinates[1]
     let lng = feature.geometry.coordinates[0]
@@ -24,7 +24,7 @@ geojson.features.reverse().map( (feature,index)  => {
 
 
 
-fs.writeFile(`./geojsonpath10m/${geojson.name}_data.json`, JSON.stringify(source, null, 2), (err) => {
+fs.writeFile(`./geojsonpath10m_json/${geojson.name}_data.json`, JSON.stringify(source, null, 2), (err) => {
     if (err) console.log(err);
-    console.log("Successfully Written to File.", `./geojsonpath10m/${geojson.name}_out.json`);
+    console.log("Successfully Written to File.", `./geojsonpath10m_json/${geojson.name}_out.json`);
 });
