@@ -7,7 +7,10 @@ import { environment } from '../../../environments/environment';
 import * as moment from 'moment';
 import * as _ from 'lodash';
 import { NgForm } from '@angular/forms';
-
+import * as blue_station_in from '../../../assets/stations/blue_station_in.json';
+import * as blue_station_out from '../../../assets/stations/blue_station_out.json';
+import * as purple_station_in from '../../../assets/stations/purple_station_in.json';
+import * as purple_station_out from '../../../assets/stations/purple_station_out.json';
 declare let L;
 
 @Component({
@@ -81,6 +84,24 @@ export class GtfsrtComponent implements OnInit {
   ) {
     // this.CurrentDate = moment().subtract(3, 'hours');
     this.CurrentDate = moment();
+    console.log("8877", purple_station_in.path)
+    console.log("8877", purple_station_in.stations)
+    console.log("8877", blue_station_in.path)
+    console.log("8877", blue_station_in.stations)
+    console.log("8877", purple_station_out.path)
+    console.log("8877", purple_station_out.stations)
+    console.log("8877", blue_station_out.path)
+    console.log("8877", blue_station_in.stations)
+
+    let BL01 = _.filter(blue_station_out.stations, o => {
+      return o.station = "BL01"
+    })
+
+    console.log("1000 ==============");
+
+    // {station: "BL01", latitude: 13.710848, longitude: 100.409503, index: 0}
+    // {station: "BL01", latitude: 13.711922, longitude: 100.422367, index: 144}
+    console.log("1000", BL01);
   }
 
   async ngOnInit() {
@@ -184,7 +205,11 @@ export class GtfsrtComponent implements OnInit {
       this.CurrentDate = moment();
       this.wsdata = JSON.stringify(data, null, 2);
       // // DEBUG: data from webservice
-      console.log('==== 187..........', this.wsdata);
+      //console.log('==== 187..........', this.wsdata);
+
+      const upcoming_st = data['stoptime'];
+      console.log('==== 187..........', upcoming_st.trip_id, upcoming_st.stop_id, upcoming_st.arrival_time ,upcoming_st.time_stamp);
+
       const route_name = data['header']['route_name'];
       const route_id = data['header']['route_id'];
       const direction = data['header']['direction'];
@@ -198,7 +223,7 @@ export class GtfsrtComponent implements OnInit {
       const start_time = data['entity']['vehicle']['trip']['start_time'];
       const end_time = data['entity']['vehicle']['trip']['end_time'];
       const trip_id = data['entity']['vehicle']['trip']['trip_id'];
-      
+
       // // TODO: display info on marker
       // tripEntity = `${stoptime.route_name}-${stoptime.trip_id}`
       const tripEntity = data['entity']['id'];
@@ -228,7 +253,7 @@ export class GtfsrtComponent implements OnInit {
       // 2 find next station and add information to marker
       const nextstation = routetrips.map((obj) => {
         // console.log('=== 231', obj)
-        const selectStoptimes = obj.stoptimes.filter((st_obj) => { 
+        const selectStoptimes = obj.stoptimes.filter((st_obj) => {
           return this.findNextTrip(st_obj.departure_time);
         });
         console.log('== 237 selectStoptimes', obj.trip_id, selectStoptimes.length, selectStoptimes)
@@ -258,7 +283,7 @@ export class GtfsrtComponent implements OnInit {
           // not arrive
           return (obj.arr_sec >  timenow && obj.calendar == calendar) ;
         });
-        
+
         // console.log(' === 245 nextstation sort', sort.length, sort);
         // console.log(' === 245 nextstation map', map.length, map);
         console.log(' === 246 nextstation filter', filter.length, filter);
@@ -266,9 +291,9 @@ export class GtfsrtComponent implements OnInit {
         // const nextstop =  nextstation[0].selectStoptimes[0];
 
         const nextstop =  filter[0];
-        
 
-        
+
+
         // find difftime to station
 
         const arr_time = this.getsecond(nextstop.arrival_time);
@@ -276,7 +301,7 @@ export class GtfsrtComponent implements OnInit {
         const arr_now = time;
         // console.log(' == 276  arr_time,time, arr_now', arr_time, time,  arr_now);
         // 1 sec = 0.0166666667 min
-        
+
         nextstop.difftime = (arr_time - arr_now).toFixed(2);
         // cal random number
         // console.log(' +++ 256 nextstop', nextstop)
@@ -293,7 +318,7 @@ export class GtfsrtComponent implements OnInit {
 
             marker_trip.runtime = runtime;
             marker_trip.calendar = calendar;
-            
+
             // markerinfo
             marker_trip.nextstop = nextstop.stop_id;
             marker_trip.arrival_time = nextstop.arrival_time;
@@ -1023,7 +1048,7 @@ export class GtfsrtComponent implements OnInit {
     } else {
       return 2
     }
-    
+
   }
 
   getRandom() {

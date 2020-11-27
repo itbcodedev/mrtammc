@@ -1,0 +1,245 @@
+{
+    "path": {
+        "name": "blue",
+        "dicrection": "in"
+    },
+    "stations": [
+        {
+            "station": "BL01",
+            "latitude": 13.729678244835242,
+            "longitude": 100.47412338480935,
+            "index": 0   
+        },
+        {
+            "station": "BL02",
+            "latitude": 13.740167,
+            "longitude": 100.470701,
+            "index": 125
+        },
+        {
+            "station": "BL03",
+            "latitude": 13.755737,
+            "longitude": 100.469332,
+            "index": 299
+        },
+        {
+            "station": "BL04",
+            "latitude": 13.763286,
+            "longitude": 100.473346,
+            "index": 400
+        },
+        {
+            "station": "BL05",
+            "latitude": 13.777265,
+            "longitude": 100.4852,
+            "index": 605
+        },
+        {
+            "station": "BL06",
+            "latitude": 13.783893,
+            "longitude": 100.493451,
+            "index": 725
+            
+        },
+        {
+            "station": "BL07",
+            "latitude": 13.792473,
+            "longitude": 100.504994,
+            "index": 887
+        },
+        {
+            "station": "BL08",
+            "latitude": 13.798988,
+            "longitude": 100.509822,
+            "index": 978
+        },
+        {
+            "station": "BL09",
+            "latitude": 13.806407,
+            "longitude": 100.520971,
+            "index": 1143
+        },
+        {
+            "station": "BL10",
+            "latitude": 13.806115,
+            "longitude": 100.530733,
+            "index": 1251
+        },
+        {
+            "station": "BL11",
+            "latitude": 13.803229,
+            "longitude": 100.53923,
+            "index": 1351
+        },
+        {
+            "station": "BL12",
+            "latitude": 13.797686,
+            "longitude": 100.547577,
+            "index": 1470
+        },
+        {
+            "station": "BL13",
+            "latitude": 13.802544,
+            "longitude": 100.553429,
+            "index": 1567
+        },
+        {
+            "station": "BL14",
+            "latitude": 13.813692,
+            "longitude": 100.559866,
+            "index": 1718
+        },
+        {
+            "station": "BL15",
+            "latitude": 13.80608,
+            "longitude": 100.573719,
+            "index": 1894
+        },
+        {
+            "station": "BL16",
+            "latitude": 13.799147,
+            "longitude": 100.574618,
+            "index": 1977
+        },
+        {
+            "station": "BL17",
+            "latitude": 13.789785,
+            "longitude": 100.574164,
+            "index": 2081
+        },
+        {
+            "station": "BL18",
+            "latitude": 13.77849,
+            "longitude": 100.573643,
+            "index": 2206
+        },
+        {
+            "station": "BL19",
+            "latitude": 13.766178,
+            "longitude": 100.570264,
+            "index": 2354
+        },
+        {
+            "station": "BL20",
+            "latitude": 13.75779,
+            "longitude": 100.565393,
+            "index": 2464
+        },
+        {
+            "station": "BL21",
+            "latitude": 13.748661,
+            "longitude": 100.563317,
+            "index": 2568
+        },
+        {
+            "station": "BL22",
+            "latitude": 13.738494,
+            "longitude": 100.561632,
+            "index": 2684
+        },
+        {
+            "station": "BL23",
+            "latitude": 13.723028,
+            "longitude": 100.56019,
+            "index": 2862
+        },
+        {
+            "station": "BL24",
+            "latitude": 13.722345,
+            "longitude": 100.553935,
+            "index": 2953
+        },
+        {
+            "station": "BL25",
+            "latitude": 13.725768,
+            "longitude": 100.545684,
+            "index": 3053
+        },
+        {
+            "station": "BL26",
+            "latitude": 13.729549,
+            "longitude": 100.536627,
+            "index": 3162
+        },
+        {
+            "station": "BL27",
+            "latitude": 13.732335,
+            "longitude": 100.529971,
+            "index": 3243
+        },
+        {
+            "station": "BL28",
+            "latitude": 13.737579,
+            "longitude": 100.517071,
+            "index": 3399
+
+        },
+        {
+            "station": "BL29",
+            "latitude": 13.742115,
+            "longitude": 100.510109,
+            "index": 3493
+        },
+        {
+            "station": "BL30",
+            "latitude": 13.746992,
+            "longitude": 100.502068,
+            "index": 3599
+        },
+        {
+            "station": "BL31",
+            "latitude": 13.743922,
+            "longitude": 100.494637,
+            "index": 3691
+        },
+        {
+            "station": "BL32",
+            "latitude": 13.738314,
+            "longitude": 100.485291,
+            "index": 3813
+        },
+        {
+            "station": "BL01",
+            "latitude": 13.729687,
+            "longitude": 100.474141,
+            "index": 3978
+        },
+        {
+            "station": "BL33",
+            "latitude": 13.724635,
+            "longitude": 100.46525,
+            "index": 4092
+        },
+        {
+            "station": "BL34",
+            "latitude": 13.720144,
+            "longitude": 100.457034,
+            "index": 4197
+        },
+        {
+            "station": "BL35",
+            "latitude": 13.715513,
+            "longitude": 100.44561,
+            "index": 4335
+        },
+        {
+            "station": "BL36",
+            "latitude": 13.712829,
+            "longitude": 100.434383,
+            "index": 4465
+        },
+        {
+            "station": "BL37",
+            "latitude": 13.711922,
+            "longitude": 100.422367,
+            "index": 4600
+
+        },
+        {
+            "station": "BL38",
+            "latitude": 13.710848,
+            "longitude": 100.409503,
+            "index": 4744
+        }
+    ]
+}
