@@ -96,14 +96,18 @@ exports.TrainSimulator = class {
       }
 
       function filtertime(stoptimes){
-
+        let options = { hour12: false };
         let d = new Date();
-        let n = d.toLocaleTimeString().slice(0,7);
+        let n = d.toLocaleTimeString('en-US',options).slice(0,8);
         const result = stoptimes.filter(st => {
-          console.log("103", st.trip_id, st.stop_id, st.arrival_time, ">" ,n )
+          console.log("103", st.trip_id, st.stop_id, st.arrival_time, "<>" ,n )
           return (convertime(st.arrival_time) > convertime(n))
         })
-        return result
+        console.log("106", result.length)
+        console.log("106", result)
+        console.log("106", "----------------------------")
+        console.log("106", result[0])
+        return result[0]
       }
       function timestamp() {
         let d = new Date();
@@ -138,9 +142,9 @@ exports.TrainSimulator = class {
         const loc_order = stoptime.loc_order
         const stoptimes = stoptime.stoptimes
         const filter_st = filtertime(stoptimes)
-        const upcoming_st = filter_st[0];
+        const upcoming_st = filter_st;
         const time_stamp = timestamp()
-        console.log("141 ", upcoming_st)
+        
         const gtfsrt = `
         {
           "header": {

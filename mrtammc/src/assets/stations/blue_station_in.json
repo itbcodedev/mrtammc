@@ -1,14 +1,14 @@
 {
     "path": {
         "name": "blue",
-        "dicrection": "in"
+        "direction": "in"
     },
     "stations": [
         {
             "station": "BL01",
             "latitude": 13.729678244835242,
             "longitude": 100.47412338480935,
-            "index": 0   
+            "index": 0
         },
         {
             "station": "BL02",
@@ -39,7 +39,7 @@
             "latitude": 13.783893,
             "longitude": 100.493451,
             "index": 725
-            
+
         },
         {
             "station": "BL07",

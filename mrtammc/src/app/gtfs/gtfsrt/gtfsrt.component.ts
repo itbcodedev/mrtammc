@@ -11,6 +11,11 @@ import * as blue_station_in from '../../../assets/stations/blue_station_in.json'
 import * as blue_station_out from '../../../assets/stations/blue_station_out.json';
 import * as purple_station_in from '../../../assets/stations/purple_station_in.json';
 import * as purple_station_out from '../../../assets/stations/purple_station_out.json';
+import * as blue_in from '../../../assets/stations/blue_in_index.json';
+import * as blue_out from '../../../assets/stations/blue_out_index.json';
+import * as purple_in from '../../../assets/stations/purple_in_index.json';
+import * as purple_out from '../../../assets/stations/purple_out_index.json';
+
 declare let L;
 
 @Component({
@@ -84,24 +89,7 @@ export class GtfsrtComponent implements OnInit {
   ) {
     // this.CurrentDate = moment().subtract(3, 'hours');
     this.CurrentDate = moment();
-    console.log("8877", purple_station_in.path)
-    console.log("8877", purple_station_in.stations)
-    console.log("8877", blue_station_in.path)
-    console.log("8877", blue_station_in.stations)
-    console.log("8877", purple_station_out.path)
-    console.log("8877", purple_station_out.stations)
-    console.log("8877", blue_station_out.path)
-    console.log("8877", blue_station_in.stations)
 
-    let BL01 = _.filter(blue_station_out.stations, o => {
-      return o.station = "BL01"
-    })
-
-    console.log("1000 ==============");
-
-    // {station: "BL01", latitude: 13.710848, longitude: 100.409503, index: 0}
-    // {station: "BL01", latitude: 13.711922, longitude: 100.422367, index: 144}
-    console.log("1000", BL01);
   }
 
   async ngOnInit() {
@@ -123,6 +111,33 @@ export class GtfsrtComponent implements OnInit {
         opacity: 1,
         fillOpacity: 0.5,
       });
+    }
+
+    function upcomming_station(line, direction, stop){
+      console.log("117", line, direction, stop)
+      let station_list
+      let station_shape
+      if (line == "blue" && direction == 0 ) {
+        station_list = blue_station_in.stations
+      }
+
+      if (line == "blue" && direction == 1) {
+        station_list = blue_station_out.stations
+      }
+
+      if (line == "purple" && direction == 0 ) {
+        station_list = purple_station_in.stations
+      }
+
+      if (line == "purple" && direction == 1) {
+        station_list = purple_station_out.stations
+      }
+
+      let stations = _.filter(station_list, o => {
+        return  o.station == stop
+      })
+ 
+      console.log("117", stations)
     }
 
     // get data
@@ -243,6 +258,10 @@ export class GtfsrtComponent implements OnInit {
       // filter again filter only active trip
       const t2 = performance.now();
       // filter  ontrack  routetrips
+
+
+      upcomming_station(route_name, direction, upcoming_st.stop_id)
+
       const routetrips = routeinfowithtrips.filter((obj) => {
         return this.checktime(obj.start_time, obj.end_time);
       });

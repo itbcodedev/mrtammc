@@ -1,7 +1,7 @@
 {
     "path": {
         "name": "blue",
-        "dicrection": "out"
+        "direction": "out"
     },
     "stations": [
         {
@@ -53,7 +53,7 @@
             "index": 931
         },
         {
-            "station": "BL31",      
+            "station": "BL31",
             "latitude": 13.743922,
             "longitude": 100.494637,
             "index": 1053
