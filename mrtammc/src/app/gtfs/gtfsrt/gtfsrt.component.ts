@@ -136,10 +136,17 @@ export class GtfsrtComponent implements OnInit {
       let stations = _.filter(station_list, o => {
         return  o.station == stop
       })
- 
-      console.log("117", stations)
+
+
+      return stations[0]
     }
 
+    function get_locaton(line,station, runtime, difftime) {
+      let location = {}
+      console.log("146", line, station, runtime, difftime)
+
+      return location
+    }
     // get data
     this.routesinfo = await this.gtfsService.getRouteInfo();
     this.routes = await this.gtfsService.getRoutesBasic();
@@ -230,6 +237,7 @@ export class GtfsrtComponent implements OnInit {
       const direction = data['header']['direction'];
       const headsign = data['header']['headsign'];
       const runtime = data['header']['runtime'];
+      const difftime = data['header']['difftime'];
       const calendar = data['header']['calendar'];
       const time_now_sec = data['entity']['vehicle']['trip']['time_now_sec'];
       const start_time_secs =
@@ -260,7 +268,9 @@ export class GtfsrtComponent implements OnInit {
       // filter  ontrack  routetrips
 
 
-      upcomming_station(route_name, direction, upcoming_st.stop_id)
+      const next_st = upcomming_station(route_name, direction, upcoming_st.stop_id)
+      const location = get_locaton(route_name, next_st, runtime, difftime)
+      //Object { station: "BL16", latitude: 13.799147, longitude: 100.574618, index: 2767 }
 
       const routetrips = routeinfowithtrips.filter((obj) => {
         return this.checktime(obj.start_time, obj.end_time);

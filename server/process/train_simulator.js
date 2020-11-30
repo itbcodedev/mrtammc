@@ -100,21 +100,34 @@ exports.TrainSimulator = class {
         let d = new Date();
         let n = d.toLocaleTimeString('en-US',options).slice(0,8);
         const result = stoptimes.filter(st => {
-          console.log("103", st.trip_id, st.stop_id, st.arrival_time, "<>" ,n )
+          //console.log("103", st.trip_id, st.stop_id, st.arrival_time, "<>" ,n )
           return (convertime(st.arrival_time) > convertime(n))
         })
-        console.log("106", result.length)
-        console.log("106", result)
-        console.log("106", "----------------------------")
-        console.log("106", result[0])
+        //console.log("106", result.length)
+        //console.log("106", result)
+        //console.log("106", "----------------------------")
+        //console.log("106", result[0])
         return result[0]
       }
       function timestamp() {
+        let options = { hour12: false };
         let d = new Date();
-        let n = d.toLocaleTimeString().slice(0,7);
+        let n = d.toLocaleTimeString('en-US',options).slice(0,8);
         let a = n.split(':');
         let s = (+a[0]) * 60 * 60 + (+a[1]) * 60 + (+a[2])
         return s
+      }
+
+      function diff_arr_timestamp(upcomming_station) {
+        let options = { hour12: false };
+        let d = new Date();
+        let n = d.toLocaleTimeString('en-US',options).slice(0,8);
+        // calculate diff time timestame to arrival_time
+        let timestamp = convertime(n)
+        let difftime =  convertime(upcomming_station.arrival_time) - timestamp
+        console.log("125 difftime stopid, index, difftime", upcomming_station.stop_id, difftime)
+        //difftime stop difftime BL10 52
+        return difftime
       }
       //each trip
       return Promise.all(stoptimes.map(stoptime => {
@@ -141,16 +154,18 @@ exports.TrainSimulator = class {
         const end_point = stoptime.end_point
         const loc_order = stoptime.loc_order
         const stoptimes = stoptime.stoptimes
-        const filter_st = filtertime(stoptimes)
-        const upcoming_st = filter_st;
+        const upcoming_st = filtertime(stoptimes)
+        const difftime = diff_arr_timestamp(upcoming_st)
+
         const time_stamp = timestamp()
-        
+
         const gtfsrt = `
         {
           "header": {
             "gtfs_realtime_version": "2.0",
             "incrementality": "FULL_DATASET",
             "timestamp": "${time_now}",
+            "difftime": "${difftime}",
             "route_name": "${route_name}",
             "route_id": "${route_id}",
             "direction": "${direction}",
