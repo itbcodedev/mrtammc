@@ -141,11 +141,49 @@ export class GtfsrtComponent implements OnInit {
       return stations[0]
     }
 
-    function get_locaton(line,station, runtime, difftime) {
-      let location = {}
-      console.log("146", line, station, runtime, difftime)
+    function get_locaton(line, direction, station, start_time_secs, end_time_secs, difftime) {
 
-      return location
+      console.log("146", line, direction, station ,start_time_secs, end_time_secs, difftime)
+      // 146 purple {station: "PP16", latitude: 13.806, longitude: 100.5308, index: 2139} 76872 78990 105
+      // 146 blue {station: "BL07", latitude: 13.792473, longitude: 100.504994, index: 3857} 74972 79653 10
+      let totaltime
+      let points     // nuber of point of each line
+
+      let train_latlng
+      let diff_point
+      if (line == "blue" && direction == 0 ) {
+          totaltime = end_time_secs - start_time_secs
+          points = blue_in.points.length
+          diff_point = station.index - Math.round(difftime * (points / totaltime))
+          train_latlng = blue_in.points[diff_point]
+      }
+
+      if (line == "blue" && direction == 1) {
+          totaltime = end_time_secs - start_time_secs
+          points = blue_out.points.length
+          diff_point = station.index - Math.round(difftime * (points / totaltime))
+          train_latlng = blue_out.points[diff_point]
+      }
+
+      if (line == "purple" && direction == 0 ) {
+         totaltime = end_time_secs - start_time_secs
+         points = purple_in.points.length
+         diff_point = station.index - Math.round(difftime * (points / totaltime))
+         train_latlng = purple_in.points[diff_point]
+      }
+
+      if (line == "purple" && direction == 1) {
+          totaltime = end_time_secs - start_time_secs
+          points = purple_out.points.length
+          diff_point = station.index - Math.round(difftime * (points / totaltime))
+          train_latlng = purple_out.points[diff_point]
+      }
+      console.log("diff_point |-------------> station.index")
+      console.log("147", "line, direction,totaltime, points, station.index, diff_point, train_latlng" )
+      console.log("147", line, direction, totaltime, points, station.index, diff_point, train_latlng  )
+      // 147 blue 1 4661 4589 3393 3290 {latitude: 13.805234944017958, longitude: 100.53492030001135, index: 3290}
+
+      return train_latlng
     }
     // get data
     this.routesinfo = await this.gtfsService.getRouteInfo();
@@ -237,7 +275,7 @@ export class GtfsrtComponent implements OnInit {
       const direction = data['header']['direction'];
       const headsign = data['header']['headsign'];
       const runtime = data['header']['runtime'];
-      const difftime = data['header']['difftime'];
+      const difftime = data['header']['difftime'];  //dif time to station
       const calendar = data['header']['calendar'];
       const time_now_sec = data['entity']['vehicle']['trip']['time_now_sec'];
       const start_time_secs =
@@ -251,10 +289,10 @@ export class GtfsrtComponent implements OnInit {
       // tripEntity = `${stoptime.route_name}-${stoptime.trip_id}`
       const tripEntity = data['entity']['id'];
       const vehicle = data['entity']['vehicle'];
-      const latitude = data['entity']['vehicle']['position']['latitude'];
-      const longitude = data['entity']['vehicle']['position']['longitude'];
+      //const latitude = data['entity']['vehicle']['position']['latitude'];
+      //const longitude = data['entity']['vehicle']['position']['longitude'];
       // create lat lng instance
-      const trainLatLng = new L.LatLng(latitude, longitude);
+      //const trainLatLng = new L.LatLng(latitude, longitude);
 
       const t0 = performance.now();
       // getdata from api
@@ -269,7 +307,11 @@ export class GtfsrtComponent implements OnInit {
 
 
       const next_st = upcomming_station(route_name, direction, upcoming_st.stop_id)
-      const location = get_locaton(route_name, next_st, runtime, difftime)
+      const location = get_locaton(route_name, direction, next_st, start_time_secs, end_time_secs, difftime)
+      console.log("312", location)
+      const latitude = location.latitude
+      const longitude = location.longitude
+      const trainLatLng = new L.LatLng(latitude, longitude);
       //Object { station: "BL16", latitude: 13.799147, longitude: 100.574618, index: 2767 }
 
       const routetrips = routeinfowithtrips.filter((obj) => {
