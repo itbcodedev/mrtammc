@@ -114,9 +114,9 @@ export class GtfsrtComponent implements OnInit {
     }
 
     function upcomming_station(line, direction, stop){
-      console.log("117", line, direction, stop)
+      // console.log("117", line, direction, stop)
       let station_list
-      let station_shape
+
       if (line == "blue" && direction == 0 ) {
         station_list = blue_station_in.stations
       }
@@ -137,7 +137,7 @@ export class GtfsrtComponent implements OnInit {
         return  o.station == stop
       })
 
-
+      console.log("140", line, stations)
       return stations[0]
     }
 
@@ -156,6 +156,7 @@ export class GtfsrtComponent implements OnInit {
           points = blue_in.points.length
           diff_point = station.index - Math.round(difftime * (points / totaltime))
           train_latlng = blue_in.points[diff_point]
+
       }
 
       if (line == "blue" && direction == 1) {
@@ -163,6 +164,7 @@ export class GtfsrtComponent implements OnInit {
           points = blue_out.points.length
           diff_point = station.index - Math.round(difftime * (points / totaltime))
           train_latlng = blue_out.points[diff_point]
+
       }
 
       if (line == "purple" && direction == 0 ) {
@@ -170,6 +172,7 @@ export class GtfsrtComponent implements OnInit {
          points = purple_in.points.length
          diff_point = station.index - Math.round(difftime * (points / totaltime))
          train_latlng = purple_in.points[diff_point]
+
       }
 
       if (line == "purple" && direction == 1) {
@@ -177,10 +180,11 @@ export class GtfsrtComponent implements OnInit {
           points = purple_out.points.length
           diff_point = station.index - Math.round(difftime * (points / totaltime))
           train_latlng = purple_out.points[diff_point]
+
       }
-      console.log("diff_point |-------------> station.index")
-      console.log("147", "line, direction,totaltime, points, station.index, diff_point, train_latlng" )
-      console.log("147", line, direction, totaltime, points, station.index, diff_point, train_latlng  )
+      // console.log("diff_point |-------------> station.index")
+      // console.log("147", "line, direction,totaltime, points, station.index, diff_point, train_latlng" )
+      // console.log("147", line, direction, totaltime, points, station.index, diff_point, train_latlng  )
       // 147 blue 1 4661 4589 3393 3290 {latitude: 13.805234944017958, longitude: 100.53492030001135, index: 3290}
 
       return train_latlng
@@ -268,29 +272,41 @@ export class GtfsrtComponent implements OnInit {
       //console.log('==== 187..........', this.wsdata);
 
       const upcoming_st = data['stoptime'];
-      console.log('==== 187..........', upcoming_st.trip_id, upcoming_st.stop_id, upcoming_st.arrival_time ,upcoming_st.time_stamp);
+      //console.log('==== 187..........', upcoming_st.trip_id, upcoming_st.stop_id, upcoming_st.arrival_time ,upcoming_st.time_stamp);
 
       const route_name = data['header']['route_name'];
       const route_id = data['header']['route_id'];
       const direction = data['header']['direction'];
       const headsign = data['header']['headsign'];
       const runtime = data['header']['runtime'];
-      const difftime = data['header']['difftime'];  //dif time to station
-      const calendar = data['header']['calendar'];
+      //const difftime = data['header']['stoptime']['difftime'];  //dif time to station
+      //const calendar = data['header']['calendar'];
       const time_now_sec = data['entity']['vehicle']['trip']['time_now_sec'];
       const start_time_secs =
         data['entity']['vehicle']['trip']['start_time_secs'];
       const end_time_secs = data['entity']['vehicle']['trip']['end_time_secs'];
       const start_time = data['entity']['vehicle']['trip']['start_time'];
       const end_time = data['entity']['vehicle']['trip']['end_time'];
-      const trip_id = data['entity']['vehicle']['trip']['trip_id'];
 
       // // TODO: display info on marker
       // tripEntity = `${stoptime.route_name}-${stoptime.trip_id}`
       const tripEntity = data['entity']['id'];
       const vehicle = data['entity']['vehicle'];
-      //const latitude = data['entity']['vehicle']['position']['latitude'];
-      //const longitude = data['entity']['vehicle']['position']['longitude'];
+      const latitude = data['entity']['vehicle']['position']['latitude'];
+      const longitude = data['entity']['vehicle']['position']['longitude'];
+      
+      // stoptime
+      const agency_key = data['header']['stoptime']['agency_key'];
+      const trip_id =  data['header']['stoptime']['trip_id'];
+      const arrival_time = data['header']['stoptime']['arrival_time'];
+      const departure_time = data['header']['stoptime']['departure_time'];
+      const stop_id = data['header']['stoptime']['stop_id'];
+      const stop_sequence = data['header']['stoptime']['stop_sequence'];
+      const calendar = data['header']['stoptime']['calendar'];
+      const time_stamp = data['header']['stoptime']['time_stamp'];
+      const difftime = data['header']['stoptime']['difftime'];
+      const blue_speed = 4588
+      const purple_speed = 2139
       // create lat lng instance
       //const trainLatLng = new L.LatLng(latitude, longitude);
 
@@ -307,10 +323,11 @@ export class GtfsrtComponent implements OnInit {
 
 
       const next_st = upcomming_station(route_name, direction, upcoming_st.stop_id)
-      const location = get_locaton(route_name, direction, next_st, start_time_secs, end_time_secs, difftime)
-      console.log("312", location)
-      const latitude = location.latitude
-      const longitude = location.longitude
+      //console.log("314", next_st)
+      //const location = get_locaton(route_name, direction, next_st, start_time_secs, end_time_secs, difftime)
+      //console.log("312", location)
+      //const latitude = location.latitude
+      //const longitude = location.longitude
       const trainLatLng = new L.LatLng(latitude, longitude);
       //Object { station: "BL16", latitude: 13.799147, longitude: 100.574618, index: 2767 }
 
@@ -331,6 +348,9 @@ export class GtfsrtComponent implements OnInit {
         obj.selectStoptimes = selectStoptimes;
         return obj;
       });
+
+      //const nextstation2 = data['header']['stoptime']
+      //console.log(" === 353", nextstation2 )
       // list stoptime at stop of each trip
       // console.log(' === 240', tripEntity, this.ActiveTrain)
       console.log(' === 239 nextstation ', nextstation.length, nextstation);
