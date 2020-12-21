@@ -202,7 +202,8 @@ exports.TrainSimulator = class {
             "stop_id": "${upcoming_st.stop_id}",
             "stop_sequence": "${upcoming_st.stop_sequence}",
             "calendar": "${upcoming_st.calendar}",
-            "time_stamp": "${time_stamp}"
+            "time_stamp": "${time_stamp}",
+            "difftime": "${difftime}"
           }
         }
         `

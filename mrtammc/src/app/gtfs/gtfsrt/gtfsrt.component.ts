@@ -113,11 +113,11 @@ export class GtfsrtComponent implements OnInit {
       });
     }
 
-    function upcomming_station(line, direction, stop){
+    function upcomming_station(line, direction, stop) {
       // console.log("117", line, direction, stop)
       let station_list
 
-      if (line == "blue" && direction == 0 ) {
+      if (line == "blue" && direction == 0) {
         station_list = blue_station_in.stations
       }
 
@@ -125,7 +125,7 @@ export class GtfsrtComponent implements OnInit {
         station_list = blue_station_out.stations
       }
 
-      if (line == "purple" && direction == 0 ) {
+      if (line == "purple" && direction == 0) {
         station_list = purple_station_in.stations
       }
 
@@ -134,16 +134,16 @@ export class GtfsrtComponent implements OnInit {
       }
 
       let stations = _.filter(station_list, o => {
-        return  o.station == stop
+        return o.station == stop.stop_id
       })
 
-      console.log("140", line, stations)
+      console.log("140", line, stations[0], stop.stop_id)
       return stations[0]
     }
+    //get_locaton(route_name, direction, next_st, difftime)
+    function get_locaton(line, direction, station, difftime) {
 
-    function get_locaton(line, direction, station, start_time_secs, end_time_secs, difftime) {
-
-      console.log("146", line, direction, station ,start_time_secs, end_time_secs, difftime)
+      //console.log("146", line, direction, station , difftime)
       // 146 purple {station: "PP16", latitude: 13.806, longitude: 100.5308, index: 2139} 76872 78990 105
       // 146 blue {station: "BL07", latitude: 13.792473, longitude: 100.504994, index: 3857} 74972 79653 10
       let totaltime
@@ -151,41 +151,38 @@ export class GtfsrtComponent implements OnInit {
 
       let train_latlng
       let diff_point
-      if (line == "blue" && direction == 0 ) {
-          totaltime = end_time_secs - start_time_secs
-          points = blue_in.points.length
-          diff_point = station.index - Math.round(difftime * (points / totaltime))
-          train_latlng = blue_in.points[diff_point]
+      if (line == "blue" && direction == 0) {
+
+        points = blue_in.points.length
+        diff_point = station.index - difftime
+        train_latlng = blue_in.points[diff_point]
 
       }
 
       if (line == "blue" && direction == 1) {
-          totaltime = end_time_secs - start_time_secs
-          points = blue_out.points.length
-          diff_point = station.index - Math.round(difftime * (points / totaltime))
-          train_latlng = blue_out.points[diff_point]
+
+        points = blue_out.points.length
+        diff_point = station.index - difftime
+        train_latlng = blue_out.points[diff_point]
 
       }
 
-      if (line == "purple" && direction == 0 ) {
-         totaltime = end_time_secs - start_time_secs
-         points = purple_in.points.length
-         diff_point = station.index - Math.round(difftime * (points / totaltime))
-         train_latlng = purple_in.points[diff_point]
+      if (line == "purple" && direction == 0) {
+
+        points = purple_in.points.length
+        diff_point = station.index - difftime
+        train_latlng = purple_in.points[diff_point]
 
       }
 
       if (line == "purple" && direction == 1) {
-          totaltime = end_time_secs - start_time_secs
-          points = purple_out.points.length
-          diff_point = station.index - Math.round(difftime * (points / totaltime))
-          train_latlng = purple_out.points[diff_point]
+
+        points = purple_out.points.length
+        diff_point = station.index - difftime
+        train_latlng = purple_out.points[diff_point]
 
       }
-      // console.log("diff_point |-------------> station.index")
-      // console.log("147", "line, direction,totaltime, points, station.index, diff_point, train_latlng" )
-      // console.log("147", line, direction, totaltime, points, station.index, diff_point, train_latlng  )
-      // 147 blue 1 4661 4589 3393 3290 {latitude: 13.805234944017958, longitude: 100.53492030001135, index: 3290}
+
 
       return train_latlng
     }
@@ -269,7 +266,7 @@ export class GtfsrtComponent implements OnInit {
       this.CurrentDate = moment();
       this.wsdata = JSON.stringify(data, null, 2);
       // // DEBUG: data from webservice
-      //console.log('==== 187..........', this.wsdata);
+      console.log('==== 187..........', this.wsdata);
 
       const upcoming_st = data['stoptime'];
       //console.log('==== 187..........', upcoming_st.trip_id, upcoming_st.stop_id, upcoming_st.arrival_time ,upcoming_st.time_stamp);
@@ -279,11 +276,10 @@ export class GtfsrtComponent implements OnInit {
       const direction = data['header']['direction'];
       const headsign = data['header']['headsign'];
       const runtime = data['header']['runtime'];
-      //const difftime = data['header']['stoptime']['difftime'];  //dif time to station
-      //const calendar = data['header']['calendar'];
+
+      const calendar = data['header']['calendar'];
       const time_now_sec = data['entity']['vehicle']['trip']['time_now_sec'];
-      const start_time_secs =
-        data['entity']['vehicle']['trip']['start_time_secs'];
+      const start_time_secs = data['entity']['vehicle']['trip']['start_time_secs'];
       const end_time_secs = data['entity']['vehicle']['trip']['end_time_secs'];
       const start_time = data['entity']['vehicle']['trip']['start_time'];
       const end_time = data['entity']['vehicle']['trip']['end_time'];
@@ -292,21 +288,22 @@ export class GtfsrtComponent implements OnInit {
       // tripEntity = `${stoptime.route_name}-${stoptime.trip_id}`
       const tripEntity = data['entity']['id'];
       const vehicle = data['entity']['vehicle'];
-      const latitude = data['entity']['vehicle']['position']['latitude'];
-      const longitude = data['entity']['vehicle']['position']['longitude'];
-      
+      //const latitude = data['entity']['vehicle']['position']['latitude'];
+      //const longitude = data['entity']['vehicle']['position']['longitude'];
+
       // stoptime
-      const agency_key = data['header']['stoptime']['agency_key'];
-      const trip_id =  data['header']['stoptime']['trip_id'];
-      const arrival_time = data['header']['stoptime']['arrival_time'];
-      const departure_time = data['header']['stoptime']['departure_time'];
-      const stop_id = data['header']['stoptime']['stop_id'];
-      const stop_sequence = data['header']['stoptime']['stop_sequence'];
-      const calendar = data['header']['stoptime']['calendar'];
-      const time_stamp = data['header']['stoptime']['time_stamp'];
-      const difftime = data['header']['stoptime']['difftime'];
-      const blue_speed = 4588
-      const purple_speed = 2139
+      // const agency_key = data['header']['stoptime']['agency_key'];
+      const trip_id = data['stoptime']['trip_id'];
+      const difftime = data['stoptime']['difftime'];  //dif time to station
+      // const arrival_time = data['header']['stoptime']['arrival_time'];
+      // const departure_time = data['header']['stoptime']['departure_time'];
+      // const stop_id = data['header']['stoptime']['stop_id'];
+      // const stop_sequence = data['header']['stoptime']['stop_sequence'];
+      // const calendar = data['header']['stoptime']['calendar'];
+      // const time_stamp = data['header']['stoptime']['time_stamp'];
+      // const difftime = data['header']['stoptime']['difftime'];
+      // const blue_speed = 4588
+      // const purple_speed = 2139
       // create lat lng instance
       //const trainLatLng = new L.LatLng(latitude, longitude);
 
@@ -322,20 +319,21 @@ export class GtfsrtComponent implements OnInit {
       // filter  ontrack  routetrips
 
 
-      const next_st = upcomming_station(route_name, direction, upcoming_st.stop_id)
-      //console.log("314", next_st)
-      //const location = get_locaton(route_name, direction, next_st, start_time_secs, end_time_secs, difftime)
-      //console.log("312", location)
-      //const latitude = location.latitude
-      //const longitude = location.longitude
-      const trainLatLng = new L.LatLng(latitude, longitude);
+      const next_st = upcomming_station(route_name, direction, upcoming_st)
+      console.log("314", next_st)
       //Object { station: "BL16", latitude: 13.799147, longitude: 100.574618, index: 2767 }
+      const location = get_locaton(route_name, direction, next_st, difftime)
+      console.log("312", location)
+      const latitude = location.latitude
+      const longitude = location.longitude
+      const trainLatLng = new L.LatLng(latitude, longitude);
 
+      //on on ly active train
       const routetrips = routeinfowithtrips.filter((obj) => {
         return this.checktime(obj.start_time, obj.end_time);
       });
 
-      // console.log("=== 225", routetrips)
+      console.log("=== 225", routetrips)
       const t3 = performance.now();
       // console.log( 'debug Time for routetrips ' + (t3 - t2) + ' millisec');
       // 2 find next station and add information to marker
@@ -344,7 +342,8 @@ export class GtfsrtComponent implements OnInit {
         const selectStoptimes = obj.stoptimes.filter((st_obj) => {
           return this.findNextTrip(st_obj.departure_time);
         });
-        console.log('== 237 selectStoptimes', obj.trip_id, selectStoptimes.length, selectStoptimes)
+        //console.log('== 237 selectStoptimes', obj.trip_id, selectStoptimes.length, selectStoptimes)
+        // == 237 selectStoptimes 1015252 8 (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
         obj.selectStoptimes = selectStoptimes;
         return obj;
       });
@@ -353,8 +352,25 @@ export class GtfsrtComponent implements OnInit {
       //console.log(" === 353", nextstation2 )
       // list stoptime at stop of each trip
       // console.log(' === 240', tripEntity, this.ActiveTrain)
-      console.log(' === 239 nextstation ', nextstation.length, nextstation);
-      if (nextstation[0] !== undefined && nextstation[0].selectStoptimes !== undefined ) {
+      //console.log(' === 239 nextstation ', nextstation.length, nextstation);
+      // data      0:
+      // agency_key: "MRTA_Transit"
+      // calendar: "WD"
+      // direction: "1"
+      // end_point: "PP01"
+      // end_time: "23:30:45"
+      // length: "21240"
+      // route_id: "00012"
+      // route_name: "purple"
+      // runtime: ""
+      // selectStoptimes: (9) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+      // speed: "1"
+      // start_point: "PP16"
+      // start_time: "22:55:30"
+      // stoptimes: (16) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+
+
+      if (nextstation[0] !== undefined && nextstation[0].selectStoptimes !== undefined) {
         // console.log('+++  242 nextstation[0] !== undefined && nextstation[0].selectStoptimes !== undefined')
         // 0
         const timenow = this.getsecond(this.CurrentDate.format('HH:mm:ss'));
@@ -364,15 +380,15 @@ export class GtfsrtComponent implements OnInit {
         // const sort = _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'));
         const sort = _.orderBy(nextstation[0].selectStoptimes, 'arr_sec');
         // 2
-        const map = _.each(sort, function(o){
+        const map = _.each(sort, function (o) {
           const seconds = moment(o.arrival_time, 'HH:mm:ss: A').diff(moment().startOf('day'), 'seconds');
           o.arr_sec = seconds;
         });
         // 3
-        const filter = _.filter(map, function(obj){
-          console.log(' === 258 filter' , obj.arr_sec, obj.calendar, timenow, calendar)
+        const filter = _.filter(map, function (obj) {
+          console.log(' === 258 filter', obj.arr_sec, obj.calendar, timenow, calendar)
           // not arrive
-          return (obj.arr_sec >  timenow && obj.calendar == calendar) ;
+          return (obj.arr_sec > timenow && obj.calendar == calendar);
         });
 
         // console.log(' === 245 nextstation sort', sort.length, sort);
@@ -381,7 +397,7 @@ export class GtfsrtComponent implements OnInit {
         // const nextstop =  _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'))[0];
         // const nextstop =  nextstation[0].selectStoptimes[0];
 
-        const nextstop =  filter[0];
+        const nextstop = filter[0];
 
 
 
@@ -447,7 +463,7 @@ export class GtfsrtComponent implements OnInit {
           marker.headsign = headsign;
           marker.runtime = runtime;
           marker.calendar = calendar;
-;
+          ;
 
           marker.map = this.map;
           marker.controllerLayer = this.controllerLayer;
@@ -474,7 +490,7 @@ export class GtfsrtComponent implements OnInit {
               // ).addTo(this.map);
 
               L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-              attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               }).addTo(this.map);
 
               this.selectTripId = marker.tripEntity;
@@ -554,8 +570,7 @@ export class GtfsrtComponent implements OnInit {
 
     const html = `
     <div class="card" style="width: 18rem;">
-      <div class="card-header" style="background-color:${
-        e.target.color
+      <div class="card-header" style="background-color:${e.target.color
       }; padding: 0.5rem 0.15rem !important;">
       <div class="row">
         <div class="col-md-3 text-center">
@@ -601,17 +616,15 @@ export class GtfsrtComponent implements OnInit {
      <p class="m-0">
      <img src="${e.target.track}"  height="32" width="15">
      สถานีถัดไป: <b>${e.target.nextstop}</b> ใช้เวลา
-     ${Math.floor(e.target.difftime / 60)} นาที  ${
-      e.target.difftime % 60
-    } วินาที
+     ${Math.floor(e.target.difftime / 60)} นาที  ${e.target.difftime % 60
+      } วินาที
 
      </p>
    </li>
    <li class="list-group-item">
        <p class="m-1">
-          <b> arrival: ${e.target.arrival_time} departure: ${
-      e.target.departure_time
-    } </b>
+          <b> arrival: ${e.target.arrival_time} departure: ${e.target.departure_time
+      } </b>
        </p>
    </li>
       </ul>
@@ -634,8 +647,8 @@ export class GtfsrtComponent implements OnInit {
         // }).addTo(this.map);
 
         L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-             attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-         }).addTo(this.map);
+          attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(this.map);
 
         this.selectTripId = marker.tripEntity;
       },
@@ -674,8 +687,7 @@ export class GtfsrtComponent implements OnInit {
     const marker = this.selectMarker;
     const html = `
     <div class="card" style="width: 18rem;">
-      <div class="card-header" style="background-color:${
-        marker.color
+      <div class="card-header" style="background-color:${marker.color
       }; padding: 0.5rem 0.15rem !important;">
       <div class="row">
         <div class="col-md-3 text-center">
@@ -720,16 +732,14 @@ export class GtfsrtComponent implements OnInit {
           <p class="m-0">
           <img src="${marker.track}"  height="32" width="15">
           สถานีถัดไป: <b>${marker.nextstop}</b> ใช้เวลา
-          ${Math.floor(marker.difftime / 60)} นาที  ${
-      marker.difftime % 60
-    } วินาที
+          ${Math.floor(marker.difftime / 60)} นาที  ${marker.difftime % 60
+      } วินาที
           </p>
         </li>
         <li class="list-group-item">
             <p class="m-1">
-              <b> arrival: ${marker.arrival_time} departure: ${
-      marker.departure_time
-    } </b>
+              <b> arrival: ${marker.arrival_time} departure: ${marker.departure_time
+      } </b>
             </p>
         </li>
       </ul>
@@ -835,16 +845,16 @@ export class GtfsrtComponent implements OnInit {
     this.routelayerGroup.clearLayers();
 
     const line = new L.GeoJSON.AJAX(kml.geojsonline_file, {
-        style: function (feature) {
-          return { color: kml.color };
-        },
-      });
+      style: function (feature) {
+        return { color: kml.color };
+      },
+    });
 
     console.log(669, line);
 
     line.on('data:progress', () => {
       this.map.fitBounds(this.routelayerGroup.getBounds());
-      })
+    })
       .addTo(this.routelayerGroup);
     // this.routelayerGroup.addLayer(line);
 
@@ -1567,7 +1577,7 @@ export class GtfsrtComponent implements OnInit {
 
     console.log(1350, data.value); // {route_en:  }
 
-    const kml = this.kmlroutes.filter( (obj) => {
+    const kml = this.kmlroutes.filter((obj) => {
       return (obj.route_en == data.value.route_en);
     });
 
@@ -1605,7 +1615,7 @@ export class GtfsrtComponent implements OnInit {
     console.log(e);
   }
 
-  singleTrip(trip) {}
+  singleTrip(trip) { }
 
   setStationInfo(stop_id, trip_id, arrival_time, direction) {
     // console.log("setStationInfo")
@@ -1633,7 +1643,7 @@ export class GtfsrtComponent implements OnInit {
   // display on kml on map
   async getKmltoroute() {
     let objects = [];
-    await this.kmlroutes.forEach( async (obj) => {
+    await this.kmlroutes.forEach(async (obj) => {
       console.log('1426', obj.geojsonline_file);
       const line = new L.GeoJSON.AJAX(obj.geojsonline_file, {
         style: function (feature) {
