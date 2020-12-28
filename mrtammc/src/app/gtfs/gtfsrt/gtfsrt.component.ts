@@ -345,6 +345,7 @@ export class GtfsrtComponent implements OnInit {
         //console.log('== 237 selectStoptimes', obj.trip_id, selectStoptimes.length, selectStoptimes)
         // == 237 selectStoptimes 1015252 8 (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
         obj.selectStoptimes = selectStoptimes;
+        
         return obj;
       });
 
@@ -352,7 +353,8 @@ export class GtfsrtComponent implements OnInit {
       //console.log(" === 353", nextstation2 )
       // list stoptime at stop of each trip
       // console.log(' === 240', tripEntity, this.ActiveTrain)
-      //console.log(' === 239 nextstation ', nextstation.length, nextstation);
+      
+       console.log(' === 239 nextstation ', nextstation.length, nextstation);
       // data      0:
       // agency_key: "MRTA_Transit"
       // calendar: "WD"
@@ -375,7 +377,7 @@ export class GtfsrtComponent implements OnInit {
         // 0
         const timenow = this.getsecond(this.CurrentDate.format('HH:mm:ss'));
 
-        // console.log(' === 243 nextstation ', nextstation.length, nextstation);
+        //console.log(' === 243 nextstation ', nextstation.length, nextstation);
         // 1
         // const sort = _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'));
         const sort = _.orderBy(nextstation[0].selectStoptimes, 'arr_sec');
@@ -397,10 +399,21 @@ export class GtfsrtComponent implements OnInit {
         // const nextstop =  _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'))[0];
         // const nextstop =  nextstation[0].selectStoptimes[0];
 
-        const nextstop = filter[0];
-
-
-
+        // const nextstop = filter[0];
+        const nextstop = upcoming_st;
+        console.log(" === 404 ", nextstop)
+        // agency_key: "MRTA_Transit"
+        // arr_sec: 77892
+        // arrival_time: "21:38:12"
+        // calendar: "WD"
+        // departure_time: "21:38:42"
+        // difftime: "24"
+        // stop_id: "BL17"
+        // stop_sequence: 22
+        // trip_id: "2415252"
+        // __v: 0
+        // _id: "5fc4567b244f4102197a2237"
+        // __proto__: Object
         // find difftime to station
 
         const arr_time = this.getsecond(nextstop.arrival_time);
@@ -409,7 +422,8 @@ export class GtfsrtComponent implements OnInit {
         // console.log(' == 276  arr_time,time, arr_now', arr_time, time,  arr_now);
         // 1 sec = 0.0166666667 min
 
-        nextstop.difftime = (arr_time - arr_now).toFixed(2);
+        //nextstop.difftime = (arr_time - arr_now).toFixed(2);
+        nextstop.difftime = difftime;
         // cal random number
         // console.log(' +++ 256 nextstop', nextstop)
         const number = this.getRandom();
@@ -616,8 +630,7 @@ export class GtfsrtComponent implements OnInit {
      <p class="m-0">
      <img src="${e.target.track}"  height="32" width="15">
      สถานีถัดไป: <b>${e.target.nextstop}</b> ใช้เวลา
-     ${Math.floor(e.target.difftime / 60)} นาที  ${e.target.difftime % 60
-      } วินาที
+     ${Math.floor(marker.difftime / 60)} นาที  ${marker.difftime % 60} วินาที
 
      </p>
    </li>
@@ -732,8 +745,7 @@ export class GtfsrtComponent implements OnInit {
           <p class="m-0">
           <img src="${marker.track}"  height="32" width="15">
           สถานีถัดไป: <b>${marker.nextstop}</b> ใช้เวลา
-          ${Math.floor(marker.difftime / 60)} นาที  ${marker.difftime % 60
-      } วินาที
+          ${Math.floor(marker.difftime / 60)} นาที  ${marker.difftime % 60} วินาที
           </p>
         </li>
         <li class="list-group-item">
