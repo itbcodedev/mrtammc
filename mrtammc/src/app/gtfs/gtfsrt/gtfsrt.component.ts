@@ -330,7 +330,7 @@ export class GtfsrtComponent implements OnInit {
       //const trainLatLng = new L.LatLng(latitude, longitude);
 
 
-      //on on ly active train
+      //on only active train
       const routetrips = routeinfowithtrips.filter((obj) => {
         return this.checktime(obj.start_time, obj.end_time);
       });
@@ -398,12 +398,14 @@ export class GtfsrtComponent implements OnInit {
         // console.log(' === 245 nextstation sort', sort.length, sort);
         // console.log(' === 245 nextstation map', map.length, map);
         console.log(' === 246 nextstation filter', filter.length, filter);
-        // const nextstop =  _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'))[0];
-        // const nextstop =  nextstation[0].selectStoptimes[0];
-
-        // const nextstop = filter[0];
-        const nextstop = upcoming_st;
-        console.log(" === 404 ", nextstop)
+        // Todo
+        // Cast 1
+        //const nextstop =  _.orderBy(nextstation[0].selectStoptimes, this.getsecond('arrival_time'))[0];
+        //const nextstop =  nextstation[0].selectStoptimes[0];
+        const nextstop = filter[0];
+        // Cast 2
+        //const nextstop = upcoming_st;
+        console.log(" === 408 ", nextstop)
         // agency_key: "MRTA_Transit"
         // arr_sec: 77892
         // arrival_time: "21:38:12"
@@ -483,7 +485,7 @@ export class GtfsrtComponent implements OnInit {
 
           marker.map = this.map;
           marker.controllerLayer = this.controllerLayer;
-          // markerinfo
+          // markerinfo Todo
           marker.nextstop = nextstop.stop_id;
           marker.arrival_time = nextstop.arrival_time;
           marker.departure_time = nextstop.departure_time;
