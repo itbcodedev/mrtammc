@@ -266,7 +266,7 @@ export class GtfsrtComponent implements OnInit {
       this.CurrentDate = moment();
       this.wsdata = JSON.stringify(data, null, 2);
       // // DEBUG: data from webservice
-      console.log('==== 187..........', this.wsdata);
+      //console.log('==== 187..........', this.wsdata);
 
       const upcoming_st = data['stoptime'];
       //console.log('==== 187..........', upcoming_st.trip_id, upcoming_st.stop_id, upcoming_st.arrival_time ,upcoming_st.time_stamp);

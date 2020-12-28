@@ -32,10 +32,10 @@ exports.TrainSimulator = class {
   }
 
   get trip_gtfs() {
-    if ( this.routeinfo  == 0) {
+    if (this.routeinfo == 0) {
       return [];
     }
-     return this.routeinfo;
+    return this.routeinfo;
   }
 
   async trainAdvance(now) {
@@ -76,7 +76,7 @@ exports.TrainSimulator = class {
       const index = path.config.findIndex(c => {
         // console.log("73.......", c )
         // console.log("73.........................", c.direction)
-        return (c.route_name == trip.route_name && c.direction == trip.direction )
+        return (c.route_name == trip.route_name && c.direction == trip.direction)
       })
 
       if (index > -1) {
@@ -95,10 +95,10 @@ exports.TrainSimulator = class {
         return s
       }
 
-      function filtertime(stoptimes){
+      function filtertime(stoptimes) {
         let options = { hour12: false };
         let d = new Date();
-        let n = d.toLocaleTimeString('en-US',options).slice(0,8);
+        let n = d.toLocaleTimeString('en-US', options).slice(0, 8);
         const result = stoptimes.filter(st => {
           //console.log("103", st.trip_id, st.stop_id, st.arrival_time, "<>" ,n )
           return (convertime(st.arrival_time) > convertime(n))
@@ -112,7 +112,7 @@ exports.TrainSimulator = class {
       function timestamp() {
         let options = { hour12: false };
         let d = new Date();
-        let n = d.toLocaleTimeString('en-US',options).slice(0,8);
+        let n = d.toLocaleTimeString('en-US', options).slice(0, 8);
         let a = n.split(':');
         let s = (+a[0]) * 60 * 60 + (+a[1]) * 60 + (+a[2])
         return s
@@ -121,10 +121,10 @@ exports.TrainSimulator = class {
       function diff_arr_timestamp(upcomming_station) {
         let options = { hour12: false };
         let d = new Date();
-        let n = d.toLocaleTimeString('en-US',options).slice(0,8);
+        let n = d.toLocaleTimeString('en-US', options).slice(0, 8);
         // calculate diff time timestame to arrival_time
         let timestamp = convertime(n)
-        let difftime =  convertime(upcomming_station.arrival_time) - timestamp
+        let difftime = convertime(upcomming_station.arrival_time) - timestamp
         console.log("125 difftime stopid, index, difftime", upcomming_station.stop_id, difftime)
         //difftime stop difftime BL10 52
         return difftime
@@ -226,15 +226,15 @@ exports.TrainSimulator = class {
     function getStationfile(trip) {
       console.log(trip.route_name, trip.direction)
       const index = path.station.findIndex(c => {
-        return (c.route_name == trip.route_name && c.direction == trip.direction )
+        return (c.route_name == trip.route_name && c.direction == trip.direction)
       })
       if (index > -1) {
-        console.log("175 ",index)
+        console.log("175 ", index)
         return path.station[3].file
       }
     }
 
-    function addStoptime(gtfs,trips){
+    function addStoptime(gtfs, trips) {
       let loc_length;
       let loc_order;
       let location;
@@ -247,7 +247,7 @@ exports.TrainSimulator = class {
       const purple_length = 20986;
       const mapdistance = 5;
 
-      return Promise.all(trips.map( async trip => {
+      return Promise.all(trips.map(async trip => {
 
 
 
@@ -256,41 +256,42 @@ exports.TrainSimulator = class {
         //stoptimesfile = getStationfile(trip)
         //console.log(" === 199",stoptimesfile )
         if (trip.route_name === "blue") {
-            //loc_length = path[`${filemodule}`].points.length;
-            //delta_b = Math.round((delta_t / totaltime) * blue_length);
-            //loc_order = Math.round(delta_b / mapdistance)
-            //location = path[`${filemodule}`].points[loc_order]
-            //trip.file = filemodule
-            //trip.location = location
-            //trip.loc_order = loc_order
-            const totaltime = trip.runtime_secs
-            const delta_t = trip.time_now_sec - trip.start_time_secs
-            loc_length = path[`${filemodule}`].points.length;
-            delta_b = Math.round((delta_t / totaltime) * loc_length);
-            location = path[`${filemodule}`].points[delta_b]
-            trip.file = filemodule
-            trip.location = location
+          //loc_length = path[`${filemodule}`].points.length;
+          //delta_b = Math.round((delta_t / totaltime) * blue_length);
+          //loc_order = Math.round(delta_b / mapdistance)
+          //location = path[`${filemodule}`].points[loc_order]
+          //trip.file = filemodule
+          //trip.location = location
+          //trip.loc_order = loc_order
+          const totaltime = trip.runtime_secs
+          const delta_t = trip.time_now_sec - trip.start_time_secs
+          loc_length = path[`${filemodule}`].points.length;
+          delta_b = Math.round((delta_t / totaltime) * loc_length);
+          location = path[`${filemodule}`].points[delta_b]
+          trip.file = filemodule
+          trip.location = location
 
-            console.log("== 209", `${filemodule}`,  delta_b, "/", loc_length, totaltime )
+          console.log("== 209", `${filemodule}`, delta_b, "/", loc_length, totaltime)
           // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_b, blue_length, loc_order );
 
         } else if (trip.route_name === "purple") {
           const totaltime = trip.runtime_secs
           const delta_t = trip.time_now_sec - trip.start_time_secs
+          //total point in shape
           loc_length = path[`${filemodule}`].points.length
-          delta_p = Math.round((delta_t/ totaltime) * loc_length)
+          delta_p = Math.round((delta_t / totaltime) * loc_length)
           location = path[`${filemodule}`].points[delta_p]
           trip.file = filemodule
           trip.location = location
 
-          console.log("== 218", `${filemodule}`,  trip.trip_id, delta_p, "/", loc_length, totaltime)
+          console.log("== 218", `${filemodule}`, trip.trip_id, delta_p, "/", loc_length, totaltime)
 
 
           // console.log('== 183', trip.trip_id, trip.route_name, trip.route_id, filemodule, delta_p, purple_length,  loc_order)
 
 
         } else {
-           console.log('== 183', trip.route_id, "missing routename")
+          console.log('== 183', trip.route_id, "missing routename")
         }
 
 
@@ -342,7 +343,7 @@ exports.TrainSimulator = class {
 
       const routeinfos_now = routeinfos.filter(trip => {
 
-            return checktime(trip, trip.start_time, trip.end_time)
+        return checktime(trip, trip.start_time, trip.end_time)
       })
 
       const routeinfos_addsec = routeinfos_now.filter(trip => c.includes(trip.calendar)).map(trip => {
@@ -350,7 +351,7 @@ exports.TrainSimulator = class {
         trip.start_time_secs = getsecond(trip.start_time)
         trip.end_time_secs = getsecond(trip.end_time)
         trip.runtime_secs = trip.end_time_secs - trip.start_time_secs
-        trip.runtime = Math.round(trip.runtime_secs/60)
+        trip.runtime = Math.round(trip.runtime_secs / 60)
         //console.log("=== 290  trip_id  runtime_secs  calendar Start/End", trip.trip_id, trip.runtime_secs, trip.calendar, trip.start_time,"/", trip.end_time)
 
         return trip

@@ -1,7 +1,7 @@
 
 
-const blue_in = require('./blue_in_index2.json')
-const blue_out = require('./blue_out_index2.json')
+const blue_in = require('./blue_in_index.json')
+const blue_out = require('./blue_out_index.json')
 const purplenorth_in = require('./purple_in_index.json')
 const purplenorth_out = require('./purple_out_index.json')
 
@@ -10,12 +10,12 @@ const blue_station_out = require('./blue_station_out.json')
 const purplenorth_station_in = require('./purple_station_in.json')
 const purplenorth_station_out = require('./purple_station_out.json')
 
-
+//shape
 exports.blue_in = blue_in
 exports.blue_out = blue_out
 exports.purplenorth_in = purplenorth_in
 exports.purplenorth_out = purplenorth_out
-
+//station
 exports.blue_station_in = blue_station_in
 exports.blue_station_out = blue_station_out
 exports.purplenorth_station_in = purplenorth_station_in
