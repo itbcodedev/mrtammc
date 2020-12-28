@@ -304,9 +304,10 @@ export class GtfsrtComponent implements OnInit {
       // const blue_speed = 4588
       // const purple_speed = 2139
       // create lat lng instance
-      const latitude = data['entity']['vehicle']['position']['latitude'];
-      const longitude = data['entity']['vehicle']['position']['longitude'];
-      const trainLatLng = new L.LatLng(latitude, longitude);
+      // todo
+      //const latitude = data['entity']['vehicle']['position']['latitude'];
+      //const longitude = data['entity']['vehicle']['position']['longitude'];
+      //const trainLatLng = new L.LatLng(latitude, longitude);
 
       const t0 = performance.now();
       // getdata from api
@@ -320,14 +321,14 @@ export class GtfsrtComponent implements OnInit {
       // filter  ontrack  routetrips
 
 
-      //const next_st = upcomming_station(route_name, direction, upcoming_st)
+      const next_st = upcomming_station(route_name, direction, upcoming_st)
       //console.log("314", next_st)
       //Object { station: "BL16", latitude: 13.799147, longitude: 100.574618, index: 2767 }
-      //const location = get_locaton(route_name, direction, next_st, difftime)
+      const location = get_locaton(route_name, direction, next_st, difftime)
       //console.log("312", location)
-      //const latitude = location.latitude
-      //const longitude = location.longitude
-      //const trainLatLng = new L.LatLng(latitude, longitude);
+      const latitude = location.latitude
+      const longitude = location.longitude
+      const trainLatLng = new L.LatLng(latitude, longitude);
 
 
       //on only active train
