@@ -288,8 +288,7 @@ export class GtfsrtComponent implements OnInit {
       // tripEntity = `${stoptime.route_name}-${stoptime.trip_id}`
       const tripEntity = data['entity']['id'];
       const vehicle = data['entity']['vehicle'];
-      //const latitude = data['entity']['vehicle']['position']['latitude'];
-      //const longitude = data['entity']['vehicle']['position']['longitude'];
+
 
       // stoptime
       // const agency_key = data['header']['stoptime']['agency_key'];
@@ -305,7 +304,9 @@ export class GtfsrtComponent implements OnInit {
       // const blue_speed = 4588
       // const purple_speed = 2139
       // create lat lng instance
-      //const trainLatLng = new L.LatLng(latitude, longitude);
+      const latitude = data['entity']['vehicle']['position']['latitude'];
+      const longitude = data['entity']['vehicle']['position']['longitude'];
+      const trainLatLng = new L.LatLng(latitude, longitude);
 
       const t0 = performance.now();
       // getdata from api
@@ -319,14 +320,15 @@ export class GtfsrtComponent implements OnInit {
       // filter  ontrack  routetrips
 
 
-      const next_st = upcomming_station(route_name, direction, upcoming_st)
-      console.log("314", next_st)
+      //const next_st = upcomming_station(route_name, direction, upcoming_st)
+      //console.log("314", next_st)
       //Object { station: "BL16", latitude: 13.799147, longitude: 100.574618, index: 2767 }
-      const location = get_locaton(route_name, direction, next_st, difftime)
-      console.log("312", location)
-      const latitude = location.latitude
-      const longitude = location.longitude
-      const trainLatLng = new L.LatLng(latitude, longitude);
+      //const location = get_locaton(route_name, direction, next_st, difftime)
+      //console.log("312", location)
+      //const latitude = location.latitude
+      //const longitude = location.longitude
+      //const trainLatLng = new L.LatLng(latitude, longitude);
+
 
       //on on ly active train
       const routetrips = routeinfowithtrips.filter((obj) => {
@@ -345,7 +347,7 @@ export class GtfsrtComponent implements OnInit {
         //console.log('== 237 selectStoptimes', obj.trip_id, selectStoptimes.length, selectStoptimes)
         // == 237 selectStoptimes 1015252 8 (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
         obj.selectStoptimes = selectStoptimes;
-        
+
         return obj;
       });
 
@@ -353,8 +355,8 @@ export class GtfsrtComponent implements OnInit {
       //console.log(" === 353", nextstation2 )
       // list stoptime at stop of each trip
       // console.log(' === 240', tripEntity, this.ActiveTrain)
-      
-       console.log(' === 239 nextstation ', nextstation.length, nextstation);
+
+      console.log(' === 239 nextstation ', nextstation.length, nextstation);
       // data      0:
       // agency_key: "MRTA_Transit"
       // calendar: "WD"
@@ -750,8 +752,7 @@ export class GtfsrtComponent implements OnInit {
         </li>
         <li class="list-group-item">
             <p class="m-1">
-              <b> arrival: ${marker.arrival_time} departure: ${marker.departure_time
-      } </b>
+              <b> arrival: ${marker.arrival_time} departure: ${marker.departure_time} </b>
             </p>
         </li>
       </ul>

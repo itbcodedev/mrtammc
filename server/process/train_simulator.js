@@ -104,9 +104,9 @@ exports.TrainSimulator = class {
           return (convertime(st.arrival_time) > convertime(n))
         })
         console.log("106", result.length)
-        console.log("106", result)
-        console.log("106", "----------------------------")
-        console.log("106", result[0])
+        console.log("107", result)
+        console.log("107", "----------------------------")
+        console.log("108", result[0])
         return result[0]
       }
       function timestamp() {
