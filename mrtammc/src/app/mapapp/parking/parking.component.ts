@@ -1,5 +1,6 @@
 import { Component, OnInit,Renderer2, Inject } from '@angular/core';
 import { ParkingserviceService } from '../../services/parkingservice.service';
+import { ParkingService } from '../../services/parking.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 // import { GtfsService } from '../../services/gtfs.service';
@@ -49,9 +50,10 @@ export class ParkingComponent implements OnInit {
   myclass
   ratiolabel
   kmlroutes
-
+  parkingDB
 
   constructor(public _parking: ParkingserviceService,
+    private parking: ParkingService,
     private gtfsService: GtfsService,
     @Inject(DOCUMENT) private document,
     private renderer: Renderer2,
@@ -66,7 +68,7 @@ export class ParkingComponent implements OnInit {
     this.myclass = "red"
 
     this._ratioparkingservice.getratioparking().subscribe(result => {
-      
+
       let output: any  = result
       // sort from min to max
       this.ratioparking = output.sort((a, b) => (parseInt(a.percent) > parseInt(b.percent)) ? 1 : -1)
@@ -74,8 +76,8 @@ export class ParkingComponent implements OnInit {
     }, (error) => {
       console.log(error)
     })
-    
-    
+
+
     //this.renderer.removeClass(this.document.body, 'sidebar-open');
     //this.renderer.addClass(this.document.body, 'sidebar-collapse');
     this.document.location.hostname;
@@ -111,12 +113,12 @@ export class ParkingComponent implements OnInit {
     // this.loadGeojson();
     // this.showAllgeojson();
     this.getKmltoroute();
-    
+
     this.stops = await this.gtfsService.getStops();
     console.log("87", this.stops)
     await this.loadStation()
 
-    
+
   }
 
 
@@ -143,15 +145,22 @@ export class ParkingComponent implements OnInit {
     // subscribe to observable
 
     get_location.subscribe(result=> {
-      console.log("145", result)
+      console.log("148", result)
     })
 
-    forkJoin([get_parking, get_location]).subscribe(result=>{
-      console.log("148", result);
-      this.parkinglocations = result[1];
+    let get_parkingDB = this.parking.getParking();
+    get_parkingDB.subscribe(result=> {
+      console.log("153", result)
+    })
+
+    forkJoin([get_parking, get_parkingDB]).subscribe(result=>{
+      console.log("157", result);
       this.parkings = result[0];
+      this.parkinglocations = result[1];
+
 
       console.log("152",this.parkings);
+
       this.parkings.forEach(parking => {
         this.totoalncarrem += +parking.ncarrem
         parking.ncarrem = parking.ncarrem < 0 ? 0 : parking.ncarrem
@@ -229,21 +238,22 @@ export class ParkingComponent implements OnInit {
     leve1::-webkit-progress-value {
       background: #cc3232;
     }
-    
+
     leve1::-moz-progress-bar {
       background: #cc3232;
     }
-    
+
     leve1::-ms-fill {
       background: #cc3232;
     }
-    
+
     `;
     return  css
   }
 
   getlocation() {
-    this._parking.getParkinglocation()
+    //this._parking.getParkinglocation()
+    this.parking.getParking()
     .subscribe(data => {
       this.parkinglocations = data;
       // console.log(this.parkinglocations);
@@ -288,13 +298,13 @@ export class ParkingComponent implements OnInit {
 
   async getShapes() {
     const shapes: Shape[] = await this.gtfsService.getShapes();
-    
+
     const shape_details: ShapeDetail[] = await this.gtfsService.getShapeDetail();
     this.shapes = shapes;
     console.log(shapes)
     console.log(shape_details)
     const grouped = this.groupBy(shapes, shape => shape.shape_id);
-  
+
     grouped.forEach((values, key) => {
       const color = shape_details.find(shape_detail => shape_detail.shape_id === key).color;
       const coordinates = [];
@@ -499,7 +509,7 @@ export class ParkingComponent implements OnInit {
     })
   }
 
-  
+
 
   async loadStation() {
     console.log("loadStation")
@@ -517,7 +527,7 @@ export class ParkingComponent implements OnInit {
       } else {
 
         this.routformats.forEach(obj => {
-          
+
           if (obj.route == route) {
             station_icon = "."+obj.station_icon
           }
@@ -528,7 +538,7 @@ export class ParkingComponent implements OnInit {
         } else {
           stopicon = station_icon
         }
-        
+
       }
 
       const icon = new L.icon({
@@ -558,7 +568,7 @@ export class ParkingComponent implements OnInit {
                   <p style="margin: 2px" >${stop.stop_id}-${stop.stop_name}</p>
                   <p style="margin: 2px" >lat ${stop.stop_lat} long ${stop.stop_lon}</p>
                 </div>
-            
+
               </div>
             </div>
 
