@@ -194,8 +194,12 @@ export class ParkingComponent implements OnInit {
           };
           const popup = `<table class="tg">
         <tr>
-          <th class="tg-0lax">รหัส<br></th>
-          <th class="tg-0lax">${c.code}<br></th>
+          <td class="tg-0lax">icon<br></td>
+          <td class="tg-0lax"><img src="${c.image}"></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax">รหัส<br></td>
+          <td class="tg-0lax">${c.code}<br></td>
         </tr>
         <tr>
           <td class="tg-0lax">ชื่อสถานี</td>
